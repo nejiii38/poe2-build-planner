@@ -17,24 +17,22 @@ Working record for reproducing the current Maxroll passive tree in the GitHub pl
 - `evasion21` — Evasion — 15% increased Evasion Rating
 - `evasion24_` — Evasion — 15% increased Evasion Rating
 
-## Critical branch being removed — 8 points
+## Verified critical/pathing branch being removed — 8
 
-The screenshot-to-tree transform maps the branch to the real group 1534 plus its Attribute pathing node. Verified nearby real IDs are:
+- `criticals52` — Critical Damage — 15% increased Critical Damage Bonus
+- `criticals56` — Critical Chance — 10% increased Critical Hit Chance
+- `criticals53` — Heartstopping — +10 Intelligence, 20% increased Critical Hit Chance
+- `criticals59` — Attack Critical Chance — 10% increased Critical Hit Chance for Attacks
+- `criticals55_` — Struck Through — Attacks have +1% to Critical Hit Chance
+- `criticals57_` — Attack Critical Damage — 15% increased Critical Damage Bonus for Attack Damage
+- `criticals54_` — Heartbreaking — 25% increased Critical Damage Bonus, +10 Strength
+- `dexterity50` — Attribute pathing node
 
-- `criticals52` — Critical Damage
-- `criticals56` — Critical Chance
-- `criticals53` — Heartstopping
-- `criticals59` — Attack Critical Chance
-- `criticals55_` — Struck Through
-- `criticals57_` — Attack Critical Damage
-- `criticals54_` — Heartbreaking
-- pathing node near screenshot coordinate (964,461): `dexterity50` — Attribute
+The adjacent `criticals58` and Critical Mastery are not substituted merely because they are nearby; the screenshot branch maps coherently to the eight IDs above.
 
-The adjacent `criticals58` / Critical Mastery nodes are not substituted merely because they are nearby; topology is being used to preserve the exact eight-point branch.
+## Verified target Elemental wheel — group 1113 — 6
 
-## Verified target Elemental wheel — group 1113
-
-Final Cold + Lightning route excludes Fire and is built from real tree IDs. Preferred six-node connected allocation:
+Final Cold + Lightning route excludes Fire:
 
 - `elemental22` — Elemental Damage — 10%
 - `elemental44` — Elemental Damage — 10%
@@ -45,7 +43,7 @@ Final Cold + Lightning route excludes Fire and is built from real tree IDs. Pref
 
 `fire34` — Echoing Flames is deliberately excluded.
 
-This six-point route contributes 40% unconditional increased Elemental Damage plus up to 60% conditional increased Elemental Damage when both Chill and Shock conditions are active.
+Contribution of this six-point target: **40% unconditional increased Elemental Damage**, plus **30% after Chill** and **30% after Shock**, for up to **100% increased Elemental Damage from this wheel while both conditions are active**.
 
 ## Verified target Freeze branch — group 1093 — 4
 
@@ -54,7 +52,7 @@ This six-point route contributes 40% unconditional increased Elemental Damage pl
 - `chill_and_freeze3` — 15% increased Freeze Buildup
 - `chill_and_freeze8` — Shattering — 30% increased Freeze Buildup, 20% increased Chill Duration on Enemies, 20% increased Magnitude of Chill you inflict
 
-Total from these four nodes: **75% increased Freeze Buildup**, plus the Chill bonuses from Shattering.
+Contribution of this four-point target: **75% increased Freeze Buildup**, **20% increased Chill Duration**, and **20% increased Chill Magnitude**.
 
 ## Build constraints
 
@@ -72,4 +70,4 @@ Total from these four nodes: **75% increased Freeze Buildup**, plus the Chill bo
 
 ## Reproduction status
 
-The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin. The Elemental and Freeze target groups above are now resolved to real 0.5.2 node IDs and real stats. Remaining work is reconstructing and validating the complete original allocation (including weapon-set colouring and ascendancy) before writing the final `.build`; no unverified node IDs will be presented as final.
+The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin and the removed critical branch. The Elemental and Freeze target groups are resolved to real 0.5.2 node IDs, real topology and real stats. The remaining task is reconstructing the complete original allocation, including weapon-set colouring and ascendancy, then applying the verified 12-out / 10-in delta and serializing the final `.build`.
