@@ -1,0 +1,141 @@
+transform scale=0.0334671 angle_deg=2.021 tx=607.46 ty=410.4
+
+## REMOVE_BEASTIAL
+screen=(919,479)
+  d=0.567 skill=59720 id=evasion33 name=Beastial Skin world=(9392.17,1722.19) projected=(919.56,479.09) group=1475
+  d=11.409 skill=17372 id=melee38 name=Reaching Strike world=(9091.22,1908.59) projected=(909.27,484.97) group=1432
+  d=12.172 skill=60899 id=spell_suppression6 name=Reduced Movement Penalty world=(9680.18,1918.61) projected=(928.96,486.00) group=1482
+  d=12.218 skill=35985 id=melee15 name=Melee Damage world=(9458.96,2075.59) projected=(921.38,490.98) group=1432
+  d=13.604 skill=27704 id=DeliriumAnoint_GraceOfTheAncestors name=Grace of the Ancestors world=(9053.85,1471.47) projected=(908.54,470.30) group=1446
+screen=(932,469)
+  d=1.093 skill=9405 id=evasion28 name=Evasion world=(9720.67,1403.21) projected=(930.92,468.80) group=1475
+  d=7.538 skill=1841 id=evasion21 name=Evasion world=(9937.17,1278.21) projected=(938.31,464.88) group=1475
+  d=8.592 skill=41163 id=mastery_evasion111 name=Evasion Mastery world=(9720.67,1153.21) projected=(931.22,460.44) group=1475
+  d=8.970 skill=53185 id=azmerianimals54 name=The Winter Owl world=(9880.47,1643.66) projected=(935.99,477.04) group=1498
+  d=9.391 skill=3209 id=evasion26 name=Evasion world=(9504.16,1278.21) projected=(923.83,464.37) group=1475
+screen=(938,465)
+  d=0.335 skill=1841 id=evasion21 name=Evasion world=(9937.17,1278.21) projected=(938.31,464.88) group=1475
+  d=8.034 skill=9405 id=evasion28 name=Evasion world=(9720.67,1403.21) projected=(930.92,468.80) group=1475
+  d=8.170 skill=41163 id=mastery_evasion111 name=Evasion Mastery world=(9720.67,1153.21) projected=(931.22,460.44) group=1475
+  d=8.504 skill=14539 id=evasion27 name=Deflection and Evasion world=(9937.17,1028.21) projected=(938.61,456.52) group=1475
+  d=12.203 skill=53185 id=azmerianimals54 name=The Winter Owl world=(9880.47,1643.66) projected=(935.99,477.04) group=1498
+screen=(953,461)
+  d=0.293 skill=44776 id=evasion24_ name=Evasion world=(10377.7,1153.21) projected=(953.19,461.22) group=1475
+  d=10.129 skill=34892 id=azmerianimals57 name=Aura Magnitude world=(10457.3,856.594) projected=(956.21,451.39) group=1501
+  d=10.388 skill=48773 id=dexterity50 name=Attribute world=(10682,1152.07) projected=(963.37,461.54) group=1509
+  d=12.200 skill=42226 id=azmerianimals59 name=Intelligence world=(10203.9,823.227) projected=(947.77,449.98) group=1501
+  d=15.074 skill=14539 id=evasion27 name=Deflection and Evasion world=(9937.17,1028.21) projected=(938.61,456.52) group=1475
+
+## REMOVE_CRIT
+screen=(990,446)
+  d=2.476 skill=13407 id=criticals54_ name=Heartbreaking world=(11471.9,733.091) projected=(990.29,448.46) group=1534
+  d=3.787 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+  d=6.749 skill=2936 id=criticals57_ name=Attack Critical Damage world=(11572.5,492.125) projected=(993.94,440.52) group=1534
+  d=8.706 skill=54983 id=criticals59 name=Attack Critical Chance world=(11481,400.619) projected=(990.98,437.35) group=1534
+  d=9.101 skill=38537 id=criticals53 name=Heartstopping world=(11240,501.159) projected=(982.80,440.43) group=1534
+screen=(994,439)
+  d=1.519 skill=2936 id=criticals57_ name=Attack Critical Damage world=(11572.5,492.125) projected=(993.94,440.52) group=1534
+  d=3.438 skill=54983 id=criticals59 name=Attack Critical Chance world=(11481,400.619) projected=(990.98,437.35) group=1534
+  d=7.251 skill=39369 id=criticals55_ name=Struck Through world=(11701,272.057) projected=(998.49,433.31) group=1534
+  d=9.229 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+  d=10.161 skill=13407 id=criticals54_ name=Heartbreaking world=(11471.9,733.091) projected=(990.29,448.46) group=1534
+screen=(998,429)
+  d=4.338 skill=39369 id=criticals55_ name=Struck Through world=(11701,272.057) projected=(998.49,433.31) group=1534
+  d=10.906 skill=54983 id=criticals59 name=Attack Critical Chance world=(11481,400.619) projected=(990.98,437.35) group=1534
+  d=12.214 skill=2936 id=criticals57_ name=Attack Critical Damage world=(11572.5,492.125) projected=(993.94,440.52) group=1534
+  d=19.013 skill=38537 id=criticals53 name=Heartstopping world=(11240,501.159) projected=(982.80,440.43) group=1534
+  d=19.226 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+screen=(990,435)
+  d=2.547 skill=54983 id=criticals59 name=Attack Critical Chance world=(11481,400.619) projected=(990.98,437.35) group=1534
+  d=6.778 skill=2936 id=criticals57_ name=Attack Critical Damage world=(11572.5,492.125) projected=(993.94,440.52) group=1534
+  d=8.660 skill=39369 id=criticals55_ name=Struck Through world=(11701,272.057) projected=(998.49,433.31) group=1534
+  d=9.013 skill=38537 id=criticals53 name=Heartstopping world=(11240,501.159) projected=(982.80,440.43) group=1534
+  d=10.055 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+screen=(983,439)
+  d=1.441 skill=38537 id=criticals53 name=Heartstopping world=(11240,501.159) projected=(982.80,440.43) group=1534
+  d=6.497 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+  d=8.153 skill=54983 id=criticals59 name=Attack Critical Chance world=(11481,400.619) projected=(990.98,437.35) group=1534
+  d=10.125 skill=55621 id=criticals56 name=Critical Chance world=(11139.5,742.125) projected=(979.16,448.37) group=1534
+  d=11.041 skill=2936 id=criticals57_ name=Attack Critical Damage world=(11572.5,492.125) projected=(993.94,440.52) group=1534
+screen=(980,447)
+  d=1.606 skill=55621 id=criticals56 name=Critical Chance world=(11139.5,742.125) projected=(979.16,448.37) group=1534
+  d=5.004 skill=23040 id=criticals58 name=Critical Damage world=(11231,833.631) projected=(982.11,451.54) group=1534
+  d=7.029 skill=51583 id=mastery_criticals64 name=Critical Mastery world=(11356,617.125) projected=(986.55,444.44) group=1534
+  d=7.146 skill=38537 id=criticals53 name=Heartstopping world=(11240,501.159) projected=(982.80,440.43) group=1534
+  d=10.137 skill=38493 id=criticals52 name=Critical Damage world=(11010.9,962.193) projected=(974.60,455.58) group=1534
+screen=(975,455)
+  d=0.703 skill=38493 id=criticals52 name=Critical Damage world=(11010.9,962.193) projected=(974.60,455.58) group=1534
+  d=7.828 skill=55621 id=criticals56 name=Critical Chance world=(11139.5,742.125) projected=(979.16,448.37) group=1534
+  d=7.910 skill=23040 id=criticals58 name=Critical Damage world=(11231,833.631) projected=(982.11,451.54) group=1534
+  d=10.090 skill=52800 id=bow19 name=Surpassing Arrow Chance world=(11229.2,1163.81) projected=(981.66,462.58) group=1541
+  d=11.768 skill=41873 id=frenzy_charges12 name=Frenzy Charge Duration world=(10923.8,1282.08) projected=(971.31,466.17) group=1523
+screen=(964,461)
+  d=0.827 skill=48773 id=dexterity50 name=Attribute world=(10682,1152.07) projected=(963.37,461.54) group=1509
+  d=8.953 skill=41873 id=frenzy_charges12 name=Frenzy Charge Duration world=(10923.8,1282.08) projected=(971.31,466.17) group=1523
+  d=10.808 skill=44776 id=evasion24_ name=Evasion world=(10377.7,1153.21) projected=(953.19,461.22) group=1475
+  d=11.905 skill=38493 id=criticals52 name=Critical Damage world=(11010.9,962.193) projected=(974.60,455.58) group=1534
+  d=12.371 skill=34892 id=azmerianimals57 name=Aura Magnitude world=(10457.3,856.594) projected=(956.21,451.39) group=1501
+
+## ADD_ELEMENTAL
+screen=(723,263)
+  d=8.739 skill=21080 id=chill_and_freeze1 name=Freeze Buildup world=(3318.64,-4263.29) projected=(723.49,271.73) group=1093
+  d=10.266 skill=31950 id=intelligence78 name=Attribute world=(3018.78,-4389.67) projected=(713.61,267.14) group=987
+  d=11.347 skill=55507 id=elemental22 name=Elemental Damage world=(3552.88,-4743.29) projected=(731.89,255.95) group=1113
+  d=11.706 skill=1869 id=chill_and_freeze2 name=Freeze Buildup world=(3602.57,-4357) projected=(733.09,268.93) group=1093
+  d=14.033 skill=48658 id=chill_and_freeze8 name=Shattering world=(3560.12,-4198.58) projected=(731.49,274.17) group=1093
+screen=(719,249)
+  d=11.306 skill=38338 id=elemental44 name=Elemental Damage world=(3419.51,-5154.29) projected=(727.91,242.04) group=1113
+  d=14.642 skill=55507 id=elemental22 name=Elemental Damage world=(3552.88,-4743.29) projected=(731.89,255.95) group=1113
+  d=15.903 skill=5257 id=cold37 name=Echoing Frost world=(3625.63,-5035.29) projected=(734.67,246.27) group=1113
+  d=17.045 skill=8569 id=intelligence79 name=Attribute world=(2711.68,-4696.77) projected=(703.70,256.51) group=987
+  d=17.689 skill=31928 id=physical44 name=Physical Life Recoup world=(3553.55,-5290.76) projected=(732.56,237.64) group=1091
+screen=(726,253)
+  d=6.585 skill=55507 id=elemental22 name=Elemental Damage world=(3552.88,-4743.29) projected=(731.89,255.95) group=1113
+  d=10.975 skill=5257 id=cold37 name=Echoing Frost world=(3625.63,-5035.29) projected=(734.67,246.27) group=1113
+  d=11.122 skill=38338 id=elemental44 name=Elemental Damage world=(3419.51,-5154.29) projected=(727.91,242.04) group=1113
+  d=15.927 skill=16367 id=elemental46 name=Elemental Damage world=(3842.13,-4910.29) projected=(741.76,250.70) group=1113
+  d=16.612 skill=60692 id=fire34 name=Echoing Flames world=(3842.13,-4660.29) projected=(741.47,259.07) group=1113
+screen=(732,246)
+  d=2.680 skill=5257 id=cold37 name=Echoing Frost world=(3625.63,-5035.29) projected=(734.67,246.27) group=1113
+  d=5.688 skill=38338 id=elemental44 name=Elemental Damage world=(3419.51,-5154.29) projected=(727.91,242.04) group=1113
+  d=8.381 skill=31928 id=physical44 name=Physical Life Recoup world=(3553.55,-5290.76) projected=(732.56,237.64) group=1091
+  d=9.948 skill=55507 id=elemental22 name=Elemental Damage world=(3552.88,-4743.29) projected=(731.89,255.95) group=1113
+  d=10.835 skill=16367 id=elemental46 name=Elemental Damage world=(3842.13,-4910.29) projected=(741.76,250.70) group=1113
+screen=(747,249)
+  d=3.091 skill=5703 id=lightning40 name=Echoing Thunder world=(4058.64,-5035.29) projected=(749.15,246.78) group=1113
+  d=5.510 skill=16367 id=elemental46 name=Elemental Damage world=(3842.13,-4910.29) projected=(741.76,250.70) group=1113
+  d=8.728 skill=35760 id=elemental45 name=Elemental Damage world=(4131.39,-4743.29) projected=(751.24,256.63) group=1113
+  d=10.635 skill=13748 id=elemental43 name=Elemental Damage world=(3842.13,-5244.29) projected=(742.15,239.53) group=1113
+  d=10.947 skill=9141 id=elemental42 name=Elemental Damage world=(4264.76,-5154.29) projected=(756.18,243.04) group=1113
+screen=(741,253)
+  d=2.419 skill=16367 id=elemental46 name=Elemental Damage world=(3842.13,-4910.29) projected=(741.76,250.70) group=1113
+  d=6.083 skill=60692 id=fire34 name=Echoing Flames world=(3842.13,-4660.29) projected=(741.47,259.07) group=1113
+  d=9.243 skill=5257 id=cold37 name=Echoing Frost world=(3625.63,-5035.29) projected=(734.67,246.27) group=1113
+  d=9.576 skill=55507 id=elemental22 name=Elemental Damage world=(3552.88,-4743.29) projected=(731.89,255.95) group=1113
+  d=10.253 skill=5703 id=lightning40 name=Echoing Thunder world=(4058.64,-5035.29) projected=(749.15,246.78) group=1113
+
+## ADD_FREEZE
+screen=(716,279)
+  d=2.467 skill=58329 id=intelligence77 name=Attribute world=(3131.18,-3970.17) projected=(716.87,281.31) group=987
+  d=7.523 skill=7405 id=lightning28 name=Shock Effect and Mana Regeneration world=(2886.7,-4100.44) projected=(708.85,276.66) group=1035
+  d=10.440 skill=21080 id=chill_and_freeze1 name=Freeze Buildup world=(3318.64,-4263.29) projected=(723.49,271.73) group=1093
+  d=12.094 skill=31950 id=intelligence78 name=Attribute world=(3018.78,-4389.67) projected=(713.61,267.14) group=987
+  d=13.395 skill=56360 id=power_charges2 name=Power Charge Duration world=(3405.31,-3776.2) projected=(725.81,288.12) group=1094
+screen=(722,286)
+  d=4.361 skill=56360 id=power_charges2 name=Power Charge Duration world=(3405.31,-3776.2) projected=(725.81,288.12) group=1094
+  d=6.950 skill=58329 id=intelligence77 name=Attribute world=(3131.18,-3970.17) projected=(716.87,281.31) group=987
+  d=9.796 skill=27176 id=power_charges9 name=The Power Within world=(3563.72,-3733.75) projected=(731.06,289.73) group=1094
+  d=10.265 skill=14890 id=chill_and_freeze9_ name=Chill Magnitude and Duration world=(3517.68,-4040.17) projected=(729.88,279.42) group=1093
+  d=13.076 skill=64643 id=power_charges3 name=Power Charge Duration world=(3679.69,-3849.72) projected=(735.08,285.98) group=1094
+screen=(731,283)
+  d=3.748 skill=14890 id=chill_and_freeze9_ name=Chill Magnitude and Duration world=(3517.68,-4040.17) projected=(729.88,279.42) group=1093
+  d=5.051 skill=64643 id=power_charges3 name=Power Charge Duration world=(3679.69,-3849.72) projected=(735.08,285.98) group=1094
+  d=6.726 skill=27176 id=power_charges9 name=The Power Within world=(3563.72,-3733.75) projected=(731.06,289.73) group=1094
+  d=7.289 skill=56360 id=power_charges2 name=Power Charge Duration world=(3405.31,-3776.2) projected=(725.81,288.12) group=1094
+  d=8.839 skill=48658 id=chill_and_freeze8 name=Shattering world=(3560.12,-4198.58) projected=(731.49,274.17) group=1093
+screen=(724,281)
+  d=6.089 skill=14890 id=chill_and_freeze9_ name=Chill Magnitude and Duration world=(3517.68,-4040.17) projected=(729.88,279.42) group=1093
+  d=7.135 skill=58329 id=intelligence77 name=Attribute world=(3131.18,-3970.17) projected=(716.87,281.31) group=987
+  d=7.346 skill=56360 id=power_charges2 name=Power Charge Duration world=(3405.31,-3776.2) projected=(725.81,288.12) group=1094
+  d=9.289 skill=21080 id=chill_and_freeze1 name=Freeze Buildup world=(3318.64,-4263.29) projected=(723.49,271.73) group=1093
+  d=10.132 skill=48658 id=chill_and_freeze8 name=Shattering world=(3560.12,-4198.58) projected=(731.49,274.17) group=1093
