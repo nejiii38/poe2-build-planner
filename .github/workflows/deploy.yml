@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, chatgpt/current-build]
   workflow_dispatch:
 
 # Allow the workflow to publish to GitHub Pages.
