@@ -1,15 +1,31 @@
 skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 25092,AscendancyDruid1Small7,Critical Damage Bonus on You,-22257.9,-2725.84,2,0,0,False,False,False
 378,AscendancyDruid1Small8,Critical Hit Chance,-20970.1,-3158.38,35,0,0,False,False,False
+58646,AscendancyDruid2Notable4,Reactive Growth,-18567.2,-2394.45,65,6,26,True,False,False
 28022,AscendancyDruid2Small1,Elemental Damage,-18931.4,-1894.41,65,8,33,False,False,False
 61722,AscendancyDruid2Small4_,Elemental Resistances,-19209.9,-2094.74,65,6,36,False,False,False
+1855,AscendancyDruid2Small7,Flask Recovery,-20048.9,-2933.74,65,6,54,False,False,False
+24807,AscendancyWarrior1Notable8,Stone Skin,-18659.6,3126.31,69,0,0,True,False,False
 46654,AscendancyDruid2Small5,Elemental Resistances,-18567.2,-2954.17,71,0,0,False,False,False
 26063,AscendancyDruid2Small2,Elemental Damage,-18298.9,-3046.83,73,0,0,False,False,False
 18353,oracle_rust_king1,Physical and Lightning Damage,-11017.2,962.236,88,6,20,False,False,False
+42762,oracle_rust_king2,Physical Damage,-12243.2,536.64,88,4,61,False,False,False
+11984,oracle_rust_king3,Physical Damage,-11563.5,416.799,88,4,7,False,False,False
+20496,oracle_rust_king4,Physical Damage,-11509.4,816.545,88,3,6,False,False,False
 3544,oracle_rust_king5_,Lightning Damage,-11626.9,941.545,88,7,8,False,False,False
 19953,oracle_rust_king6,Lightning Damage,-11718.4,600.039,88,7,2,False,False,False
 50142,oracle_rust_king7,Lightning Damage,-12302,649.639,88,4,58,False,False,False
+58197,oracle_rust_king8,Unquenchable Iron,-12570,397.045,88,6,60,True,False,False
 35980,oracle_rust_king_mastery1,Lightning Mastery,-11843.4,816.545,88,0,0,False,False,False
+28201,oracle_crab_claw1,Armour and Block Chance,-10909.3,-3219.7,91,4,21,False,False,False
+56174,oracle_crab_claw2,Armour,-11058.1,-3432.45,91,3,5,False,False,False
+1887,oracle_crab_claw3,Armour,-11213.7,-3635.26,91,3,2,False,False,False
+10713,oracle_crab_claw4__,Armour,-11467.2,-3668.62,91,3,23,False,False,False
+16615,oracle_crab_claw5,Unmoving Craiceann,-11803.3,-3590,91,4,60,True,False,False
+10636,oracle_crab_claw6,Block Chance,-11144.5,-3109.83,91,3,9,False,False,False
+38697,oracle_crab_claw7,Block Chance,-11380.7,-3012,91,3,12,False,False,False
+20391,oracle_crab_claw8,Block Chance,-11616.9,-3109.83,91,3,15,False,False,False
+16947,oracle_crab_claw9_,Shelter from the Rain,-11868.7,-3346,91,4,54,True,False,False
 18713,oracle_crab_claw_mastery1,Armour and Energy Shield Mastery,-11380.7,-3346,91,0,0,False,False,False
 65,chill_and_freeze19_,Freeze Buildup,-10952.1,-597.249,93,2,7,False,False,False
 36504,chill_and_freeze20,Freeze Buildup,-11068.1,-481.283,93,2,11,False,False,False
@@ -17,97 +33,174 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 19751,chill_and_freeze22,Freeze Threshold,-11269,-682.141,93,2,19,False,False,False
 15698,chill_and_freeze23,Freeze Buildup,-10933.8,-816.472,93,7,3,False,False,False
 35618,chill_and_freeze25,Cold Coat,-11287.3,-462.918,93,7,15,True,False,False
+47387,lightning68,Stormkeeper,-10694.6,-176.705,100,0,0,True,False,False
 63482,mastery_lightning148,Lightning Mastery,-10692,-175.715,101,0,0,False,False,False
 47080,lightning60,Lightning Damage,-10673.3,-593.395,104,0,0,False,False,False
 18593,lightning61,Lightning Damage,-10577.4,-391.035,113,0,0,False,False,False
+65192,oracle_totems1,Totem Cast and Attack Speed,-10489.2,-6063.76,114,3,11,False,False,False
+33423,oracle_totems2,Totem Cast and Attack Speed,-10640.4,-6144.89,114,7,13,False,False,False
 15672,oracle_totems3_,Totem Elemental Resistance,-10334.2,-6451.08,114,7,5,False,False,False
 6999,oracle_totems4,Totem Elemental Resistance,-10253,-6299.93,114,3,7,False,False,False
+59908,oracle_totems5,Totem Area of Effect,-10662.1,-6708.99,114,3,23,False,False,False
+36197,oracle_totems6,Totem Placement Speed,-10898.3,-6472.82,114,3,19,False,False,False
+27096,oracle_totems7,Rustle of the Leaves,-10792.2,-6261.38,114,7,16,True,False,False
+45400,oracle_totems8,Mighty Trunk,-10450.7,-6602.88,114,7,2,True,False,False
 63170,oracle_totems9,Totem Cast and Attack Speed and Elemental Resistance,-10339.5,-6150.2,114,3,9,False,False,False
+13691,oracle_totems_mastery1,Totem Mastery,-10575.7,-6386.38,114,0,0,False,False,False
 37113,lightning50,Lightning Damage,-10559.1,-803.165,115,0,0,False,False,False
 8850,wolf10,Shapeshifted Critical Chance,-10520.3,-3933.98,116,0,0,False,False,False
 61896,wolf6,Shapeshifted Critical Chance,-10520.3,-3710.82,117,0,0,False,False,False
 17349,energy_shield_and_armour10,Armour and Energy Shield,-10375,-5555.09,125,7,0,False,False,False
+5728,energy_shield_and_armour11,Ancient Aegis,-10158.4,-5430.09,125,7,4,True,False,False
+23940,energy_shield_and_armour12,Fortified Aegis,-10591.5,-5430.09,125,7,20,True,False,False
 14342,energy_shield_and_armour5,Armour and Energy Shield,-10591.5,-5180.09,125,7,16,False,False,False
 49256,energy_shield_and_armour6_,Armour and Energy Shield,-10375,-4971.09,125,3,12,False,False,False
 14439,energy_shield_and_armour7,Armour and Energy Shield,-10158.4,-5180.09,125,7,8,False,False,False
 58138,mastery_armour_and_energy_shield_6274,Armour and Energy Shield Mastery,-10375,-5223.09,125,1,6,False,False,False
+46384,shield10,Wide Barrier,-9952.33,-5061.09,125,4,24,True,False,False
+33402,shield11,Shield Block,-10863,-5305.09,125,4,54,False,False,False
+58125,shield12,Shield Block,-10797.6,-5549.09,125,4,60,False,False,False
+6133,shield14_,Core of the Guardian,-10797.6,-5061.09,125,4,48,True,False,False
+10681,shield18_,Defensive Stance,-10375,-5793.09,125,4,0,True,False,False
+27581,shield7,Shield Block,-9952.33,-5549.09,125,4,12,False,False,False
+50510,shield8,Shield Block,-9886.96,-5305.09,125,4,18,False,False,False
 55888,energy_shield_and_armour8,Armour and Energy Shield,-10371.3,-4590.02,126,0,0,False,False,False
 4442,maximum_resistances10,Armour Applies to Lightning Damage Hits,-9598.33,999.917,154,3,10,False,False,False
 59886,maximum_resistances11,Armour Applies to Lightning Damage Hits,-9169.88,988.325,154,5,23,False,False,False
+62313,maximum_resistances2,Armour Applies to Fire Damage Hits,-10412.3,824.752,154,5,52,False,False,False
+62034,maximum_resistances21,Prism Guard,-9765.33,710.665,154,0,0,True,False,False
+55931,maximum_resistances3_,Armour Applies to Fire Damage Hits,-10099.3,710.665,154,3,18,False,False,False
 33939,maximum_resistances6,Armour Applies to Cold Damage Hits,-9598.33,421.413,154,3,2,False,False,False
 6872,maximum_resistances7_,Armour Applies to Cold Damage Hits,-9598.42,252.095,154,4,4,False,False,False
+53123,shaman1,Shaman,-9985.55,-2055.78,155,7,18,False,False,False
+43250,shaman12,Adaptive Skin,-9485.55,-2055.78,155,7,6,True,False,False
+34818,shaman2,Fire Resistance,-9694.55,-2126.8,155,1,1,False,False,False
 22697,shaman3,Lightning Resistance,-9653.55,-1913.76,155,2,10,False,False,False
 8421,shaman4,Cold Resistance,-9817.55,-2197.81,155,2,22,False,False,False
 35404,shaman5,Cold Resistance,-9610.55,-2272.29,155,7,2,False,False,False
 5862,shaman6__,Lightning Resistance,-9860.55,-1839.28,155,7,14,False,False,False
+54982,shaman7,Fire Resistance,-9776.55,-1984.77,155,1,7,False,False,False
 31290,energy_shield_and_armour52,Armour and Energy Shield,-9604.92,-4177.5,169,7,22,False,False,False
 37609,energy_shield_and_armour53,Armour and Energy Shield,-9479.92,-3960.99,169,0,0,False,False,False
 60332,energy_shield_and_armour54,Armour and Energy Shield,-9263.42,-4085.99,169,7,4,False,False,False
 32764,energy_shield_and_armour55_,Armour and Energy Shield,-9696.43,-3835.99,169,7,16,False,False,False
+21213,energy_shield_and_armour56_,Cirel of Tarth's Light,-9354.92,-3744.49,169,7,10,True,False,False
 61847,flail7,Flail Critical Chance,-9265.01,-2982.99,175,0,0,False,False,False
 17587,oracle_slow_crit_mastery1,Critical Mastery,-9329.14,-875.705,176,1,9,False,False,False
 59039,oracle_slow_crits1,Critical Damage,-9361.23,-228.686,176,5,38,False,False,False
 28223,oracle_slow_crits2,Critical Damage,-9204.61,-389.562,176,4,35,False,False,False
 6100,oracle_slow_crits3,Critical Damage,-9182.44,-634.224,176,7,11,False,False,False
+20963,oracle_slow_crits4__,Calculated Hunter,-9411.14,-875.705,176,2,18,True,False,False
+49370,flail11,Morning Star,-9222.33,-2717.44,183,2,18,True,False,False
+32148,flail15,Rattling Ball,-8976.33,-2859.47,183,2,2,True,False,False
+8535,flail18,Spiked Whip,-8976.33,-2575.42,183,2,10,True,False,False
 43443,flail8,Flail Critical Chance,-9058.33,-2717.44,183,0,0,False,False,False
 41747,flail6,Flail Critical Chance,-9050.55,-3180.38,185,0,0,False,False,False
 10824,energy_shield_and_armour45_,Armour and Energy Shield,-8364.03,-2026.93,189,4,19,False,False,False
 25648,energy_shield_and_armour46,Armour and Energy Shield,-8633.67,-1944.46,189,7,8,False,False,False
 43077,energy_shield_and_armour47,Armour and Energy Shield,-9308.75,-2236.37,189,4,58,False,False,False
+58894,energy_shield_and_armour48,Dominus' Providence,-8807.73,-2227.88,189,2,1,True,False,False
+15825,energy_shield_and_armour49_,Bhatair's Storm,-8992.2,-1987.46,189,2,16,True,False,False
 45736,energy_shield_and_armour50,Armour and Energy Shield,-8850.17,-1819.46,189,7,12,False,False,False
 26592,energy_shield_and_armour51,Armour and Energy Shield,-9172.79,-2155.91,189,3,19,False,False,False
 30393,mastery_energyshield107,Armour and Energy Shield Mastery,-8850.17,-2069.46,189,0,0,False,False,False
 25315,armour38,Armour and Applies to Cold Damage,-8176.71,2248.71,212,2,2,False,False,False
 25591,armour39,Armour and Applies to Cold Damage,-8116.69,2472.73,212,2,8,False,False,False
 19820,armour40,Armour and Applies to Cold Damage,-8400.74,2308.73,212,2,20,False,False,False
+5686,armour41,Chillproof,-8340.71,2532.76,212,2,14,True,False,False
+12005,mastery_shapeshifting_6687,Shapeshifting Mastery,-8263.64,-7988.58,215,2,23,False,False,False
+28489,oracle_wyvern_addon1,Shapeshifted Skill Effect Duration,-8347.5,-8301.54,215,4,69,False,False,False
+56890,oracle_wyvern_addon2,Endlessly Soaring,-8391.24,-8464.78,215,5,69,True,False,False
+33562,wyvern1,Shapeshifted Damage,-8221.2,-7830.17,215,0,0,False,False,False
 41609,wyvern10,Shapeshifted Energy Shield Recharge,-7574.18,-7716.08,215,5,20,False,False,False
 31010,wyvern11,Shapeshifted Energy Shield Delay,-7778.92,-7623.93,215,4,23,False,False,False
 27611,wyvern12__,Shapeshifted Elemental Damage,-8471.2,-7830.17,215,7,18,False,False,False
 27216,wyvern13__,Shapeshifted Energy Shield Delay,-8004.69,-7955.17,215,7,4,False,False,False
+30546,wyvern14,Electrified Claw,-8285.9,-8071.65,215,7,23,True,False,False
+57273,wyvern18,Shapeshifted Damage,-8094.89,-7358.79,215,4,33,False,False,False
+60619,wyvern4,Scales of the Wyvern,-7749.82,-7956.47,215,4,15,True,False,False
+26104,wyvern5,Spirit of the Wyvern,-8692.57,-7703.86,215,4,51,True,False,False
 43282,wyvern6,Shapeshifted Elemental Damage,-8981.59,-7475.59,215,6,49,False,False,False
+55672,wyvern7,Shapeshifted Accuracy Rating,-8724.49,-7407.85,215,5,46,False,False,False
+32186,wyvern8,Shapeshifted Accuracy Rating,-8501.1,-7430.42,215,4,43,False,False,False
 541,wyvern9,Shapeshifted Energy Shield Recharge,-7385.39,-7903.29,215,6,17,False,False,False
+31779,mastery_power_charge_6642_,Power Charge Mastery,-8166.54,-4543.78,220,0,0,False,False,False
 20791,power_endurance_charges1,Power Charge Duration and Energy Shield,-8084.54,-4401.76,220,2,10,False,False,False
 13777,power_endurance_charges2,Power Charge Duration and Energy Shield,-8282.51,-4427.82,220,2,15,False,False,False
+38532,power_endurance_charges3,Thirst for Power,-8308.57,-4625.78,220,2,20,True,False,False
 59061,criticals31,Critical Damage,-7937.59,-5348.53,228,2,6,False,False,False
 2672,criticals32_,Spell Critical Damage,-8019.59,-5490.56,228,2,2,False,False,False
 8509,criticals33,Critical Damage,-8019.59,-5206.51,228,2,10,False,False,False
 45569,criticals34,Spell Critical Damage,-8183.59,-5490.56,228,2,22,False,False,False
 55596,criticals35,Critical Damage,-8390.85,-5181.53,228,3,16,False,False,False
+28267,criticals40,Desensitisation,-7812.34,-5515.53,228,3,4,True,False,False
 35085,mastery_criticals66,Critical Mastery,-8101.59,-5348.53,228,0,0,False,False,False
 35048,criticals60,Attack Critical Chance,-7966.51,4294.84,238,2,12,False,False,False
 26176,criticals61,Attack Critical Damage,-7824.49,4212.84,238,2,8,False,False,False
 43650,criticals62,Critical Chance and Damage,-8007.51,4059.83,238,1,11,False,False,False
 21070,criticals63,Attack Critical Chance,-8183.02,4005.84,238,7,20,False,False,False
+57388,criticals64,Overwhelming Strike,-8133.51,3841.59,238,3,22,True,False,False
 53386,criticals65,Attack Critical Damage,-7966.51,3880.84,238,7,0,False,False,False
 9698,mastery_critical_6414,Critical Mastery,-8048.51,3988.82,238,2,22,False,False,False
 41147,armour42,Armour and  Applies to Lightning Damage,-7940.6,6790.76,242,2,14,False,False,False
 23797,armour43,Armour and  Applies to Lightning Damage,-7716.58,6730.73,242,2,8,False,False,False
 31370,armour44,Armour and  Applies to Lightning Damage,-8000.63,6566.73,242,2,20,False,False,False
+32448,armour45_,Shockproof,-7776.6,6506.71,242,2,2,True,False,False
 4621,oracle_beast_corruption1,Stun and Elemental Threshold,-7598.42,-9274.8,243,4,30,False,False,False
+54297,oracle_beast_corruption10,Life Costs and Chaos Damage,-7419.8,-9453.42,243,4,24,False,False,False
+24993,oracle_beast_corruption11_,Life Costs and Chaos Damage,-7519.81,-9783.87,243,3,5,False,False,False
+43721,oracle_beast_corruption12,Life Costs and Chaos Damage,-7842.42,-10185.4,243,4,0,False,False,False
+9554,oracle_beast_corruption13,Life Costs and Chaos Damage,-8485.14,-10236.7,243,6,62,False,False,False
+11160,oracle_beast_corruption14,Relinquish Your Life,-7988.12,-10523.7,243,6,70,True,False,False
+49769,oracle_beast_corruption15_,Corruption Endures,-7958.39,-9813.39,243,2,21,True,False,False
+16332,oracle_beast_corruption2,Stun Threshold,-8381.72,-10340.1,243,6,64,False,False,False
+1628,oracle_beast_corruption3_,Stun Threshold,-8265.04,-9941.42,243,4,60,False,False,False
+57202,oracle_beast_corruption4,Stun Threshold,-7842.42,-9533.42,243,2,12,False,False,False
 3681,oracle_beast_corruption5,Elemental Threshold,-8330.42,-9697.42,243,4,54,False,False,False
 57386,oracle_beast_corruption6,Elemental Threshold,-7928.87,-9374.81,243,3,13,False,False,False
+8723,oracle_beast_corruption7,Flesh Withstands,-8668.68,-9843.12,243,6,56,True,False,False
+49258,oracle_beast_corruption8,Life Costs and Chaos Damage,-8086.42,-10120,243,4,66,False,False,False
+25678,oracle_beast_corruption9,Life Costs and Chaos Damage,-7678.42,-9697.42,243,2,6,False,False,False
+21374,oracle_beast_corruption_mastery1,Life Mastery,-8019.2,-9874.2,243,7,21,False,False,False
+2946,mastery_fire_resistance_6526,Fire Resistance Mastery,-7571.36,8131.27,253,1,1,False,False,False
+62518,maximum_resistances1,Fire Resistance,-7289.75,8288.73,253,3,7,False,False,False
+4547,maximum_resistances20,Unnatural Resilience,-7612.36,8202.29,253,0,0,True,False,False
 41414,maximum_resistances5,Cold Resistance,-7677.07,7960.8,253,7,23,False,False,False
 41363,maximum_resistances9,Lightning Resistance,-7267.3,7857.22,253,4,9,False,False,False
 29197,oracle_archon_crit1,Archon Duration and Critical Damage,-7782.46,-5289.7,254,7,15,False,False,False
 23436,oracle_archon_crit2,Archon Duration and Critical Damage,-7731.99,-4995.1,254,4,39,False,False,False
 26300,oracle_archon_crit3,Archon Duration and Critical Damage,-7435.64,-4831.86,254,5,33,False,False,False
+11428,oracle_archon_crit4,Exhaust All Power,-7447.27,-5424.03,254,2,7,True,False,False
 43653,cold20,Cold Damage,-7134.25,-1100.19,259,4,9,False,False,False
 48171,cold21,Cold Damage,-7037.04,-961.363,259,4,13,False,False,False
 26518,cold30,Cold Nature,-7273.08,-1197.4,259,4,5,True,False,False
+40803,cold31,Sigil of Ice,-7007.94,-628.821,259,4,21,True,False,False
 3218,elemental5,Elemental Damage,-6993.17,-797.657,259,4,17,False,False,False
 34317,mastery_elemental99,Elemental Mastery,-7383.29,-7035.15,270,0,0,False,False,False
+8145,oracle1,Fire Penetration,-7465.29,-7035.15,270,1,9,False,False,False
+2344,oracle12,Dimensional Weakspot,-7133.29,-7035.15,270,7,6,True,False,False
+23331,oracle2,Fire Penetration,-7301.29,-7035.15,270,1,3,False,False,False
 30959,oracle3,Cold Penetration,-7465.29,-6893.12,270,2,14,False,False,False
 31778,oracle4,Cold Penetration,-7301.29,-6893.12,270,2,10,False,False,False
 12992,oracle5,Lightning Penetration,-7465.29,-7177.17,270,2,22,False,False,False
 16485,oracle6,Lightning Penetration,-7301.29,-7177.17,270,2,2,False,False,False
 296,oracle7,Elemental Penetration,-7633.29,-7035.15,270,7,18,False,False,False
 24430,elemental9,Elemental Damage,-7495.15,-793.725,275,4,66,False,False,False
+47191,fire1_,Fire Damage,-7709.71,-538.011,275,4,58,False,False,False
+3601,fire2,Fire Damage,-7624.97,-684.785,275,4,62,False,False,False
+8554,fire30,Burning Nature,-7739.15,-371.105,275,4,54,True,False,False
+63037,fire31,Sigil of Fire,-7335.89,-851.691,275,4,70,True,False,False
 50629,elemental3,Elemental Damage,-7241.96,-651.555,276,0,0,False,False,False
 44298,mastery_elemental93,Elemental Mastery,-7240.77,-656.165,277,0,0,False,False,False
+17725,criticals101,Bonded Precision,-7063.4,-2210.03,278,7,10,True,False,False
 24420,criticals93_,Critical Chance,-7313.4,-2643.04,278,7,22,False,False,False
 33829,criticals94,Critical Chance,-7063.4,-2643.04,278,7,2,False,False,False
 18737,criticals95,Critical Chance,-6938.4,-2426.53,278,7,6,False,False,False
 9221,mastery_critical_269,Critical Mastery,-7188.4,-2426.53,278,0,0,False,False,False
+9442,wolf12,Warcry Speed,-7352.4,-2426.53,278,2,18,False,False,False
+37260,wolf13_,Warcry Speed,-7230.84,-2268.12,278,2,13,False,False,False
+30395,wolf14,Howling Beast,-7117.38,-2467.53,278,1,2,True,False,False
+50062,energy_shield_and_armour13,Barrier of Venarius,-6998.06,-3208.51,284,2,2,True,False,False
 64357,energy_shield_and_armour16_,Armour and Energy Shield,-6938.04,-2984.48,284,2,8,False,False,False
 6416,energy_shield_and_armour4,Armour and Energy Shield,-7222.09,-3148.48,284,2,20,False,False,False
 506,energy_shield_and_armour9,Armour and Energy Shield,-7162.06,-2924.46,284,2,14,False,False,False
@@ -115,43 +208,91 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 23930,elemental8_,Elemental Damage,-7240.25,-363.325,285,4,40,False,False,False
 30662,lightning1_,Lightning Damage,-6906.44,-363.325,285,4,32,False,False,False
 45383,lightning3,Lightning Damage,-7073.34,-333.895,285,4,36,False,False,False
+26291,lightning30,Electrifying Nature,-6759.66,-448.065,285,4,28,True,False,False
 46024,lightning31,Sigil of Lightning,-7387.03,-448.065,285,4,44,True,False,False
 65509,energy_shield_and_armour41,Armour Applies to Elemental Damage and Energy Shield Delay,-7237.17,-3365.02,286,3,22,False,False,False
 41384,energy_shield_and_armour42,Armour Applies to Elemental Damage and Energy Shield Delay,-6780.92,-3242.76,286,3,4,False,False,False
 51672,energy_shield_and_armour43,Armour Applies to Elemental Damage and Energy Shield Delay,-6903.17,-2786.51,286,3,10,False,False,False
+31955,energy_shield_and_armour44,Voll's Protection,-7359.43,-2908.76,286,3,16,True,False,False
+61973,AscendancyMercenary2Notable1,Pitiless Killer,-7583.45,19467.3,288,6,44,True,False,False
+38601,AscendancyMercenary2Notable5,Obsessive Rituals,-6504.86,19467.3,288,6,28,True,False,False
+43131,AscendancyMercenary2Small1,Damage vs Low Life Enemies,-7412.17,19835.7,288,8,40,False,False,False
+40719,AscendancyMercenary2Small2,Damage vs Low Life Enemies,-7582.34,19201.4,288,5,47,False,False,False
 61897,AscendancyMercenary2Small5,Armour and Evasion,-6676.14,19835.7,288,8,32,False,False,False
 34501,AscendancyMercenary2Small6,Armour and Evasion,-6505.97,19201.4,288,5,25,False,False,False
+7120,AscendancyMercenary2Start,Witchhunter,-7044.15,20144.6,288,9,72,False,False,False
 52993,oracle_glory_elemental1,Elemental Damage,-6821.89,-1824.91,293,7,4,False,False,False
 9414,oracle_glory_elemental2_,Elemental Damage,-7154.36,-1815.87,293,2,21,False,False,False
+32768,oracle_glory_elemental3_,Glory Generation,-7196.81,-1657.46,293,2,17,False,False,False
+8107,oracle_glory_elemental4,Glory Generation,-6913.4,-1483.4,293,7,10,False,False,False
+18081,oracle_glory_elemental5_,Call Upon the Deep,-6715.78,-1613.46,293,3,7,True,False,False
 14980,oracle_glory_elemental_mastery1,Elemental Mastery,-7038.4,-1699.91,293,0,0,False,False,False
+13693,cold58,Rhythm of Ice,-6958.05,-4267.12,298,0,0,True,False,False
+45632,mana16,Mind Eraser,-7179.99,-5604.12,299,7,19,True,False,False
+25503,mana5,Mana Regeneration,-7155.01,-5414.42,299,7,16,False,False,False
+27068,mana6,Mana Regeneration,-7063.5,-5322.91,299,7,14,False,False,False
+35831,mana7,Mana Regeneration,-6761.73,-5362.64,299,7,9,False,False,False
+27388,mana_regeneration20,Aspiring Genius,-7003.21,-5780.9,299,7,23,True,False,False
 28578,mana_regeneration3,Mana Regeneration and Critical Chance,-6813.5,-5755.92,299,7,2,False,False,False
 904,mana_regeneration4,Mana Regeneration and Critical Chance,-6722,-5664.42,299,7,4,False,False,False
+24551,mastery_mana_6596,Mana Mastery,-6938.5,-5539.42,299,0,0,False,False,False
+48935,oracle_flat_lightning1,Attack Added Lighting Damage,-6610.4,-475.569,306,3,3,False,False,False
+61367,oracle_flat_lightning2,Attack Added Lighting Damage,-6764.57,-97.3668,306,2,10,False,False,False
+64239,oracle_flat_lightning3_,Innate Rune,-7004.99,-196.949,306,2,17,True,False,False
 2733,oracle_lightning_mastery1,Lightning Mastery,-6846.57,-239.395,306,0,0,False,False,False
 50757,mastery_evasion108,Evasion Mastery,-6813.53,-3551.71,308,0,0,False,False,False
+62303,slow_mitigation17,Ailment Threshold and Slow Effect on You,-6878.24,-3793.2,308,7,23,False,False,False
+33045,slow_mitigation18,Ailment Threshold and Slow Effect on You,-7093.44,-3951.46,308,4,65,False,False,False
+59938,slow_mitigation19_,Against the Elements,-6813.53,-3551.71,308,0,0,True,False,False
 8553,cold52,Cold Damage,-6788.28,-4451.88,309,0,0,False,False,False
 34331,elemental19,Fire and Cold Damage,-6782.96,-4268.65,310,0,0,False,False,False
 20390,mastery_elemental_6472,Elemental Mastery,-6782,-4265.36,311,0,0,False,False,False
 51328,cold54,Cold Damage,-6534.71,-4055.73,320,0,0,False,False,False
+22270,accuracy50,Accuracy,-6444.33,-5465.1,327,2,13,False,False,False
+1144,accuracy51,Accuracy,-6243.47,-5581.07,327,2,7,False,False,False
 12471,accuracy52,Attack Elemental Damage,-6560.3,-5665.96,327,2,19,False,False,False
 19942,accuracy53,Attack Elemental Damage,-6359.44,-5781.93,327,2,1,False,False,False
+42070,accuracy54_,Saqawal's Guidance,-6401.88,-5623.51,327,0,0,True,False,False
+26148,mastery_accuracy2,Accuracy Mastery,-6401.88,-5623.51,327,0,0,False,False,False
 37415,cold53_,Cold Damage,-6394.63,-4266.42,328,0,0,False,False,False
+43711,getting_hit14,Thornhide,-6534.69,420.575,331,2,18,True,False,False
 5544,getting_hit22,Thorn Critical Damage,-6288.69,562.603,331,2,10,False,False,False
 14459,getting_hit23,Thorn Critical Damage,-6288.69,278.547,331,2,2,False,False,False
+32777,mastery_shapeshifting_6683,Shapeshifting Mastery,-6355.24,-3106.76,340,2,15,False,False,False
+17625,shapeshifting14,Rage on Hit,-6062.5,-3045.95,340,7,9,False,False,False
+59710,shapeshifting15,Shapeshifting Spell Damage,-6416.05,-3399.5,340,7,21,False,False,False
+21567,shapeshifting16,Shapeshifting Spell Damage,-6303.98,-3464.21,340,7,23,False,False,False
+18822,shapeshifting17,Damage,-6280.27,-3151.71,340,1,7,False,False,False
 10873,shapeshifting18,Bestial Rage,-6239.27,-2888.72,340,3,12,True,False,False
+52618,shapeshifting19,Boon of the Beast,-6573.27,-3222.72,340,3,18,True,False,False
+47790,shapeshifting4,Rage on Hit,-5997.79,-3158.02,340,7,7,False,False,False
 8982,chill_and_freeze26,Freeze Buildup and Skill Effect Duration,-6160.01,-9175.97,350,3,12,False,False,False
 58926,chill_and_freeze27,Freeze Buildup,-6376.52,-9384.97,350,7,16,False,False,False
 64572,chill_and_freeze28,Freeze Buildup,-6376.52,-9634.97,350,7,20,False,False,False
+14952,chill_and_freeze29,Skill Effect Duration,-5943.51,-9384.97,350,7,8,False,False,False
+21985,chill_and_freeze30,Skill Effect Duration,-5943.51,-9634.97,350,7,4,False,False,False
+48925,chill_and_freeze31_,Blessing of the Moon,-6160.01,-9759.97,350,7,0,True,False,False
 54887,mastery_projectile203,Cold Mastery,-6160.01,-9509.97,350,0,0,False,False,False
 35408,focus1,Focus Energy Shield,-6212.5,-8611.42,354,2,16,False,False,False
 24767,focus4,Focus Energy Shield,-5928.45,-8611.42,354,2,8,False,False,False
+41180,mastery_shapeshifting_6682,Shapeshifting Mastery,-6051.67,-646.185,355,0,0,False,False,False
+6222,shapeshifting1,Shapeshifted Damage,-5986.97,-404.704,355,7,11,False,False,False
+17260,shapeshifting11,Piercing Claw,-5884.67,-935.438,355,3,2,True,False,False
+61703,shapeshifting12,Sharpened Claw,-6340.93,-813.185,355,3,20,True,False,False
+9037,shapeshifting2,Shapeshifted Skill Speed,-6094.12,-804.597,355,2,23,False,False,False
+57608,shapeshifting3,Shapeshifted Physical Damage,-6167.64,-530.219,355,2,15,False,False,False
+32353,shapeshifting5,Swift Claw,-6138.12,-968.804,355,3,23,True,False,False
 65189,shapeshifting7,Shapeshifted Elemental Penetration,-5893.26,-603.739,355,2,7,False,False,False
 29126,oracle_shapeshifting_path1,Shapeshifted Elemental Damage,-6161.75,-1297.56,356,7,14,False,False,False
 28770,oracle_shapeshifting_path2_,Shapeshifted Elemental Damage,-5911.75,-1730.57,356,7,2,False,False,False
+479,oracle_shapeshifting_path3,Hidden Forms,-6036.75,-1514.07,356,0,0,True,False,False
 21017,criticals68,Critical Chance,-6026.21,540.885,357,5,0,False,False,False
 26969,criticals69,Critical Chance,-6152.52,726.513,357,4,69,False,False,False
 16861,criticals70,Critical Chance,-6193.21,908.632,357,3,22,False,False,False
 55789,criticals71,Critical Damage,-5899.91,726.513,357,4,3,False,False,False
 41665,criticals72,Critical Damage,-5859.21,908.633,357,3,2,False,False,False
+27303,criticals73,Vulgar Methods,-6242.72,1322.89,357,7,16,True,False,False
+50562,criticals74,Barbaric Strength,-5809.71,1322.89,357,7,8,True,False,False
 43142,mastery_critical_6415,Critical Mastery,-6026.21,1197.89,357,0,0,False,False,False
 64318,elemental1,Elemental Penetration,-5745.67,-7959.35,372,3,2,False,False,False
 5088,elemental10,Elemental,-6246.67,-7670.09,372,3,18,False,False,False
@@ -159,6 +300,9 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 43893,elemental12,Elemental Damage,-5745.67,-7380.84,372,3,10,False,False,False
 26739,elemental13,Elemental Damage,-5623.41,-7503.09,372,3,8,False,False,False
 61063,elemental2,Elemental Penetration,-5912.67,-8004.09,372,3,0,False,False,False
+38535,elemental33,Stormcharged,-6156.67,-8092.72,372,4,66,True,False,False
+7777,elemental37_,Breaking Point,-5424.67,-7670.09,372,4,18,True,False,False
+58016,elemental39,All Natural,-6156.67,-7247.47,372,4,42,True,False,False
 22873,elemental4,Elemental Penetration,-5623.41,-7837.09,372,3,4,False,False,False
 16596,elemental6,Speed with Elemental Skills,-6201.92,-7837.09,372,3,20,False,False,False
 49537,elemental7,Speed with Elemental Skills,-6201.92,-7503.09,372,3,16,False,False,False
@@ -166,35 +310,76 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 46380,power_charges10,Energy Shield if Consumed Power Charge,-5968.61,-5395.76,373,2,22,False,False,False
 21327,power_charges11,Energy Shield if Consumed Power Charge,-5968.61,-5111.71,373,2,14,False,False,False
 56876,power_charges12,Energy Shield if Consumed Power Charge,-5722.61,-5253.73,373,2,6,False,False,False
+1104,power_charges7,Lust for Power,-5886.61,-5253.73,373,0,0,True,False,False
+23879,mastery_shapeshifting_6688,Shapeshifting Mastery,-5885.4,-2365.38,374,0,0,False,False,False
+51743,shapeshifting23,Shapeshifting Attack Damage,-5885.4,-2853.38,374,4,0,False,False,False
+42452,shapeshifting24_,Shapeshifting Attack Damage,-5556.9,-2934.36,374,5,6,False,False,False
+57617,shapeshifting26,Shifted Strikes,-5885.4,-2365.38,374,0,0,True,False,False
+41620,shapeshifting27,Bear's Roar,-5562.78,-2451.83,374,3,5,True,False,False
+35417,shapeshifting28,Wyvern's Breath,-5971.84,-2042.77,374,3,13,True,False,False
+57921,shapeshifting29,Wolf's Howl,-6121.57,-2601.56,374,3,21,True,False,False
 16506,shapeshifting30,Shapeshifting Elemental Ailment Chance,-5760.4,-2148.88,374,7,10,False,False,False
+14996,shapeshifting31,Shapeshifting Stun Buildup,-5760.4,-2581.89,374,7,2,False,False,False
 37509,shapeshifting8,Shapeshifting Critical Hit Chance,-6135.4,-2365.38,374,7,18,False,False,False
 62948,mastery_armour_and_energy_shield_6276,Armour and Energy Shield Mastery,-5841.98,-6866.01,377,0,0,False,False,False
 40377,energy_shield_and_armour21,Armour Applies to Elemental Damage and Energy Shield Delay,-5557.5,-6454.26,384,3,10,False,False,False
 7554,energy_shield_and_armour22,Energy Shield Delay and Armour Applies to Elemental Damage,-5810.94,-6420.9,384,3,13,False,False,False
 23039,energy_shield_and_armour23,Energy Shield Delay and Armour Applies to Elemental Damage,-6013.75,-6576.51,384,3,16,False,False,False
+64770,energy_shield_and_armour24,"Morgana, the Storm Seer",-6047.11,-6829.96,384,3,19,True,False,False
 46318,energy_shield_and_armour38,Armour Applies to Elemental Damage and Energy Shield Delay,-5401.88,-6657.07,384,3,7,False,False,False
 32964,energy_shield_and_armour39,Armour Applies to Elemental Damage and Energy Shield Delay,-5488.32,-6979.69,384,3,3,False,False,False
+34617,energy_shield_and_armour40,Conall the Hunted,-5810.94,-7066.13,384,3,23,True,False,False
 54892,AscendancyMercenary1Small7_,Armour and Evasion,-5640.01,17186.9,391,0,0,False,False,False
 30151,AscendancyMercenary1Small6,Armour and Evasion,-5552.04,16435.6,400,0,0,False,False,False
+20499,mana_regeneration41,Arcane Surge Effect,-5370.33,-3309.22,427,7,13,False,False,False
+34327,mana_regeneration42,Arcane Surge Spell Damage,-5547.11,-3486,427,7,17,False,False,False
+32078,mana_regeneration43,Arcane Surge Spell Damage,-5482.4,-3727.48,427,7,21,False,False,False
+16940,mana_regeneration44_,Arcane Nature,-5240.92,-3792.19,427,7,1,True,False,False
+25446,mastery_leech159,Mana Mastery,-5305.62,-3550.7,427,0,0,False,False,False
+2336,wyvern15,Arcane Surge Effect,-5189.66,-3434.74,427,2,9,False,False,False
+63402,wyvern16,Arcane Surge Effect,-5163.6,-3632.7,427,2,4,False,False,False
+29881,wyvern17,Surging Beast,-5376.64,-3509.7,427,1,8,True,False,False
 12099,cold56,Cold Damage,-5263.61,-9401.91,431,0,0,False,False,False
 4833,cold55,Cold Damage,-5147,-9203.79,439,0,0,False,False,False
 51183,energy_shield_and_armour26,Armour and Energy Shield,-5081.34,-627.755,446,2,12,False,False,False
 10635,energy_shield_and_armour27,Armour and Energy Shield,-4917.34,-791.755,446,2,6,False,False,False
+45301,energy_shield_and_armour28__,Slow Effect on You,-5245.34,-791.755,446,2,18,False,False,False
+31724,energy_shield_and_armour29_,Iron Slippers,-5081.34,-955.755,446,2,0,True,False,False
 2074,mastery_armour_and_energy_shield_6273,Armour and Energy Shield Mastery,-5081.34,-791.755,446,0,0,False,False,False
+33852,cold59,Flurry,-5013.88,-8978.47,450,0,0,True,False,False
 50177,mastery_cold_6393,Cold Mastery,-5006.69,-8973.79,451,0,0,False,False,False
+34412,bear14,Shapeshifted Damage,-4844.67,-1298.91,452,2,7,False,False,False
+25915,bear15,Shapeshifted Damage,-4921.08,-1483.38,452,2,2,False,False,False
+8916,bear16,Bashing Beast,-5074.1,-1300.35,452,1,8,True,False,False
+20547,stun23,Stun Buildup,-4938.38,-1099.87,452,7,11,False,False,False
+33340,stun24_,Stun Buildup,-5179.86,-1164.58,452,7,15,False,False,False
+51267,stun26_,Stun Buildup,-5244.57,-1406.06,452,7,19,False,False,False
+11886,stun27,Mauling Stuns,-5067.79,-1582.84,452,7,23,True,False,False
 44191,cold57,Cold Damage,-4971.36,-9503.08,458,0,0,False,False,False
+36880,mana_regeneration26,Arcane Surge Effect,-5374.7,-8536.08,461,4,57,False,False,False
+15628,mana_regeneration27,Arcane Surge Effect,-5498.77,-8687.43,461,5,59,False,False,False
+27626,mana_regeneration28_,Touch the Arcane,-5560.32,-8409.77,461,5,54,True,False,False
 2244,mana_regeneration29,Arcane Surge on Critical Hit,-5374.7,-8283.47,461,4,51,False,False,False
 54067,mana_regeneration30,Arcane Surge on Critical Hit,-5498.77,-8132.11,461,5,49,False,False,False
+43036,mana_regeneration31_,Mana Regeneration,-5153.32,-8409.77,461,7,18,False,False,False
 10452,energy_shield_and_armour30,Armour and Energy Shield,-4794.25,-7794.74,463,2,2,False,False,False
 1878,energy_shield_and_armour31,Energy Shield and Armour applies to Elemental Damage Hits,-4940.96,-7894.2,463,7,23,False,False,False
 44213,energy_shield_and_armour32_,Armour and Energy Shield Delay,-4634.77,-7717.42,463,7,5,False,False,False
 14328,energy_shield_and_armour33,Energy Shield and Armour applies to Elemental Damage Hits,-5117.74,-7717.42,463,7,19,False,False,False
 869,energy_shield_and_armour34,Armour and Energy Shield Delay,-4699.48,-7475.94,463,7,9,False,False,False
+18959,energy_shield_and_armour35,Ruinic Helm,-4958.25,-7510.69,463,2,14,True,False,False
 55843,mastery_armour_and_energy_shield_6275,Armour and Energy Shield Mastery,-4876.25,-7652.71,463,0,0,False,False,False
+3339,being_surrounded13,Attack Damage while Surrounded,-4895.36,9159.48,483,3,19,False,False,False
+23036,being_surrounded14,Attack Damage while Surrounded,-4808.92,9482.1,483,3,15,False,False,False
+46931,being_surrounded15,Attack Damage while Surrounded,-4486.3,9568.54,483,3,11,False,False,False
 45585,being_surrounded17_,Armour and Evasion while Surrounded,-4659.19,8923.31,483,3,23,False,False,False
 55617,being_surrounded18,Armour and Evasion while Surrounded,-4336.57,9009.75,483,3,3,False,False,False
 29914,being_surrounded19,Armour and Evasion while Surrounded,-4250.13,9332.37,483,3,7,False,False,False
+17825,being_surrounded21,Tactical Retreat,-4572.75,9245.92,483,0,0,True,False,False
+19546,being_surrounded23,Favourable Odds,-4430.72,9163.92,483,2,4,True,False,False
+59208,being_surrounded24,Frantic Fighter,-4714.77,9327.92,483,2,16,True,False,False
 48121,totems47_,Totem Elemental Resistance,-4120.96,4565.35,516,0,0,False,False,False
+4931,energy_shield_recovery18,Dependable Ward,-4117.42,-8299.44,517,2,0,True,False,False
 42825,energy_shield_recovery32_,Energy Shield Delay,-4199.42,-7993.41,517,2,14,False,False,False
 21404,energy_shield_recovery33,Energy Shield Delay,-4281.42,-8135.44,517,2,18,False,False,False
 27674,energy_shield_recovery34,Energy Shield Delay,-4035.42,-7993.41,517,2,10,False,False,False
@@ -203,104 +388,240 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 46742,passive_keystone_elemental_equilibrium,Elemental Equilibrium,-4102.54,-10310.9,524,0,0,False,True,False
 26490,one_handed12,One Handed Critical Chance,-3950.84,8640.88,528,2,9,False,False,False
 12751,one_handed14,One Handed Critical Chance,-4182.77,8640.88,528,2,15,False,False,False
+6229,one_handed15,Push the Advantage,-3825.32,8460.21,528,7,5,True,False,False
+13356,one_handed16__,One Handed Damage,-4066.8,8360.92,528,2,0,False,False,False
+18489,one_handed4,One Handed Damage,-4308.29,8460.21,528,7,19,False,False,False
 61179,physical18,Spell Critical Chance,-3955.44,-9600.64,536,0,0,False,False,False
+51485,mastery_shapeshifting_6684,Shapeshifting Mastery,-3861.26,-1010.61,545,0,0,False,False,False
 41338,shapeshifting35,Shapeshifting Armour applies to Elemental Damage Hits,-3702.85,-968.169,545,2,7,False,False,False
 31673,shapeshifting36,Energy Shield Delay while Shapeshifted,-3943.26,-868.587,545,2,14,False,False,False
+48649,shapeshifting37,Insulating Hide,-3943.26,-1152.64,545,2,22,True,False,False
+8867,AscendancySorceress1Notable1,Constant Gale,-4739.94,-17019.5,547,8,60,True,False,False
+42522,AscendancySorceress1Notable10,Refracted Infusion,-4699.87,-17454.7,547,9,127,True,False,False
+39204,AscendancySorceress1Notable2,Force of Will,-4739.94,-15943.5,547,8,48,True,False,False
+12882,AscendancySorceress1Notable3,Tempest Caller,-2876.25,-17019.5,547,8,12,True,False,False
+38578,AscendancySorceress1Notable4,Multiplying Squalls,-2876.25,-15943.5,547,8,24,True,False,False
+2857,AscendancySorceress1Notable5,Strike Twice,-4227.59,-17208.1,547,6,66,True,False,False
+39640,AscendancySorceress1Notable6,Shaper of Storms,-3922.18,-17128.5,547,5,70,True,False,False
+61985,AscendancySorceress1Notable7,Heavy Snows,-3388.59,-17208.1,547,6,6,True,False,False
+18849,AscendancySorceress1Notable8,Shaper of Winter,-3694.01,-17128.5,547,5,2,True,False,False
+49189,AscendancySorceress1Notable9,Storm's Recollection,-2916.32,-17454.7,547,9,17,True,False,False
+64789,AscendancySorceress1Small1,Mana Regeneration,-4176.11,-17492.6,547,8,68,False,False,False
+44484,AscendancySorceress1Small10,Remnant Range,-4259.56,-17721.9,547,9,136,False,False,False
+7246,AscendancySorceress1Small2,Mana Regeneration,-4884.09,-16481.5,547,8,54,False,False,False
 65413,AscendancySorceress1Small3,Spell Critical Chance,-3440.08,-17492.6,547,8,4,False,False,False
 25618,AscendancySorceress1Small4,Spell Critical Chance,-2732.09,-16481.5,547,8,18,False,False,False
+49759,AscendancySorceress1Small5,Shock Chance,-3901.87,-17553.4,547,8,71,False,False,False
+7998,AscendancySorceress1Small6,Shock Chance,-3953.79,-17307.8,547,6,70,False,False,False
+13673,AscendancySorceress1Small7,Chill Duration,-3714.32,-17553.4,547,8,1,False,False,False
+29398,AscendancySorceress1Small8,Chill Duration,-3662.4,-17307.8,547,6,2,False,False,False
+12488,AscendancySorceress1Small9,Remnant Range,-3356.63,-17721.9,547,9,8,False,False,False
+40721,AscendancySorceress1Start_,Stormweaver,-3808.09,-17801.5,547,9,0,False,False,False
 21245,physical15,Spell Critical Chance,-3804.23,-9338.75,548,0,0,False,False,False
 57178,physical17,Spell Critical Chance and Critical Ailment Effect,-3804.23,-8886.17,549,0,0,False,False,False
+20637,oracle_hiearchy_mastery1,Damage Mastery,-3604.52,-11358.1,566,0,0,False,False,False
+25570,oracle_hierarchy1,Damage,-3604.52,-11024.1,566,3,12,False,False,False
+21549,oracle_hierarchy2,Physical Damage,-4063.09,-11525,566,4,58,False,False,False
+37694,oracle_hierarchy3,Fire Damage,-3781.3,-11534.9,566,7,21,False,False,False
 44560,oracle_hierarchy4,Cold Damage,-3604.52,-11522.1,566,2,0,False,False,False
 64083,oracle_hierarchy5_,Lightning Damage,-3427.75,-11534.9,566,7,3,False,False,False
+27572,oracle_hierarchy6,Chaos Damage,-3145.95,-11525,566,4,14,False,False,False
+12940,oracle_hierarchy7,Cower Before the First Ones,-3604.52,-11846.1,566,4,0,True,False,False
 33601,chill_and_freeze13,Freeze Buildup,-3698.96,-419.575,570,2,20,False,False,False
+5692,chill_and_freeze15,Chill Magnitude,-3414.91,-255.575,570,2,8,False,False,False
+35708,chill_and_freeze16,Chill Magnitude,-3474.93,-479.603,570,2,2,False,False,False
 41154,chill_and_freeze17,Freeze Buildup,-3638.93,-195.547,570,2,14,False,False,False
 2863,chill_and_freeze18,Perpetual Freeze,-3556.93,-337.575,570,0,0,True,False,False
+2511,criticals51_,Sundering,-3806.57,4949.13,574,3,20,True,False,False
 19802,criticals66,Attack Critical Damage,-3375.29,5198.13,574,2,8,False,False,False
 64399,criticals67__,Attack Critical Damage,-3558.31,5187.15,574,1,7,False,False,False
 62661,mastery_critical_271_,Critical Mastery,-3443.04,-4769.59,583,0,0,False,False,False
+8531,criticals26,Leaping Ambush,-3273.57,-4571.19,591,3,11,True,False,False
+24483,criticals27,Direct Approach,-3682.63,-4807.36,591,3,17,True,False,False
 32660,criticals4,Critical Chance,-3475.98,-5009.77,591,2,21,False,False,False
 8631,criticals5_,Critical Chance,-3193.01,-5183.06,591,3,2,False,False,False
 59256,criticals6,Critical Chance,-3201.6,-4851.36,591,2,7,False,False,False
 51534,criticals7,Critical Chance,-3527.01,-4604.55,591,3,14,False,False,False
 46760,criticals8,Critical Chance,-3360.01,-4893.8,591,0,0,False,False,False
 64223,AscendancySorceress3Small2,Energy Shield,-3309.23,-14351.1,593,0,0,False,False,False
+17655,auras1,Aura Effect,-3139.44,-1812.64,597,2,8,False,False,False
+64299,auras18,Bolstering Presence,-3423.49,-1976.64,597,2,20,True,False,False
+50558,auras3,Aura Effect,-3704.09,-2138.64,597,4,60,False,False,False
+12462,auras4,Aura Effect,-3570.72,-2061.64,597,3,20,False,False,False
+18465,criticals25_,Cruel Fate,-3595.15,-1520.81,597,4,44,True,False,False
 39540,criticals2_,Critical Chance,-3723.74,-1688.4,597,4,49,False,False,False
 36602,criticals36,Critical Damage,-3407.77,-1423.26,597,4,39,False,False,False
+6744,intelligence32,Attribute,-2861.96,-2621.23,597,6,6,False,False,False
+49357,intelligence33_,Attribute,-3281.46,-2733.64,597,6,0,False,False,False
+32194,intelligence34,Attribute,-4008.06,-2314.14,597,6,60,False,False,False
+58651,minion_offence1,Minion Damage,-3324,-2380.78,597,4,71,False,False,False
+5777,minion_offence13,Deadly Swarm,-3114.56,-2353.21,597,4,4,True,False,False
+44951,minion_offence4,Minion Damage,-2936.4,-2239.7,597,4,9,False,False,False
+37629,strength7,Attribute,-3700.97,-1168.04,597,6,42,False,False,False
+55933,strength8,Attribute,-4008.06,-1475.14,597,6,48,False,False,False
 30265,AscendancySorceress3Small1,Energy Shield,-3087.41,-15208.1,610,0,0,False,False,False
 61657,armour_and_evasion46,Armour applies to Elemental Damage and Deflection,-2790.14,8216.2,620,3,2,False,False,False
 45808,armour_and_evasion47,Armour applies to Elemental Damage and Deflection,-2707.14,8505.46,620,7,6,False,False,False
 17750,armour_and_evasion48,Armour applies to Elemental Damage and Deflection,-3082.14,8288.95,620,7,22,False,False,False
 3191,armour_and_evasion49_,Armour applies to Elemental Damage and Deflection,-2957.14,8839.46,620,3,12,False,False,False
 65324,armour_and_evasion50,Armour applies to Elemental Damage and Deflection,-3246.4,8672.46,620,3,16,False,False,False
+24736,armour_and_evasion51,Knight of Chitus,-2790.24,8964.03,620,4,32,True,False,False
+1861,armour_and_evasion52,Knight of Tarcus,-3437.73,8590.2,620,4,52,True,False,False
+9863,armour_and_evasion53,Knight of Izaro,-3201.14,8928.08,620,4,42,True,False,False
 658,armour_and_evasion55,Armour applies to Elemental Damage and Deflection,-3279.76,8419.01,620,3,19,False,False,False
 35623,armour_and_evasion56_,Armour applies to Elemental Damage and Deflection,-2720.97,8741.63,620,3,9,False,False,False
 14575,minion_defence39,Minion Lightning Resistance,-2730.42,-9028.75,634,0,0,False,False,False
 38105,energy_shield22,Energy Shield,-2903.56,-10687.7,639,4,67,False,False,False
 49455,energy_shield23,Energy Shield,-2491.09,-10687.7,639,4,5,False,False,False
 13537,energy_shield24,Energy Shield,-2323.5,-10559.1,639,4,10,False,False,False
+44299,energy_shield36,Enhanced Barrier,-2697.32,-10733.5,639,4,0,True,False,False
 6006,energy_shield9,Energy Shield,-3071.15,-10559.1,639,4,62,False,False,False
+23939,life_recoup18,Glazed Flesh,-2697.32,-9995.46,639,7,12,True,False,False
+59425,life_recoup21,Life Recoup,-2913.83,-10120.5,639,7,16,False,False,False
+2508,life_recoup5,Life Recoup,-2947.32,-10245.5,639,7,18,False,False,False
+51797,life_recoup7,Life Recoup,-2480.82,-10120.5,639,7,8,False,False,False
+22141,life_recoup8,Life Recoup,-2447.32,-10245.5,639,7,6,False,False,False
 857,mastery_life139,Energy Shield Mastery,-2697.32,-10245.5,639,0,0,False,False,False
 58789,stun_threshold_from_energy_shield14,Stun and Ailment Threshold from Energy Shield,-2216.74,-10160.7,639,4,20,False,False,False
 46275,stun_threshold_from_energy_shield15,Stun and Ailment Threshold from Energy Shield,-2654.79,-9759.32,639,4,35,False,False,False
 13307,stun_threshold_from_energy_shield16,Stun and Ailment Threshold from Energy Shield,-2297.58,-9965.56,639,4,25,False,False,False
 26614,stun_threshold_from_energy_shield17,Stun and Ailment Threshold from Energy Shield,-2864.23,-9786.89,639,4,40,False,False,False
+3894,stun_threshold_from_energy_shield22,Eldritch Will,-2453.32,-9822.84,639,4,30,True,False,False
 3414,minion_defence37,Minion Lightning Resistance,-2625.49,-8808.47,642,0,0,False,False,False
 38663,melee28,Melee Critical Chance,-2370.07,7379.36,644,7,6,False,False,False
+49618,melee39,Deadly Flourish,-2620.07,7379.36,644,0,0,True,False,False
+62039,melee42,Melee Damage,-2870.07,7379.36,644,7,18,False,False,False
 47284,minion_defence26,Minion Cold Resistance,-2588.8,-8604.12,648,0,0,False,False,False
 3332,minion_defence34,Minion Cold Resistance,-2530.04,-8376.52,653,0,0,False,False,False
+58930,cast_speed25,Cast Speed,-2280.76,-3303.1,662,7,9,False,False,False
+52429,cast_speed26,Cast Speed,-2543.98,-3157.26,662,3,13,False,False,False
+6294,cast_speed27,Cast Speed,-2945.53,-3479.88,662,4,54,False,False,False
+4847,cast_speed28__,Cast Speed,-2786.03,-4048.85,662,5,66,False,False,False
+14934,cast_speed34,Spiral into Mania,-2315.51,-3561.88,662,2,4,True,False,False
+858,chaos13,Chaos Damage,-1800.53,-3479.88,662,5,18,False,False,False
+58387,chaos14,Chaos Damage,-2213.53,-3902.5,662,4,6,False,False,False
+52454,chaos15,Chaos Damage,-2693.71,-3716.05,662,3,21,False,False,False
+46604,chaos17,Chaos Damage,-2699.02,-3415.17,662,7,17,False,False,False
+2138,chaos34__,Spiral into Insanity,-2457.53,-3315.88,662,2,12,True,False,False
+1546,energy_shield_and_armour14,Spiral into Depression,-2599.56,-3561.88,662,2,20,True,False,False
 38827,energy_shield_and_armour17,Armour and Energy Shield,-2392.83,-3721.36,662,7,1,False,False,False
 31890,energy_shield_and_armour18,Armour and Energy Shield,-2134.92,-3566.32,662,3,5,False,False,False
 25745,energy_shield_and_armour19,Armour and Energy Shield,-2213.53,-3057.25,662,4,30,False,False,False
 21081,energy_shield_and_armour20,Armour and Energy Shield,-2786.04,-2910.9,662,5,42,False,False,False
+17584,area_attacks4,Attack Area,-2347.27,-926.219,680,2,17,False,False,False
+28446,area_attacks5_,Attack Area,-2072.89,-852.699,680,2,9,False,False,False
+12430,melee2,Melee Damage,-2231.3,-810.253,680,2,13,False,False,False
 61067,spell_criticals6,Spell Critical Damage,-2304.82,-1084.63,680,2,21,False,False,False
 1143,spell_criticals7,Spell Critical Damage,-2030.44,-1011.11,680,2,5,False,False,False
+58170,spells2,Spell Damage,-2146.41,-1127.08,680,2,1,False,False,False
 28718,mastery_elemental_6475,Elemental Mastery,-2187.5,-962.965,681,0,0,False,False,False
+48581,exploiting_elemental_ailments16,Exploit the Elements,-2076.24,-5540.25,689,6,0,True,False,False
+15969,exploiting_elemental_ailments3,Damage against Ailments,-2076.24,-5035.25,689,3,0,False,False,False
+41129,exploiting_elemental_ailments4,Damage against Ailments,-2160.99,-5181.83,689,4,70,False,False,False
+24338,exploiting_elemental_ailments5,Damage against Ailments,-2190.33,-5348.26,689,5,70,False,False,False
+15838,exploiting_elemental_ailments6,Ailment Chance,-1991.5,-5181.83,689,4,2,False,False,False
+33242,exploiting_elemental_ailments7,Ailment Chance,-1962.16,-5348.26,689,5,2,False,False,False
 13387,mastery_elemental95,Elemental Mastery,-2076.24,-5358.25,689,5,0,False,False,False
 58674,mastery_elemental_6469,Elemental Mastery,-1901.41,3924.05,695,7,1,False,False,False
+17867,slowed_enemies28,Exposure Effect and Slow Effect,-1841.11,4382.04,695,7,10,False,False,False
+37092,slowed_enemies29,Exposure Effect and Slow Effect,-1716.11,4165.53,695,7,6,False,False,False
+55817,slowed_enemies30,Alchemical Oil,-1901.41,3924.05,695,7,1,True,False,False
+20119,mastery_minion_offence_6620_,Minion Offence Mastery,-1940.55,-8386.27,699,0,0,False,False,False
 18160,minion_offence29,Minion Critical Chance,-2065.55,-8169.77,699,7,14,False,False,False
 15809,minion_offence30_,Minion Critical Chance,-2107.54,-8675.53,699,3,22,False,False,False
 26945,minion_offence31,Minion Critical Chance,-2098.96,-8343.83,699,2,17,False,False,False
+31175,minion_offence33_,Grip of Evil,-2022.55,-8528.3,699,2,22,True,False,False
+22783,minion_reservation1,Minion Damage,-1815.55,-8169.77,699,7,10,False,False,False
+30720,minion_reservation14,Entropic Incarnation,-1858.55,-8528.3,699,2,2,True,False,False
+54036,minion_reservation4,Minion Damage,-1773.55,-8675.53,699,3,2,False,False,False
+17501,minion_reservation5,Minion Damage,-1782.13,-8343.83,699,2,7,False,False,False
+18485,volatility1,Unstable Bond,-1940.55,-8720.27,699,3,0,True,False,False
 50626,energy_shield_and_armour1,Armour and Energy Shield,-1769.35,-1379.74,704,2,7,False,False,False
 32597,energy_shield_and_armour2,Armour and Energy Shield,-1811.8,-1538.15,704,2,3,False,False,False
 12777,energy_shield_and_armour3,Armour and Energy Shield,-1970.21,-1580.6,704,2,23,False,False,False
+3918,mana3,Mana Regeneration,-2043.73,-1306.22,704,2,15,False,False,False
+54708,mana_regeneration1,Mana Regeneration,-1885.32,-1263.77,704,2,11,False,False,False
+59695,mana_regeneration9,Mana Regeneration,-2086.18,-1464.63,704,2,19,False,False,False
 7424,energy_shield29,Energy Shield,-1909.32,-6963.67,706,4,0,False,False,False
+27491,energy_shield38,Heavy Buffer,-1486.69,-6231.67,706,4,24,True,False,False
+1823,energy_shield39,Illuminated Crown,-2331.94,-6719.67,706,4,60,True,False,False
 36994,energy_shield41,Energy Shield,-1486.69,-6719.67,706,4,12,False,False,False
 29432,energy_shield42__,Energy Shield,-2331.94,-6231.67,706,4,48,False,False,False
 4061,energy_shield43,Energy Shield,-1909.32,-5987.67,706,4,36,False,False,False
 3471,mastery_energyshield104,Energy Shield Mastery,-1909.32,-6475.67,706,0,0,False,False,False
+34531,stun_threshold_from_energy_shield12,Hallowed,-1692.81,-6600.67,706,7,4,True,False,False
 25363,stun_threshold_from_energy_shield7,Stun and Ailment Threshold from Energy Shield,-2125.82,-6600.67,706,7,20,False,False,False
 44098,stun_threshold_from_energy_shield8,Stun and Ailment Threshold from Energy Shield,-1909.32,-6225.67,706,7,12,False,False,False
+13942,armour28_,Armour,-1627.31,6429.16,708,3,3,False,False,False
+65023,armour36,Impenetrable Shell,-1529.48,6665.33,708,3,6,True,False,False
+18186,armour9,Armour,-1863.48,6331.33,708,3,0,False,False,False
 6626,armour_and_evasion10,Armour and Evasion,-1979.45,6549.37,708,2,21,False,False,False
+32354,armour_and_evasion12,Defiance,-1863.48,6665.33,708,0,0,True,False,False
 34433,armour_and_evasion18,Armour and Evasion,-1747.52,6781.3,708,2,9,False,False,False
 24009,armour_and_evasion19,Armour and Evasion,-1518.42,7010.4,708,4,27,False,False,False
 46475,armour_and_evasion20_,Armour and Evasion,-2208.55,6320.27,708,4,63,False,False,False
 16744,evasion25,Evasion,-1863.48,6999.33,708,3,12,False,False,False
+4716,evasion35,Afterimage,-2197.48,6665.33,708,3,18,True,False,False
 24748,evasion36,Evasion,-2099.66,6901.51,708,3,15,False,False,False
+53853,armour_and_evasion13,Backup Plan,-1697.55,3714.06,728,7,19,True,False,False
 36170,armour_and_evasion4,Armour and Evasion,-1498.51,3937.18,728,2,13,False,False,False
 28693,armour_and_evasion8,Armour and Evasion,-1413.62,3620.35,728,2,1,False,False,False
 49280,armour_and_evasion9,Armour and Evasion,-1214.58,3843.47,728,7,7,False,False,False
 57320,mastery_armour_and_evasion_6278,Armour and Evasion Mastery,-1456.07,3778.76,728,0,0,False,False,False
 45497,ground16,Elemental Damage,-1446.33,-10165.6,729,0,0,False,False,False
 17057,ground11,Lightning Damage,-1446.33,-9804.75,730,1,0,False,False,False
+22784,ground12,Shock Effect on You,-1282.33,-9722.75,730,2,6,False,False,False
 17025,ground13,Lightning Damage,-1610.33,-9722.75,730,2,18,False,False,False
+13515,ground15,Stormwalker,-1446.33,-9472.75,730,7,12,True,False,False
 14601,mastery_elemental_6470,Elemental Mastery,-1446.33,-9972.75,730,7,0,False,False,False
 13855,placeholder1,Armour and Energy Shield,-1396.89,-954.585,736,0,0,False,False,False
+17150,armour37,General's Bindings,-1077.89,11762,739,3,8,True,False,False
 23888,armour_and_evasion21,Armour and Evasion,-1367.15,11261,739,3,0,False,False,False
 29399,armour_and_evasion22,Armour and Evasion,-1656.4,11428,739,3,20,False,False,False
 7390,armour_and_evasion23,Armour and Evasion,-1077.89,11428,739,3,4,False,False,False
 53647,armour_and_evasion24,Armour and Evasion,-1367.15,11929,739,3,12,False,False,False
+51446,evasion38_,Leather Bound Gauntlets,-1656.4,11762,739,3,16,True,False,False
 19750,mastery_evasion115,Armour and Evasion Mastery,-1367.15,11595,739,0,0,False,False,False
+8349,energy_shield26,Intelligence,-1480.72,-4333.3,742,2,19,False,False,False
+56564,energy_shield28_,Intelligence,-1438.27,-4174.89,742,2,15,False,False,False
+42077,energy_shield_recovery16,Essence Infusion,-1279.86,-4132.44,742,2,11,True,False,False
 31644,energy_shield_recovery21,Energy Shield Delay,-1364.75,-4449.27,742,2,23,False,False,False
 49235,energy_shield_recovery30__,Energy Shield Delay,-1163.89,-4248.41,742,2,7,False,False,False
 14739,energy_shield_recovery31,Energy Shield Delay,-1206.34,-4406.82,742,2,3,False,False,False
 2102,mastery_energy_shield_6492,Energy Shield Mastery,-1322.31,-4290.85,742,0,0,False,False,False
+23450,fire11_,Fire Damage,-884.895,-11527.9,748,3,6,False,False,False
+558,fire12,Fire Damage,-929.643,-11694.9,748,3,4,False,False,False
+23091,fire13,Fire Damage,-1051.9,-11238.7,748,3,10,False,False,False
+63021,fire18,Fire Damage,-1385.9,-11238.7,748,3,14,False,False,False
+11366,fire37,Volcanic Skin,-1104.81,-12174.9,748,5,2,True,False,False
+39515,fire8,Fire Damage,-929.643,-11360.9,748,3,8,False,False,False
+39228,fire_penetration10,Fire Penetration,-1552.9,-11527.9,748,3,18,False,False,False
+62603,fire_penetration11_,Fire Penetration,-1508.15,-11694.9,748,3,20,False,False,False
+19715,fire_penetration24,Cremation,-1462.89,-11950.5,748,4,66,True,False,False
+46300,ignite1,Flammability Magnitude,-1300.9,-11385.9,748,2,14,False,False,False
+52774,ignite12,Flammability Magnitude,-1382.9,-11527.9,748,2,18,False,False,False
+57832,ignite13,Ignite Magnitude,-1102.93,-11411.9,748,2,9,False,False,False
+34290,ignite14,Ignite Magnitude,-1076.87,-11609.9,748,2,4,False,False,False
+5084,ignite16,Flammability Magnitude,-1300.9,-11669.9,748,2,22,False,False,False
+35324,ignite17,Burnout,-1218.9,-11861.9,748,3,0,True,False,False
+34927,mastery_fire118,Fire Mastery,-1218.9,-11527.9,748,0,0,False,False,False
+47157,projectiles31,Projectile Damage,-1169.57,7800.25,752,7,12,False,False,False
+516,projectiles32,Projectile Damage,-1386.08,7675.25,752,7,16,False,False,False
+7201,projectiles33,Projectile Damage,-1346.35,7373.47,752,7,21,False,False,False
 61347,projectiles34,Projectile Critical Chance,-953.069,7675.25,752,7,8,False,False,False
 64488,projectiles35,Projectile Critical Chance,-992.798,7373.47,752,7,3,False,False,False
+48215,projectiles36,Headshot,-1169.57,7550.25,752,0,0,True,False,False
 13333,ground6,Cold Damage,-1243.05,-9989.29,753,1,9,False,False,False
+1091,ground7,Chill Effect on You,-1161.05,-10153.3,753,2,0,False,False,False
 1700,ground8,Cold Damage,-1161.05,-9825.29,753,2,12,False,False,False
 48699,ground9,Frostwalker,-911.045,-9989.29,753,7,6,True,False,False
+18086,cold_penetration25,Breath of Ice,-1437.03,-5546.35,761,4,54,True,False,False
 32427,cold_penetration5,Cold Penetration,-1113.03,-5546.35,761,2,18,False,False,False
 62844,cold_penetration9,Cold Penetration,-1283.03,-5546.35,761,3,18,False,False,False
+24655,fire_penetration23_,Breath of Fire,-705.025,-5123.73,761,4,30,True,False,False
+42127,fire_penetration6,Fire Penetration,-867.025,-5404.33,761,2,10,False,False,False
+41573,fire_penetration8,Fire Penetration,-782.025,-5257.1,761,3,10,False,False,False
+4456,intelligence88,Attribute,-949.025,-5546.35,761,0,0,False,False,False
 14363,lightning_penetration10,Lightning Penetration,-782.025,-5835.61,761,3,2,False,False,False
 61338,lightning_penetration25,Breath of Lightning,-705.025,-5968.98,761,4,6,True,False,False
 4776,lightning_penetration8,Lightning Penetration,-867.025,-5688.38,761,2,2,False,False,False
@@ -308,10 +629,16 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 13359,cold14,Elemental Damage and Energy Shield Delay,-928.329,-10609.8,765,3,15,False,False,False
 8382,cold15,Elemental Damage and Energy Shield Delay,-455.981,-10609.8,765,3,9,False,False,False
 61863,cold16,Elemental Damage and Energy Shield Delay,-358.155,-10845.9,765,3,6,False,False,False
+42045,cold17,Archon of the Blizzard,-455.981,-11082.1,765,3,3,True,False,False
+50535,cold19,Archon Effect,-856.155,-10845.9,765,2,18,False,False,False
 10612,cold22,Embodiment of Frost,-533.743,-10888.4,765,2,5,True,False,False
 31943,cold27,Elemental Damage and Energy Shield Delay,-692.155,-10511.9,765,3,12,False,False,False
 35387,cold60__,Cold Damage,-612.835,-7781.69,769,0,0,False,False,False
 22439,elemental21,Elemental Damage,-612.805,-8303.76,770,3,12,False,False,False
+44498,elemental34,Exposure Effect,-902.057,-8804.76,770,3,20,False,False,False
+25101,elemental35,Exposure Effect,-323.552,-8804.76,770,3,4,False,False,False
+52199,elemental36,Overexposure,-612.805,-8637.76,770,0,0,True,False,False
+43139,elemental40,Stormbreaker,-612.805,-9125.76,770,4,0,True,False,False
 65248,elemental49,Elemental Ailment Duration,-190.185,-8393.76,770,4,24,False,False,False
 39752,elemental50,Elemental Ailment Duration,-1035.43,-8393.76,770,4,48,False,False,False
 56409,elemental51,Elemental Ailment Chance,-190.185,-8881.76,770,4,12,False,False,False
@@ -320,25 +647,72 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 52003,mastery_cold_6394,Cold Mastery,-673.645,-10901.4,772,2,18,False,False,False
 38270,shock_mitigation10,Lightning Damage,-484.775,9376.46,773,3,0,False,False,False
 23724,shock_mitigation11,Lightning Damage,-609.775,9493.96,773,7,22,False,False,False
+7275,shock_mitigation12,Electrocuting Exposure,-798.455,9336.63,773,4,64,True,False,False
+29402,shock_mitigation5,Electrocute Buildup,-307.998,9533.69,773,7,3,False,False,False
+4046,shock_mitigation6_,Electrocute Buildup,-342.747,9792.46,773,2,8,False,False,False
+8875,shock_mitigation7,Electrocute Buildup,-555.789,9751.46,773,1,8,False,False,False
+50687,shock_mitigation8_,Coursing Energy,-609.775,9926.97,773,7,14,True,False,False
 22821,cold2,Elemental Damage,-478.295,-3566.19,775,7,0,False,False,False
 22314,elemental14,Elemental Damage,-478.295,-3316.19,775,0,0,False,False,False
 3823,cold34,Elemental Force,-478.245,-3834.19,777,1,0,True,False,False
 60230,elemental15,Elemental Damage,-478.245,-4409.19,777,5,0,False,False,False
 51968,fire3,Elemental Ailment Chance,-812.245,-3752.19,777,3,18,False,False,False
+51335,fire32,Affliction Enforcer,-655.022,-3928.97,777,7,21,True,False,False
+64046,lightning34,Principal Infusion,-301.468,-3928.97,777,7,3,True,False,False
+45522,lightning6,Infused Spell Damage,-144.245,-3752.19,777,3,6,False,False,False
 5726,mastery_elemental94,Elemental Mastery,-478.245,-3752.19,777,0,0,False,False,False
 58362,sorcerer_start1,Elemental Ailment Chance,-604.549,-4223.57,777,4,69,False,False,False
 10192,sorcerer_start2,Elemental Damage,-478.245,-4086.19,777,3,0,False,False,False
+55909,sorcerer_start3,Infused Spell Damage,-351.941,-4223.57,777,4,3,False,False,False
 6554,cold61,Cold Damage,-477.995,-7622.1,780,0,0,False,False,False
+7049,being_surrounded1,Armour while Surrounded,-789.244,8740.79,782,3,19,False,False,False
+25711,being_surrounded10,Thrill of Battle,-308.213,8784.79,782,2,5,True,False,False
+31566,being_surrounded2,Armour while Surrounded,-553.071,8504.62,782,3,23,False,False,False
+24766,being_surrounded22,Paranoia,-466.625,8827.24,782,0,0,True,False,False
 22556,being_surrounded4,Evasion while Surrounded,-702.799,9063.41,782,3,15,False,False,False
 11257,being_surrounded5,Evasion while Surrounded,-380.179,9149.85,782,3,11,False,False,False
+10271,being_surrounded6,Attack Damage while Surrounded,-144.006,8913.68,782,3,7,False,False,False
+58038,being_surrounded7,Attack Damage while Surrounded,-230.451,8591.06,782,3,3,False,False,False
+35028,being_surrounded9,In the Thick of It,-625.037,8869.68,782,2,17,True,False,False
+51974,mastery_fortify7,Fortify Mastery,-466.625,8827.24,782,0,0,False,False,False
 39476,mastery_cold_6398,Cold Mastery,-465.635,-7778.58,783,0,0,False,False,False
 44405,lightning63,Lightning Damage,-382.905,-7264.94,788,0,0,False,False,False
+55807,mana25,Mana Regeneration,-215.813,-2616.58,790,2,5,False,False,False
+6686,mana8,Mana Regeneration,-331.779,-2732.55,790,2,1,False,False,False
+1922,mastery_caster_6126,Caster Mastery,-374.225,-2574.13,790,0,0,False,False,False
+41965,spell_criticals1,Spell Damage,-490.19,-2690.1,790,2,21,False,False,False
+1755,spell_criticals2__,Spell Damage,-532.637,-2531.69,790,2,17,False,False,False
+18845,spells15,Spell Damage,-309.52,-2332.65,790,7,11,False,False,False
+23907,cold68,Ice Storm,-317.615,-7755.36,792,0,0,True,False,False
+36564,AscendancyWitch1Notable1,Beidat's Gaze,-1549.28,-17167.8,793,9,100,True,False,False
+17754,AscendancyWitch1Notable10,Loyal Hellhound,308.283,-18500.7,793,8,7,True,False,False
+24039,AscendancyWitch1Notable2,Beidat's Hand,-943.498,-17449.2,793,5,51,True,False,False
+46644,AscendancyWitch1Notable3,Beidat's Will,-1240.73,-17081.3,793,8,48,True,False,False
+18348,AscendancyWitch1Notable4,Altered Flesh,-1240.73,-18157.3,793,8,60,True,False,False
+25239,AscendancyWitch1Notable5,Demonic Possession,-846.885,-18551.1,793,8,66,True,False,False
+61267,AscendancyWitch1Notable6,Mastered Darkness,-1035.48,-18038.8,793,6,60,True,False,False
+13174,AscendancyWitch1Notable7,Pyromantic Pact,-91.7358,-18429.7,793,6,3,True,False,False
+34419,AscendancyWitch1Notable9,Grinning Immolation,351.115,-18762.4,793,9,12,True,False,False
+19482,AscendancyWitch1Small1,Life,-1627.63,-17676.9,793,9,109,False,False,False
+39470,AscendancyWitch1Small10,Minion Life,-30.3957,-18658.6,793,8,3,False,False,False
+770,AscendancyWitch1Small11,Mana,172.346,-18306.5,793,6,7,False,False,False
+46016,AscendancyWitch1Small2,Life,-1147.89,-17619.3,793,6,54,False,False,False
+8854,AscendancyWitch1Small3,Life,-1384.89,-17619.3,793,8,54,False,False,False
+7793,AscendancyWitch1Small4,Life,-1066.01,-18700.6,793,9,130,False,False,False
+64379,AscendancyWitch1Small5,Spell Damage,-587.374,-18658.6,793,8,69,False,False,False
+63894,AscendancyWitch1Small6,Spell Damage,-848.184,-18262,793,6,64,False,False,False
+23880,AscendancyWitch1Small7,Mana,-308.885,-18695.3,793,8,0,False,False,False
 24135,AscendancyWitch1Small9,Critical Chance,32.7561,-18894.3,793,9,6,False,False,False
+32699,AscendancyWitch1Start__,Infernalist,-308.885,-18939.3,793,9,0,False,False,False
 14122,mastery_caster41,Lightning Mastery,-229.015,-7281.88,798,0,0,False,False,False
 60878,lightning69_,Lightning Storm,-211.585,-7418.46,799,0,0,True,False,False
 21560,lightning62,Lightning Damage,-204.425,-7142.42,800,0,0,False,False,False
 17044,elemental47,Cold and Lightning Damage,-191.895,-7617.42,802,0,0,False,False,False
 59779,armour_and_evasion2,Armour and Evasion,-133.155,1690.41,805,0,0,False,False,False
+35492,mastery_minion_offence_6621,Minion Offence Mastery,-250.712,-10074.5,807,7,21,False,False,False
+30523,minion_offence16,Dead can Dance,-612.118,-10274.6,807,5,61,True,False,False
+11376,minion_offence34,Necrotic Touch,-144.949,-9938.76,807,1,10,True,False,False
+50720,minion_offence35,Minion Damage,-160.381,-10220.4,807,3,23,False,False,False
 34199,minion_offence36,Minion Critical Damage,-560.078,-9940.3,807,4,55,False,False,False
 43557,minion_offence37_,Minion Critical Damage,-396.554,-9811.32,807,3,17,False,False,False
 44871,energy_shield15,Energy Shield,136.065,-1694.96,808,3,2,False,False,False
@@ -347,24 +721,41 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 48821,spell_criticals3,Spell Critical Damage,164.005,-4439.9,816,2,6,False,False,False
 15618,spell_criticals4,Spell Critical Damage,0.005,-4773.9,816,3,0,False,False,False
 32404,spell_criticals9,Spell Critical Chance,-163.995,-4439.9,816,2,18,False,False,False
+11337,chill_and_freeze10,Chill Magnitude,-288.818,-11285.5,821,3,16,False,False,False
+29369,chill_and_freeze11,Chill Magnitude,-243.565,-11029.8,821,4,42,False,False,False
+23427,chill_and_freeze14,Chilled to the Bone,-487.565,-11452.5,821,4,54,True,False,False
 47270,chill_and_freeze4,Inescapable Cold,-243.565,-11875.1,821,4,66,True,False,False
 52799,cold10,Freeze Buildup,0.435,-11786.5,821,3,0,False,False,False
 60515,cold12,Cold Damage,289.688,-11619.5,821,3,4,False,False,False
 44455,cold13,Cold Damage,0.435,-11452.5,821,0,0,False,False,False
+19955,cold38,Endless Blizzard,244.435,-11875.1,821,4,6,True,False,False
 62914,cold5,Cold Damage,-288.817,-11619.5,821,3,20,False,False,False
 41669,cold7,Cold Damage,0.434971,-11118.5,821,3,12,False,False,False
 55250,cold_penetration10,Cold Penetration,244.435,-11029.8,821,4,30,False,False,False
 56649,cold_penetration12__,Cold Penetration,289.687,-11285.5,821,3,8,False,False,False
+41972,cold_penetration26,Glaciation,488.435,-11452.5,821,4,18,True,False,False
 17380,mastery_cold58,Cold Mastery,0.434993,-11370.5,821,1,6,False,False,False
 40691,mana21,Energy Shield Delay,-373.005,-6764.21,822,4,62,False,False,False
 36746,mana22,Energy Shield Delay,-288.427,-6283.52,822,3,16,False,False,False
 25893,mana24,Energy Shield Delay,-163.175,-6450.52,822,2,18,False,False,False
+51169,mana40,Soul Bloom,-175.952,-6627.3,822,7,21,True,False,False
+43576,mana_regeneration15,Mana Regeneration,290.077,-6283.52,822,3,8,False,False,False
+14324,mana_regeneration19,Arcane Blossom,177.602,-6627.3,822,7,3,True,False,False
+1468,mana_regeneration23,Mana Regeneration,164.825,-6450.52,822,2,6,False,False,False
+7971,mana_regeneration24,Mana Regeneration,374.655,-6764.21,822,4,10,False,False,False
 47150,armour_and_evasion26,Armour and Evasion,-140.083,2911.7,827,2,16,False,False,False
 38779,armour_and_evasion27,Armour and Evasion,143.973,2911.7,827,2,8,False,False,False
+44836,armour_and_evasion28,Feel no Pain,1.94499,2993.7,827,2,12,True,False,False
 11311,armour_and_evasion1,Armour and Evasion,-312.768,2219.24,840,5,61,False,False,False
 38057,armour_and_evasion25,Armour and Evasion,-391.963,2371.37,840,5,58,False,False,False
 34061,armour_and_evasion3,Armour and Evasion,-429.085,2538.81,840,5,55,False,False,False
+56910,duelist_mercenary_notable1,Battle-hardened,-409.198,2766.12,840,5,51,True,False,False
+26648,deflect30,Deflection,150.84,10367,846,2,21,False,False,False
+22565,deflect31,Deflection,309.251,10324.5,846,2,1,False,False,False
+17994,deflect32,Deflection,425.217,10440.5,846,2,5,False,False,False
 24256,deflect33,Armour and Evasion,150.839,10598.9,846,2,15,False,False,False
+63541,deflect34,Brush Off,382.771,10598.9,846,2,9,True,False,False
+10398,spell_criticals11_,Sudden Escalation,310.135,-7336.21,849,0,0,True,False,False
 3472,spell_criticals13,Spell Critical Chance,228.135,-7194.19,849,2,14,False,False,False
 56640,spell_criticals5,Spell Critical Damage,228.135,-7478.24,849,2,22,False,False,False
 26682,spell_criticals8,Spell Critical Damage,474.135,-7336.21,849,2,6,False,False,False
@@ -374,15 +765,23 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 29695,energy_shield_recovery19,Energy Shield Delay,530.317,-2531.69,850,2,7,False,False,False
 43736,energy_shield_recovery20,Energy Shield Delay,487.871,-2690.1,850,2,3,False,False,False
 6338,mastery_energyshield105,Energy Shield Mastery,371.905,-2574.13,850,0,0,False,False,False
+4017,energy_shield_recovery10,Mana Regeneration,418.515,-9071.2,854,2,12,False,False,False
+12918,energy_shield_recovery11,Mana Regeneration,560.543,-9153.2,854,2,8,False,False,False
+26447,energy_shield_recovery17,Refocus,418.515,-9399.2,854,2,0,True,False,False
+10079,energy_shield_recovery9_,Mana Regeneration,276.487,-9153.2,854,2,16,False,False,False
 49633,mastery_energy_shield_6483,Energy Shield Mastery,418.515,-9235.2,854,0,0,False,False,False
 517,energy_shield11,Stun and Ailment Threshold from Energy Shield,419.295,-4284.19,855,0,0,False,False,False
 14666,energy_shield10_,Stun and Ailment Threshold from Energy Shield,146.295,-3752.19,858,3,18,False,False,False
+9642,energy_shield37,Dampening Shield,303.518,-3928.97,858,7,21,True,False,False
+17973,energy_shield_recovery14,Rapid Recharge,657.072,-3928.97,858,7,3,True,False,False
 4748,energy_shield_recovery24,Energy Shield Delay,814.295,-3752.19,858,3,6,False,False,False
+61027,mana18,Mana Blessing,480.295,-3752.19,858,0,0,True,False,False
 4113,chill_and_freeze5,Freeze Buildup,711.201,-8559.59,861,7,4,False,False,False
 36782,chill_and_freeze6,Freeze Buildup,494.695,-8184.59,861,7,12,False,False,False
 55572,cold9,Cold and Fire Damage,278.189,-8559.59,861,7,20,False,False,False
 44179,mastery_cold60,Cold Mastery,494.695,-8434.59,861,0,0,False,False,False
 1151,chill_and_freeze7,Freeze Buildup,711.201,-8279.42,862,7,8,False,False,False
+4627,cold36,Climate Change,494.695,-8654.42,862,7,0,True,False,False
 57626,cold8_,Cold and Fire Damage,278.189,-8279.42,862,7,16,False,False,False
 22691,energy_shield_recovery29,Energy Shield Delay,552.405,-4284.19,867,0,0,False,False,False
 15984,mastery_lightning_6564,Lightning Mastery,728.785,-10884.2,876,0,0,False,False,False
@@ -390,33 +789,57 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 11873,lightning51,Elemental Damage and Mana Regeneration,979.389,-10581.5,878,3,9,False,False,False
 37279,lightning52,Elemental Damage and Mana Regeneration,507.041,-10581.5,878,3,15,False,False,False
 41159,lightning53,Elemental Damage and Mana Regeneration,409.215,-10817.7,878,3,18,False,False,False
+27434,lightning54,Archon of the Storm,507.041,-11053.8,878,3,21,True,False,False
+51234,lightning56,Archon Effect,907.215,-10817.7,878,2,6,False,False,False
 15991,lightning57,Embodiment of Lightning,584.803,-10860.1,878,2,19,True,False,False
+15083,lightning32,Power Conduction,905.735,-11253.8,883,0,0,True,False,False
+22271,lightning23_,Shock Chance,1029.73,-11468.6,887,0,0,False,False,False
 18651,lightning19,Lightning Damage,1129.94,-11238.3,896,0,0,False,False,False
+55554,lightning18,Shock Chance,1139.73,-11659.1,897,0,0,False,False,False
+62237,armour_and_evasion29,Saqawal's Talon,1657.42,5271.55,906,4,24,True,False,False
 59281,armour_and_evasion30_,Armour and Evasion,1152.8,4885.53,906,2,22,False,False,False
 14394,armour_and_evasion31,Armour and Evasion,1092.77,5109.55,906,2,16,False,False,False
 1221,armour_and_evasion32,Armour and Evasion,1234.8,5027.55,906,0,0,False,False,False
 50124,armour_and_evasion33,Armour and Evasion,1376.82,4945.55,906,2,4,False,False,False
+35743,armour_and_evasion34,Saqawal's Hide,1234.8,5515.55,906,4,36,True,False,False
 60116,mastery_armour_and_evasion_6283,Armour and Evasion Mastery,1401.79,5316.81,906,3,10,False,False,False
 26905,lightning22,Lightning Damage,1414.12,-12145,908,3,2,False,False,False
 11736,lightning17,Lightning Damage,1249.73,-11026.7,909,4,36,False,False,False
 8821,lightning21,Lightning Damage,1249.73,-11848.7,909,3,0,False,False,False
+28975,lightning29,Pure Power,1249.73,-12353.7,909,6,0,True,False,False
 44566,lightning_penetration28,Lightning Rod,1353.57,9646.22,915,0,0,True,False,False
 63863,lightning20__,Lightning Damage,1367.44,-11645.1,917,0,0,False,False,False
 27785,lightning_penetration12,Lightning Penetration,1492.44,-11428.6,917,7,10,False,False,False
 36293,lightning_penetration15_,Lightning Penetration,1381.34,-11239.6,918,0,0,False,False,False
+55708,lightning_penetration27,Electric Amplification,1506.34,-11023.1,918,7,10,True,False,False
 13828,evasion11,Evasion,1402.97,958.265,919,0,0,False,False,False
 48030,energy_shield12,Energy Shield,1488.43,-4425.12,920,7,1,False,False,False
 6715,energy_shield13,Energy Shield and Mana Regeneration,1182.24,-4118.93,920,7,17,False,False,False
 62436,energy_shield16,Energy Shield,1665.21,-4248.34,920,7,5,False,False,False
+116,energy_shield34_,Insightfulness,1359.02,-3942.15,920,7,13,True,False,False
+3215,energy_shield35,Melding,1600.5,-4006.86,920,7,9,True,False,False
 41372,energy_shield7,Energy Shield and Mana Regeneration,1246.95,-4360.41,920,7,21,False,False,False
 44359,mastery_energy_shield_6487,Energy Shield Mastery,1423.72,-4183.63,920,0,0,False,False,False
 60741,elemental57,Elemental Damage,1505.67,-5382.35,925,2,12,False,False,False
+49804,elemental58_,Exposure Effect,1423.67,-5688.38,925,2,22,False,False,False
+6950,elemental59,Exposure Effect,1587.67,-5688.38,925,2,2,False,False,False
 24035,elemental60,Elemental Damage,1341.67,-5546.35,925,2,18,False,False,False
+33922,elemental61_,Stripped Defences,1669.67,-5546.35,925,2,6,True,False,False
 58783,life_leech1,Life Leech. Armour and Evasion while Leeching,1474.01,4008.26,935,2,19,False,False,False
+37190,life_leech11,Life Leech,1790.84,4093.15,935,2,7,False,False,False
+35855,life_leech13,Fortifying Blood,1748.39,3934.74,935,2,3,True,False,False
 48583,life_leech2,Life Leech. Armour and Evasion while Leeching,1589.98,3892.29,935,2,23,False,False,False
+26520,life_leech4,Life Leech,1674.87,4209.12,935,2,11,False,False,False
+35859,mastery_leech129,Leech Mastery,1632.43,4050.7,935,0,0,False,False,False
 48846,lightning_penetration16,Lightning Damage,1657.19,9770.52,936,0,0,False,False,False
+6266,mercenary1,Damage,1847.18,10472.4,938,7,9,False,False,False
+60085,mercenary11,Damage,1493.63,10472.4,938,7,15,False,False,False
+15839,mercenary2,Ailment Duration,1711.41,10366.6,938,1,5,False,False,False
+11667,mercenary3,Immobilisation Buildup,1599.39,10254.6,938,1,10,False,False,False
 1915,mercenary4,Critical Chance,1493.63,10118.8,938,7,21,False,False,False
+48617,mercenary5,Hunter,1847.18,10118.8,938,7,3,True,False,False
 30117,AscendancyWitch2Small1,Spell Critical Chance,1684.82,-18566.4,939,0,0,False,False,False
+58939,criticals80,Dispatch Foes,1879.79,4860,945,2,8,True,False,False
 26319,criticals81_,Critical Chance,1737.77,4614,945,2,0,False,False,False
 30990,criticals82,Critical Chance,1595.74,4860,945,2,16,False,False,False
 44608,mastery_critical_6413,Critical Mastery,1737.77,4778,945,0,0,False,False,False
@@ -424,27 +847,51 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 31409,evasion13,Evasion,1875.94,1204.48,947,2,3,False,False,False
 50437,evasion14,Evasion,1976.48,1445.44,947,7,8,False,False,False
 32274,mastery_evasion_6502,Evasion Mastery,1759.97,1320.44,947,0,0,False,False,False
+61106,movement_speed1,Movement Speed,1644.01,1436.41,947,2,15,False,False,False
+59653,movement_speed3,Movement Speed,1884.97,1536.95,947,7,10,False,False,False
+35987,ranger_huntress_notable1,Blur,2105.04,1665.51,947,4,27,True,False,False
 48551,AscendancyWitch2Small2,Spell Critical Chance,1760.62,-17480.4,948,0,0,False,False,False
 15876,cold23,Energy Shield as Freeze Threshold,1858.09,-10538.1,949,2,10,False,False,False
 7947,cold24,Energy Shield as Freeze Threshold,1634.07,-10598.1,949,2,16,False,False,False
 26061,cold25,Energy Shield as Freeze Threshold,1694.09,-10822.2,949,2,22,False,False,False
 4579,cold26,Unbothering Cold,1918.12,-10762.1,949,2,4,True,False,False
+7576,attack_damage1,Attack Damage,1821.35,-1202.94,955,0,0,False,False,False
+33866,attack_damage3,Attack Damage,1963.38,-1284.94,955,2,4,False,False,False
+10364,attack_speed25,Skill Speed,1398.73,-958.945,955,4,48,False,False,False
+42857,attack_speed27,Skill Speed,1604.85,-1077.94,955,7,16,False,False,False
 20024,criticals14,Critical Damage,1696.35,-1419.45,955,7,22,False,False,False
 44223,criticals15,Critical Damage,1886.06,-1444.43,955,7,1,False,False,False
+55342,intelligence3,Attribute,1421.61,-1482.85,955,4,61,False,False,False
+17248,intelligence4,Attribute,1821.35,-1859.94,955,5,0,False,False,False
+10429,mastery_trap236,Trap Mastery,1780.35,-1273.96,955,1,11,False,False,False
+49220,shadow_monk_notable1,Flow Like Water,2243.98,-1446.94,955,4,12,True,False,False
+10998,armour_and_evasion11,Strong Chin,2070.62,8936.47,957,4,30,True,False,False
+9736,armour_and_evasion14__,Insulated Treads,1582.62,8936.47,957,4,42,True,False,False
 61396,armour_and_evasion16,Armour and Evasion,1913.07,8836.47,957,3,11,False,False,False
 61318,armour_and_evasion17,Armour and Evasion,1740.18,8836.47,957,3,13,False,False,False
+2843,armour_and_evasion40,Tolerant Equipment,1826.62,9170.85,957,5,36,True,False,False
 1019,armour_and_evasion5,Armour and Evasion,1826.62,8513.85,957,0,0,False,False,False
 45037,armour_and_evasion6,Armour and Evasion,1585.14,8578.56,957,7,17,False,False,False
 21438,armour_and_evasion7,Armour and Evasion,2068.11,8578.56,957,7,7,False,False,False
 62235,mastery_evasion109,Armour and Evasion Mastery,1826.62,8677.85,957,2,12,False,False,False
+7062,crossbow14,Reusable Ammunition,2343.8,11466.4,958,4,19,True,False,False
+16680,crossbow15_,Crossbow Reload Speed,2329.03,11297.5,958,4,15,False,False,False
+48137,crossbow16,Crossbow Reload Speed,2257.4,11143.9,958,4,11,False,False,False
+33887,crossbow18,Full Salvo,2137.56,11024.1,958,4,7,True,False,False
 43155,crossbow4,Crossbow Critical Chance,2299.93,11630.1,958,4,23,False,False,False
 31763,crossbow6,Crossbow Critical Chance,2202.72,11768.9,958,4,27,False,False,False
 33415,crossbow7,Crossbow Critical Chance,2063.89,11866.1,958,4,31,False,False,False
+6178,crossbow8_,Power Shots,1900.19,11910,958,4,35,True,False,False
+44343,dexterity1,Attribute,2001.39,-492.002,962,4,35,False,False,False
+55276,dexterity2,Attribute,2527.83,-649.645,962,5,24,False,False,False
 52980,evasion_and_energy_shield1,Evasion and Energy Shield,1536.23,-734.145,962,4,48,False,False,False
 17366,evasion_and_energy_shield2,Evasion and Energy Shield,2083.85,-761.639,962,7,10,False,False,False
 18970,evasion_and_energy_shield3,Evasion and Energy Shield,1742.35,-853.145,962,7,16,False,False,False
 29361,evasion_and_energy_shield4,Evasion and Energy Shield,2200.34,-913.44,962,7,7,False,False,False
+11938,mana10,Mana Regeneration,1958.85,-978.145,962,0,0,False,False,False
+39964,mana11,Mana Regeneration,2100.88,-1060.15,962,2,4,False,False,False
 1215,mastery_energyshield106,Evasion and Energy Shield Mastery,1999.85,-907.131,962,1,5,False,False,False
+48198,shadow_monk_notable2,Step Like Mist,2381.48,-1222.15,962,4,12,True,False,False
 21779,criticals20,Critical Damage,1820.38,-4298.39,964,2,19,False,False,False
 9185,criticals21,Critical Chance,2137.21,-4298.39,964,2,5,False,False,False
 40760,criticals22,Critical Chance,2021.24,-4414.36,964,2,1,False,False,False
@@ -452,75 +899,146 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 57204,criticals30,Critical Exploit,1936.35,-4097.53,964,2,13,True,False,False
 47833,mastery_critical_270_,Critical Mastery,1978.8,-4255.94,964,0,0,False,False,False
 11315,lightning_penetration14,Lightning Damage,2015.42,9673.14,968,0,0,False,False,False
+23153,ballista10,Ballista Damage,1957.55,7848.28,970,7,14,False,False,False
 31112,ballista11,Ballista Critical Strike,2207.55,7415.27,970,7,2,False,False,False
 56897,ballista12,Ballista Critical Damage,2207.55,7848.28,970,7,10,False,False,False
+57785,ballista15,Trained Turrets,2332.55,7631.77,970,7,6,True,False,False
 63828,ballista8,Ballista Critical Strike and Damage,1832.55,7631.77,970,7,18,False,False,False
+23996,ballista9,Ballista Damage,2082.55,7631.77,970,0,0,False,False,False
 61768,minion_defence27,Minion Cold Resistance,2157.18,-9511.45,975,0,0,False,False,False
 5961,lightning25,Lightning Damage,2260.4,9939.27,985,0,0,False,False,False
 54675,lightning24,Lightning Damage,2281.59,10332.1,986,0,0,False,False,False
 63926,minion_defence23,Minion Lightning Resistance,2393.91,-9611.59,992,0,0,False,False,False
+26383,AscendancyWitch2Notable2_,Sunder the Flesh,1467.56,-18071.1,993,8,59,True,False,False
+8415,AscendancyWitch2Notable3,Sanguimancy,2442.74,-18455.4,993,6,0,True,False,False
+26282,AscendancyWitch2Notable4,Blood Barbs,2114.25,-18185.4,993,5,66,True,False,False
+27667,AscendancyWitch2Notable5,Whispers of the Flesh,2982.04,-18259.1,993,6,8,True,False,False
+23416,AscendancyWitch2Notable6,Vitality Siphon,1903.45,-18259.1,993,6,64,True,False,False
+56162,AscendancyWitch2Notable7,Grasping Wounds,3417.93,-18071.1,993,8,13,True,False,False
+65518,AscendancyWitch2Notable9,Sanguine Tides,2771.24,-18185.4,993,5,6,True,False,False
 62388,AscendancyWitch2Small4_,Bleed on Critical Chance,2328.66,-18263.4,993,5,70,False,False,False
+30071,AscendancyWitch2Small5,Curse Effect,2729.7,-18404.8,993,6,4,False,False,False
+59342,AscendancyWitch2Small6,Life Leech,2155.79,-18404.8,993,6,68,False,False,False
+47442,AscendancyWitch2Small9,Life Flasks,2556.83,-18263.4,993,5,2,False,False,False
+59822,AscendancyWitch2Start,Blood Mage,2442.74,-18936.4,993,9,0,False,False,False
 53266,lightning7,Lightning Skill Speed,2453.78,-8312.45,994,0,0,False,False,False
+23764,lightning45,Alternating Current,2459.21,-3622.89,997,0,0,True,False,False
 5295,lightning26_,Lightning Penetration,2476.38,9574.5,998,0,0,False,False,False
+43431,armour_and_evasion35_,Deflection,2384.75,8260.36,1003,4,69,False,False,False
+20779,armour_and_evasion36_,Deflection,2511.05,8397.74,1003,3,0,False,False,False
+50239,armour_and_evasion37,Mutewind Agility,2752.54,8667.03,1003,7,5,True,False,False
+19224,armour_and_evasion38,Deflection,2267.06,8309.12,1003,4,66,False,False,False
+32555,armour_and_evasion39,Deflection,2386.05,8515.23,1003,7,22,False,False,False
+9535,armour_and_evasion41,Brinerot Ferocity,2511.05,8731.74,1003,0,0,True,False,False
+24963,armour_and_evasion42_,Deflection,2165.99,8386.67,1003,4,63,False,False,False
+42169,armour_and_evasion43,Deflection,2221.8,8564.74,1003,3,20,False,False,False
+61309,armour_and_evasion44,Redblade Discipline,2334.28,8908.51,1003,7,15,True,False,False
+51850,armour_and_evasion45,Path of the Renegade,2678.05,9020.99,1003,3,10,True,False,False
 37434,mastery_armour_and_evasion_6281,Armour and Evasion Mastery,2593.05,8873.76,1003,2,10,False,False,False
+4850,lightning44,Shock Effect and Mana Regeneration,2577.55,-4030.32,1007,0,0,False,False,False
 17024,lightning16,Lightning Skill Speed,2607.33,-8878.62,1010,0,0,False,False,False
 13738,lightning39,Lightning Quick,2641.65,-9309.5,1013,0,0,True,False,False
 4157,criticals11,Critical Chance,2444.54,-2103.71,1016,7,18,False,False,False
 55088,criticals12,Critical Chance,2819.54,-2320.22,1016,7,2,False,False,False
+34168,criticals3,Crashing Wave,2569.54,-2320.22,1016,7,22,True,False,False
+36479,lightning41,Essence of the Storm,2480.75,-2481.04,1018,4,66,True,False,False
+36778,lightning42,Shock Chance,2266.17,-2225.32,1018,4,58,False,False,False
+12925,lightning43,Shock Chance,2809.49,-2539,1018,4,2,False,False,False
+61312,dexterity22,Attribute,2483.45,2447.28,1019,4,42,False,False,False
+20831,evasion39,Catlike Agility,2645.45,2166.68,1019,2,14,True,False,False
 29843,evasion4,Evasion and Reduced Movement Penalty,2485.97,1959.95,1019,7,19,False,False,False
+55397,flasks22,Flask Charges Gained,2550.68,1847.88,1019,7,21,False,False,False
+44527,flasks24,Cautious Concoctions,2809.45,1882.63,1019,2,2,True,False,False
 44875,mastery_evasion_6508,Evasion Mastery,2727.45,2024.66,1019,0,0,False,False,False
+35503,lightning48,Shock Effect and Mana Regeneration,2744.59,-3760.9,1021,0,0,False,False,False
+34233,attack_speed37,Flow State,2671.29,-2143.98,1022,2,22,True,False,False
+14725,attack_speed46,Skill Speed,2589.29,-2001.95,1022,2,18,False,False,False
+32545,attack_speed47,Skill Speed,2835.29,-2143.98,1022,2,2,False,False,False
 16123,mastery_criticals67,Critical Mastery,2586.29,-2291.21,1022,3,22,False,False,False
 53560,shock1,Lightning Skill Chain Chance,2785.02,-8428.64,1027,0,0,False,False,False
 34984,mastery_energy_shield_6495,Energy Shield Mastery,2787.39,-5900.44,1028,0,0,False,False,False
+12661,stun_threshold_from_energy_shield10,Asceticism,2570.89,-5775.44,1028,7,16,True,False,False
+44917,stun_threshold_from_energy_shield11,Self Mortification,2787.39,-6150.44,1028,7,0,True,False,False
 18895,stun_threshold_from_energy_shield3,Stun Threshold from Energy Shield,2787.39,-5818.44,1028,1,6,False,False,False
 703,stun_threshold_from_energy_shield4,Stun Threshold from Energy Shield,2858.41,-5941.44,1028,1,2,False,False,False
 10552,stun_threshold_from_energy_shield5,Stun Threshold from Energy Shield,3003.9,-5775.44,1028,7,8,False,False,False
 13576,lightning9,Lightning Skill Speed,2802.27,-8676.29,1030,0,0,False,False,False
 64352,lightning11,Lightning Damage,2806.74,4311.96,1031,0,0,False,False,False
 37372,lightning10,Lightning Skill Speed,2810.3,-9096.02,1032,0,0,False,False,False
+12337,lightning35,Flash Storm,2880.86,9533.6,1033,0,0,True,False,False
+7405,lightning28,Shock Effect and Mana Regeneration,2886.7,-4100.44,1035,0,0,False,False,False
 48585,evasion9,Evasion and Reduced Movement Penalty,2890.88,2251.96,1036,0,0,False,False,False
+62230,energy_shield33_,Patient Barrier,2922.78,-10953.2,1040,6,0,True,False,False
 19355,energy_shield44,Energy Shield,3209.74,-10902.6,1040,6,4,False,False,False
 37974,energy_shield46_,Energy Shield,2635.83,-10902.6,1040,6,68,False,False,False
 21336,evasion_and_energy_shield26,Evasion and Energy Shield,2777.15,-1737.29,1042,2,19,False,False,False
 15975,evasion_and_energy_shield27,Evasion and Energy Shield,2893.12,-1536.43,1042,2,13,False,False,False
+62984,evasion_and_energy_shield35_,Mindful Awareness,3077.59,-1776.84,1042,2,4,True,False,False
+58182,life_on_kill1,Life on Kill,2768.56,-1984.1,1042,3,22,False,False,False
+7344,life_on_kill14,Life from Death,3224.82,-1861.84,1042,3,4,True,False,False
+26931,life_on_kill2,Life on Kill,3102.56,-1405.59,1042,3,10,False,False,False
 44345,lightning12,Lightning Damage,2947.79,4537.32,1045,0,0,False,False,False
 46157,shock2,Lightning Skill Chain Chance,3017.04,-8315.27,1047,0,0,False,False,False
 3665,companions64,Attack Damage and Companion Damage as Cold,3028.9,6994.96,1048,0,0,False,False,False
+6772,dexterity18,Attribute,3353.38,914.335,1054,4,6,False,False,False
+30695,exploiting_elemental_ailments10,Vile Wounds,3027.38,1478.98,1054,2,14,True,False,False
+13783,exploiting_elemental_ailments8,Ailment Chance,2867.89,1272.25,1054,7,19,False,False,False
+56472,mastery_projectile_6652,Projectile Mastery,3109.38,1336.95,1054,0,0,False,False,False
+22795,projectiles16,Projectile Damage,2932.6,1160.18,1054,7,21,False,False,False
+42781,projectiles23,Clean Shot,3191.38,1194.93,1054,2,2,True,False,False
 32185,companions65,Attack Damage and Companion Damage as Cold,3113.83,7213.29,1058,0,0,False,False,False
+63064,energy_shield_recovery12,Mystic Stance,3198.47,-1247.22,1059,2,10,True,False,False
 65437,energy_shield_recovery4,Energy Shield Delay,3034.47,-1247.22,1059,2,14,False,False,False
 30634,energy_shield_recovery5,Energy Shield Delay,3280.47,-1389.24,1059,2,6,False,False,False
+54413,mastery_evasion114,Spell Suppression Mastery,3283.47,-1099.99,1059,3,10,False,False,False
 40068,cold28,Freeze Buildup,3060.82,-850.529,1062,4,38,False,False,False
 53149,cold29,Freeze Buildup,3604.14,-1164.21,1062,4,22,False,False,False
+32683,cold39__,Essence of the Mountain,3389.56,-908.495,1062,4,30,True,False,False
 56325,evasion23_,Evasion and Reduced Movement Penalty,3195.27,2366.42,1063,0,0,False,False,False
 53965,lightning27,Lightning Penetration,3203.89,9325.66,1065,0,0,False,False,False
 48833,lightning13,Lightning Damage,3228.15,4292.78,1067,0,0,False,False,False
+4,lightning14,Shock Chance,3249.41,4552.82,1069,0,0,False,False,False
 33946,criticals75_,Attack Critical Chance,3562.95,10089.5,1077,7,9,False,False,False
 34074,criticals76,Attack Critical Chance,3343.73,10071.1,1077,2,13,False,False,False
 57227,criticals77,Attack Critical Chance,3544.59,9870.26,1077,2,5,False,False,False
 23259,criticals78,Attack Critical Chance,3270.21,9796.74,1077,2,21,False,False,False
+22864,criticals79,Tainted Strike,3150,9676.53,1077,3,21,True,False,False
 57966,mastery_critical_6416,Critical Mastery,3386.17,9912.71,1077,0,0,False,False,False
+19808,exploiting_elemental_ailments9_,Ailment Chance,3433.98,1627.23,1082,0,0,False,False,False
+11578,lightning37,Spreading Shocks,3512.67,4752.05,1087,0,0,True,False,False
+5564,lightning15,Electrocute Buildup,3555.53,4441.55,1092,0,0,False,False,False
 21080,chill_and_freeze1,Freeze Buildup,3318.64,-4263.29,1093,7,19,False,False,False
 1869,chill_and_freeze2,Freeze Buildup,3602.57,-4357,1093,2,1,False,False,False
 27095,chill_and_freeze3,Freeze Buildup,3801.61,-4133.88,1093,7,7,False,False,False
+48658,chill_and_freeze8,Shattering,3560.12,-4198.58,1093,0,0,True,False,False
+14890,chill_and_freeze9_,Chill Magnitude and Duration,3517.68,-4040.17,1093,2,13,False,False,False
+17548,criticals38_,Moment of Truth,3757.11,-3197.79,1097,7,2,True,False,False
 14958,criticals41,Critical Chance,3561.1,-3022.28,1097,1,10,False,False,False
 630,criticals42,Critical Damage,3703.13,-2940.28,1097,1,4,False,False,False
 13419,criticals43_,Critical Damage,3507.11,-2764.78,1097,7,14,False,False,False
 31039,mastery_criticals65,Critical Mastery,3632.11,-2981.28,1097,0,0,False,False,False
 62510,elemental_attacks1,Elemental Attack Damage,3524.27,8035.54,1101,4,69,False,False,False
+3985,elemental_attacks10,Forces of Nature,3534.61,8622.88,1101,2,15,True,False,False
+43423,elemental_attacks11,Emboldened Avatar,3608.13,8348.5,1101,2,23,True,False,False
 8697,elemental_attacks2,Elemental Attack Damage,3817.57,8217.66,1101,3,2,False,False,False
 30905,elemental_attacks3,Elemental Attack Damage,4121.95,8633.22,1101,4,21,False,False,False
 64140,elemental_attacks4,Elemental Attack Damage,3817.57,8796.17,1101,3,10,False,False,False
 51336,elemental_attacks5,Elemental Attack Damage,3305.51,8851.98,1101,4,45,False,False,False
 56818,elemental_attacks7,Elemental Attack Damage,3316.57,8506.92,1101,3,18,False,False,False
+38895,elemental_attacks9,Crystal Elixir,3808.99,8549.36,1101,2,7,True,False,False
 48660,mastery_elemental96,Elemental Mastery,3650.57,8506.92,1101,0,0,False,False,False
 47754,cold_penetration11,Cold Damage,3451.59,-8091.37,1103,7,16,False,False,False
 23455,cold_penetration13,Cold Damage,3668.09,-8216.37,1103,0,0,False,False,False
+49740,cold_penetration14,Shattered Crystal,3668.09,-8466.37,1103,7,0,True,False,False
+55847,cold_penetration15,Ice Walls,3884.6,-8091.37,1103,7,8,True,False,False
 27274,mastery_cold_6395,Cold Mastery,3739.11,-8257.37,1103,1,2,False,False,False
 63861,mastery_criticals62,Critical Mastery,3647.01,-9798.88,1104,2,13,False,False,False
 55947,spell_criticals12_,Spell Critical Chance,3731.9,-10115.7,1104,2,1,False,False,False
+13823,spell_criticals15,Controlling Magic,3603.01,-9634.68,1104,3,13,True,False,False
 46088,spell_criticals16,Spell Critical Chance,3925.63,-9721.12,1104,3,9,False,False,False
 62153,spell_criticals17_,Spell Critical Damage,3366.84,-9870.85,1104,3,17,False,False,False
 32054,spell_criticals18,Spell Critical Damage,3453.28,-9721.12,1104,3,15,False,False,False
+11838,focus10,Dreamcatcher,4082.63,-9003.35,1112,7,6,True,False,False
 10881,focus6,Focus Energy Shield,3832.63,-9003.35,1112,0,0,False,False,False
 33112,focus7,Focus Energy Shield,3832.63,-8669.35,1112,3,12,False,False,False
 36450,focus8,Spell Damage on full Energy Shield,3832.63,-9337.35,1112,3,0,False,False,False
@@ -532,12 +1050,29 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 38338,elemental44,Elemental Damage,3419.51,-5154.29,1113,4,60,False,False,False
 35760,elemental45,Elemental Damage,4131.39,-4743.29,1113,3,8,False,False,False
 16367,elemental46,Elemental Damage,3842.13,-4910.29,1113,0,0,False,False,False
+60692,fire34,Echoing Flames,3842.13,-4660.29,1113,7,12,True,False,False
 5703,lightning40,Echoing Thunder,4058.64,-5035.29,1113,7,4,True,False,False
 63585,lightning36,Thunderstruck,3915.95,4292.71,1120,0,0,True,False,False
+44612,mastery_spell_suppression_6714,Spell Suppression Mastery,3917.46,3195.79,1121,0,0,False,False,False
+9112,spell_suppression29,Ailment Threshold,3876.46,3124.78,1121,1,11,False,False,False
+41538,spell_suppression30,Ailment Threshold,3583.46,3195.79,1121,3,18,False,False,False
+55598,spell_suppression31,Ailment Threshold,4084.46,2906.54,1121,3,2,False,False,False
+15644,spell_suppression32,Shedding Skin,4084.46,3485.05,1121,3,10,True,False,False
+38459,blind10,Disorientation,3784.82,1041.23,1124,2,16,True,False,False
+61373,blind5,Damage vs Blinded,4216.1,792.235,1124,3,4,False,False,False
+63610,blind6_,Blind Effect,3926.84,795.235,1124,2,0,False,False,False
+5988,blind7,Damage vs Blinded,4068.87,1041.23,1124,2,8,False,False,False
+38568,mastery_evasion110,Blind Mastery,3997.86,918.235,1124,1,2,False,False,False
+33751,cooldowns14,Cooldown Recovery Rate,3691.17,7406.81,1125,7,18,False,False,False
+8810,cooldowns15,Multitasking,4012.19,7447.81,1125,1,4,True,False,False
+12451,cooldowns16,Cooldown Recovery Rate,3941.17,7740.81,1125,3,12,False,False,False
 37220,evasion10,Evasion,4298.53,6334.27,1133,2,9,False,False,False
 50342,evasion15,Evasion,4024.15,6260.75,1133,2,17,False,False,False
+5227,evasion6,Escape Strategy,3893.31,6051.3,1133,3,20,True,False,False
+17955,evasion7_,Careful Consideration,4516.56,6218.3,1133,3,6,True,False,False
 46402,evasion8,Evasion,4117.86,6459.79,1133,7,13,False,False,False
 51708,mastery_evasion_6509,Evasion Mastery,4182.56,6218.3,1133,0,0,False,False,False
+36623,energy_shield_recovery22,Convalescence,4067.74,-9977.13,1134,2,21,True,False,False
 3628,energy_shield_recovery26,Energy Shield Delay,4342.12,-9903.61,1134,2,5,False,False,False
 64474,energy_shield_recovery27,Energy Shield Delay,4299.67,-9745.2,1134,2,9,False,False,False
 31630,energy_shield_recovery28,Energy Shield Delay,4025.29,-9818.72,1134,2,17,False,False,False
@@ -545,13 +1080,25 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 38703,accuracy32,Accuracy and Attack Critical Chance,4153.42,10781.1,1139,7,14,False,False,False
 63525,accuracy33,Accuracy and Attack Critical Chance,4403.42,10348,1139,7,2,False,False,False
 8249,accuracy34,Accuracy and Attack Critical Chance,4494.93,10689.5,1139,7,8,False,False,False
+16816,accuracy35,Pinpoint Shot,4278.42,10564.5,1139,0,0,True,False,False
+53094,accuracy36,Accuracy,4061.92,10439.5,1139,7,20,False,False,False
 12761,evasion_and_energy_shield10,Evasion and Energy Shield,4577.4,-1974.44,1149,2,4,False,False,False
+19156,evasion_and_energy_shield14,Immaterial,4435.38,-1728.44,1149,2,12,True,False,False
+53941,evasion_and_energy_shield15,Shimmering,4435.38,-1558.44,1149,3,12,True,False,False
 17367,evasion_and_energy_shield16,Evasion and Energy Shield,4724.63,-2059.44,1149,3,4,False,False,False
 62841,evasion_and_energy_shield17,Evasion and Energy Shield,4146.12,-2059.44,1149,3,20,False,False,False
 12249,evasion_and_energy_shield9_,Evasion and Energy Shield,4293.35,-1974.44,1149,2,20,False,False,False
 17283,mastery_evasion_and_energy_shield_6496,Evasion and Energy Shield Mastery,4435.38,-1892.44,1149,0,0,False,False,False
+26068,attack35,Attack Damage,4769.91,2982.72,1153,3,4,False,False,False
+37389,attack36,Attack Damage,4622.68,3067.72,1153,2,4,False,False,False
 28061,elemental54,Elemental Attack Damage,4697.16,3274.72,1153,7,8,False,False,False
 35878,elemental55,Elemental Attack Damage,4545.36,3391.21,1153,7,11,False,False,False
+50884,elemental56,Primal Sundering,4355.65,3366.23,1153,7,14,True,False,False
+53696,mastery_attack10_,Attack Mastery,4480.65,3149.72,1153,0,0,False,False,False
+37644,physical27_,Physical Attack Damage,4480.65,2899.72,1153,7,0,False,False,False
+46874,physical38,Physical Attack Damage,4303.88,2972.95,1153,7,21,False,False,False
+7449,physical39,Splinters,4230.65,3149.72,1153,7,18,True,False,False
+30562,evasion_and_energy_shield12_,Inner Faith,4356.4,-6892.55,1155,2,18,True,False,False
 13711,evasion_and_energy_shield18,Evasion and Energy Shield,4395.4,-7109.06,1155,7,22,False,False,False
 3203,evasion_and_energy_shield19,Deflection and Energy Shield Delay,4395.4,-6676.05,1155,7,14,False,False,False
 8908,evasion_and_energy_shield20,Evasion and Energy Shield,4770.4,-6892.55,1155,7,6,False,False,False
@@ -560,25 +1107,38 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 4519,criticals18,Damage on Critical,4542.03,-5257.07,1158,0,0,False,False,False
 20236,criticals19,Attack and Cast Speed on Critical,4542.03,-4689.38,1159,0,0,False,False,False
 28464,evasion_and_energy_shield38_,Deflection and Energy Shield Delay,4599.58,-6751.84,1164,0,0,False,False,False
+49661,bleed12,Perfectly Placed Knife,4758.1,7289.29,1168,1,2,True,False,False
 49394,bleed2,Critical Bleeding Effect,4445.6,7265.59,1168,7,19,False,False,False
 23786,bleed3,Critical Bleeding Effect,4803.05,7446.26,1168,2,9,False,False,False
 33391,bleed7,Critical Bleeding Effect,5009.7,7243.85,1168,3,5,False,False,False
 56330,bleed8_,Bleeding Chance on Critical,4562.08,7113.79,1168,7,22,False,False,False
 39570,bleed9,Bleeding Chance on Critical,4244.81,7124.06,1168,4,59,False,False,False
 4346,criticals13,Critical Chance,4705.26,-4974.35,1171,0,0,False,False,False
+7782,physical_witch10,Rupturing Pins,4748.75,-11059.2,1172,3,0,True,False,False
 48805,physical_witch11,Spell Critical Chance,4965.25,-10850.2,1172,7,4,False,False,False
+26563,physical_witch12,Bone Chains,5171.37,-10969.2,1172,4,12,True,False,False
+4810,physical_witch13,Sanguine Tolerance,4748.75,-10643.2,1172,1,6,True,False,False
+61905,physical_witch5_,Bleed Chance,4748.75,-10391.2,1172,3,12,False,False,False
+8938,physical_witch6,Bleed Chance,4459.49,-10558.2,1172,3,16,False,False,False
 12778,physical_witch7,Spell Critical Chance,5038,-10558.2,1172,3,8,False,False,False
+33229,physical_witch8,Haemorrhaging Cuts,4326.12,-10969.2,1172,4,60,True,False,False
+64996,physical_witch9,Bleed Chance,4532.24,-10850.2,1172,7,20,False,False,False
 33292,lightning67_,Lightning Damage,4784.23,-9692.38,1176,0,0,False,False,False
+64650,stun_threshold16_,Wary Dodging,4789.34,7039.05,1179,2,12,True,False,False
+35058,stun_threshold17,Stun Threshold if no recent Stun,4625.34,6875.05,1179,2,18,False,False,False
 30210,stun_threshold18,Evasion Rating,4953.34,6875.05,1179,2,6,False,False,False
 38966,stun_threshold29,Stun Threshold and Evasion Rating,4789.34,6711.05,1179,2,0,False,False,False
 9510,energy_shield_recovery37,Energy Shield Recoup,4821.1,-7916.56,1183,2,0,False,False,False
 16695,energy_shield_recovery38,Energy Shield Recoup,4985.1,-7752.56,1183,2,6,False,False,False
 61926,energy_shield_recovery39,Energy Shield Recoup,4821.1,-7588.56,1183,2,12,False,False,False
+1603,energy_shield_recovery40,Storm Driven,4657.1,-7752.56,1183,2,18,True,False,False
 32040,mastery_energy_shield_6484,Energy Shield Mastery,4825,-7747.13,1184,0,0,False,False,False
 38668,unarmed10,Evasion,5106.5,-6307.4,1187,7,7,False,False,False
+32664,unarmed12,Chakra of Breathing,4865.01,-6372.1,1187,0,0,True,False,False
 27671,unarmed7,Energy Shield Delay,4800.31,-6613.59,1187,7,23,False,False,False
 32681,unarmed8,Evasion and Energy Shield Delay,4688.24,-6195.33,1187,7,15,False,False,False
 5188,unarmed9,Evasion and Energy Shield Delay,5041.79,-6548.88,1187,7,3,False,False,False
+13724,criticals50,Deadly Force,4384.03,-4974.35,1188,4,54,True,False,False
 29763,lightning_penetration1,Lightning Penetration,4889.32,-7413.25,1190,0,0,False,False,False
 39241,AscendancyWitch3Small7,Energy Shield,4890.63,-18537.4,1191,0,0,False,False,False
 9586,mastery_criticals68,Critical Mastery,5305.14,-4964.33,1193,4,10,False,False,False
@@ -587,8 +1147,13 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 56729,azmerianimals19,Evasion while Moving,4859.19,8071.42,1200,2,16,False,False,False
 26308,azmerianimals22,Evasion while Moving,5083.21,8131.45,1200,2,10,False,False,False
 27017,azmerianimals23,Evasion while Moving,4919.21,7847.4,1200,2,22,False,False,False
+21349,azmerianimals24_,The Quick Fox,5143.24,7907.42,1200,2,4,True,False,False
 57928,lightning66,Lightning Damage,5022.51,-9397.47,1201,0,0,False,False,False
+20677,criticals29,For the Jugular,5061.13,-4971.48,1203,0,0,True,False,False
+43877,attack_speed57,Attack Speed,5033.31,-137.961,1204,1,7,False,False,False
+51522,attack_speed58,Attack Speed,4992.31,-351.003,1204,2,22,False,False,False
 47895,attack_speed59,Evasion Rating on Hit Recently,5238.31,-208.975,1204,2,6,False,False,False
+56493,attack_speed60_,Agile Succession,5310.49,-445.149,1204,3,3,True,False,False
 38044,evasion2,Evasion,5291.11,460.085,1205,7,4,False,False,False
 11813,evasion3,Evasion,5074.6,835.085,1205,7,12,False,False,False
 9782,criticals44,Critical Damage,5193.02,-5200.3,1211,0,0,False,False,False
@@ -596,14 +1161,42 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 2446,monkchakra19,Elemental Damage,4880.31,-8121.08,1213,3,18,False,False,False
 50268,monkchakra20_,Cold and Lightning Damage,5072.29,-8203.08,1213,2,20,False,False,False
 22851,monkchakra21,Cold and Lightning Damage,5214.31,-8285.08,1213,2,0,False,False,False
+37164,monkchakra22,Non-Damaging Ailment Magnitude,5072.29,-8039.08,1213,2,16,False,False,False
+419,monkchakra23,Non-Damaging Ailment Magnitude,5214.31,-7957.08,1213,2,12,False,False,False
+63400,monkchakra24,Chakra of Elements,5378.31,-8121.08,1213,2,6,True,False,False
+63668,triggers24_,Triggered Spell Damage,5539.71,-6166.69,1214,3,4,False,False,False
+9069,triggers25_,Triggered Spell Damage,5392.48,-6081.69,1214,2,4,False,False,False
+42245,triggers26,Efficient Inscriptions,5179.44,-5958.69,1214,1,8,True,False,False
 16024,triggers27,Invocation Critical Damage,5168.46,-6141.72,1214,2,22,False,False,False
+49150,triggers28,Precise Invocations,5573.07,-5913.25,1214,3,7,True,False,False
 18167,triggers29,Invocation Critical Hits,5332.46,-5857.67,1214,2,10,False,False,False
+29288,triggers30,Deadly Invocations,5336.9,-6322.31,1214,3,1,True,False,False
+17788,AscendancyWitch3Notable1,Crystalline Phylactery,5253.69,-18532.2,1215,6,0,True,False,True
+23352,AscendancyWitch3Notable2,Rupture the Soul,4429.43,-18384.9,1215,8,62,True,False,False
+26085,AscendancyWitch3Notable3,Necromantic Conduit,4242.52,-18541.7,1215,9,124,True,False,False
+2877,AscendancyWitch3Notable4,Blackened Heart,3953.75,-17464,1215,9,104,True,False,False
+33570,AscendancyWitch3Notable5,Soulless Form,6264.87,-18541.7,1215,9,20,True,False,False
+28431,AscendancyWitch3Notable6,Eternal Life,6553.64,-17464,1215,9,40,True,False,False
+59,AscendancyWitch3Notable9,Incessant Cacophony,4242.59,-17325.2,1215,8,50,True,False,False
+8611,AscendancyWitch3Small1,Curse Area,4194.04,-17880.1,1215,8,56,False,False,False
+20772,AscendancyWitch3Small3,Mana,3978.67,-18034.9,1215,9,114,False,False,False
+51142,AscendancyWitch3Small4,Mana,4748.55,-18912.7,1215,9,135,False,False,False
+36696,AscendancyWitch3Small5,Life,6528.72,-18034.9,1215,9,30,False,False,False
+33141,AscendancyWitch3Small6_,Life,5758.84,-18912.7,1215,9,9,False,False,False
 58751,AscendancyWitch3Small9,Energy Shield,5253.69,-18769.2,1215,8,0,False,False,False
+23710,AscendancyWitch3Start_,Necromancer,5253.69,-19013.2,1215,9,0,False,False,False
+49993,deflect23,Deflection,5482.17,5316.09,1216,7,8,False,False,False
+40632,deflect24,Deflection,5265.67,5355.09,1216,2,12,False,False,False
+48889,deflect25,Deflection,5049.16,5316.09,1216,7,16,False,False,False
 28038,deflect26,Evasion,5049.16,5066.09,1216,7,20,False,False,False
 3893,deflect27,Evasion,5265.67,5027.09,1216,2,0,False,False,False
 64434,deflect28,Evasion,5482.17,5066.09,1216,7,4,False,False,False
+56488,deflect29,Glancing Deflection,5265.67,5191.09,1216,0,0,True,False,False
+50498,lightning70,Brain Storm,5279.03,-9458.27,1217,0,0,True,False,False
 240,mastery_lightning150,Lightning Mastery,5280.67,-9450.66,1219,0,0,False,False,False
+30456,evasion5,High Alert,5286.04,719.085,1220,0,0,True,False,False
 39423,lightning_penetration2,Lightning Penetration,5146.95,-7492.44,1221,2,20,False,False,False
+47635,lightning_penetration22_,Overload,5578.23,-7243.44,1221,3,8,True,False,False
 53207,lightning_penetration3,Lightning Penetration,5359.99,-7369.44,1221,1,4,False,False,False
 56914,lightning_penetration4,Lightning Penetration,5530.46,-7475.15,1221,7,5,False,False,False
 28021,criticals9,Critical Damage,5324.92,-5429.12,1225,0,0,False,False,False
@@ -611,6 +1204,7 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 39569,criticals46,Critical Damage,5524.15,3506.51,1232,7,2,False,False,False
 9046,criticals47,Critical Chance,5688.41,3890.01,1232,3,8,False,False,False
 45609,criticals48,Critical Damage,5109.9,3556.01,1232,3,20,False,False,False
+56776,criticals49,Cooked,5358.15,3794.03,1232,1,7,True,False,False
 3458,criticals91,Critical Damage,5356.71,3564.6,1232,2,23,False,False,False
 7353,criticals92,Critical Chance,5557.57,3680.57,1232,2,5,False,False,False
 24129,mastery_critical_268,Critical Mastery,5399.15,3723.01,1232,0,0,False,False,False
@@ -619,6 +1213,7 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 24721,cold69_,Brain Freeze,5541.32,-9278.17,1241,0,0,True,False,False
 30663,mastery_cold_6392,Cold Mastery,5545.19,-9271,1243,0,0,False,False,False
 14310,cold63,Cold Damage,5569.62,-8962.42,1244,0,0,False,False,False
+61601,criticals28,True Strike,5579.63,-4981.71,1246,0,0,True,False,False
 64213,elemental16,Elemental Damage and Freeze Buildup,5798.23,1472.41,1247,7,8,False,False,False
 32155,elemental18,Elemental Damage and Shock Chance,5365.22,1472.41,1247,7,16,False,False,False
 44204,elemental23,Elemental Damage and Flammability Magnitude,5581.73,1097.41,1247,7,0,False,False,False
@@ -628,37 +1223,66 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 144,elemental27,Elemental Damage and Freeze Buildup,6150.7,1018.91,1247,5,12,False,False,False
 41096,elemental28,Elemental Damage and Shock Chance,5581.73,2004.41,1247,5,36,False,False,False
 45712,elemental29,Elemental Damage and Flammability Magnitude,5012.75,1018.91,1247,5,60,False,False,False
+12611,elemental32,Harness the Elements,5581.73,1347.41,1247,0,0,True,False,False
 11472,frenzy_charges1,Evasion if Consumed Frenzy Charge,5788.27,717.095,1250,2,8,False,False,False
 19880,frenzy_charges2,Evasion if Consumed Frenzy Charge,5646.25,471.095,1250,2,0,False,False,False
 59390,frenzy_charges3,Evasion if Consumed Frenzy Charge,5504.22,717.095,1250,2,16,False,False,False
+40270,frenzy_charges7_,Frenetic,5646.25,635.095,1250,0,0,True,False,False
 2995,AscendancyWitch3Small8,Energy Shield if Consumed Power Charge,5699.65,-18720.7,1256,0,0,False,False,False
 32340,cold64__,Cold Damage,5818.69,-9005.17,1260,0,0,False,False,False
+56860,buckler15,Resolute Reprisal,5833.86,5463.88,1261,0,0,True,False,False
+29320,buckler17,Stun Threshold during Parry,6050.37,5588.88,1261,7,8,False,False,False
+1680,buckler18,Projectile Parry Range,5915.86,5321.85,1261,2,2,False,False,False
+17447,buckler19,Stun Threshold during Parry,5751.86,5605.9,1261,2,14,False,False,False
 24843,buckler20,Evasion during Parry,5617.36,5338.88,1261,7,20,False,False,False
 45377,cold65,Cold Damage,5901,-8772.67,1263,0,0,False,False,False
 10944,evasion_and_energy_shield23,Evasion and Energy Shield,5924.32,-789.865,1264,2,0,False,False,False
 33366,evasion_and_energy_shield24,Evasion and Energy Shield,5799.32,-409.359,1264,7,14,False,False,False
+55193,evasion_and_energy_shield25,Subterfuge Mask,5995.34,-584.865,1264,1,4,True,False,False
 23915,criticals23,Critical Damage,5948.12,186.785,1267,0,0,False,False,False
 41529,criticals37,Critical Damage,6106.54,144.339,1267,2,5,False,False,False
+21380,criticals39,Preemptive Strike,6124.9,363.562,1267,7,9,True,False,False
 31284,mastery_critical_267,Critical Mastery,6030.12,186.785,1267,1,3,False,False,False
 60700,cold49,Empowered Attack Freeze Buildup,6141.96,-416.582,1268,7,3,False,False,False
 52501,cold50,Empowered Attack Freeze Buildup,6181.69,-114.805,1268,7,8,False,False,False
+44974,cold51,Hail,5965.19,-239.805,1268,0,0,True,False,False
 50121,cold11,Cold Damage,5988.31,-7475.15,1271,0,0,False,False,False
+21572,exploiting_elemental_ailments1,Damage against Ailments,5873.12,6361.42,1272,2,20,False,False,False
+39050,exploiting_elemental_ailments15,Exploit,6157.17,6361.42,1272,2,4,True,False,False
+6660,exploiting_elemental_ailments2,Damage against Ailments,6015.15,6607.42,1272,2,12,False,False,False
 31345,lightning_penetration11,Lightning Penetration,6079.18,1921.76,1274,2,11,False,False,False
 30372,lightning_penetration13,Lightning Penetration,5994.29,1604.93,1274,2,23,False,False,False
+42065,lightning_penetration26__,Surging Currents,5878.32,1805.79,1274,2,17,True,False,False
 55400,lightning_penetration9,Lightning Penetration,6195.15,1720.9,1274,2,5,False,False,False
 37532,mastery_elemental97,Lightning Mastery,6036.73,1763.34,1274,0,0,False,False,False
 43720,mana_leech1,Mana Leech and Cold Resistance,6147.01,8561.77,1276,2,11,False,False,False
+14383,mana_leech17,Suffusion,6104.56,8403.35,1276,0,0,True,False,False
 18568,mana_leech3,Mana Leech and Cold Resistance,6147.01,8244.94,1276,2,1,False,False,False
+46601,mana_leech4,Mana Leech,5940.56,8403.35,1276,2,18,False,False,False
+46887,mana_leech5,Mana Leech,6438.56,8403.35,1276,3,6,False,False,False
+35901,dexterity34,Attribute,5639.16,3255.33,1285,6,60,False,False,False
+12890,dexterity57,Attribute,7092.35,3255.33,1285,6,12,False,False,False
+63566,dexterity61,Attribute,6365.75,4513.83,1285,6,36,False,False,False
 62464,evasion17_,Evasion,6198.75,3385.58,1285,3,22,False,False,False
 55275,evasion18,Evasion,6532.75,3385.58,1285,3,2,False,False,False
+12120,evasion19,Slow Effect on You,6031.75,3674.83,1285,3,18,False,False,False
+65207,evasion20,Slow Effect on You,6198.75,3964.09,1285,3,14,False,False,False
+51606,evasion30,Freedom of Movement,5943.13,3918.83,1285,4,48,True,False,False
+17854,evasion31,Escape Velocity,6365.75,3186.83,1285,4,0,True,False,False
 34853,azmerianimals31,Strength and Critical Damage Bonus on You,6365.75,5825.65,1287,2,0,False,False,False
 25458,azmerianimals34,Strength and Critical Damage Bonus on You,6149.25,5864.65,1287,7,20,False,False,False
 37568,azmerianimals35,Strength and Critical Damage Bonus on You,6529.75,5989.65,1287,2,6,False,False,False
+45370,azmerianimals36,The Raging Ox,6223.73,6071.65,1287,2,16,True,False,False
+28441,blind11,Frantic Swings,6254.37,-2079.42,1292,7,15,True,False,False
+32721,blind12,Distracted Target,6495.85,-2014.71,1292,7,11,True,False,False
 24570,blind13,Blinded Enemies Critical,6272.73,-2298.64,1292,2,19,False,False,False
 11836,blind14,Critical vs Blinded,6589.56,-2213.75,1292,2,7,False,False,False
 47235,blind15_,Blinded Enemies Critical,6306.15,-2472.7,1292,7,22,False,False,False
 53471,blind16,Critical vs Blinded,6647.65,-2381.19,1292,7,4,False,False,False
+10011,blind17,Damage vs Blinded,6344.7,-1933.58,1292,3,13,False,False,False
+11871,blind18,Blind Chance,6517.59,-2578.81,1292,3,1,False,False,False
 57088,cold_penetration1,Cold Penetration,6409.49,794.875,1297,2,20,False,False,False
+9421,cold_penetration24,Snowpiercer,6693.54,958.875,1297,2,8,True,False,False
 28086,cold_penetration6,Cold Penetration,6469.51,1018.9,1297,2,14,False,False,False
 54557,cold_penetration7,Cold Penetration,6633.51,734.847,1297,2,2,False,False,False
 60170,mastery_cold59,Cold Mastery,6551.51,876.875,1297,0,0,False,False,False
@@ -666,43 +1290,72 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 22713,cold3,Cold Damage,6814.29,-7691.65,1300,7,6,False,False,False
 12166,cold6,Cast Speed with Cold Skills,6439.29,-7908.16,1300,7,22,False,False,False
 33221,mastery_cold_6390,Cold Mastery,6564.44,-7691.65,1301,0,0,False,False,False
+19722,cold32,Thin Ice,6689.44,-7475.15,1302,7,10,True,False,False
 4959,cold33,Heavy Frost,6689.44,-7908.16,1302,7,2,True,False,False
+26331,cold35,Harsh Winter,6314.44,-7691.65,1302,7,18,True,False,False
 19003,cold4_,Cold Damage,6564.44,-7691.65,1302,0,0,False,False,False
+22329,deflect36,Deflection,6719.35,7863.32,1310,7,11,False,False,False
+58526,deflect37,Deflection,6538.68,7737.8,1310,2,15,False,False,False
 331,deflect38,Deflection and Evasion,6770.61,7505.87,1310,2,3,False,False,False
 32891,deflect39,Deflection and Evasion,6896.13,7686.54,1310,7,7,False,False,False
+62427,deflect40,Deflection Rating,6538.68,7505.87,1310,2,21,False,False,False
+42103,deflect41,Enduring Deflection,6654.65,7287.83,1310,3,0,True,False,False
+50673,deflect42,Avoiding Deflection,6320.65,7621.83,1310,3,18,True,False,False
 46857,energy_shield_recovery1,Energy Shield Delay,6790.3,-6502.08,1318,0,0,False,False,False
 52060,mastery_energy_shield_6493,Energy Shield Mastery,6844.88,-9157.81,1319,0,0,False,False,False
 17602,stun_threshold_from_energy_shield13,Stun and Ailment Threshold from Energy Shield,6668.1,-8981.04,1319,7,15,False,False,False
 59799,stun_threshold_from_energy_shield18,Stun Threshold from Energy Shield,6773.86,-9198.81,1319,1,10,False,False,False
+7338,stun_threshold_from_energy_shield19_,Abasement,6780.17,-9399.3,1319,7,23,True,False,False
 59798,stun_threshold_from_energy_shield20,Ailment Threshold from Energy Shield,6885.88,-9086.8,1319,1,5,False,False,False
+5335,stun_threshold_from_energy_shield21,Shimmering Mirage,7086.36,-9093.11,1319,7,7,True,False,False
 21495,elemental_attacks12,Elemental Attack Damage,6679.27,5090.26,1320,3,14,False,False,False
 42794,elemental_attacks6,Elemental Attack Damage,7013.27,4511.75,1320,3,2,False,False,False
+31433,elemental_attacks8,Catalysis,6988.3,4883,1320,2,8,True,False,False
 5348,mastery_elemental98,Elemental Mastery,6846.27,4801,1320,0,0,False,False,False
 6842,poise3,Stun and Freeze Buildup,7267.71,7433.94,1325,3,9,False,False,False
+28329,poise39,Pressure Points,6795.36,6961.59,1325,3,21,True,False,False
 18472,poise4,Stun and Freeze Buildup,7031.53,7361.76,1325,2,12,False,False,False
 46533,poise5,Stun and Freeze Buildup,6867.53,7197.76,1325,2,18,False,False,False
 3700,poise6,Stun and Freeze Buildup,7195.53,7197.76,1325,2,6,False,False,False
 36723,poise7,Stun and Freeze Buildup,7031.53,7033.76,1325,2,0,False,False,False
+29285,azmerianimals10,Movement Speed,7093.09,8212.83,1341,7,19,False,False,False
+9745,azmerianimals11,Movement Speed,7334.57,8527.54,1341,7,12,False,False,False
+11774,azmerianimals12,The Spring Hare,7334.57,8277.54,1341,0,0,True,False,False
 58513,azmerianimals7,Evasion and Movement Speed,7570.75,8513.71,1341,3,9,False,False,False
 16602,azmerianimals8,Evasion,7269.87,8036.05,1341,7,23,False,False,False
 14418,azmerianimals9,Evasion,7584.57,8277.54,1341,7,6,False,False,False
+52971,energy_shield_recovery13,The Soul Meridian,7020.64,-6363.28,1343,4,45,True,False,False
 21227,energy_shield_recovery6,Deflection and Energy Shield Delay,7239.4,-6236.97,1343,4,39,False,False,False
 36290,energy_shield_recovery7,Deflection and Energy Shield Delay,7492.01,-6236.97,1343,4,33,False,False,False
 23046,energy_shield_recovery8,Deflection and Energy Shield Delay,7710.77,-6363.28,1343,4,27,False,False,False
+62936,mana14,Damage from Mana,7408.15,-6549.93,1343,2,11,False,False,False
+51891,mana19,Lucidity,7124.22,-6643.64,1343,7,17,True,False,False
+49976,mana23,Damage from Mana,7607.19,-6773.05,1343,7,5,False,False,False
+25528,mastery_mana_6597,Mana Mastery,7129.53,-6472.17,1343,3,15,False,False,False
 51040,deflect60,Deflection and Energy Shield Delay,7374.83,-7151.38,1344,0,0,False,False,False
+23822,deflect61,Life Recoup,7374.83,-7315.38,1344,2,0,False,False,False
 327,deflect63,Evasion and Energy Shield,7374.83,-6987.38,1344,2,12,False,False,False
 58779,deflect65,Deflection and Energy Shield Delay,7538.83,-7151.38,1344,2,6,False,False,False
+9652,deflect66,Mending Deflection,7210.83,-7151.38,1344,2,18,True,False,False
+336,cold_penetration22,Storm Swell,7284.41,-670.631,1354,3,15,True,False,False
 4806,cold_penetration8,Cold Penetration,7602.58,-764.777,1354,2,10,False,False,False
 49388,elemental17,Elemental,7362.17,-949.251,1354,2,19,False,False,False
 37304,elemental20,Elemental,7049.21,-1033.11,1354,4,57,False,False,False
+64543,elemental30,Unbound Forces,6885.97,-1076.85,1354,5,57,True,False,False
+61921,lightning_penetration24,Storm Surge,7434.14,-1229.42,1354,3,23,True,False,False
 38215,lightning_penetration7,Lightning Penetration,7662.61,-988.805,1354,2,4,False,False,False
+1448,companions55,Bond of the Cat,7712.58,3564.17,1357,2,8,True,False,False
 6530,companions56,Evasion and Companion Movement Speed,7403.55,3771.43,1357,3,14,False,False,False
 24269,companions57__,Evasion and Companion Movement Speed,7737.55,3192.92,1357,3,2,False,False,False
+19542,mastery_companion293,Companion Mastery,7570.55,3482.17,1357,0,0,False,False,False
 31692,criticals83,Critical Chance,7761.63,-7890.57,1360,2,3,False,False,False
+46197,criticals84,Careful Assassin,7804.08,-7732.16,1360,2,7,True,False,False
 61333,criticals85,Critical Chance,7688.11,-7616.19,1360,2,11,False,False,False
 45702,criticals86,Critical Chance,7487.25,-7817.05,1360,2,19,False,False,False
 39237,mastery_critical_6409,Critical Mastery,7645.67,-7774.6,1360,0,0,False,False,False
 52445,mastery_evasion_and_energy_shield_6498,Evasion and Energy Shield Mastery,7747,-5468.73,1364,0,0,False,False,False
+34324,evasion_and_energy_shield11,Spectral Ward,7749.73,-5950.17,1365,4,0,True,False,False
+13457,evasion_and_energy_shield13,Shadow Dancing,7327.1,-5706.17,1365,4,60,True,False,False
 3630,evasion_and_energy_shield21_,Evasion and Energy Shield Delay,7415.73,-5462.17,1365,3,18,False,False,False
 56838,evasion_and_energy_shield22,Evasion and Energy Shield,7916.73,-5751.42,1365,3,2,False,False,False
 26034,evasion_and_energy_shield5,Evasion and Energy Shield,7916.73,-5172.91,1365,3,10,False,False,False
@@ -711,9 +1364,17 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 42805,evasion_and_energy_shield8,Evasion and Energy Shield,7999.73,-5462.17,1365,7,6,False,False,False
 59503,accuracy10,Accuracy and Critical Chance,7697.67,6676.15,1368,7,13,False,False,False
 22208,accuracy11,Accuracy and Critical Chance,7512.38,6434.67,1368,7,18,False,False,False
+60034,accuracy20,Falcon Dive,7762.38,6434.67,1368,0,0,True,False,False
+6330,accuracy21,Accuracy and Attack Damage,8003.86,6369.96,1368,7,5,False,False,False
+15207,accuracy22,Accuracy and Attack Damage,7762.38,6184.67,1368,7,0,False,False,False
+4378,accuracy31,Accuracy,7939.15,6611.44,1368,7,9,False,False,False
 44490,lightning49,Lightning Damage and Electrocute Buildup,8203.42,-391.255,1393,0,0,False,False,False
 1599,physical1,Physical Damage and Critical Chance,8117.88,-2509.71,1397,2,18,False,False,False
 35173,physical2,Physical Damage and Critical Chance,8156.88,-2726.22,1397,7,22,False,False,False
+16013,physical3,Daze on Hit,8531.88,-2509.71,1397,7,6,False,False,False
+41811,physical30,Shatter Palm,8448.88,-2798.97,1397,3,2,True,False,False
+16140,physical4,Daze on Hit,8363.88,-2367.69,1397,2,10,False,False,False
+31286,physical5,Physical,8114.88,-2220.46,1397,3,14,False,False,False
 8456,cold41,Attack Cold Damage and Freeze Buildup,8504.02,1364.62,1399,7,4,False,False,False
 10267,cold42_,Attack Cold Damage and Freeze Buildup,8162.51,1273.12,1399,7,22,False,False,False
 38329,cold43,Biting Frost,8287.51,1489.62,1399,0,0,True,False,False
@@ -723,19 +1384,43 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 43338,daze_14,Shock Chance and Lightning Damage,8439.5,-6018.62,1404,2,10,False,False,False
 5797,daze_15,Freeze Buildup and Cold Damage,8439.5,-6302.67,1404,2,2,False,False,False
 22063,daze_16,Freeze Buildup and Cold Damage,8275.5,-6302.67,1404,2,22,False,False,False
+64415,daze_17,Shattering Daze,8116.02,-6225.35,1404,7,19,True,False,False
+56767,daze_18,Electrifying Daze,8292.8,-5919.16,1404,7,13,True,False,False
+33348,criticals100_,Presence Area,8521.83,2389.03,1405,2,7,False,False,False
 11509,criticals96,Critical Chance,8127.24,2582.76,1405,3,15,False,False,False
+17664,criticals97,Decisive Retreat,8363.42,2346.58,1405,0,0,True,False,False
 7465,criticals98,Critical Chance,8247.45,2462.55,1405,2,15,False,False,False
+11463,criticals99,Presence Area,8320.97,2188.17,1405,2,23,False,False,False
+3994,deflect49,Deflection,8326.57,4365.3,1407,2,23,False,False,False
 9089,deflect50_,Evasion Rating,8451.01,4523.71,1407,1,3,False,False,False
+37951,deflect51,Deflection,8411.46,4682.13,1407,2,11,False,False,False
+41020,deflect52_,Deflection,8298,4564.71,1407,1,8,False,False,False
+34908,deflect53,Staunch Deflection,8282.57,4201.1,1407,3,23,True,False,False
 24656,Sprint7,Evasion and Movement Speed while Sprinting,8400.25,166.185,1410,0,0,False,False,False
 12800,Sprint6,Evasion while Sprinting,8433.06,504.455,1412,0,0,False,False,False
 61800,enemies_on_full_life1,Critical Damage vs Full Life,8508.37,-477.954,1413,7,11,False,False,False
 52630,enemies_on_full_life2,Critical Damage vs Full Life,8378.96,-477.954,1413,7,13,False,False,False
+28371,enemies_on_full_life4,Damage vs Full Life,8227.16,-594.435,1413,7,16,False,False,False
+60560,enemies_on_full_life7,Damage vs Full Life,8443.67,-719.435,1413,0,0,False,False,False
+29527,enemies_on_full_life9,First Approach,8660.17,-594.435,1413,7,8,True,False,False
+7809,lightning33,Wild Storm,8464.96,-3633.16,1416,0,0,True,False,False
+56988,lightning59,Electric Blood,8506.18,-3240.16,1418,0,0,True,False,False
 47831,deflect43,Deflection and Energy Shield Delay,8348.95,-1003.98,1419,2,18,False,False,False
+44522,deflect44,Deflection,8430.95,-1146.01,1419,2,22,False,False,False
+63762,deflect45,Deflection,8594.95,-1146.01,1419,2,2,False,False,False
+34541,deflect46,Energising Deflection,8594.95,-1003.98,1419,1,3,True,False,False
 52743,deflect47,Energy Shield Delay,8594.95,-861.957,1419,2,10,False,False,False
 8734,deflect48,Energy Shield Delay,8430.95,-861.957,1419,2,14,False,False,False
+12174,azmerianimals43,Ailment Magnitude,8471.74,2570.8,1420,2,22,False,False,False
+18864,azmerianimals44,Ailment Magnitude,8635.74,2570.8,1420,2,2,False,False,False
 49107,azmerianimals45,Critical Chance,8471.74,2854.85,1420,2,14,False,False,False
 54562,azmerianimals46,Critical Chance,8635.74,2854.85,1420,2,10,False,False,False
+49485,azmerianimals47,Dexterity,8389.74,2712.82,1420,2,18,False,False,False
+2745,azmerianimals48,The Noble Wolf,8635.74,2712.82,1420,1,3,True,False,False
+43090,lightning_penetration29,Electrotherapy,8601.56,-234.445,1421,0,0,True,False,False
 32672,freeze_and_chill_mitigation1,Freeze and Chill Resistance,8602.39,-5448.69,1422,3,12,False,False,False
+23362,freeze_and_chill_mitigation10,Slippery Ice,8838.57,-5546.51,1422,3,9,True,False,False
+4031,freeze_and_chill_mitigation12,Icebreaker,8366.22,-5546.51,1422,3,15,True,False,False
 17871,freeze_and_chill_mitigation2,Freeze and Chill Resistance,8602.39,-5618.69,1422,2,12,False,False,False
 13701,freeze_and_chill_mitigation4,Freeze and Chill Resistance,8684.39,-5924.71,1422,2,2,False,False,False
 9928,freeze_and_chill_mitigation7,Embracing Frost,8602.39,-5294.69,1422,4,36,True,False,False
@@ -743,29 +1428,60 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 15814,Sprint5,Evasion while Sprinting,8660.79,276.645,1424,0,0,False,False,False
 60483,lightning5,Lightning Damage,8733.08,-3633.16,1429,0,0,False,False,False
 36540,lightning58,Lightning Resistance,8733.08,-3371.16,1430,0,0,False,False,False
+36071,mastery_spear_6704,Spear Mastery,9416.12,6743.65,1435,5,12,False,False,False
 38369,spear1,Spear Critical Chance,8424.52,7316.15,1435,4,48,False,False,False
+35223,spear11,Spear Attack Speed,9136.4,6905.15,1435,3,4,False,False,False
+36677,spear12,Spear Damage,8847.14,7072.15,1435,0,0,False,False,False
+13895,spear13,Precise Point,9350.44,6649.83,1435,5,10,True,False,False
+61112,spear18,Roll and Strike,9464.52,6847.44,1435,5,14,True,False,False
 18910,spear2,Spear Critical Chance,8278.17,7400.65,1435,5,48,False,False,False
+21225,spear3,Spear Damage,8557.89,7239.15,1435,3,16,False,False,False
+10265,spear4,Javelin,8120.55,7491.65,1435,6,48,True,False,False
+9240,spear5,Spear Damage,8705.12,7154.15,1435,2,16,False,False,False
+19767,spear6,Spear Attack Speed,9220.97,6758.46,1435,4,10,False,False,False
+55680,spear7,Spear Attack Speed,9305.71,6905.24,1435,4,14,False,False,False
+9227,spear9,Focused Thrust,8989.17,6990.15,1435,2,4,True,False,False
 15625,azmerianimals38,Evasion,8862.17,5955.31,1436,2,12,False,False,False
 23253,azmerianimals39,Evasion,9026.17,5791.31,1436,2,6,False,False,False
+65161,azmerianimals40,Deflection,8720.15,5873.31,1436,2,16,False,False,False
+3170,azmerianimals41,Deflection,8720.15,5709.31,1436,2,20,False,False,False
+22811,azmerianimals42,The Wild Cat,8862.17,5627.31,1436,2,0,True,False,False
 18717,lightning8,Lightning Damage,8862.26,-3861.86,1437,0,0,False,False,False
+8273,lightning38__,Endless Circuit,8922.01,-4178.25,1439,0,0,True,False,False
 15356,lightning_penetration5,Lightning Penetration,8992.39,-3633.64,1443,0,0,False,False,False
+40990,lightning_penetration23,Exposed to the Storm,8993.62,-3178.16,1444,0,0,True,False,False
 17420,lightning4,Lightning Damage,9124.17,-3861.86,1448,0,0,False,False,False
 18815,lightning_penetration6,Lightning Penetration,9125.5,-3407.73,1449,0,0,False,False,False
 25565,lightning2,Lightning Damage,9234.09,-4261.87,1450,2,2,False,False,False
+59657,evasion_and_energy_shield28,First Teachings of the Keeper,8968.35,-2535.28,1454,3,16,True,False,False
 58692,evasion_and_energy_shield29_,Deflection and Energy Shield Delay,9344.05,-3024.9,1454,3,1,False,False,False
 58593,evasion_and_energy_shield30,Evasion and Energy Shield,8688.63,-2373.78,1454,5,48,False,False,False
+49356,evasion_and_energy_shield31,First Principle of the Hollow,9546.86,-2869.28,1454,3,4,True,False,False
 60239,evasion_and_energy_shield32,Evasion and Energy Shield,9580.22,-2615.84,1454,3,7,False,False,False
 15343,evasion_and_energy_shield33,Deflection and Energy Shield Delay,9826.58,-3030.78,1454,5,12,False,False,False
 26556,evasion_and_energy_shield34,Deflection and Energy Shield Delay,8934.99,-2788.73,1454,3,19,False,False,False
 18314,evasion_and_energy_shield36,Evasion and Energy Shield,9171.16,-2379.67,1454,3,13,False,False,False
+42078,evasion_and_energy_shield37,The Hollowkeeper,9257.6,-2702.28,1454,0,0,True,False,False
+10162,mastery_power_charge_6641,Power Charge Mastery,9329.96,-5015.5,1457,0,0,False,False,False
 3336,power_charges4,Critical Damage when consuming a Power Charge,9171.54,-5057.94,1457,2,19,False,False,False
 36231,power_charges5,Critical Damage when consuming a Power Charge,9372.4,-5173.91,1457,2,1,False,False,False
 30615,power_charges6_,Critical Damage when consuming a Power Charge,9287.51,-4857.08,1457,2,13,False,False,False
+65204,power_charges8,Overflowing Power,9488.37,-4973.05,1457,2,7,True,False,False
+37616,mastery_trap238_,Trap Mastery,9052.35,-6715.72,1467,5,45,False,False,False
+8644,trap1,Trap Damage,8706.5,-6963.14,1467,6,51,False,False,False
 33964,trap10,Trap Critical Chance,9074.64,-6974.05,1467,4,49,False,False,False
 64295,trap11,Trap Critical Chance,9028.92,-7180.28,1467,4,54,False,False,False
 27834,trap12,Trap Critical Chance,9310.68,-6738.01,1467,4,41,False,False,False
+63659,trap13,Clever Construction,9171.85,-6835.22,1467,4,45,True,False,False
+37688,trap17,Devestating Devices,9516.92,-6341.28,1467,6,36,True,False,False
+27417,trap18,Destructive Apparatus,8677.92,-7180.28,1467,6,54,True,False,False
+62496,trap2,Trap Damage,8790.32,-6760.78,1467,6,48,False,False,False
+34912,trap3_,Trap Damage,8923.65,-6587.02,1467,6,45,False,False,False
+4664,trap5,Trap Throw Speed,9097.42,-6453.69,1467,6,42,False,False,False
+43938,trap6,Trap Throw Speed,9299.77,-6369.87,1467,6,39,False,False,False
 34449,trap9,Trap Critical Chance,9516.92,-6692.28,1467,4,36,False,False,False
 44891,cold_penetration2,Cold Penetration,9748.74,-3436.23,1471,2,7,False,False,False
+55835,cold_penetration23,Exposed to the Cosmos,9431.91,-3521.12,1471,2,19,True,False,False
 20909,cold_penetration3,Cold Penetration,9632.77,-3637.09,1471,2,1,False,False,False
 52537,cold_penetration4,Cold Penetration,9547.88,-3320.26,1471,2,13,False,False,False
 7023,mastery_cold61,Cold Mastery,9590.33,-3478.67,1471,0,0,False,False,False
@@ -777,23 +1493,36 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 3209,evasion26,Evasion,9504.16,1278.21,1475,7,16,False,False,False
 14539,evasion27,Deflection and Evasion,9937.17,1028.21,1475,7,4,False,False,False
 9405,evasion28,Evasion,9720.67,1403.21,1475,7,12,False,False,False
+51707,evasion32,Enhanced Reflexes,9392.17,584.236,1475,5,66,True,False,False
 59720,evasion33,Beastial Skin,9392.17,1722.19,1475,5,42,True,False,False
 41163,mastery_evasion111,Evasion Mastery,9720.67,1153.21,1475,0,0,False,False,False
 45382,ailments46,Ailment Chance and Elemental Damage,9990.87,-2123.32,1478,3,3,False,False,False
 28859,ailments47,Ailment Chance and Elemental Damage,10226.1,-2013.45,1478,4,15,False,False,False
+53265,ailments48,Nature's Bite,9754.7,-1887.15,1478,0,0,True,False,False
 20649,shock_mitigation1__,Lightning Damage,9947.79,2860.79,1486,0,0,False,False,False
 65290,shock22_,Lightning Damage and Resistance,10006.4,2637.88,1488,0,0,False,False,False
+16121,monkelemental1,Energy,10104,-5597.67,1489,7,1,False,False,False
 61421,monkelemental2,Energy and Critical Chance,9797.78,-5420.89,1489,7,19,False,False,False
 56334,monkelemental3,Energy and Critical Chance,10280.7,-5291.48,1489,7,7,False,False,False
 46171,monkelemental4,Critical Chance,9974.56,-5114.7,1489,7,13,False,False,False
+41753,monkelemental6,Evocational Practitioner,10039.3,-5356.19,1489,0,0,True,False,False
 49320,dagger10_,Dagger Critical Chance,10446.2,-4843.3,1493,6,31,False,False,False
 30973,dagger11,Dagger Critical Chance,10237.3,-4777.44,1493,6,34,False,False,False
+60891,azmerianimals50,Accuracy Rating,10121.1,1730.1,1498,1,9,False,False,False
 18897,azmerianimals51,Evasion Rating,10345.1,1648.1,1498,2,4,False,False,False
+64990,azmerianimals53_,Intelligence,10285.1,1872.13,1498,2,10,False,False,False
+53185,azmerianimals54,The Winter Owl,9880.47,1643.66,1498,3,19,True,False,False
+47514,daze_19,Dizzying Hits,10507.4,-356.595,1499,7,8,True,False,False
+38342,daze_2,Stupefy,10074.4,-606.595,1499,7,20,True,False,False
 21945,daze_3,Damage and Criticals vs Dazed Enemies,10290.9,-481.595,1499,0,0,False,False,False
+61718,daze_4,Damage vs Dazed Enemies,10148.9,-399.595,1499,2,16,False,False,False
 26572,daze_7,Criticals vs Dazed Enemies,10290.9,-317.595,1499,2,12,False,False,False
+54545,daze_8,Daze Magnitude,10290.9,-645.595,1499,2,0,False,False,False
+39128,daze_9,Daze Magnitude,10432.9,-563.595,1499,2,4,False,False,False
 29959,criticals87,Critical Damage,10217.9,-3575.23,1500,2,14,False,False,False
 60362,criticals88_,Critical Damage,10463.9,-3717.25,1500,2,6,False,False,False
 6891,criticals89,Critical Damage,10217.9,-3859.28,1500,2,22,False,False,False
+56265,criticals90,Throatseeker,10381.9,-3859.28,1500,2,2,True,False,False
 42802,mastery_critical_6408,Critical Mastery,10299.9,-3717.25,1500,0,0,False,False,False
 326,quarterstaff12,Quarterstaff Critical Chance,10504,-3050.26,1505,0,0,False,False,False
 59694,quarterstaff17,Quarterstaff Critical Damage,10614.8,-3021.26,1506,0,0,False,False,False
@@ -802,34 +1531,102 @@ skill,id,name,x,y,group,orbit,orbitIndex,isNotable,isKeystone,isJewelSocket
 20787,cold46,Freeze Buildup,10473.3,2327.55,1507,7,21,False,False,False
 5390,cold47,Freeze Buildup,10525.1,2720.83,1507,7,14,False,False,False
 16142,cold48,Deep Freeze,10817.1,2793.58,1507,3,10,True,False,False
+34612,bow11,Bow Damage,11329.3,4434.44,1510,5,16,False,False,False
+25992,bow12,Bow Accuracy Rating,11163.5,3861.26,1510,6,7,False,False,False
+60764,bow13,Feathered Fletching,11251.2,4220.02,1510,5,12,True,False,False
+11526,bow14,Sniper,11010.8,5117.5,1510,5,30,True,False,False
+31055,bow15,Bow Speed,10523.8,4506.08,1510,2,19,False,False,False
+44141,bow17,Bow Speed,11004.9,4634.97,1510,3,7,False,False,False
+7651,bow18,Pierce the Heart,11492.7,4765.67,1510,6,21,True,False,False
+21788,bow4,Bow Damage,11316.9,4718.57,1510,5,21,False,False,False
+21112,bow5,Bow Damage,10210.9,4422.22,1510,4,57,False,False,False
+8573,bow6,Bow Damage,11185.5,4970.84,1510,5,26,False,False,False
 25586,bow7,Bow Critical Damage,10755.4,5384.33,1510,6,35,False,False,False
+2361,quarterstaff1,Quarterstaff Stun and Knockback,10912.7,-4133.03,1511,5,4,False,False,False
+37514,quarterstaff10,Whirling Assault,10774.4,-3838.27,1511,3,1,True,False,False
 31449,quarterstaff13,Quarterstaff Critical Chance,10463.3,-2898.28,1511,5,40,False,False,False
+9444,quarterstaff14,One with the Storm,10470.8,-2705.24,1511,6,39,True,False,False
 52399,quarterstaff16_,Quarterstaff Critical Damage,10573.9,-2868.64,1511,5,38,False,False,False
+2113,quarterstaff18,Martial Artistry,10601.5,-3193.04,1511,3,13,True,False,False
+34316,quarterstaff4,One with the River,10905.1,-4326.07,1511,6,3,True,False,False
 61632,quarterstaff6,Quarterstaff Freeze and Daze Buildup,10802.1,-4162.67,1511,5,2,False,False,False
+4536,quarterstaff7,Quarterstaff Speed,10730.4,-3674.07,1511,2,1,False,False,False
+11598,quarterstaff8,Quarterstaff Speed,10688,-3515.65,1511,0,0,False,False,False
+44516,quarterstaff9_,Quarterstaff Speed,10645.5,-3357.24,1511,2,13,False,False,False
 64700,quarterstaff15,Quarterstaff Freeze and Daze Buildup,10769.3,-4040.33,1514,0,0,False,False,False
 52215,dagger9,Dagger Critical Chance,10794.6,-5031.25,1516,0,0,False,False,False
 38993,bow9,Bow Critical Damage,10852.7,5275.51,1519,0,0,False,False,False
+56366,dagger13,Silent Shiv,10758.7,-5168.92,1526,3,16,True,False,False
 54058,dagger14,Dagger Critical Damage,11048,-5335.92,1526,0,0,False,False,False
 35755,dagger15,Dagger Critical Damage,10905.9,-5253.92,1526,2,16,False,False,False
+4423,dagger17,Coated Knife,11206.4,-5293.47,1526,2,7,True,False,False
+62001,dagger18,Backstabbing,11090.4,-5494.33,1526,2,1,True,False,False
 38493,criticals52,Critical Damage,11010.9,962.193,1534,4,45,False,False,False
+38537,criticals53,Heartstopping,11240,501.159,1534,2,21,True,False,False
+13407,criticals54_,Heartbreaking,11471.9,733.091,1534,2,9,True,False,False
+39369,criticals55_,Struck Through,11701,272.057,1534,4,9,True,False,False
 55621,criticals56,Critical Chance,11139.5,742.125,1534,7,16,False,False,False
 2936,criticals57_,Attack Critical Damage,11572.5,492.125,1534,7,4,False,False,False
 23040,criticals58,Critical Damage,11231,833.631,1534,7,14,False,False,False
 54983,criticals59,Attack Critical Chance,11481,400.619,1534,7,2,False,False,False
 51583,mastery_criticals64,Critical Mastery,11356,617.125,1534,0,0,False,False,False
+8143,AscendancyMonk2Notable1_,Lead me through Grace...,15015.2,-4547.39,1554,9,5,True,False,False
+65173,AscendancyMonk2Notable2_,...and Protect me from Harm,14443.8,-4547.39,1554,9,139,True,False,False
 7621,AscendancyMonk2Notable3,I am the Thunder...,15364.1,-3428.72,1554,5,15,True,False,False
+23587,AscendancyMonk2Notable4,I am the Blizzard...,15194.1,-3723.24,1554,5,9,True,False,False
+64031,AscendancyMonk2Notable5,...and I Shall Rage,15018.8,-3425.67,1554,3,4,True,False,False
+63713,AscendancyMonk2Notable6,Sunder my Enemies...,15988.4,-2861.74,1554,9,43,True,False,False
+52448,AscendancyMonk2Notable7_,...and Scatter Them to the Winds,15702.7,-2366.9,1554,9,53,True,False,False
+12876,AscendancyMonk2Notable8,Faith is a Choice,15210.7,-3945.94,1554,6,7,True,False,False
+63236,AscendancyMonk2Notable9,The Soul Springs Eternal,15565.3,-3331.8,1554,6,17,True,False,False
 23415,AscendancyMonk2Small1,Evasion and Energy Shield,15486.6,-4339.96,1554,9,14,False,False,False
+13065,AscendancyMonk2Small10_,Triggered Spell Damage,15740.6,-3626.69,1554,8,14,False,False,False
 16100,AscendancyMonk2Small2,Evasion,14729.5,-4334.67,1554,8,0,False,False,False
+17268,AscendancyMonk2Small3,Shock Effect,15489.9,-3613.25,1554,6,13,False,False,False
+25434,AscendancyMonk2Small4,Chill Effect,15416.8,-3739.91,1554,6,11,False,False,False
 55611,AscendancyMonk2Small5,Elemental Damage,15200.9,-3384.98,1554,4,15,False,False,False
 29133,AscendancyMonk2Small6,Elemental Damage,15074.6,-3603.74,1554,4,9,False,False,False
 57181,AscendancyMonk2Small7,Critical Chance,15661.4,-2720.67,1554,8,24,False,False,False
 44357,AscendancyMonk2Small8,Critical Chance,16044.5,-3373.72,1554,9,34,False,False,False
 27686,AscendancyMonk2Small9,Energy Shield Recharge Rate,15553.8,-3950.31,1554,8,10,False,False,False
+9994,AscendancyMonk2Start,Master of the Elements,15872.7,-3918.67,1554,9,24,False,False,False
+41751,AscendancyMonk1Notable1_,Martial Adept,15124.3,-6167.62,1559,1,6,True,False,False
+61586,AscendancyMonk1Notable2,Martial Master,15778.8,-6192.36,1559,5,19,True,False,False
+19370,AscendancyMonk1Notable3,Hollow Focus Technique,15067,-6904.12,1559,5,71,True,False,False
+17356,AscendancyMonk1Notable4,Hollow Resonance Technique,14113.2,-6617.64,1559,8,58,True,False,False
+39552,AscendancyMonk1Notable5,Runic Meridians,14999.3,-6466.13,1559,7,22,True,False,False
+51546,AscendancyMonk1Notable6,Way of the Mountain,15927.9,-5202.4,1559,9,57,True,False,False
+1739,AscendancyMonk1Notable7,Hollow Form Technique,14363.5,-7010.47,1559,8,63,True,False,False
+39595,AscendancyMonk1Notable8,Way of the Stonefist,15446.9,-6163.18,1559,3,7,True,False,False
+53280,AscendancyMonk1Small1,Attack Speed,15360.5,-6485.8,1559,3,3,False,False,False
+65228,AscendancyMonk1Small2,Attack Speed,15438,-5875.8,1559,4,28,False,False,False
 52295,AscendancyMonk1Small3,Evasion and Energy Shield,15595.7,-6375.93,1559,4,15,False,False,False
+34081,AscendancyMonk1Small4,Area of Effect,15501.1,-6787.81,1559,5,7,False,False,False
+57449,AscendancyMonk1Small5,Area of Effect,14531,-6842.89,1559,6,63,False,False,False
+36643,AscendancyMonk1Small6,Additional Power Charge Chance,15197.4,-7085.43,1559,6,1,False,False,False
+20437,AscendancyMonk1Small7,Attributes,15404.2,-6649.37,1559,4,7,False,False,False
+37604,AscendancyMonk1Small8,Immobilisation Buildup,15934.7,-6032.48,1559,6,21,False,False,False
+11495,AscendancyMonk1Start,Martial Artist,15934.7,-6466.77,1559,6,15,False,False,False
 39292,AscendancyRanger3Small5,Evasion,16832.5,6899.92,1580,0,0,False,False,False
 19233,AscendancyHuntress1Small6,Elemental Damage,17979.2,5031.73,1590,0,0,False,False,False
+41401,AscendancyHuntress2Notable1,Vivid Stampede,18294.9,7530.9,1591,4,29,True,False,False
+27773,AscendancyHuntress2Notable2,The Mórrigan's Guidance,17725.7,7298.15,1591,3,16,True,False,False
+62743,AscendancyHuntress2Notable3,Wild Protector,18160.6,7957.41,1591,6,34,True,False,False
+765,AscendancyHuntress2Notable4,The Catha's Balance,17288.4,7550.65,1591,6,48,True,False,False
+46070,AscendancyHuntress2Notable5,Primal Bounty,17900.9,7778.17,1591,5,38,True,False,False
+4367,AscendancyHuntress2Notable6,The Mhacha's Gift,17358,7131.15,1591,5,54,True,False,False
+39887,AscendancyHuntress2Notable7,The Natural Order,18496.2,6443.89,1591,6,7,True,False,False
+56489,AscendancyHuntress2Notable8,Idolatry,18572.8,5934.83,1591,9,10,True,False,False
+28254,AscendancyHuntress2Notable9,Sacred Unity,18337.6,7044.71,1591,3,5,True,False,False
+26294,AscendancyHuntress2Small1,Movement Speed,18632.3,7355.86,1591,5,22,False,False,False
+62702,AscendancyHuntress2Small2_,Movement Speed,17930.2,7611.74,1591,4,38,False,False,False
+37769,AscendancyHuntress2Small3,Shared Companion Damage,18608.2,7724.42,1591,6,27,False,False,False
+21519,AscendancyHuntress2Small4,Shared Companion Damage,17660.4,7891.55,1591,6,41,False,False,False
 62424,AscendancyHuntress2Small5,Critical Chance,18391.8,7669.34,1591,5,29,False,False,False
 41085,AscendancyHuntress2Small6,Critical Chance,17511.7,7553.47,1591,5,46,False,False,False
+45228,AscendancyHuntress2Small7,Companion Life and Area,19026.1,6763.14,1591,8,14,False,False,False
+5733,AscendancyHuntress2Small8,Spirit,19185.8,6521.65,1591,9,25,False,False,False
+63493,AscendancyHuntress2Start,Spirit Walker,19054.3,7409.64,1591,8,21,False,False,False
 9294,AscendancyHuntress1Notable1,Critical Strike,18386,5659.28,1593,0,0,True,False,False
 7979,AscendancyHuntress1Notable6,Elemental Surge,18536.8,5093.42,1594,0,0,True,False,False
 60662,AscendancyHuntress1Small5,Elemental Damage,18846.7,5272.28,1597,0,0,False,False,False
