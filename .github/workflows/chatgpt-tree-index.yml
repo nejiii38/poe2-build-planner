@@ -26,6 +26,14 @@ jobs:
         run: python Builds/extract-target-nodes.py
       - name: Match screenshot cluster geometry
         run: python scripts/chatgpt_match_clusters.py
+      - name: Upload generated data
+        uses: actions/upload-artifact@v4
+        with:
+          name: chatgpt-tree-data
+          path: |
+            Builds/tree-node-index.csv
+            Builds/target-node-index.csv
+            Builds/cluster-match-candidates.txt
       - name: Commit generated indexes
         run: |
           git config user.name 'github-actions[bot]'
