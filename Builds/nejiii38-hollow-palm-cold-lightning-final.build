@@ -1,0 +1,104 @@
+{
+  "name": "Nejiii38 — Hollow Palm Cold + Lightning",
+  "author": "Nejiii38",
+  "description": "Hollow Palm multi-element build concept focused on cold/freeze and lightning/stun. Shattering Palm for clear/explosions, Charged Staff for lightning scaling, Holoform as main boss damage source. This file preserves the current finalized passive-tree direction for continued planner work.",
+  "gameVersion": "0.3.0",
+  "class": "Monk",
+  "ascendancy": "Invoker",
+  "level": 100,
+  "passives": {
+    "allocated": [
+      716279,
+      722286,
+      731283,
+      724281
+    ],
+    "weaponSet1": [],
+    "weaponSet2": [],
+    "masteries": {},
+    "notes": {
+      "716279": "Freeze route target",
+      "722286": "Freeze route target",
+      "731283": "Freeze route target",
+      "724281": "Freeze route target"
+    }
+  },
+  "skills": [
+    {
+      "name": "Shattering Palm",
+      "role": "Clear / Freeze / Overkill explosions",
+      "supports": []
+    },
+    {
+      "name": "Charged Staff",
+      "role": "Lightning damage / Shock-Stun pressure",
+      "supports": []
+    },
+    {
+      "name": "Holoform",
+      "role": "Primary boss damage source",
+      "supports": []
+    }
+  ],
+  "items": {},
+  "profiles": [
+    {
+      "minLevel": 1,
+      "maxLevel": 100,
+      "name": "Final Tree Direction",
+      "passives": {
+        "allocated": [
+          716279,
+          722286,
+          731283,
+          724281
+        ],
+        "weaponSet1": [],
+        "weaponSet2": [],
+        "masteries": {},
+        "notes": {
+          "716279": "Freeze route target",
+          "722286": "Freeze route target",
+          "731283": "Freeze route target",
+          "724281": "Freeze route target"
+        }
+      },
+      "skills": [
+        {
+          "name": "Shattering Palm",
+          "role": "Clear / Freeze / Overkill explosions",
+          "supports": []
+        },
+        {
+          "name": "Charged Staff",
+          "role": "Lightning damage / Shock-Stun pressure",
+          "supports": []
+        },
+        {
+          "name": "Holoform",
+          "role": "Primary boss damage source",
+          "supports": []
+        }
+      ],
+      "items": {}
+    }
+  ],
+  "metadata": {
+    "buildIntent": {
+      "elements": [
+        "Cold",
+        "Lightning"
+      ],
+      "priorities": [
+        "Freeze bosses",
+        "Stun bosses with lightning pressure",
+        "Elemental damage scaling",
+        "Shattering Palm overkill/explosion clear",
+        "Holoform boss damage"
+      ],
+      "critAssumption": "Equipment baseline around 40% critical hit chance; additional crit to be added selectively through supports such as Neural Overload/critical support where needed rather than over-investing in tree crit chance."
+    },
+    "source": "ChatGPT collaborative build planning session with Nejiii38",
+    "status": "final-direction"
+  }
+}
