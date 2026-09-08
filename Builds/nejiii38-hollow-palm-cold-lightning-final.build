@@ -1,7 +1,7 @@
 {
   "name": "Nejiii38 — Hollow Palm Cold + Lightning",
   "author": "Nejiii38",
-  "description": "Hollow Palm Martial Artist — Cold + Lightning. Freeze/Shattering Palm clear, Charged Staff + Shock/Electrocute bosses. 118 main passive points allocated (2 intentionally free from the 120-point reference), Weapon Set 1: 22, Weapon Set 2: 22, Ascendancy: 8. Reconstructed on the PoE2 0.5.2 tree from Maxroll bapdl0y6.",
+  "description": "Hollow Palm Martial Artist — Cold + Lightning. Freeze/Shattering Palm clear, Charged Staff + Shock/Electrocute bosses. 117 main passive points allocated (3 intentionally free from the 120-point reference), Weapon Set 1: 22, Weapon Set 2: 22, Ascendancy: 6 (2 intentionally free). Reconstructed on the PoE2 0.5.2 tree from Maxroll bapdl0y6.",
   "ascendancy": "Monk1",
   "passives": [
     "deflect61",
@@ -67,7 +67,6 @@
     },
     "dexterity46",
     "volatility8",
-    "elemental41_",
     "intelligence78",
     "chill_and_freeze2",
     "volatility10",
@@ -256,8 +255,6 @@
     "dexterity50",
     "AscendancyMonk1Small3",
     "AscendancyMonk1Notable8",
-    "AscendancyMonk1Small8",
-    "AscendancyMonk1Notable6",
     "AscendancyMonk1Small6",
     "AscendancyMonk1Notable7",
     "AscendancyMonk1Small4",
