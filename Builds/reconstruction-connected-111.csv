@@ -1,6 +1,112 @@
-skill,id,name,sx,sy,cream,red,green,bright,degree_in_candidate
-23822,deflect61,Life Recoup,862.755,174.432,0.097143,0.000000,0.000000,0.085714,2
-9652,deflect66,Mending Deflection,857.076,179.723,0.079545,0.000000,0.000000,0.079545,3
-51040,deflect60,Deflection and Energy Shield Delay,862.561,179.917,0.154286,0.000000,0.000000,0.120000,2
-58779,deflect65,Deflection and Energy Shield Delay,868.046,180.111,0.097143,0.000000,0.000000,0.097143,4
-47976,attributes12,Attribute,879.673,180.521,0.131429,0.000000,0.000000,0.125714,2
+skill,id,name,cream,red,green,degree
+23822,deflect61,Life Recoup,0.097,0.000,0.000,2
+9652,deflect66,Mending Deflection,0.080,0.000,0.000,3
+51040,deflect60,Deflection and Energy Shield Delay,0.154,0.000,0.000,2
+58779,deflect65,Deflection and Energy Shield Delay,0.097,0.000,0.000,4
+47976,attributes12,Attribute,0.131,0.000,0.000,2
+327,deflect63,Evasion and Energy Shield,0.086,0.000,0.000,2
+59538,intelligence67,Attribute,0.200,0.000,0.000,5
+22063,daze_16,Freeze Buildup and Cold Damage,0.177,0.000,0.000,1
+5797,daze_15,Freeze Buildup and Cold Damage,0.131,0.000,0.000,2
+38944,daze_13,Shock Chance and Lightning Damage,0.115,0.000,0.000,2
+43338,daze_14,Shock Chance and Lightning Damage,0.138,0.000,0.000,1
+13701,freeze_and_chill_mitigation4,Freeze and Chill Resistance,0.142,0.000,0.000,1
+31765,dexterity7,Attribute,0.107,0.023,0.000,4
+45631,evasion_and_energy_shield6_,Evasion and Energy Shield Delay,0.131,0.000,0.000,1
+26034,evasion_and_energy_shield5,Evasion and Energy Shield,0.216,0.006,0.000,2
+36231,power_charges5,Critical Damage when consuming a Power Charge,0.198,0.164,0.011,2
+3336,power_charges4,Critical Damage when consuming a Power Charge,0.385,0.149,0.000,2
+10162,mastery_power_charge_6641,Power Charge Mastery,0.136,0.227,0.028,1
+65204,power_charges8,Overflowing Power,0.132,0.144,0.000,2
+33404,passive_keystone_eternal_youth,Eternal Youth,0.229,0.034,0.000,1
+30615,power_charges6_,Critical Damage when consuming a Power Charge,0.190,0.144,0.029,2
+57821,dexterity9,Attribute,0.153,0.102,0.000,4
+722,dexterity46,Attribute,0.175,0.000,0.000,2
+46615,volatility8,Volatility when Stunned,0.171,0.046,0.000,1
+45798,volatility10,Volatility on Kill,0.169,0.006,0.000,2
+58329,intelligence77,Attribute,0.090,0.000,0.000,3
+51741,intelligence25,Attribute,0.114,0.006,0.000,3
+56360,power_charges2,Power Charge Duration,0.103,0.017,0.006,2
+56638,stun_threshold_if_no_recent_stun4,Stun Threshold if not Stunned recently,0.203,0.000,0.000,2
+24812,power_charges1,Power Charge Duration,0.097,0.034,0.000,1
+10677,stun_threshold_if_no_recent_stun3,Stun Threshold if not Stunned recently,0.147,0.000,0.000,2
+25281,mastery_life140,Life Mastery,0.143,0.000,0.000,1
+60362,criticals88_,Critical Damage,0.169,0.215,0.000,1
+61834,jewel_slot1961,[Jewel] Socket,0.091,0.000,0.000,2
+20909,cold_penetration3,Cold Penetration,0.155,0.034,0.000,1
+28638,mastery_quarterstaff_6654_,Quarterstaff Mastery,0.096,0.090,0.000,1
+29959,criticals87,Critical Damage,0.261,0.159,0.000,2
+53935,stun_threshold_if_no_recent_stun9,Briny Carapace,0.174,0.000,0.000,2
+11598,quarterstaff8,Quarterstaff Speed,0.131,0.080,0.000,2
+44891,cold_penetration2,Cold Penetration,0.303,0.022,0.000,3
+52537,cold_penetration4,Cold Penetration,0.143,0.046,0.000,1
+44516,quarterstaff9_,Quarterstaff Speed,0.171,0.154,0.000,2
+15775,dexterity47,Attribute,0.354,0.034,0.000,6
+17088,intelligence7,Attribute,0.108,0.131,0.000,2
+2113,quarterstaff18,Martial Artistry,0.097,0.097,0.000,2
+58692,evasion_and_energy_shield29_,Deflection and Energy Shield Delay,0.284,0.080,0.091,2
+15343,evasion_and_energy_shield33,Deflection and Energy Shield Delay,0.318,0.028,0.000,3
+8975,intelligence9,Attribute,0.142,0.045,0.000,1
+49356,evasion_and_energy_shield31,First Principle of the Hollow,0.354,0.140,0.090,1
+11604,attributes28,Attribute,0.118,0.045,0.000,3
+26556,evasion_and_energy_shield34,Deflection and Energy Shield Delay,0.223,0.091,0.109,3
+42078,evasion_and_energy_shield37,The Hollowkeeper,0.239,0.131,0.051,1
+21713,accuracy12,Accuracy,0.091,0.034,0.000,1
+38676,attack41__,Attack Damage,0.233,0.153,0.000,1
+61196,intelligence10,Attribute,0.209,0.102,0.000,5
+60239,evasion_and_energy_shield32,Evasion and Energy Shield,0.157,0.041,0.035,2
+47021,volatility17,Volatility Detonation Time,0.160,0.057,0.000,1
+55088,criticals12,Critical Chance,0.160,0.206,0.000,1
+59657,evasion_and_energy_shield28,First Teachings of the Keeper,0.242,0.124,0.129,2
+36778,lightning42,Shock Chance,0.079,0.130,0.023,1
+36217,volatility16,Volatility Detonation Time,0.163,0.045,0.000,2
+56045,dexterity6,Attribute,0.274,0.086,0.000,4
+58593,evasion_and_energy_shield30,Evasion and Energy Shield,0.135,0.028,0.213,1
+34233,attack_speed37,Flow State,0.073,0.257,0.011,2
+32545,attack_speed47,Skill Speed,0.075,0.149,0.006,2
+4157,criticals11,Critical Chance,0.074,0.199,0.034,1
+29990,volatility13,Volatility on Kill,0.119,0.119,0.000,2
+62841,evasion_and_energy_shield17,Evasion and Energy Shield,0.175,0.011,0.000,2
+30808,attributes11,Attribute,0.114,0.063,0.000,4
+14725,attack_speed46,Skill Speed,0.101,0.197,0.051,2
+62984,evasion_and_energy_shield35_,Mindful Awareness,0.084,0.062,0.090,2
+28859,ailments47,Ailment Chance and Elemental Damage,0.144,0.046,0.000,1
+21336,evasion_and_energy_shield26,Evasion and Energy Shield,0.147,0.090,0.056,2
+15975,evasion_and_energy_shield27,Evasion and Energy Shield,0.073,0.085,0.062,2
+53941,evasion_and_energy_shield15,Shimmering,0.090,0.000,0.017,1
+49220,shadow_monk_notable1,Flow Like Water,0.233,0.068,0.085,6
+33866,attack_damage3,Attack Damage,0.170,0.188,0.034,2
+10429,mastery_trap236,Trap Mastery,0.102,0.193,0.000,1
+7576,attack_damage1,Attack Damage,0.079,0.202,0.011,2
+48198,shadow_monk_notable2,Step Like Mist,0.171,0.051,0.091,2
+42857,attack_speed27,Skill Speed,0.091,0.114,0.000,2
+39964,mana11,Mana Regeneration,0.146,0.079,0.039,2
+10364,attack_speed25,Skill Speed,0.156,0.140,0.006,2
+11938,mana10,Mana Regeneration,0.099,0.105,0.012,2
+18970,evasion_and_energy_shield3,Evasion and Energy Shield,0.102,0.085,0.006,2
+3640,unarmed1,Attack Damage and Combo,0.164,0.040,0.000,2
+44683,six704,SIX,0.073,0.090,0.006,2
+14267,dexterity48,Attribute,0.112,0.028,0.000,4
+52980,evasion_and_energy_shield1,Evasion and Energy Shield,0.086,0.075,0.006,2
+17724,unarmed3,Attack Damage,0.149,0.257,0.000,1
+38212,monkchakra13,Life Recoup,0.154,0.017,0.000,1
+54545,daze_8,Daze Magnitude,0.254,0.395,0.000,2
+38342,daze_2,Stupefy,0.326,0.465,0.000,2
+39128,daze_9,Daze Magnitude,0.218,0.391,0.000,2
+21945,daze_3,Damage and Criticals vs Dazed Enemies,0.269,0.554,0.000,5
+61718,daze_4,Damage vs Dazed Enemies,0.246,0.363,0.000,2
+47514,daze_19,Dizzying Hits,0.152,0.258,0.000,2
+26572,daze_7,Criticals vs Dazed Enemies,0.229,0.377,0.000,2
+14262,attributes27,Attribute,0.114,0.000,0.000,2
+32763,jewel_slot1976,[Jewel] Socket,0.170,0.000,0.000,3
+54983,criticals59,Attack Critical Chance,0.124,0.175,0.000,1
+38537,criticals53,Heartstopping,0.085,0.193,0.000,3
+51583,mastery_criticals64,Critical Mastery,0.192,0.271,0.000,1
+55621,criticals56,Critical Chance,0.073,0.174,0.000,2
+23040,criticals58,Critical Damage,0.086,0.183,0.000,1
+38493,criticals52,Critical Damage,0.107,0.085,0.000,3
+14539,evasion27,Deflection and Evasion,0.112,0.101,0.017,1
+44776,evasion24_,Evasion,0.091,0.028,0.000,3
+48773,dexterity50,Attribute,0.140,0.028,0.000,3
+1841,evasion21,Evasion,0.096,0.124,0.006,2
+9405,evasion28,Evasion,0.081,0.121,0.017,1
