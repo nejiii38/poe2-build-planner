@@ -1,51 +1,29 @@
-# HOLLOW DOMINION — Project Reference Hub
+# HOLLOW DOMINION — Project Archive
 
-Ce dossier est la référence centrale du projet **HOLLOW DOMINION** afin qu'une autre conversation ChatGPT puisse retrouver rapidement les éléments essentiels sans reconstruire le contexte depuis zéro.
+Dossier de référence persistant pour le projet **HOLLOW DOMINION** (PoE 2, arbre 0.5.2).
+
+## Règle de travail
+
+Toute nouvelle conversation ChatGPT qui reprend ce projet doit commencer par consulter ce dossier avant de modifier le build, l'arbre, les visuels ou un futur diaporama.
 
 ## Sources de vérité
 
-1. `reference/HOLLOW_DOMINION_reference.build`
-   - `.build` de référence désigné par l'utilisateur.
-   - Contient 120 passifs principaux et 9 entrées d'Ascendancy en comptant `AscendancyMonk1Start`; cela correspond à 8 points d'Ascendancy dépensés.
-   - La description interne du fichier est ancienne et ne doit PAS être utilisée pour recompter les allocations.
-
-2. `reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`
-   - Rapport validé : IDs, noms, types et coordonnées des 120 passifs + 8 passifs Martial Artist.
-
-3. `../Skill Trees/0.5.2/data.json`
-   - Vérité structurelle pour la géométrie, les coordonnées et les connexions de l'arbre PoE 2 version 0.5.2.
+- `reference/HOLLOW_DOMINION_reference.build` : fichier `.build` de référence désigné par Nejib. Le champ `description` interne est ancien ; les allocations sérialisées sont la vérité.
+- `reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` : rapport validé ID ↔ nom ↔ type ↔ coordonnées.
+- `../Skill Trees/0.5.2/data.json` : source structurelle officielle pour les coordonnées et connexions réelles de l'arbre.
+- Référence d'allocation validée : **120 passifs principaux + 8 passifs Martial Artist dépensés**, avec `AscendancyMonk1Start` comme point de départ non compté.
 
 ## Références visuelles
 
-- `visuals/HOLLOW_DOMINION_passive_tree_master.webp`
-  - Master technique de l'arbre passif validé.
-  - Les Notables importants sont placés sur leurs coordonnées réelles 0.5.2.
-  - Ne jamais déplacer un nœud pour l'esthétique; seuls les labels peuvent être décalés.
+- `images/passive_tree_master.webp` : master de l'arbre validé, avec les Notables importants replacés sur leurs coordonnées réelles.
+- Les planches **Skills / Supports** et **Anneaux + Ingenuity** font partie du projet et doivent conserver l'identité visuelle HOLLOW DOMINION : noir/bleu électrique, Cold bleu, Lightning or, cadres métalliques et typographie fantasy PoE.
 
-- `visuals/HOLLOW_DOMINION_skills_supports_reference.webp`
-  - Planche du build : Hollow Form, Shattering Palm, Charged Staff, Tempest Bell, Hollow Resonance, Hollow Focus, Charge Regulation, Convalescence, Spirit Vessel, Elemental Conflux, supports, réservations et prérequis.
+## Identité du build
 
-- `visuals/HOLLOW_DOMINION_ingenuity_rings_reference.webp`
-  - Planche équipement dédiée aux deux bagues Cold/Lightning et à la ceinture Ingenuity.
+**HOLLOW DOMINION — Cold / Lightning Martial Artist**, par Nejib.
 
-## Identité visuelle à conserver
+Axes : Freeze / Shattering Palm pour le clear, Charged Staff + Shock/Electrocute pour les boss, Hollow Form comme DPS boss, contrôle par Freeze/Stun, critiques, multi-éléments et équilibre défense/offense.
 
-- Fond sombre noir / bleu électrique.
-- Cold : bleu / cyan.
-- Lightning : or / jaune électrique.
-- Cadres métalliques / fantasy PoE.
-- Typographie fantasy lisible avec hiérarchie très structurée.
-- Informations techniques denses mais organisées en panneaux.
+## Consigne technique importante
 
-## Règles importantes pour les futures conversations
-
-- Ne jamais inventer la géométrie de l'arbre passif.
-- Pour l'arbre, utiliser `Skill Trees/0.5.2/data.json` + le `.build` de référence + le rapport d'identification.
-- 120 passifs principaux + 8 points Martial Artist dépensés.
-- `AscendancyMonk1Start` est un repère graphique et n'est pas compté comme point dépensé.
-- Ne pas se fier au texte de description obsolète intégré au `.build` pour les comptes.
-- Les visuels présents dans `visuals/` sont des références de direction artistique et de contenu.
-
-## Note sur les images
-
-Les fichiers WebP de ce dossier sont des copies de référence optimisées pour consultation rapide depuis GitHub. Les originaux PNG haute résolution peuvent rester dans la conversation de production, mais ces versions sont suffisantes pour transmettre le contenu, la mise en page et la direction artistique à une autre conversation.
+Pour l'arbre passif, ne jamais inventer ou déplacer un nœud. Toujours utiliser les coordonnées et connexions réelles de `Skill Trees/0.5.2/data.json`. Les labels peuvent être déplacés pour la lisibilité, les nœuds non.
