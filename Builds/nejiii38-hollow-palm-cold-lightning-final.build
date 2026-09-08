@@ -1,104 +1,268 @@
 {
   "name": "Nejiii38 — Hollow Palm Cold + Lightning",
   "author": "Nejiii38",
-  "description": "Hollow Palm multi-element build concept focused on cold/freeze and lightning/stun. Shattering Palm for clear/explosions, Charged Staff for lightning scaling, Holoform as main boss damage source. This file preserves the current finalized passive-tree direction for continued planner work.",
-  "gameVersion": "0.3.0",
-  "class": "Monk",
-  "ascendancy": "Invoker",
-  "level": 100,
-  "passives": {
-    "allocated": [
-      716279,
-      722286,
-      731283,
-      724281
-    ],
-    "weaponSet1": [],
-    "weaponSet2": [],
-    "masteries": {},
-    "notes": {
-      "716279": "Freeze route target",
-      "722286": "Freeze route target",
-      "731283": "Freeze route target",
-      "724281": "Freeze route target"
-    }
-  },
-  "skills": [
+  "description": "Hollow Palm Martial Artist — Cold + Lightning. Freeze/Shattering Palm clear, Charged Staff + Shock/Electrocute bosses. 118 main passive points allocated (2 intentionally free from the 120-point reference), Weapon Set 1: 22, Weapon Set 2: 22, Ascendancy: 8. Reconstructed on the PoE2 0.5.2 tree from Maxroll bapdl0y6.",
+  "ascendancy": "Monk1",
+  "passives": [
+    "deflect61",
+    "deflect66",
+    "deflect60",
+    "deflect65",
+    "attributes12",
+    "deflect63",
+    "intelligence67",
+    "daze_16",
+    "daze_15",
+    "daze_13",
+    "daze_14",
+    "freeze_and_chill_mitigation4",
     {
-      "name": "Shattering Palm",
-      "role": "Clear / Freeze / Overkill explosions",
-      "supports": []
+      "id": "dexterity7",
+      "weapon_set": 2
+    },
+    "evasion_and_energy_shield6_",
+    {
+      "id": "power_charges5",
+      "weapon_set": 2
+    },
+    "evasion_and_energy_shield5",
+    "elemental44",
+    "elemental42",
+    {
+      "id": "power_charges4",
+      "weapon_set": 2
+    },
+    "cold37",
+    "lightning40",
+    {
+      "id": "mastery_power_charge_6641",
+      "weapon_set": 1
     },
     {
-      "name": "Charged Staff",
-      "role": "Lightning damage / Shock-Stun pressure",
-      "supports": []
+      "id": "power_charges8",
+      "weapon_set": 1
+    },
+    "elemental46",
+    {
+      "id": "power_charges6_",
+      "weapon_set": 2
     },
     {
-      "name": "Holoform",
-      "role": "Primary boss damage source",
-      "supports": []
-    }
+      "id": "passive_keystone_eternal_youth",
+      "weapon_set": 1
+    },
+    "elemental22",
+    {
+      "id": "area_attacks54",
+      "weapon_set": 1
+    },
+    {
+      "id": "dexterity9",
+      "weapon_set": 1
+    },
+    "intelligence79",
+    {
+      "id": "area_attacks53",
+      "weapon_set": 1
+    },
+    "dexterity46",
+    "volatility8",
+    "elemental41_",
+    "intelligence78",
+    "chill_and_freeze2",
+    "volatility10",
+    "chill_and_freeze1",
+    "chill_and_freeze8",
+    "chill_and_freeze3",
+    "intelligence25",
+    "intelligence77",
+    "criticals89",
+    "criticals90",
+    "power_charges2",
+    "criticals88_",
+    "cold_penetration3",
+    "mastery_quarterstaff_6654_",
+    "power_charges1",
+    "criticals87",
+    "stun_threshold_if_no_recent_stun4",
+    "jewel_slot1961",
+    {
+      "id": "quarterstaff8",
+      "weapon_set": 1
+    },
+    "stun_threshold_if_no_recent_stun3",
+    "cold_penetration2",
+    "quarterstaff9_",
+    {
+      "id": "dexterity47",
+      "weapon_set": 1
+    },
+    "cold_penetration4",
+    "stun_threshold_if_no_recent_stun9",
+    "quarterstaff18",
+    {
+      "id": "intelligence7",
+      "weapon_set": 1
+    },
+    {
+      "id": "evasion_and_energy_shield33",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield29_",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield31",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield34",
+      "weapon_set": 2
+    },
+    {
+      "id": "intelligence9",
+      "weapon_set": 1
+    },
+    {
+      "id": "evasion_and_energy_shield37",
+      "weapon_set": 2
+    },
+    {
+      "id": "attributes28",
+      "weapon_set": 1
+    },
+    "passive_keystone_hollow_palm_technique",
+    "volatility17",
+    {
+      "id": "evasion_and_energy_shield32",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield28",
+      "weapon_set": 2
+    },
+    "volatility16",
+    "accuracy12",
+    "attack41__",
+    "intelligence10",
+    {
+      "id": "evasion_and_energy_shield36",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield30",
+      "weapon_set": 2
+    },
+    "volatility13",
+    {
+      "id": "criticals12",
+      "weapon_set": 1
+    },
+    "attributes11",
+    {
+      "id": "dexterity6",
+      "weapon_set": 1
+    },
+    "lightning42",
+    "attack_speed37",
+    {
+      "id": "attack_speed47",
+      "weapon_set": 1
+    },
+    {
+      "id": "criticals11",
+      "weapon_set": 2
+    },
+    "evasion_and_energy_shield17",
+    "ailments47",
+    {
+      "id": "attack_speed46",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield35_",
+      "weapon_set": 2
+    },
+    {
+      "id": "evasion_and_energy_shield26",
+      "weapon_set": 2
+    },
+    "evasion_and_energy_shield15",
+    {
+      "id": "evasion_and_energy_shield27",
+      "weapon_set": 2
+    },
+    {
+      "id": "shadow_monk_notable1",
+      "weapon_set": 2
+    },
+    "attack_damage3",
+    {
+      "id": "shadow_monk_notable2",
+      "weapon_set": 2
+    },
+    "attack_damage1",
+    "unarmed1",
+    "attack_speed27",
+    {
+      "id": "mana11",
+      "weapon_set": 2
+    },
+    "dexterity48",
+    {
+      "id": "mana10",
+      "weapon_set": 2
+    },
+    "attack_speed25",
+    "unarmed3",
+    "evasion_and_energy_shield3",
+    "evasion_and_energy_shield1",
+    "six704",
+    "monkchakra13",
+    {
+      "id": "daze_8",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_2",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_9",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_3",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_4",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_19",
+      "weapon_set": 1
+    },
+    {
+      "id": "daze_7",
+      "weapon_set": 1
+    },
+    "jewel_slot1976",
+    {
+      "id": "attributes27",
+      "weapon_set": 1
+    },
+    "dexterity50",
+    "AscendancyMonk1Small3",
+    "AscendancyMonk1Notable8",
+    "AscendancyMonk1Small8",
+    "AscendancyMonk1Notable6",
+    "AscendancyMonk1Small6",
+    "AscendancyMonk1Notable7",
+    "AscendancyMonk1Small4",
+    "AscendancyMonk1Notable3"
   ],
-  "items": {},
-  "profiles": [
-    {
-      "minLevel": 1,
-      "maxLevel": 100,
-      "name": "Final Tree Direction",
-      "passives": {
-        "allocated": [
-          716279,
-          722286,
-          731283,
-          724281
-        ],
-        "weaponSet1": [],
-        "weaponSet2": [],
-        "masteries": {},
-        "notes": {
-          "716279": "Freeze route target",
-          "722286": "Freeze route target",
-          "731283": "Freeze route target",
-          "724281": "Freeze route target"
-        }
-      },
-      "skills": [
-        {
-          "name": "Shattering Palm",
-          "role": "Clear / Freeze / Overkill explosions",
-          "supports": []
-        },
-        {
-          "name": "Charged Staff",
-          "role": "Lightning damage / Shock-Stun pressure",
-          "supports": []
-        },
-        {
-          "name": "Holoform",
-          "role": "Primary boss damage source",
-          "supports": []
-        }
-      ],
-      "items": {}
-    }
-  ],
-  "metadata": {
-    "buildIntent": {
-      "elements": [
-        "Cold",
-        "Lightning"
-      ],
-      "priorities": [
-        "Freeze bosses",
-        "Stun bosses with lightning pressure",
-        "Elemental damage scaling",
-        "Shattering Palm overkill/explosion clear",
-        "Holoform boss damage"
-      ],
-      "critAssumption": "Equipment baseline around 40% critical hit chance; additional crit to be added selectively through supports such as Neural Overload/critical support where needed rather than over-investing in tree crit chance."
-    },
-    "source": "ChatGPT collaborative build planning session with Nejiii38",
-    "status": "final-direction"
-  }
+  "skills": [],
+  "inventory_slots": []
 }
