@@ -66,6 +66,20 @@ The build's Hollow Form target resolves the ascendancy unambiguously to **Martia
 
 Other Martial Artist branches in the data include Hollow Focus Technique, Hollow Resonance Technique, Martial Adept/Martial Master, Runic Meridians, Way of the Mountain, and Way of the Stonefist. The exact remaining 6 ascendancy-point allocation is still being matched rather than guessed.
 
+## Full allocation reconstruction pass — started
+
+The next-stage image/topology pass is now running against the real 0.5.2 graph rather than against approximate screenshot coordinates alone.
+
+Current raw visual detection finds **132 candidate allocated nodes** after excluding the obvious Maxroll UI and bottom-bar regions. They split into:
+
+- 99 cream/common candidates
+- 25 red weapon-set candidates
+- 8 green weapon-set candidates
+
+These are deliberately treated as candidates, not as final allocations. On the real passive-tree graph they currently form large connected components of 40 and 26 nodes plus several smaller components. The next cleanup step is to use graph continuity from the Monk start and the known highlighted branches to eliminate UI/colour false positives and restore any visually weak bridge nodes.
+
+This pass is also what will resolve the exact weapon-set ownership before serialization, so the final `.build` can use the planner's real `weapon_set` field instead of flattening the two sets together.
+
 ## Build constraints
 
 - Hollow Palm
@@ -82,4 +96,4 @@ Other Martial Artist branches in the data include Hollow Focus Technique, Hollow
 
 ## Reproduction status
 
-The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin and the removed critical branch. The Elemental and Freeze target groups are resolved to real 0.5.2 node IDs, real topology and real stats. The class is now confirmed as Monk and the ascendancy as Martial Artist (`Monk1`) because Hollow Form Technique exists only on that ascendancy. Remaining work is reconstructing the full common/weapon-set allocation and resolving the other 6 ascendancy points, then applying the verified 12-out / 10-in delta and serializing the final `.build`.
+The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin and the removed critical branch. The Elemental and Freeze target groups are resolved to real 0.5.2 node IDs, real topology and real stats. The class is confirmed as Monk and the ascendancy as Martial Artist (`Monk1`). The full common/weapon-set reconstruction pass has now started; after graph cleanup and the remaining ascendancy match, the verified 12-out / 10-in delta will be applied and the final `.build` serialized.
