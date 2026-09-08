@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { CSSProperties } from 'react';
+import { parseBuild } from './buildfile';
+import finalBuildPreset from '../Builds/nejiii38-hollow-palm-cold-lightning-final.build?raw';
 import { loadTreeData, loadAtlas } from './tree/source';
 import type { Atlas } from './tree/source';
 import { loadGems } from './gems';
@@ -24,10 +26,13 @@ const splash: CSSProperties = {
   textTransform: 'uppercase', fontSize: 15,
 };
 
+const FINAL_BUILD_PRESET = 'nejiii38-hollow-palm-cold-lightning-final';
+
 export default function App() {
   const tree = useStore((s) => s.tree);
   const setTree = useStore((s) => s.setTree);
   const setGems = useStore((s) => s.setGems);
+  const loadBuild = useStore((s) => s.loadBuild);
   const [atlases, setAtlases] = useState<{ skills: Atlas; frames: Atlas } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [screen, setScreen] = useState<Screen>('tree');
@@ -45,6 +50,14 @@ export default function App() {
         if (cancelled) return;
         setTree(t);
         setGems(gems);
+
+        // Optional URL preset. It deliberately goes through the exact same
+        // parseBuild -> loadBuild path as the existing local-file Load button.
+        const preset = new URLSearchParams(window.location.search).get('preset');
+        if (preset === FINAL_BUILD_PRESET) {
+          loadBuild(parseBuild(finalBuildPreset));
+        }
+
         setAtlases({ skills, frames });
       } catch (e) {
         if (!cancelled) setError(String(e));
@@ -53,7 +66,7 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [setTree, setGems]);
+  }, [setTree, setGems, loadBuild]);
 
   if (error)
     return (
