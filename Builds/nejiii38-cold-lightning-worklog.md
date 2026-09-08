@@ -54,6 +54,18 @@ Contribution of this six-point target: **40% unconditional increased Elemental D
 
 Contribution of this four-point target: **75% increased Freeze Buildup**, **20% increased Chill Duration**, and **20% increased Chill Magnitude**.
 
+## Class / Ascendancy — verified
+
+The tree start at the centre maps to internal node `six704`, which is the **Monk** start in the 0.5.2 data.
+
+The build's Hollow Form target resolves the ascendancy unambiguously to **Martial Artist (`Monk1`)**:
+
+- `AscendancyMonk1Start` — Martial Artist
+- `AscendancyMonk1Small6` — 10% chance when gaining a Power Charge to gain an additional Power Charge
+- `AscendancyMonk1Notable7` — **Hollow Form Technique** — Grants Skill: Hollow Form
+
+Other Martial Artist branches in the data include Hollow Focus Technique, Hollow Resonance Technique, Martial Adept/Martial Master, Runic Meridians, Way of the Mountain, and Way of the Stonefist. The exact remaining 6 ascendancy-point allocation is still being matched rather than guessed.
+
 ## Build constraints
 
 - Hollow Palm
@@ -70,4 +82,4 @@ Contribution of this four-point target: **75% increased Freeze Buildup**, **20% 
 
 ## Reproduction status
 
-The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin and the removed critical branch. The Elemental and Freeze target groups are resolved to real 0.5.2 node IDs, real topology and real stats. The remaining task is reconstructing the complete original allocation, including weapon-set colouring and ascendancy, then applying the verified 12-out / 10-in delta and serializing the final `.build`.
+The screenshot-to-real-tree coordinate transform has been validated against exact node centres, including Beastial Skin and the removed critical branch. The Elemental and Freeze target groups are resolved to real 0.5.2 node IDs, real topology and real stats. The class is now confirmed as Monk and the ascendancy as Martial Artist (`Monk1`) because Hollow Form Technique exists only on that ascendancy. Remaining work is reconstructing the full common/weapon-set allocation and resolving the other 6 ascendancy points, then applying the verified 12-out / 10-in delta and serializing the final `.build`.
