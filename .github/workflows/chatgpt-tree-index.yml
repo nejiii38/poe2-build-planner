@@ -1,0 +1,28 @@
+name: ChatGPT Tree Index
+
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/chatgpt-tree-index.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/current-build
+      - name: Generate compact node index
+        run: python scripts/chatgpt_extract_tree_index.py
+      - name: Commit generated index to work branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Builds/tree-node-index.csv
+          git diff --cached --quiet && exit 0
+          git commit -m 'Generate compact passive tree index [skip ci]'
+          git push origin HEAD:chatgpt/current-build
