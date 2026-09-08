@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/chatgpt_extract_tree_index.py'
       - 'scripts/chatgpt_match_clusters.py'
+      - 'scripts/chatgpt_map_known_coords.py'
       - 'Builds/extract-target-nodes.py'
       - '.github/workflows/chatgpt-tree-index.yml'
   workflow_dispatch:
@@ -26,6 +27,8 @@ jobs:
         run: python Builds/extract-target-nodes.py
       - name: Match screenshot cluster geometry
         run: python scripts/chatgpt_match_clusters.py
+      - name: Map known screenshot coordinates
+        run: python scripts/chatgpt_map_known_coords.py
       - name: Upload generated data
         uses: actions/upload-artifact@v4
         with:
@@ -34,11 +37,12 @@ jobs:
             Builds/tree-node-index.csv
             Builds/target-node-index.csv
             Builds/cluster-match-candidates.txt
+            Builds/known-coordinate-map.txt
       - name: Commit generated indexes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add Builds/tree-node-index.csv Builds/target-node-index.csv Builds/cluster-match-candidates.txt
+          git add Builds/tree-node-index.csv Builds/target-node-index.csv Builds/cluster-match-candidates.txt Builds/known-coordinate-map.txt
           git diff --cached --quiet && exit 0
-          git commit -m 'Generate passive tree indexes and cluster matches [skip ci]'
+          git commit -m 'Generate passive tree indexes, matches and coordinate map [skip ci]'
           git push origin HEAD:chatgpt/current-build
