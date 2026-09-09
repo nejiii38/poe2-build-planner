@@ -1,5 +1,5 @@
 window.HOLLOW_DOMINION_DATA={
-meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.9-freeze-engine",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel et Vitality II sont exclus. Danseur du vent est actif. Direction Freeze boss validée : Freezing Mark + Ice Bite II sur Shattering Palm afin que le premier Freeze donne ensuite à Hollow Form une composante Cold. Biting Frost II est exclu. Pour cette phase, l’arbre et les bonus permanents de campagne restent verrouillés."},
+meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.10-freezing-mark-supports",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel et Vitality II sont exclus. Danseur du vent est actif. Direction Freeze boss validée : Freezing Mark + Ice Bite II sur Shattering Palm afin que le premier Freeze donne ensuite à Hollow Form une composante Cold. Supports Freezing Mark verrouillés : Eternal Mark, Prolonged Duration II, Charged Mark et Mark for Death II. Biting Frost II est exclu. Pour cette phase, l’arbre et les bonus permanents de campagne restent verrouillés."},
 rules:{endgameElementalPenalty:-60,endgameChaosPenalty:0,resistanceCap:75,ingenuityRounding:"floor-per-mod",qualityLocalDefenceMorePerPct:1},
 campaignFixed:{
 attributes:{strength:5,dexterity:5,intelligence:5},flatLife:20,maxLifePct:5,maxManaPct:5,spirit:100,manaRegenPct:25,kaomDefencesPct:30,resistances:{fire:15,cold:15,lightning:15,chaos:0},ancientVowsCharmChargesGainedPct:30,manaRecoveryFromFlasksPct:30,
@@ -19,7 +19,7 @@ ringTopaz:{slot:"Bague droite",name:"Bague de Topaze",rarity:"Rare BiS — trava
 skills:[
 {name:"Hollow Form → Whirling Assault",role:"Main DPS boss",active:true,supports:["Heavy Swing","Heightened Charges","Blindside","Vorana's Siege"]},
 {name:"Shattering Palm",role:"Clear / setup Freeze boss / Overkill",active:true,supports:["Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest","Ice Bite II"],optionalSupports:["Ancestral Call II — clear swap"]},
-{name:"Freezing Mark",role:"Boss setup / amplification Freeze / Cold gain",active:true,supports:[]},
+{name:"Freezing Mark",role:"Boss setup / amplification Freeze / Cold gain",active:true,supports:["Eternal Mark","Prolonged Duration II","Charged Mark","Mark for Death II"]},
 {name:"Charged Staff",role:"Lightning / Shock / Blind / contrôle boss",active:true,supports:["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"]},
 {name:"Tempest Bell",role:"Burst élémentaire",active:true,supports:["Heavy Swing","Close Combat II","Ancestral Call II","Overabundance II","Rage III"]},
 {name:"Hollow Resonance",role:"Stun",active:true,supports:["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"]},
@@ -30,7 +30,7 @@ skills:[
 ],
 priorities:[
 {id:1,title:"Sustain Mana",status:"OPEN",note:"Problème réel quantifié sur la bêta ; priorité à Mana Regeneration Rate sans ralentir Hollow Form."},
-{id:2,title:"Freeze boss — moteur Hollow Form",status:"TEST",note:"Freezing Mark + Ice Bite II intégrés. Rotation de travail : Mark → ~4 Shattering Palm → Freeze → Tempest Bell → Hollow Form. Vérifier que Hollow Form entretient ensuite le Freeze."},
+{id:2,title:"Freeze boss — moteur Hollow Form",status:"TEST",note:"Freezing Mark + Ice Bite II intégrés. Supports Freezing Mark verrouillés : Eternal Mark + Prolonged Duration II + Charged Mark + Mark for Death II. Rotation : Mark → ~4 Shattering Palm → Freeze → Tempest Bell → Hollow Form."},
 {id:3,title:"Chance de critique réelle",status:"ACTIVE",note:"Utiliser les deux suffixes libres, comparer Duality 15% et les Jewel Sockets sans toucher à l'arbre."},
 {id:4,title:"Budget Spirit",status:"OPEN",note:"Réservation actuelle : 100 / 226, soit 126 Esprit libres. Elemental Conflux reste optionnel ; le +61 Spirit du torse est candidat au remplacement."},
 {id:5,title:"Gros hits physiques",status:"OPEN",note:"Améliorer sans casser ES/Evasion/contrôle."},
