@@ -43,7 +43,7 @@ function renderEditor(){
   $('#editorFields').querySelectorAll('select[data-stat-path]').forEach(s=>s.onchange=()=>{setPath(data,s.dataset.statPath,s.value||null);save();render();});
 }
 function save(){localStorage.setItem('hd-live-data',JSON.stringify(data));localStorage.setItem('hd-live-tree',JSON.stringify(tree));}
-try{const sd=localStorage.getItem('hd-live-data'),st=localStorage.getItem('hd-live-tree');if(sd)data=JSON.parse(sd);if(st)tree=JSON.parse(st);}catch(e){}
+try{const sd=localStorage.getItem('hd-live-data'),st=localStorage.getItem('hd-live-tree');if(sd){const parsed=JSON.parse(sd);if(parsed?.meta?.stateVersion===baseData.meta.stateVersion)data=parsed;}if(st){const parsedTree=JSON.parse(st);if(parsedTree?.meta?.gameVersion===baseTree.meta.gameVersion&&parsedTree?.meta?.mainPassives===baseTree.meta.mainPassives)tree=parsedTree;}}catch(e){}
 $('#editBtn').onclick=()=>document.body.classList.toggle('open');$('#resetBtn').onclick=()=>{data=JSON.parse(JSON.stringify(baseData));tree=JSON.parse(JSON.stringify(baseTree));localStorage.removeItem('hd-live-data');localStorage.removeItem('hd-live-tree');render();};$('#exportBtn').onclick=()=>{const payload={data,tree,calculated:HD_CALC.calcAll(data,tree)},blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='HOLLOW_DOMINION_live_state.json';a.click();URL.revokeObjectURL(a.href);};
 render();
 })();
