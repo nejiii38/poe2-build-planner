@@ -4,7 +4,7 @@
     "width": 1672,
     "height": 941,
     "status": "user-designated reference for build values, layout, and visual extraction",
-    "note": "Le live build en ligne affiche maintenant des vignettes équipement / compétences extraites depuis cette image de référence, sous forme de data-URIs embarquées dans assets-data.js."
+    "note": "Le live build affiche désormais les visuels extraits de cette image via des SVG embarquant des WebP compressés : une vignette par équipement et un sprite 3x3 pour les compétences."
   },
   "gear_crops": {
     "helmet": [64, 133, 171, 286],
@@ -27,5 +27,9 @@
     "charge-regulation": [1010, 650, 1161, 802],
     "spirit-vessel": [1300, 650, 1440, 802],
     "elemental-conflux": [1440, 650, 1602, 802]
+  },
+  "live_assets": {
+    "gear": "assets/gear/*.svg",
+    "skills": "assets/skills/skills-sprite.svg"
   }
 }
