@@ -2,9 +2,11 @@
 
 **Path of Exile 2 • Martial Artist • Cold / Lightning • version 0.5.2 • by Nejib**
 
-Ce fichier est la transcription opérationnelle du document maître fourni par Nejib. Il sert de référence prioritaire pour poursuivre le theorycraft, la validation technique, la reconstruction de l’arbre et la création du futur guide/diaporama HOLLOW DOMINION.
+**Mise à jour opérationnelle : 2026-09-09 — tests bêta en maps, sustain Mana, Freeze boss, Spirit Vessel / Wind Dancer.**
 
-> En cas de contradiction avec une information plus ancienne, une décision indiquée ici comme verrouillée prévaut.
+Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMINION. Il sert à poursuivre le theorycraft, la validation technique, la reconstruction de l’arbre, le live build et le futur guide/diaporama.
+
+> En cas de contradiction avec une information plus ancienne, une décision indiquée ici comme **verrouillée** prévaut.
 
 ## 1. Identité et règles verrouillées
 
@@ -16,6 +18,8 @@ Ce fichier est la transcription opérationnelle du document maître fourni par N
 - Pour le visuel de l’arbre : travailler comme un arbre Default unique de **120 passifs + 8 passifs d’Ascendancy**. Ne pas afficher ni commenter les Weapon Sets.
 - Priorité du build : **Hollow Form → Whirling Assault** pour le boss DPS ; **Shattering Palm** pour clear/Cold/Freeze ; Lightning pour Shock/contrôle et **Charged Staff**.
 - Philosophie : build très offensif, avec contrôle Freeze/Stun et une vraie couche **Evasion + Energy Shield**.
+- Constat bêta : avec les uniques clés mais des rares encore lambda, **les dégâts sont déjà impressionnants et le clear est très fluide**. Ne pas chercher à augmenter l’offense tant que Mana / contrôle boss / survie ne sont pas fiabilisés.
+- Convention live build : **les noms des gemmes de soutien restent en anglais**.
 
 ## 2. Arbre passif — vérité validée
 
@@ -26,6 +30,8 @@ Ce fichier est la transcription opérationnelle du document maître fourni par N
 - Méthode obligatoire pour le visuel : rendu déterministe depuis les IDs, coordonnées et connexions du `data.json`, contrôlé par les screenshots du vrai Build Planner.
 - **Ne jamais utiliser un générateur d’images pour redessiner la topologie de l’arbre.**
 - Le détail complet des 120 IDs, noms, types et coordonnées est conservé dans `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`.
+- Agrégats de travail actuellement utilisés par le live build : **+179% Evasion**, **+179% Energy Shield**, **+14% Attack Speed**, **+19% Skill Speed**, **+48% Mana Regeneration Rate**, **33% Evasion as Deflection**.
+- Le chemin actuel contient bien les quatre allocations de Freeze prévues, pour un total de travail de **+75% increased Freeze Buildup**.
 
 ## 3. Ascendancy Martial Artist
 
@@ -48,7 +54,7 @@ Ce fichier est la transcription opérationnelle du document maître fourni par N
 7. `AscendancyMonk1Small5` — Area of Effect
 8. `AscendancyMonk1Notable4` — Hollow Resonance Technique
 
-## 4. Compétences et supports — état de travail
+## 4. Compétences et supports — état actuel
 
 ### Hollow Form → Whirling Assault
 
@@ -61,6 +67,8 @@ Rôle : moteur principal de DPS boss.
 **Ancestral Call II • Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest**
 
 Rôle : clear, Chill/Freeze et overkill.
+
+**Problème en cours :** malgré les **+75% Freeze Buildup** de l’arbre présents sur la bêta, les boss ne Freeze pas aussi rapidement qu’attendu. Un test avec un support dédié au Freeze doit comparer le temps jusqu’au premier Freeze.
 
 ### Charged Staff
 
@@ -88,107 +96,222 @@ Rôle : couche Lightning et application de Blind.
 
 ### Charge Regulation
 
-**Vitality II • Clarity II • Precision II** provisoires.
+**Clarity II • Precision II**
 
-Le coût Spirit exact des supports doit être audité avant verrouillage.
+- **Vitality II est définitivement supprimée.**
+- Réservation de travail : **70 Spirit** = 30 base + 20 Clarity II + 20 Precision II.
+- Rôle : charges + utilitaire + support du sustain Mana via Clarity II.
 
-### Convalescence
+### Danseur du vent / Wind Dancer
 
-**Prolonged Duration II • Cooldown Recovery II** uniquement.
+**Maim • Pin I • Lockdown**
 
-Rôle : bouton d’urgence Energy Shield.
+- Supports retenus et verrouillés : **Maim, Pin I, Lockdown**.
+- Supports facultatifs : **Blind II, Her Declaration**.
+- Réservation de travail : **30 Spirit**.
+- Rôle : défense / Evasion / repoussement / contrôle de proximité.
 
-### Spirit Vessel
+### Spirit Vessel — EXCLU
 
-**Meat Shield II • Wing Blast • Romira’s Requital • Amanamu’s Tithe**
+- **Définitivement retiré du build actuel.**
+- Motif : l’aptitude est octroyée par **Forgotten Warden**, ce qui entrerait en conflit avec notre armure de torse **Veste racée**.
+- Remplacement retenu : **Danseur du vent**.
 
-Rôle : package passif défensif/utilitaire.
+### Convalescence — EXCLU
 
-### Elemental Conflux — optionnel
+- **Définitivement exclu du setup actif.**
+- Ne pas le réintroduire sur la base d’anciens documents.
+
+### Elemental Conflux — optionnel / inactif
 
 - 60 Spirit.
-- Aucun support essentiel verrouillé.
-- Bonus de luxe si le budget Spirit le permet.
+- **Non utilisé dans la bêta actuelle.**
+- Ne pas le considérer dans le budget Spirit actif tant qu’il n’est pas explicitement activé.
 
 ## 5. Défense / Energy Shield
 
 - Armures prévues : **Evasion Rating + Energy Shield** lorsque possible.
-- Arbre : **+99% increased maximum Energy Shield** identifiés sur le chemin de référence.
+- Arbre de travail : **+179% increased Energy Shield** et **+179% increased Evasion**.
 - **Spectral Ward** : +1 Maximum ES par 12 Item Evasion sur le Body Armour.
-- Recharge : **18% faster start** inconditionnel identifié ; jusqu’à **38%** lorsque la condition `not Full Life` s’applique.
-- Convalescence est réintégré car le pool ES est suffisamment important.
-- Estimation de travail avant jewels : environ **2300–2450 ES**.
-- Objectif ambitieux : environ **2500 ES avant jewels**, si le DPS reste intact.
-- Faiblesse à surveiller : **gros coups physiques / slams**.
+- Recharge : **40% faster start** permanent dans l’agrégat actuel, avec **+20% supplémentaire** sous la condition de travail correspondante.
+- Working gear final actuel : environ **7168 ES**, **7159 Evasion**, **2362 Deflection** avant conditions supplémentaires.
+- Danseur du vent devient la couche persistante défensive/utilitaire retenue à la place de Spirit Vessel.
+- Faiblesse toujours à surveiller : **gros coups physiques / slams**.
 
-## 6. Vitesse, mana et charges
+## 6. Mana, vitesse et charges — problème majeur quantifié
 
-- Arbre Default : **+16% increased Skill Speed** identifié.
+### Orientation verrouillée
+
 - Ne pas chercher de Cast Speed sur l’équipement.
 - Priorité : **Attack Speed >>> Cast Speed**.
-- Cible de confort provisoire : environ **+40–50% Attack Speed permanent total**, autour de +45%, sans sacrifier Mana/Combo.
-- Le Mana est un risque majeur : les images de Hollow Form dépensent **80% du coût de Whirling Assault** ; davantage d’Attack Speed augmente la pression.
-- Charge Regulation exploite Power / Endurance / Frenzy ; qualité et coûts Spirit des supports doivent être vérifiés précisément.
+- Les dégâts et le clear bêta sont déjà excellents : **ne pas ralentir le build offensivement pour résoudre le Mana tant qu’une solution de sustain existe**.
+- Direction retenue pour la résolution : **Mana Regeneration Rate** en priorité, soutenue par un flacon de Mana adapté.
 
-## 7. Spirit — contrainte non résolue
+### Valeurs du modèle final actuel
 
-Ancien budget de travail :
+- Mana final modélisé : environ **834**.
+- Régénération de base naturelle : environ **33.36 Mana/s**.
+- Bonus permanent actuel : **+73%** hors Clarity II = +48% arbre +25% campagne.
+- Avec **Clarity II** : environ **+123% total**, soit **~74.4 Mana/s**.
+- Avec condition “Shock récemment” du modèle : environ **~82.7 Mana/s**.
 
-- Charge Regulation : 30
-- Convalescence : 30
-- Spirit Vessel : 87
-- Total : **147 Spirit**
-- Avec Elemental Conflux : **207 Spirit**
+### Test bêta réel — 2026-09-09
 
-Ces totaux n’intègrent pas nécessairement les réservations supplémentaires de Vitality II / Clarity II / Precision II. Le budget Spirit doit être **réaudité avant le gear final**.
+Mesures en jeu sur Hollow Form :
+
+- Mana maximum : **624**.
+- Coût affiché de Hollow Form / aptitude enchâssée : **126 Mana**.
+- Régénération affichée : **67.2 Mana/s**.
+- Temps avant Mana vide sans flacon : **~5 s**.
+- Temps avant Mana vide avec **Esprit de Levianga / Lavianga** : **~7 s**.
+
+Estimation empirique dérivée des mesures :
+
+- Déficit net sans flacon : **~124.8 Mana/s**.
+- Consommation effective moyenne estimée de Hollow Form : **~192 Mana/s**.
+- Avec le flacon, récupération totale effective : **~102.9 Mana/s**.
+- Apport observé du flacon par rapport à la regen naturelle : **~35.7 Mana/s**.
+
+### Statut
+
+**OUVERT / PRIORITAIRE.** Le flacon aide nettement mais ne résout pas seul le sustain. La régénération de Mana doit devenir un critère majeur lors de la prochaine révision de l’arbre et/ou du gear final.
+
+## 7. Spirit — problème largement désamorcé
+
+Budget actif actuel :
+
+- Charge Regulation : **70 Spirit**
+- Danseur du vent : **30 Spirit**
+- Total réservé : **100 Spirit**
+- Spirit total modélisé avec gear actuel : **226**
+- Libre : **126 Spirit**
+- Elemental Conflux : **inactif**, donc non compté.
+
+Conséquence importante :
+
+- Le préfixe **+61 Spirit** du torse n’est plus nécessaire pour faire fonctionner le setup actif actuel.
+- Si ce préfixe est retiré sans autre changement, le total descendrait à **165 Spirit** pour **100 réservés**, soit **65 Spirit libres**.
+- Ce préfixe du torse est donc **candidat à remplacement**, avec priorité potentielle à une solution de Mana / sustain si le pool d’affixes le permet.
 
 ## 8. Quarterstaff / cible endgame
 
-- **Duality Warding Quarterstaff** est un candidat endgame sérieux.
-- Rolls prioritaires : **Physical Damage + Attack Speed**.
-- Critical Damage Bonus et Guard sont secondaires.
-- Référence observée : Runemastered Duality ~**948.66 physical DPS**, **1.63 APS**, **275% increased Physical Damage**, **+30% Critical Damage Bonus**, **16% increased Attack Speed**, **998 Guard/Combo**.
-- Recipe connue : Duality Warding Quarterstaff + **20 Exceptional Verisium + 1 Olroth’s Crest of the Sun**.
-- Warding Starlit Ore Duality Warding Quarterstaff au Verisium Anvil.
-- Farming envisagé plutôt qu’achat.
+- **Duality Warding Quarterstaff** est la cible de travail endgame.
+- Version du live build : base crit 10%, base 1.40 APS, +300% local Physical Damage, +22% local Attack Speed, +30% Critical Damage Bonus, 50 Runic Ward.
+- Variante 15% base crit à comparer plus tard.
+- Ne pas sacrifier le sustain Mana uniquement pour gagner davantage d’Attack Speed tant que la consommation de Hollow Form n’est pas stabilisée.
 
-## 9. Ingenuity / anneaux — ne pas survalider
+## 9. Ingenuity / anneaux — état de travail
 
-- **Ingenuity** est un candidat BiS conditionnel.
-- Screenshot de référence : **+23% bonuses from left equipped Ring**, **+29% from right equipped Ring**, **+20% Charm Charges gained**, **+7% Charm Charges used**.
-- Réserver le meilleur anneau au **slot droit** si la ceinture est retenue.
-- Les deux anneaux conceptuels déjà illustrés **ne sont pas techniquement validés** contre le pool réel d’affixes 0.5.2.
-- Ne pas reprendre leurs affixes comme vérité avant audit.
+- **Ingenuity** est retenue comme cible BiS de travail, avec hypothèse de **+30% bonus bague gauche / +30% bague droite** dans le live build.
+- L’effet est modélisé avec arrondi `floor-per-mod`.
+- Bague Améthyste gauche : concept de travail déjà intégré.
+- Bague Topaze droite : le mod **+30% Attack Speed** reste marqué **audit / inactive** tant que sa légalité exacte n’est pas confirmée.
+- Ne pas transformer un affixe “audit” en vérité mécanique sans validation.
 
-## 10. Évaluation et risques
+## 10. Freeze boss — problème actif à diagnostiquer
 
-- Évaluation actuelle de travail : **~8.8/10**.
-- Potentiel estimé : **~9.5/10** après résolution Mana/Spirit et optimisation gear.
-- Risques principaux : **Mana, Spirit, surinvestissement Shattering Palm, surinvestissement Stun, gros dégâts physiques**.
-- Règle de pruning : ne pas ajouter de mécanique qui ne soutient pas directement **Whirling Assault**, le contrôle nécessaire ou la survie.
+### Observation bêta
 
-## 11. Visuels et futur diaporama
+- La bêta possède bien les **4 passifs Freeze** prévus, soit **+75% increased Freeze Buildup**.
+- Malgré cela, les boss ne sont pas Gelés aussi rapidement qu’attendu.
+- Le clear reste excellent ; le problème est spécifique au contrôle / Freeze des boss.
 
-- Conserver le visuel compétences/supports validé comme référence esthétique, mais corriger Spirit/attributs avant publication.
-- Conserver le visuel Ingenuity + anneaux pour le style seulement ; contenu des affixes à revalider.
+### Hypothèse structurelle à tester
+
+- Hollow Form → Whirling Assault est principalement une source de dégâts physiques : il est possible qu’une part insuffisante de ses Hits contribue réellement au Freeze Buildup.
+- Shattering Palm pourrait donc devoir devenir la vraie compétence dédiée à la préparation du Freeze sur boss.
+- Cette hypothèse n’est **pas encore verrouillée** : elle doit être confirmée par test.
+
+### Protocole de test demandé
+
+Comparer sur un boss comparable :
+
+1. **Shattering Palm setup actuel** → temps jusqu’au premier Freeze.
+2. **Shattering Palm + support de Freeze dédié** → temps jusqu’au premier Freeze.
+3. **Hollow Form seul** → observer la progression de la jauge de Freeze.
+4. Garder **Charged Staff** contrôlé / noté pour éviter de mélanger sa contribution.
+
+### Statut
+
+**EN TEST.** Selon le résultat, les leviers possibles seront :
+- davantage de Freeze Buildup ;
+- davantage de dégâts de froid réellement présents dans les Hits de boss ;
+- spécialisation plus nette de Shattering Palm comme outil de Freeze.
+
+## 11. Problèmes résolus / décisions récentes
+
+### RÉSOLU — Spirit Vessel inutilisable avec le torse prévu
+- Cause : Spirit Vessel dépend de Forgotten Warden.
+- Solution : **Spirit Vessel supprimé**, **Danseur du vent ajouté**.
+
+### RÉSOLU — Vitality II inutile
+- Cause : regen Life peu pertinente pour un build reposant massivement sur ES.
+- Solution : **Vitality II supprimée définitivement de Charge Regulation**.
+- Effet secondaire positif : économie de **40 Spirit**.
+
+### RÉSOLU — Supports principaux de Danseur du vent
+- Verrouillés : **Maim + Pin I + Lockdown**.
+- Facultatifs : **Blind II + Her Declaration**.
+
+### PARTIELLEMENT RÉSOLU — Pression Spirit
+- Les réservations actives sont descendues à **100 Spirit**.
+- Elemental Conflux reste inactif.
+- Le +61 Spirit du torse est maintenant probablement superflu pour la bêta actuelle.
+
+### OUVERT — Mana
+- Problème confirmé et quantifié par test réel.
+- Direction de résolution : **Mana Regeneration Rate + Lavianga**, puis révision arbre/gear.
+
+### OUVERT — Freeze boss
+- Problème confirmé malgré les +75% Freeze Buildup de l’arbre.
+- Tests comparatifs en cours.
+
+## 12. Évaluation et priorités actuelles
+
+- Les dégâts bêta et le clear sont déjà **très élevés / très fluides** avec un équipement non-BiS.
+- Priorité n°1 : **sustain Mana**.
+- Priorité n°2 : **fiabiliser le Freeze des boss**.
+- Priorité n°3 : conserver la défense Evasion + ES et surveiller les gros hits physiques.
+- Priorité n°4 : seulement ensuite reprendre critique / affixes offensifs / optimisation fine.
+- Règle de pruning : ne pas ajouter de mécanique qui ne soutient pas directement **Whirling Assault**, le contrôle nécessaire, le sustain ou la survie.
+
+## 13. Checklist avant build final 100%
+
+- Terminer les tests Freeze boss.
+- Mesurer le sustain Hollow Form après chaque modification importante de Mana / Attack Speed.
+- Réviser l’arbre si nécessaire pour intégrer davantage de **Mana Regeneration Rate** sans dégrader inutilement le DPS.
+- Auditer le meilleur remplacement du **+61 Spirit** sur la Veste racée.
+- Valider les supports encore marqués provisoires.
+- Fixer les seuils finaux Attack Speed / crit / Freeze / Stun.
+- Valider chaque affixe du gear contre le pool réel 0.5.2.
+- Recalculer Spirit, Mana, ES, Evasion et Deflection après chaque modification verrouillée.
+- Après seulement : créer le diaporama final HOLLOW DOMINION.
+
+## 14. Protocole automatique de maintenance du MASTER CONTEXT — VERROUILLÉ
+
+À partir du 2026-09-09 :
+
+- **Chaque nouvelle problématique significative soulevée pendant le theorycraft ou les tests en jeu doit être ajoutée automatiquement à ce fichier.**
+- **Chaque problématique solutionnée doit être mise à jour automatiquement**, avec la cause retenue, la solution, l’impact sur le build et son nouveau statut.
+- Statuts à utiliser : **OUVERT**, **EN TEST**, **PARTIELLEMENT RÉSOLU**, **RÉSOLU**, **VERROUILLÉ**, **AUDIT**.
+- Les mesures réelles en jeu doivent être conservées séparément des projections théoriques.
+- Une hypothèse ne doit jamais être transformée en décision verrouillée sans validation.
+- Pour toute modification du MASTER CONTEXT : synchroniser la version actuelle, créer un backup local daté, modifier la copie locale, puis appliquer la même mise à jour sur la branche GitHub du projet et vérifier le résultat.
+- Ce fichier doit rester cohérent avec le live build ; lorsqu’une décision est verrouillée, **MASTER CONTEXT et live build doivent être alignés automatiquement**.
+
+## 15. Visuels et futur diaporama
+
+- Conserver le visuel compétences/supports validé comme référence esthétique, mais ne jamais utiliser un poster ancien comme source mécanique.
 - Pour l’arbre : **120 passifs principaux + 8 Ascendancy**, chemin réel lumineux, Notables importants en rouge, Ascendancy en violet, non-alloué en gris sombre.
 - Le visuel final doit rester **reproductible nœud par nœud par un débutant**.
 - Créer ensuite un second visuel de levelling depuis exactement le même master, avec **8–12 grandes étapes** plutôt que 120 numéros.
-
-## 12. Checklist avant build final 100%
-
-- Auditer précisément le coût Spirit des supports de Charge Regulation.
-- Tester Mana en situation réelle avec Hollow Form → Whirling Assault et Attack Speed final.
-- Valider les supports encore marqués provisoires.
-- Fixer le Quarterstaff final et les seuils Attack Speed / crit / Freeze / Stun.
-- Valider chaque affixe des anneaux et du reste du gear contre le pool 0.5.2.
-- Corriger les chiffres Spirit et attributs du futur infographic.
-- Après seulement : créer le diaporama final HOLLOW DOMINION.
 
 ## Sources associées du projet
 
 - `HOLLOW_DOMINION_reference.build` — allocations de référence.
 - `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — rapport exact 120 + 8, IDs/noms/types/coordonnées.
 - `../../Skill Trees/0.5.2/data.json` — topologie officielle de l’arbre PoE2 0.5.2.
+- `../live_build/build-data.js` — état de travail actuel du gear / compétences / supports.
+- `../live_build/tree-state.js` — agrégats programmables de l’arbre.
 
 Ce fichier doit être lu avant toute modification majeure du build, de l’arbre, du gear ou du guide final.
