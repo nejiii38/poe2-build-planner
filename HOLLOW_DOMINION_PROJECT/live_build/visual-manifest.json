@@ -1,0 +1,31 @@
+{
+  "reference_image": {
+    "filename": "ChatGPT Image 9 sept. 2026, 05_47_28(1).png",
+    "width": 1672,
+    "height": 941,
+    "status": "user-designated reference for build values and layout",
+    "note": "The binary image remains in the ChatGPT conversation. This manifest records the exact visual reference and crop map so a future session can rematerialize it when available."
+  },
+  "gear_crops": {
+    "helmet": [64, 133, 171, 286],
+    "gloves": [64, 310, 171, 468],
+    "weapon": [64, 493, 171, 648],
+    "chest": [878, 132, 993, 287],
+    "belt": [878, 310, 993, 466],
+    "boots": [878, 492, 993, 648],
+    "amulet": [1266, 132, 1379, 286],
+    "ring-amethyst": [1266, 310, 1379, 466],
+    "ring-topaz": [1266, 492, 1379, 648]
+  },
+  "skill_crops": {
+    "hollow-form": [60, 650, 204, 802],
+    "shattering-palm": [208, 650, 368, 802],
+    "charged-staff": [370, 650, 528, 802],
+    "tempest-bell": [530, 650, 686, 802],
+    "hollow-resonance": [688, 650, 842, 802],
+    "hollow-focus": [845, 650, 1007, 802],
+    "charge-regulation": [1010, 650, 1161, 802],
+    "spirit-vessel": [1300, 650, 1440, 802],
+    "elemental-conflux": [1440, 650, 1602, 802]
+  }
+}
