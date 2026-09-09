@@ -3,8 +3,8 @@
     "filename": "ChatGPT Image 9 sept. 2026, 05_47_28(1).png",
     "width": 1672,
     "height": 941,
-    "status": "user-designated reference for build values and layout",
-    "note": "The binary image remains in the ChatGPT conversation. This manifest records the exact visual reference and crop map so a future session can rematerialize it when available."
+    "status": "user-designated reference for build values, layout, and visual extraction",
+    "note": "Le live build en ligne affiche maintenant des vignettes équipement / compétences extraites depuis cette image de référence, sous forme de data-URIs embarquées dans assets-data.js."
   },
   "gear_crops": {
     "helmet": [64, 133, 171, 286],
