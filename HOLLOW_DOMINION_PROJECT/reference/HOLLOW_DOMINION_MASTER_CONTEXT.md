@@ -371,3 +371,25 @@ Conséquence importante :
 - `../live_build/tree-state.js` — agrégats programmables de l’arbre.
 
 Ce fichier doit être lu avant toute modification majeure du build, de l’arbre, du gear ou du guide final.
+
+
+## Politique visuelle du live build — VERROUILLÉE (2026-09-10)
+
+- **PoE2DB est la source visuelle de référence** pour les équipements, compétences et gemmes de soutien du site.
+- À chaque modification future d’un **item**, d’un **sort/skill** ou d’une **support gem**, le visuel correspondant doit être recherché/vérifié sur PoE2DB puis répercuté automatiquement dans la copie locale et le live build.
+- Les **fonds transparents natifs** doivent être conservés.
+- Les supports sont affichés **sans numérotation**, avec un **petit logo à gauche de leur ligne**, sans modifier la mise en forme générale du site.
+- Pour un **Lineage Support** dont PoE2DB n’expose pas une seconde icône de support, utiliser l’image officielle de la gemme publiée par PoE2DB.
+- Les anciens SVG/sprites issus du poster sont conservés uniquement comme **rollback**, mais ne constituent plus la source visuelle active.
+
+### RÉSOLU — audit des visuels PoE2DB
+- Les visuels ont été contrôlés individuellement pour **9 équipements, 10 compétences et 31 supports** du live build.
+- Les mauvais liens du brouillon pour **Lochtonial Caress, Duality et Ingenuity** ont été remplacés par les images exactes exposées par leurs fiches PoE2DB.
+- Le chemin de **Daggerfoot Shoes** a été corrigé en `BootsDexInt04`.
+- Les identifiants visuels incorrects de **Charged Mark, Mark for Death II, Innervate, Overabundance II, Stun III et Cooldown Recovery II** ont été corrigés à partir des liens d’images PoE2DB.
+- **Vorana's Siege, Her Declaration et Seraph's Heart** utilisent leur image officielle de Lineage Support.
+
+### AUDIT — Elemental Focus II
+- Le live build contient encore le libellé **Elemental Focus II** sur Elemental Conflux.
+- La base PoE2DB courante expose **Elemental Focus** sans variante `II`.
+- Le visuel du site est donc relié à l’icône officielle actuelle d’Elemental Focus, mais **le nom/support du build n’est pas modifié sans validation explicite**.
