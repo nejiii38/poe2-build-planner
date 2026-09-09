@@ -1,5 +1,5 @@
 window.HOLLOW_DOMINION_DATA={
-meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.10-freezing-mark-supports",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel et Vitality II sont exclus. Danseur du vent est actif. Direction Freeze boss validée : Freezing Mark + Ice Bite II sur Shattering Palm afin que le premier Freeze donne ensuite à Hollow Form une composante Cold. Supports Freezing Mark verrouillés : Eternal Mark, Prolonged Duration II, Charged Mark et Mark for Death II. Biting Frost II est exclu. Pour cette phase, l’arbre et les bonus permanents de campagne restent verrouillés."},
+meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.11-wind-dancer-rework",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel et Vitality II sont exclus. Danseur du vent est actif. Direction Freeze boss validée : Freezing Mark + Ice Bite II sur Shattering Palm afin que le premier Freeze donne ensuite à Hollow Form une composante Cold. Supports Freezing Mark verrouillés : Eternal Mark, Prolonged Duration II, Charged Mark et Mark for Death II. Biting Frost II est exclu. Lockdown a été retiré de Wind Dancer car indisponible dans le client actuel ; son package de supports est rouvert. Pour cette phase, l’arbre et les bonus permanents de campagne restent verrouillés."},
 rules:{endgameElementalPenalty:-60,endgameChaosPenalty:0,resistanceCap:75,ingenuityRounding:"floor-per-mod",qualityLocalDefenceMorePerPct:1},
 campaignFixed:{
 attributes:{strength:5,dexterity:5,intelligence:5},flatLife:20,maxLifePct:5,maxManaPct:5,spirit:100,manaRegenPct:25,kaomDefencesPct:30,resistances:{fire:15,cold:15,lightning:15,chaos:0},ancientVowsCharmChargesGainedPct:30,manaRecoveryFromFlasksPct:30,
@@ -25,7 +25,7 @@ skills:[
 {name:"Hollow Resonance",role:"Stun",active:true,supports:["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"]},
 {name:"Hollow Focus",role:"Heavy Stun",active:true,supports:["Cooldown Recovery II","Overabundance II","Magnified Area II","Close Combat II","Heft"]},
 {name:"Charge Regulation",role:"Charges / utilitaire",active:true,spiritReservation:70,reservationBreakdown:"30 base + Clarity II 20 + Precision II 20",supports:["Clarity II","Precision II"]},
-{name:"Danseur du vent",role:"Défense / Évasion / Repoussement / contrôle",active:true,spiritReservation:30,reservationBreakdown:"30 Esprit",supports:["Maim","Pin I","Lockdown"],optionalSupports:["Blind II","Her Declaration"]},
+{name:"Danseur du vent",role:"Défense / Évasion / Repoussement / contrôle",active:true,spiritReservation:30,reservationBreakdown:"30 Esprit — supports actuels à 100% de multiplicateur",supports:["Maim","Pin I"],optionalSupports:["Blind II","Rage II","Her Declaration","Seraph's Heart"],status:"rework"},
 {name:"Elemental Conflux",role:"Optionnel",active:false,spiritReservation:60,supports:["Elemental Focus II","Innervate"]}
 ],
 priorities:[
@@ -34,6 +34,6 @@ priorities:[
 {id:3,title:"Chance de critique réelle",status:"ACTIVE",note:"Utiliser les deux suffixes libres, comparer Duality 15% et les Jewel Sockets sans toucher à l'arbre."},
 {id:4,title:"Budget Spirit",status:"OPEN",note:"Réservation actuelle : 100 / 226, soit 126 Esprit libres. Elemental Conflux reste optionnel ; le +61 Spirit du torse est candidat au remplacement."},
 {id:5,title:"Gros hits physiques",status:"OPEN",note:"Améliorer sans casser ES/Evasion/contrôle."},
-{id:6,title:"Supports secondaires",status:"OPEN",note:"Danseur du vent : Maim + Pin I + Lockdown verrouillés ; Blind II et Her Declaration facultatifs. Ancestral Call II devient un clear swap pour Shattering Palm."}
+{id:6,title:"Supports secondaires",status:"OPEN",note:"Danseur du vent : Lockdown retiré car indisponible en jeu. Maim + Pin I restent actifs pendant le retravail ; Blind II, Rage II, Her Declaration et Seraph's Heart sont à comparer. Ancestral Call II reste un clear swap pour Shattering Palm."}
 ]
 };
