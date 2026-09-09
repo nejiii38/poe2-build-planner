@@ -89,3 +89,11 @@ Le cinquième emplacement reste libre pour l'instant. **Biting Frost II reste ex
 - Supports actifs temporaires : **Maim + Pin I**.
 - Candidats prioritaires : **Blind II, Rage II, Her Declaration, Seraph's Heart**.
 - Le budget reste provisoirement à **30 Spirit** tant qu'aucun support avec multiplicateur/réservation supplémentaire n'est verrouillé.
+
+## Correction live-1.12 — Supports de Danseur du vent verrouillés
+
+- Supports retenus : **Maim + Blind II + Rage II**.
+- **Pin I est retiré / exclu** du setup : le contrôle Pin n'est pas jugé suffisamment convaincant pour justifier le slot.
+- **Her Declaration** et **Seraph's Heart** restent des options non verrouillées.
+- `Blind II` applique un multiplicateur de coût de **110%** ; réservation de travail de Wind Dancer : **33 Spirit**.
+- Budget actif mis à jour : **103 / 226 Spirit réservés**, soit **123 Spirit libres**.
