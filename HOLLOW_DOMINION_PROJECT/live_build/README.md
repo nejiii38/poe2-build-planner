@@ -9,10 +9,11 @@ Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — M
 ## Visuels intégrés
 
 - les **9 équipements** affichent leur vignette extraite de l’image de référence ;
-- les **9 compétences** affichent leur vignette extraite de l’image de référence ;
+- les compétences déjà présentes sur l’image de référence utilisent leurs vignettes extraites ;
+- **Danseur du vent** utilise temporairement le fallback visuel de l’interface, car il remplace Spirit Vessel qui figurait sur le poster de référence ;
 - les **Implicites / Préfixes / Suffixes / Effets uniques** restent séparés visuellement ;
 - les équipements sont servis depuis `assets/gear/*.svg` ;
-- les compétences utilisent le sprite `assets/skills/skills-sprite.svg`.
+- les compétences de référence utilisent le sprite `assets/skills/skills-sprite.svg`.
 
 ## Correction live-1.6 — Danseur du vent
 
