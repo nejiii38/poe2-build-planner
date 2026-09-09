@@ -1,49 +1,99 @@
 (function(){
-const baseData=JSON.parse(JSON.stringify(window.HOLLOW_DOMINION_DATA)),baseTree=JSON.parse(JSON.stringify(window.HOLLOW_DOMINION_TREE));
-let data=JSON.parse(JSON.stringify(baseData)),tree=JSON.parse(JSON.stringify(baseTree));
+const baseData=JSON.parse(JSON.stringify(window.HOLLOW_DOMINION_DATA));
+const tree=JSON.parse(JSON.stringify(window.HOLLOW_DOMINION_TREE));
+let data=JSON.parse(JSON.stringify(baseData));
 const $=s=>document.querySelector(s),fmt=(n,d=1)=>Number(n).toLocaleString('fr-FR',{maximumFractionDigits:d}),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const STAT_OPTIONS=[['','Aucun effet'],['critChancePct','Chance de critique %'],['critDamageBonusFlatPct','Bonus de dégâts critiques %'],['attackSpeedPct',"Vitesse d'attaque %"],['resFire','Résistance feu %'],['resCold','Résistance froid %'],['resLightning','Résistance foudre %'],['resChaos','Résistance chaos %'],['strength','Force'],['dexterity','Dextérité'],['intelligence','Intelligence'],['maxES','ES maximal'],['maxMana','Mana maximal'],['spirit','Spirit']];
+const STAT_OPTIONS=[['','Aucun effet'],['critChancePct','Chance de critique %'],['critDamageBonusFlatPct','Bonus de dégâts critiques %'],['attackSpeedPct',"Vitesse d'attaque %"],['coldDamagePct','Dégâts de froid %'],['resFire','Résistance feu %'],['resCold','Résistance froid %'],['resLightning','Résistance foudre %'],['resChaos','Résistance chaos %'],['strength','Force'],['dexterity','Dextérité'],['intelligence','Intelligence'],['maxES','ES maximal'],['maxMana','Mana maximal'],['manaRegenPct','Régénération de Mana %'],['spirit','Spirit']];
 const allAffixes=i=>[...(i.implicits||[]),...(i.prefixes||[]),...(i.suffixes||[])];
 
 function gearCard(item){
-  const aff=allAffixes(item).map(a=>{const scaled=a.stat?HD_CALC.scaledAffixValue(a,item,data):Number(a.value||0),amp=a.ingenuity&&a.stat?` <em>→ ${fmt(scaled,1)} avec Ingéniosité</em>`:'',chosen=a.editableStat&&a.stat?` <em>[${esc(STAT_OPTIONS.find(x=>x[0]===a.stat)?.[1]||a.stat)}]</em>`:'';return`<li class="${a.status||''}">${esc(a.label)}${chosen}${amp}</li>`;}).join('');
+  const aff=allAffixes(item).map(a=>{
+    const scaled=a.stat?HD_CALC.scaledAffixValue(a,item,data):Number(a.value||0);
+    const amp=a.ingenuity&&a.stat?` <em>→ ${fmt(scaled,1)} avec Ingéniosité</em>`:'';
+    const chosen=a.editableStat&&a.stat?` <em>[${esc(STAT_OPTIONS.find(x=>x[0]===a.stat)?.[1]||a.stat)}]</em>`:'';
+    const inactive=a.active===false?' <em>INACTIF — audit</em>':'';
+    return`<li class="${a.status||''}${a.active===false?' inactive':''}">${esc(a.label)}${chosen}${amp}${inactive}</li>`;
+  }).join('');
   const unique=(item.unique||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+  const d=HD_CALC.calcItemDefence(item,data,tree);
   const base=item.baseStats?`<div class="baseLine">Base : ${item.baseStats.evasion||0} Évasion / ${item.baseStats.energyShield||0} ES</div>`:'';
-  return`<article><div class="icon">${esc(item.name.slice(0,2))}</div><h3>${esc(item.name)}</h3><small>${esc(item.slot)} · ${esc(item.rarity)}</small>${base}${aff?`<ul>${aff}</ul>`:''}${unique?`<ul>${unique}</ul>`:''}</article>`;
+  const transformed=item.transformed?`<div class="baseLine">Transformation niv.${tree.baseCharacter.level} : ${fmt((item.transformed.evasionPerLevel||0)*tree.baseCharacter.level,0)} Évasion / ${fmt((item.transformed.energyShieldPerLevel||0)*tree.baseCharacter.level,0)} ES avant qualité</div>`:'';
+  const quality=Number.isFinite(Number(item.quality))?`<div class="qualityLine">Qualité ${fmt(item.quality,0)}% · local calculé : ${fmt(d.evasion,0)} Évasion / ${fmt(d.energyShield,0)} ES</div>`:'';
+  return`<article><div class="icon">${esc(item.name.slice(0,2))}</div><h3>${esc(item.name)}</h3><small>${esc(item.slot)} · ${esc(item.rarity)}</small>${base}${transformed}${quality}${aff?`<ul>${aff}</ul>`:''}${unique?`<ul>${unique}</ul>`:''}</article>`;
 }
-function skillCard(s){return`<article><div class="icon skillIcon">${esc(s.name.slice(0,2))}</div><h3>${esc(s.name)}</h3><small>${esc(s.role)}</small><ol>${s.supports.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></article>`;}
+function skillCard(s){
+  const state=s.active===false?'OPTIONNEL / INACTIF':'ACTIF';
+  const reservation=s.spiritReservation?` · ${fmt(s.spiritReservation,0)} Spirit réservé`:'';
+  const breakdown=s.reservationBreakdown?`<div class="baseLine">${esc(s.reservationBreakdown)}</div>`:'';
+  return`<article class="${s.active===false?'skillInactive':''}"><div class="icon skillIcon">${esc(s.name.slice(0,2))}</div><h3>${esc(s.name)}</h3><small>${esc(s.role)}</small><div class="skillStatus">${state}${reservation}</div>${breakdown}<ol>${s.supports.map((x,i)=>`<li><b>${i+1}.</b> ${esc(x)}</li>`).join('')}</ol></article>`;
+}
 function kv(rows){return rows.map(([a,b,c])=>`<div><span>${esc(a)}</span><strong>${b}</strong>${c?`<small>${esc(c)}</small>`:''}</div>`).join('');}
 function render(){
   const C=HD_CALC.calcAll(data,tree),a=C.attributes,d=C.defences,lm=C.lifeMana,r=C.resistances,cr=C.crit,sp=C.spirit,as=C.attackSpeed,mv=C.movement;
-  $('#gear').innerHTML=Object.values(data.gear).map(gearCard).join('');$('#skills').innerHTML=data.skills.map(skillCard).join('');
+  $('#gear').innerHTML=Object.values(data.gear).map(gearCard).join('');
+  $('#skills').innerHTML=data.skills.map(skillCard).join('');
   $('#character').innerHTML=kv([
-    ['Vie',fmt(lm.life,0),'niveau + Force + stuff'],['Mana',fmt(lm.mana,0),'niveau + Intelligence + stuff'],['ES',fmt(d.energyShield,0),`arbre +${tree.unconditional.energyShieldIncreasedPct}% ; Spectral Ward +${d.spectralWard}`],['Évasion',fmt(d.evasion,0),`arbre +${tree.unconditional.evasionIncreasedPct}%`],['Évasion (non touché récemment)',fmt(d.evasionNotHit,0),`+${tree.conditional.evasionIfNotHitRecentlyPct}% conditionnel`],['Deflection',fmt(d.deflection,0),`${tree.unconditional.deflectionFromEvasionPct}% de l'Évasion`],['Déplacement',`+${fmt(mv.permanentPct,0)}%`,`+${fmt(mv.whileEnergyShieldPct,0)}% avec ES`],['Force',fmt(a.strength,0),`flex ${a.allocation.strength}/${a.allocation.required}`],['Dextérité',fmt(a.dexterity,0),`flex ${a.allocation.dexterity}/${a.allocation.required}`],['Intelligence',fmt(a.intelligence,0),`flex ${a.allocation.intelligence}/${a.allocation.required}`],['Attack Speed (bâton)',fmt(as.finalAPS,2),`arme ${fmt(as.weaponAPS,2)} APS ; arbre +${fmt(as.treePct,0)}%`],['Skill Speed arbre',`+${fmt(as.skillSpeedPct,0)}%`,'séparé de l’Attack Speed'],['Mana regen',`${fmt(lm.manaRegen,1)}/s`,`≈ ${fmt(lm.manaRegenShocked,1)}/s si Shock récent`],['Spirit total',fmt(sp.total,0),`${sp.base} base + ${fmt(sp.gear,0)} stuff`],['Crit Dmg Bonus',`+${fmt(cr.cdbPermanent,0)}%`,`+${fmt(cr.cdbPowerRecent,0)}% après Power Charge récente`]
+    ['Vie',fmt(lm.life,0),'niveau + Force + campagne fixe + stuff'],
+    ['Mana',fmt(lm.mana,0),'niveau + Intelligence + campagne fixe + stuff'],
+    ['ES',fmt(d.energyShield,0),`+${fmt(d.incES,0)}% global ; Spectral Ward +${fmt(d.spectralWard,0)}`],
+    ['Évasion',fmt(d.evasion,0),`+${fmt(d.incEvasion,0)}% global`],
+    ['Évasion — non touché récemment',fmt(d.evasionNotHit,0),`Shimmering +${tree.conditional.evasionIfNotHitRecentlyPct}%`],
+    ['Deflection',fmt(d.deflection,0),`${tree.unconditional.deflectionFromEvasionPct}% de l'Évasion`],
+    ['Deflection — non touché récemment',fmt(d.deflectionNotHit,0),'avec Shimmering'],
+    ['Déplacement',`+${fmt(mv.permanentPct,0)}%`,`+${fmt(mv.whileEnergyShieldPct,0)}% avec ES`],
+    ['Force',fmt(a.strength,0),'allocation d’attributs verrouillée'],
+    ['Dextérité',fmt(a.dexterity,0),'allocation d’attributs verrouillée'],
+    ['Intelligence',fmt(a.intelligence,0),'allocation d’attributs verrouillée'],
+    ['Attack Speed bâton',fmt(as.finalAPS,2),`arme ${fmt(as.weaponAPS,2)} APS · arbre applicable +${fmt(as.applicableTreePct,0)}% · stuff +${fmt(as.gearPct,0)}%`],
+    ['Mana regen',`${fmt(lm.manaRegen,1)}/s`,'sans Clarity II'],
+    ['Mana regen + Clarity II',`${fmt(lm.manaRegenWithClarity,1)}/s`,'setup Charge Regulation actuel'],
+    ['Mana regen + Clarity + Shock',`${fmt(lm.manaRegenWithClarityAndShock,1)}/s`,'si Shock récent'],
+    ['Runic Ward',fmt(C.runicWard,0),'Duality'],
+    ['Crit Dmg Bonus',`+${fmt(cr.cdbPermanent,0)}%`,`+${fmt(cr.cdbPowerRecent,0)}% après Power Charge consommée récemment`]
   ]);
-  const names={fire:'Feu',cold:'Froid',lightning:'Foudre',chaos:'Chaos'};$('#res').innerHTML=Object.keys(names).map(k=>{const p=r.afterPenalty[k],cls=p<75?'low':p>77?'over':'perfect';return`<div class="resRow ${cls}"><span>${names[k]}</span><strong>${fmt(r.capped[k],1)}%</strong><small>avant cap ${fmt(p,1)}% · brut ${fmt(r.raw[k],1)}%</small></div>`;}).join('');
-  $('#crit').innerHTML=kv([['Base arme',`${fmt(cr.weaponBasePct,1)}%`],['Increased arbre',`${fmt(cr.treeIncreasedPct,0)}%`],['Increased équipement',`${fmt(cr.gearIncreasedPct,0)}%`],['Crit permanent',`${fmt(cr.permanent,2)}%`,'arbre + équipement seulement'],['Crit vs Dazed',`${fmt(cr.vsDazed,2)}%`,'inclut Dizzying Hits'],['CDB permanent',`+${fmt(cr.cdbPermanent,0)}%`]]);
-  $('#spirit').innerHTML=kv([['Base',fmt(sp.base,0)],['Équipement',fmt(sp.gear,0)],['Total',fmt(sp.total,0)]);$('#damage').innerHTML=kv(data.skillDamageSnapshot.entries.map(([n,x,y])=>[n,`${fmt(x,0)} – ${fmt(y,0)}`,'snapshot historique']));$('#priorities').innerHTML=data.priorities.map(p=>`<li><b>#${p.id} ${esc(p.title)}</b> <span>${esc(p.status)}</span><small>${esc(p.note)}</small></li>`).join('');
-  $('#calcStatus').innerHTML=`<b>Calcul dynamique actif</b> · arbre ${tree.meta.mainPassives}+${tree.meta.ascendancySpent} · ${a.allocation.total===tree.attributeAllocation.flexibleNodes?'allocation attributs valide':'⚠ allocation attributs invalide'} · aucun bonus de compétence inclus.`;
+  const names={fire:'Feu',cold:'Froid',lightning:'Foudre',chaos:'Chaos'};
+  $('#res').innerHTML=Object.keys(names).map(k=>{const p=r.afterPenalty[k],cls=p<75?'low':p>77?'over':'perfect';return`<div class="resRow ${cls}"><span>${names[k]}</span><strong>${fmt(r.capped[k],1)}%</strong><small>avant cap ${fmt(p,1)}% · brut ${fmt(r.raw[k],1)}%</small></div>`;}).join('');
+  $('#crit').innerHTML=kv([
+    ['Base arme',`${fmt(cr.weaponBasePct,1)}%`],['Increased arbre',`${fmt(cr.treeIncreasedPct,0)}%`],['Increased équipement',`${fmt(cr.gearIncreasedPct,0)}%`],['Crit permanent',`${fmt(cr.permanent,2)}%`,'arbre + équipement'],['Crit vs Dazed',`${fmt(cr.vsDazed,2)}%`,'inclut Dizzying Hits'],['CDB permanent',`+${fmt(cr.cdbPermanent,0)}%`]
+  ]);
+  $('#spirit').innerHTML=kv([['Campagne',fmt(sp.base,0)],['Équipement',fmt(sp.gear,0)],['Total',fmt(sp.total,0)],['Réservé',fmt(sp.reserved,0)],['Libre',fmt(sp.free,0)]]);
+  const activeSkills=data.skills.filter(s=>s.active!==false),supportCount=activeSkills.reduce((n,s)=>n+s.supports.length,0),optional=data.skills.filter(s=>s.active===false).map(s=>s.name).join(', ');
+  $('#skillState').innerHTML=kv([['Compétences actives',fmt(activeSkills.length,0)],['Supports équipés',fmt(supportCount,0)],['Spirit réservé',fmt(sp.reserved,0)],['Optionnel',optional||'Aucun']]);
+  $('#priorities').innerHTML=data.priorities.map(p=>`<li><b>#${p.id} ${esc(p.title)}</b> <span>${esc(p.status)}</span><small>${esc(p.note)}</small></li>`).join('');
+  $('#calcStatus').innerHTML=`<b>Calcul dynamique équipement actif</b> · arbre ${tree.meta.mainPassives}+${tree.meta.ascendancySpent} verrouillé · campagne verrouillée · seule la couche stuff est modifiable pour le moment.`;
   renderEditor();
 }
 function setPath(obj,path,val){const parts=path.split('.'),last=parts.pop(),target=parts.reduce((o,k)=>o[k],obj);target[last]=val;}
 function input(label,path,value,step='1'){return`<label><span>${esc(label)}</span><input type="number" step="${step}" data-path="${esc(path)}" value="${value}"></label>`;}
 function selectStat(label,path,value){return`<label><span>${esc(label)}</span><select data-stat-path="${esc(path)}">${STAT_OPTIONS.map(([v,n])=>`<option value="${esc(v)}"${v===value?' selected':''}>${esc(n)}</option>`).join('')}</select></label>`;}
+function checkbox(label,path,value){return`<label><span>${esc(label)}</span><input class="check" type="checkbox" data-bool-path="${esc(path)}"${value?' checked':''}></label>`;}
 function itemEditor(key,item){
   let h=`<h4>${esc(item.name)}</h4>`;
+  if(Number.isFinite(Number(item.quality)))h+=input('Qualité %',`gear.${key}.quality`,item.quality,'.1');
+  if(key==='belt')h+=input('Bonus bague gauche %',`gear.${key}.ringBonusLeftPct`,item.ringBonusLeftPct,'.1')+input('Bonus bague droite %',`gear.${key}.ringBonusRightPct`,item.ringBonusRightPct,'.1');
   if(item.weaponStats){h+=input('Crit base arme',`gear.${key}.weaponStats.baseCritPct`,item.weaponStats.baseCritPct,'.1')+input('APS base',`gear.${key}.weaponStats.baseAPS`,item.weaponStats.baseAPS,'.01')+input('Attack Speed local %',`gear.${key}.weaponStats.localAttackSpeedPct`,item.weaponStats.localAttackSpeedPct,'.1')+input('CDB arme %',`gear.${key}.weaponStats.criticalDamageBonusFlatPct`,item.weaponStats.criticalDamageBonusFlatPct,'.1');}
   if(item.baseStats){h+=input('Base Évasion',`gear.${key}.baseStats.evasion`,item.baseStats.evasion)+input('Base ES',`gear.${key}.baseStats.energyShield`,item.baseStats.energyShield);}
   if(item.transformed){h+=input('Évasion / niveau',`gear.${key}.transformed.evasionPerLevel`,item.transformed.evasionPerLevel,'.1')+input('ES / niveau',`gear.${key}.transformed.energyShieldPerLevel`,item.transformed.energyShieldPerLevel,'.1')+input('Attack Speed %',`gear.${key}.transformed.attackSpeedPct`,item.transformed.attackSpeedPct,'.1');}
-  ['implicits','prefixes','suffixes'].forEach(group=>(item[group]||[]).forEach((a,i)=>{if(a.editableStat)h+=selectStat(`${group} ${i+1} — type`,`gear.${key}.${group}.${i}.stat`,a.stat||'');if(a.stat||a.editableStat)h+=input(`${group} ${i+1} — valeur`,`gear.${key}.${group}.${i}.value`,a.value,'.1');}));
+  ['implicits','prefixes','suffixes'].forEach(group=>(item[group]||[]).forEach((a,i)=>{
+    const root=`gear.${key}.${group}.${i}`;
+    if(a.editableStat)h+=selectStat(`${group} ${i+1} — type`,`${root}.stat`,a.stat||'');
+    if(a.stat||a.editableStat)h+=input(`${group} ${i+1} — valeur`,`${root}.value`,a.value,'.1');
+    if(Object.prototype.hasOwnProperty.call(a,'active'))h+=checkbox(`${group} ${i+1} — actif`,`${root}.active`,a.active!==false);
+  }));
   return h;
 }
 function renderEditor(){
-  const a=tree.attributeAllocation.defaultNodes,r=data.rules;let h=`<h3>Arbre — attributs flexibles</h3>${input('Nœuds STR','TREE.attributeAllocation.defaultNodes.strength',a.strength)}${input('Nœuds DEX','TREE.attributeAllocation.defaultNodes.dexterity',a.dexterity)}${input('Nœuds INT','TREE.attributeAllocation.defaultNodes.intelligence',a.intelligence)}<p>Total requis : ${tree.attributeAllocation.flexibleNodes} nœuds × ${tree.attributeAllocation.pointsPerNode} attributs.</p><h3>Ingéniosité</h3>${input('Bague gauche %','rules.ingenuityLeftRingBonusPct',r.ingenuityLeftRingBonusPct)}${input('Bague droite %','rules.ingenuityRightRingBonusPct',r.ingenuityRightRingBonusPct)}<h3>Équipement</h3>`;
-  Object.entries(data.gear).forEach(([k,item])=>h+=itemEditor(k,item));$('#editorFields').innerHTML=h;
-  $('#editorFields').querySelectorAll('input[data-path]').forEach(i=>i.oninput=()=>{const p=i.dataset.path;if(p.startsWith('TREE.'))setPath(tree,p.slice(5),Number(i.value));else setPath(data,p,Number(i.value));save();render();});
+  let h=`<div class="lockedNotice"><b>Phase actuelle :</b> arbre et bonus permanents de campagne verrouillés. Les champs ci-dessous concernent uniquement l'équipement ; toute modification recalcule immédiatement la feuille de personnage.</div><h3>Équipement</h3>`;
+  Object.entries(data.gear).forEach(([k,item])=>h+=itemEditor(k,item));
+  $('#editorFields').innerHTML=h;
+  $('#editorFields').querySelectorAll('input[data-path]').forEach(i=>i.oninput=()=>{setPath(data,i.dataset.path,Number(i.value));save();render();});
   $('#editorFields').querySelectorAll('select[data-stat-path]').forEach(s=>s.onchange=()=>{setPath(data,s.dataset.statPath,s.value||null);save();render();});
+  $('#editorFields').querySelectorAll('input[data-bool-path]').forEach(i=>i.onchange=()=>{setPath(data,i.dataset.boolPath,Boolean(i.checked));save();render();});
 }
-function save(){localStorage.setItem('hd-live-data',JSON.stringify(data));localStorage.setItem('hd-live-tree',JSON.stringify(tree));}
-try{const sd=localStorage.getItem('hd-live-data'),st=localStorage.getItem('hd-live-tree');if(sd){const parsed=JSON.parse(sd);if(parsed?.meta?.stateVersion===baseData.meta.stateVersion)data=parsed;}if(st){const parsedTree=JSON.parse(st);if(parsedTree?.meta?.gameVersion===baseTree.meta.gameVersion&&parsedTree?.meta?.mainPassives===baseTree.meta.mainPassives)tree=parsedTree;}}catch(e){}
-$('#editBtn').onclick=()=>document.body.classList.toggle('open');$('#resetBtn').onclick=()=>{data=JSON.parse(JSON.stringify(baseData));tree=JSON.parse(JSON.stringify(baseTree));localStorage.removeItem('hd-live-data');localStorage.removeItem('hd-live-tree');render();};$('#exportBtn').onclick=()=>{const payload={data,tree,calculated:HD_CALC.calcAll(data,tree)},blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='HOLLOW_DOMINION_live_state.json';a.click();URL.revokeObjectURL(a.href);};
+function save(){localStorage.setItem('hd-live-data',JSON.stringify(data));}
+try{const sd=localStorage.getItem('hd-live-data');if(sd){const parsed=JSON.parse(sd);if(parsed?.meta?.stateVersion===baseData.meta.stateVersion)data=parsed;}}catch(e){}
+$('#editBtn').onclick=()=>document.body.classList.toggle('open');
+$('#resetBtn').onclick=()=>{data=JSON.parse(JSON.stringify(baseData));localStorage.removeItem('hd-live-data');render();};
+$('#exportBtn').onclick=()=>{const payload={data,tree,calculated:HD_CALC.calcAll(data,tree)},blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='HOLLOW_DOMINION_live_state.json';a.click();URL.revokeObjectURL(a.href);};
 render();
 })();
