@@ -69,3 +69,15 @@ python -m http.server 8000
 puis ouvrir `http://localhost:8000/`.
 
 Le bouton **Modifier le stuff** ouvre le panneau d'édition. Les modifications sont conservées dans le `localStorage` du navigateur. **Exporter JSON** produit un snapshot partageable.
+
+
+## Correction live-1.10 — Supports de Freezing Mark
+
+Supports verrouillés :
+
+- **Eternal Mark**
+- **Prolonged Duration II**
+- **Charged Mark**
+- **Mark for Death II**
+
+Le cinquième emplacement reste libre pour l'instant. **Biting Frost II reste exclu.**
