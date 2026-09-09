@@ -68,7 +68,14 @@ Rôle : moteur principal de DPS boss.
 
 Rôle : clear, Chill/Freeze et overkill.
 
-**Problème en cours :** malgré les **+75% Freeze Buildup** de l’arbre présents sur la bêta, les boss ne Freeze pas aussi rapidement qu’attendu. Un test avec un support dédié au Freeze doit comparer le temps jusqu’au premier Freeze.
+**Problème en cours :** malgré les **+75% Freeze Buildup** de l’arbre présents sur la bêta, les boss ne Freeze pas aussi rapidement qu’attendu.
+
+**Test bêta n°1 — sans Freeze support, Charged Staff actif :**
+- Hollow Form n’a montré aucune contribution visible à l’accumulation de Gel du boss.
+- Pendant le combat : **4 utilisations de Shattering Palm**, **Tempest Bell posée**, puis Hollow Form utilisé comme source principale de dégâts.
+- Le boss est mort **avant d’être Gelé**.
+- Ce test renforce fortement l’hypothèse que le Freeze boss dépend surtout de Shattering Palm / des dégâts de froid réellement appliqués, et non du DPS brut de Hollow Form.
+- Le test avec un support dédié au Freeze reste nécessaire avant de verrouiller une correction.
 
 ### Charged Staff
 
@@ -216,20 +223,28 @@ Conséquence importante :
 - Malgré cela, les boss ne sont pas Gelés aussi rapidement qu’attendu.
 - Le clear reste excellent ; le problème est spécifique au contrôle / Freeze des boss.
 
-### Hypothèse structurelle à tester
+### Hypothèse structurelle — fortement renforcée par le test n°1
 
-- Hollow Form → Whirling Assault est principalement une source de dégâts physiques : il est possible qu’une part insuffisante de ses Hits contribue réellement au Freeze Buildup.
-- Shattering Palm pourrait donc devoir devenir la vraie compétence dédiée à la préparation du Freeze sur boss.
-- Cette hypothèse n’est **pas encore verrouillée** : elle doit être confirmée par test.
+- Hollow Form → Whirling Assault est principalement une source de dégâts physiques et, dans le test bêta n°1, **n’a montré aucune contribution visible à la jauge de Freeze du boss**.
+- Même avec **4 Shattering Palm**, **Tempest Bell** et **Charged Staff actif**, le boss est mort avant le premier Freeze.
+- Shattering Palm devient donc le candidat principal pour porter l’accumulation de Gel sur boss.
+- Cette conclusion reste **EN TEST**, car le contrôle avec un support de Freeze dédié n’a pas encore été effectué.
 
-### Protocole de test demandé
+### Protocole de test
 
-Comparer sur un boss comparable :
+**Test n°1 effectué :**
+- setup actuel sans Freeze support ;
+- Charged Staff actif ;
+- 4 Shattering Palm ;
+- Tempest Bell posée ;
+- Hollow Form pour le DPS ;
+- aucun Freeze avant la mort du boss ;
+- aucune contribution visible de Hollow Form à la jauge.
 
-1. **Shattering Palm setup actuel** → temps jusqu’au premier Freeze.
-2. **Shattering Palm + support de Freeze dédié** → temps jusqu’au premier Freeze.
-3. **Hollow Form seul** → observer la progression de la jauge de Freeze.
-4. Garder **Charged Staff** contrôlé / noté pour éviter de mélanger sa contribution.
+**Test n°2 à faire :**
+1. **Shattering Palm + support de Freeze dédié** → mesurer le temps jusqu’au premier Freeze.
+2. Comparer la vitesse de montée de jauge au test n°1.
+3. Garder Charged Staff dans le même état pour rendre la comparaison exploitable.
 
 ### Statut
 
@@ -262,9 +277,11 @@ Comparer sur un boss comparable :
 - Problème confirmé et quantifié par test réel.
 - Direction de résolution : **Mana Regeneration Rate + Lavianga**, puis révision arbre/gear.
 
-### OUVERT — Freeze boss
+### EN TEST — Freeze boss
 - Problème confirmé malgré les +75% Freeze Buildup de l’arbre.
-- Tests comparatifs en cours.
+- Test n°1 : aucun Freeze avant la mort du boss malgré 4 Shattering Palm + Tempest Bell, Charged Staff actif.
+- Hollow Form n’a montré aucune contribution visible à l’accumulation de Gel.
+- Test avec Freeze support encore à effectuer avant correction.
 
 ## 12. Évaluation et priorités actuelles
 
