@@ -1,0 +1,9 @@
+(function(){
+const MAP={resFire:'fire',resCold:'cold',resLightning:'lightning',resChaos:'chaos'};
+const allAffixes=i=>[...(i.implicits||[]),...(i.prefixes||[]),...(i.suffixes||[])];
+function ringMultiplier(item,data){if(!item.ingenuitySide)return 1;const p=item.ingenuitySide==='left'?data.rules.ingenuityLeftRingBonusPct:data.rules.ingenuityRightRingBonusPct;return 1+p/100;}
+function calcResistances(data){const raw={...data.rules.treeResistanceBonus};Object.keys(raw).forEach(k=>raw[k]+=data.rules.campaignElementalBonus[k]||0);Object.values(data.gear).forEach(item=>{const m=ringMultiplier(item,data);allAffixes(item).forEach(a=>{const k=MAP[a.stat];if(!k||!Number.isFinite(Number(a.value)))return;raw[k]+=Number(a.value)*(a.ingenuity?m:1);});});const afterPenalty={fire:raw.fire+data.rules.endgameElementalPenalty,cold:raw.cold+data.rules.endgameElementalPenalty,lightning:raw.lightning+data.rules.endgameElementalPenalty,chaos:raw.chaos+data.rules.endgameChaosPenalty};const capped={};Object.keys(afterPenalty).forEach(k=>capped[k]=Math.min(data.rules.resistanceCap,afterPenalty[k]));return{raw,afterPenalty,capped};}
+function calcCrit(data){const c=data.workingCharacter.crit;const increased=Number(c.increasedPctFromTree||0)+Number(c.increasedPctFromGear||0)+Number(c.increasedPctFromJewels||0);const permanent=Number(c.weaponBasePct||0)*(1+increased/100);const powerCharge=permanent*(1+Number(c.morePctPowerChargeCondition||0)/100);const blindBoss=powerCharge*(1+Number(c.morePctBlindsideCondition||0)/100);return{increased,permanent,powerCharge,blindBoss};}
+function calcSpirit(data){const total=Number(data.workingCharacter.spiritTotal||0),reserved=Number(data.workingCharacter.spiritReserved||0);return{total,reserved,free:total-reserved};}
+window.HD_CALC={calcResistances,calcCrit,calcSpirit};
+})();
