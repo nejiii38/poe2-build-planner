@@ -120,16 +120,16 @@ Rôle : couche Lightning et application de Blind.
 - Réservation de travail : **70 Spirit** = 30 base + 20 Clarity II + 20 Precision II.
 - Rôle : charges + utilitaire + support du sustain Mana via Clarity II.
 
-### Danseur du vent / Wind Dancer — REWORK
+### Danseur du vent / Wind Dancer — VERROUILLÉ
 
-**Maim • Pin I** *(working temporaire)*
+**Maim • Blind II • Rage II**
 
-- **Lockdown est retiré / INVALIDÉ** : indisponible dans le client actuel malgré des entrées encore présentes dans certaines bases externes.
-- **Maim** et **Pin I** restent actifs temporairement pendant le retravail.
-- Candidats prioritaires à comparer : **Blind II**, **Rage II**, **Her Declaration**, **Seraph's Heart**.
-- Réservation provisoire : **30 Spirit** tant qu'aucun nouveau support à multiplicateur/réservation supplémentaire n'est verrouillé.
-- Statut : **OUVERT / REWORK**.
-- Rôle : défense / Evasion / repoussement / contrôle de proximité, avec possibilité de transformer Gale en générateur utilitaire de Blind ou de Rage.
+- Supports retenus et **VERROUILLÉS** : **Maim, Blind II, Rage II**.
+- **Pin I est exclu** : le contrôle Pin n'est pas jugé suffisamment convaincant pour justifier un emplacement.
+- **Lockdown reste INVALIDÉ / exclu** : indisponible dans le client actuel.
+- Options non verrouillées : **Her Declaration**, **Seraph's Heart**.
+- `Blind II` utilise un multiplicateur de coût de **110%** ; réservation de travail : **33 Spirit** pour Wind Dancer.
+- Rôle : couche Evasion persistante + Gale utilitaire, avec **Maim**, **Blind** renforcé et génération de **Rage**.
 
 ### Spirit Vessel — EXCLU
 
@@ -201,16 +201,16 @@ Estimation empirique dérivée des mesures :
 Budget actif actuel :
 
 - Charge Regulation : **70 Spirit**
-- Danseur du vent : **30 Spirit**
-- Total réservé : **100 Spirit**
+- Danseur du vent : **33 Spirit**
+- Total réservé : **103 Spirit**
 - Spirit total modélisé avec gear actuel : **226**
-- Libre : **126 Spirit**
+- Libre : **123 Spirit**
 - Elemental Conflux : **inactif**, donc non compté.
 
 Conséquence importante :
 
 - Le préfixe **+61 Spirit** du torse n’est plus nécessaire pour faire fonctionner le setup actif actuel.
-- Si ce préfixe est retiré sans autre changement, le total descendrait à **165 Spirit** pour **100 réservés**, soit **65 Spirit libres**.
+- Si ce préfixe est retiré sans autre changement, le total descendrait à **165 Spirit** pour **103 réservés**, soit **62 Spirit libres**.
 - Ce préfixe du torse est donc **candidat à remplacement**, avec priorité potentielle à une solution de Mana / sustain si le pool d’affixes le permet.
 
 ## 8. Quarterstaff / cible endgame
@@ -289,14 +289,15 @@ Conséquence importante :
 - Solution : **Vitality II supprimée définitivement de Charge Regulation**.
 - Effet secondaire positif : économie de **40 Spirit**.
 
-### ROUVERT / REWORK — Supports de Danseur du vent
-- **Lockdown retiré** : indisponible dans le client actuel.
-- **Maim + Pin I** restent le working temporaire.
-- Comparaison en cours : **Blind II / Rage II / Her Declaration / Seraph's Heart**.
-- Le nouveau package ne sera verrouillé qu'après validation.
+### RÉSOLU / VERROUILLÉ — Supports de Danseur du vent
+- Package final retenu : **Maim + Blind II + Rage II**.
+- **Pin I est exclu** du setup.
+- **Lockdown reste exclu / invalide**.
+- **Her Declaration** et **Seraph's Heart** restent facultatifs et non verrouillés.
+- Réservation active de Wind Dancer : **33 Spirit**.
 
 ### PARTIELLEMENT RÉSOLU — Pression Spirit
-- Les réservations actives sont descendues à **100 Spirit**.
+- Les réservations actives sont désormais à **103 Spirit**.
 - Elemental Conflux reste inactif.
 - Le +61 Spirit du torse est maintenant probablement superflu pour la bêta actuelle.
 
