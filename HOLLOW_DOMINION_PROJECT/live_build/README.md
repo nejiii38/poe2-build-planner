@@ -20,10 +20,18 @@ Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — M
 - **Spirit Vessel est supprimé** du setup actif : cette aptitude est octroyée par **Forgotten Warden**, qui occuperait l’emplacement d’armure de torse à la place de notre **Veste racée**.
 - **Danseur du vent** le remplace comme aptitude persistante active et réserve **30 Esprit**.
 - **Vitalité II est définitivement retirée de Régulation des charges.**
-- Régulation des charges réserve désormais **70 Esprit** : 30 de base + 20 Clarté II + 20 Justesse II.
+- Régulation des charges réserve désormais **70 Esprit** : 30 de base + 20 Clarity II + 20 Precision II.
 - Budget actuel : **100 / 226 Esprit réservés**, soit **126 Esprit libres**.
 - **Elemental Conflux reste optionnel et inactif** pour la version bêta actuelle.
 - Le visuel de Danseur du vent utilise temporairement le fallback de l’interface ; le sprite de référence reste inchangé tant qu’un visuel dédié n’a pas été validé.
+
+## Correction live-1.8 — Supports de Danseur du vent
+
+- Supports retenus : **Maim + Pin I + Lockdown**.
+- Supports laissés facultatifs : **Blind II + Her Declaration**.
+- Les noms des **gemmes de soutien restent désormais en anglais dans le live build**.
+- `Precision II` remplace donc l'ancien libellé français `Justesse II` dans Charge Regulation.
+- Ces trois supports de Danseur du vent ne modifient pas le budget actuel du live : **100 / 226 Esprit réservés**, soit **126 Esprit libres**.
 
 ## Source de vérité / priorité
 
