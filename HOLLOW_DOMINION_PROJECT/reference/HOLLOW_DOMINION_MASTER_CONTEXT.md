@@ -120,14 +120,16 @@ Rôle : couche Lightning et application de Blind.
 - Réservation de travail : **70 Spirit** = 30 base + 20 Clarity II + 20 Precision II.
 - Rôle : charges + utilitaire + support du sustain Mana via Clarity II.
 
-### Danseur du vent / Wind Dancer
+### Danseur du vent / Wind Dancer — REWORK
 
-**Maim • Pin I • Lockdown**
+**Maim • Pin I** *(working temporaire)*
 
-- Supports retenus et verrouillés : **Maim, Pin I, Lockdown**.
-- Supports facultatifs : **Blind II, Her Declaration**.
-- Réservation de travail : **30 Spirit**.
-- Rôle : défense / Evasion / repoussement / contrôle de proximité.
+- **Lockdown est retiré / INVALIDÉ** : indisponible dans le client actuel malgré des entrées encore présentes dans certaines bases externes.
+- **Maim** et **Pin I** restent actifs temporairement pendant le retravail.
+- Candidats prioritaires à comparer : **Blind II**, **Rage II**, **Her Declaration**, **Seraph's Heart**.
+- Réservation provisoire : **30 Spirit** tant qu'aucun nouveau support à multiplicateur/réservation supplémentaire n'est verrouillé.
+- Statut : **OUVERT / REWORK**.
+- Rôle : défense / Evasion / repoussement / contrôle de proximité, avec possibilité de transformer Gale en générateur utilitaire de Blind ou de Rage.
 
 ### Spirit Vessel — EXCLU
 
@@ -287,9 +289,11 @@ Conséquence importante :
 - Solution : **Vitality II supprimée définitivement de Charge Regulation**.
 - Effet secondaire positif : économie de **40 Spirit**.
 
-### RÉSOLU — Supports principaux de Danseur du vent
-- Verrouillés : **Maim + Pin I + Lockdown**.
-- Facultatifs : **Blind II + Her Declaration**.
+### ROUVERT / REWORK — Supports de Danseur du vent
+- **Lockdown retiré** : indisponible dans le client actuel.
+- **Maim + Pin I** restent le working temporaire.
+- Comparaison en cours : **Blind II / Rage II / Her Declaration / Seraph's Heart**.
+- Le nouveau package ne sera verrouillé qu'après validation.
 
 ### PARTIELLEMENT RÉSOLU — Pression Spirit
 - Les réservations actives sont descendues à **100 Spirit**.
