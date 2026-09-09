@@ -10,6 +10,11 @@
     "supports": "small icon left of unnumbered support line",
     "lineage_supports": "official PoE2DB gem image when no support skill icon is exposed"
   },
+  "implementation": {
+    "javascript": "poe2db-visuals.js",
+    "css": "poe2db-visuals.css",
+    "mode": "additive overlay; general layout unchanged"
+  },
   "legacy_assets": {
     "gear": "assets/gear/*.svg",
     "skills": "assets/skills/skills-sprite.svg",
