@@ -64,9 +64,11 @@ Rôle : moteur principal de DPS boss.
 
 ### Shattering Palm
 
-**Ancestral Call II • Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest**
+**Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest • Ice Bite II**
 
-Rôle : clear, Chill/Freeze et overkill.
+Support de swap clear : **Ancestral Call II**.
+
+Rôle : clear, setup du premier Freeze boss et overkill. **Ice Bite II est verrouillé dans le setup boss de travail.**
 
 **Problème en cours :** malgré les **+75% Freeze Buildup** de l’arbre présents sur la bêta, les boss ne Freeze pas aussi rapidement qu’attendu.
 
@@ -75,7 +77,7 @@ Rôle : clear, Chill/Freeze et overkill.
 - Pendant le combat : **4 utilisations de Shattering Palm**, **Tempest Bell posée**, puis Hollow Form utilisé comme source principale de dégâts.
 - Le boss est mort **avant d’être Gelé**.
 - Ce test renforce fortement l’hypothèse que le Freeze boss dépend surtout de Shattering Palm / des dégâts de froid réellement appliqués, et non du DPS brut de Hollow Form.
-- Le test avec un support dédié au Freeze reste nécessaire avant de verrouiller une correction.
+- Ce test sert de baseline avant la correction désormais retenue : **Freezing Mark + Ice Bite II**.
 
 ### Charged Staff
 
@@ -227,13 +229,21 @@ Conséquence importante :
 
 - Hollow Form → Whirling Assault est principalement une source de dégâts physiques et, dans le test bêta n°1, **n’a montré aucune contribution visible à la jauge de Freeze du boss**.
 - Même avec **4 Shattering Palm**, **Tempest Bell** et **Charged Staff actif**, le boss est mort avant le premier Freeze.
-- Shattering Palm devient donc le candidat principal pour porter l’accumulation de Gel sur boss.
-- Cette conclusion reste **EN TEST**, car le contrôle avec un support de Freeze dédié n’a pas encore été effectué.
+- **Nouvelle contrainte de design verrouillée :** Shattering Palm ne doit pas devenir la source principale continue de Freeze en boss. Son rôle est le **setup initial** : environ **4 coups** pour construire le Combo / préparer le contrôle, puis **Tempest Bell**, puis le reste du combat doit être assuré principalement par **Hollow Form → Whirling Assault**.
+- L’objectif de correction est donc désormais de **faire contribuer Hollow Form / Whirling Assault à l’accumulation de Gel**, plutôt que de simplement empiler davantage de Freeze Buildup sur Shattering Palm.
+- Toute solution devra préserver autant que possible le rôle Lightning de **Charged Staff** et le DPS boss de Hollow Form.
+- **Direction mécanique validée : Freezing Mark + Ice Bite II.**
+  - **Freezing Mark** devient l'outil de setup boss : les Hits contre la cible marquée génèrent davantage de Freeze Buildup ; après le Freeze, le buff octroie **30% des dégâts gagnés sous forme de Cold pendant 10 s**.
+  - **Ice Bite II** est intégré à **Shattering Palm** : lorsqu'une aptitude supportée Freeze, le personnage gagne **30% des dégâts sous forme de Cold pendant 6 s**, ce qui donne ensuite à Hollow Form une composante Cold capable de participer au Freeze Buildup.
+  - Shattering Palm ayant déjà 5 supports, **Ancestral Call II passe en clear swap facultatif** afin de libérer le slot d'Ice Bite II.
+  - **Biting Frost II est rejeté / exclu** : ce support empêche l'aptitude supportée de générer du Freeze Buildup et consomme le Freeze, contraire à notre objectif.
+- Rotation de travail verrouillée pour test : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
+- Statut : **PARTIELLEMENT RÉSOLU / EN TEST**. Le mécanisme choisi est intégré ; il reste à mesurer en jeu si Hollow Form entretient suffisamment le Freeze après le premier proc.
 
 ### Protocole de test
 
 **Test n°1 effectué :**
-- setup actuel sans Freeze support ;
+- setup antérieur sans Ice Bite II / Freezing Mark ;
 - Charged Staff actif ;
 - 4 Shattering Palm ;
 - Tempest Bell posée ;
@@ -241,17 +251,21 @@ Conséquence importante :
 - aucun Freeze avant la mort du boss ;
 - aucune contribution visible de Hollow Form à la jauge.
 
-**Test n°2 à faire :**
-1. **Shattering Palm + support de Freeze dédié** → mesurer le temps jusqu’au premier Freeze.
-2. Comparer la vitesse de montée de jauge au test n°1.
-3. Garder Charged Staff dans le même état pour rendre la comparaison exploitable.
+**Test n°2 à faire — moteur validé :**
+1. Appliquer **Freezing Mark** au boss.
+2. Utiliser environ **4 Shattering Palm** avec **Ice Bite II**.
+3. Noter le moment du **premier Freeze** et confirmer l'activation des buffs Cold.
+4. Poser **Tempest Bell**, puis passer sur **Hollow Form**.
+5. Observer si Hollow Form fait progresser visiblement la nouvelle jauge de Freeze et si un second Freeze est obtenu avant expiration des buffs.
+6. Garder **Charged Staff actif** pour rester comparable au test n°1.
 
 ### Statut
 
-**EN TEST.** Selon le résultat, les leviers possibles seront :
-- davantage de Freeze Buildup ;
-- davantage de dégâts de froid réellement présents dans les Hits de boss ;
-- spécialisation plus nette de Shattering Palm comme outil de Freeze.
+**PARTIELLEMENT RÉSOLU / EN TEST.**
+- La direction mécanique est maintenant verrouillée : **Freezing Mark + Ice Bite II**.
+- **Biting Frost II est exclu**.
+- Shattering Palm reste un setup court avant **Tempest Bell**.
+- La validation restante est expérimentale : confirmer que les buffs Cold permettent réellement à **Hollow Form → Whirling Assault** de reprendre et entretenir l'accumulation de Gel sur boss.
 
 ## 11. Problèmes résolus / décisions récentes
 
@@ -277,17 +291,21 @@ Conséquence importante :
 - Problème confirmé et quantifié par test réel.
 - Direction de résolution : **Mana Regeneration Rate + Lavianga**, puis révision arbre/gear.
 
-### EN TEST — Freeze boss
+### PARTIELLEMENT RÉSOLU / EN TEST — Freeze boss
 - Problème confirmé malgré les +75% Freeze Buildup de l’arbre.
 - Test n°1 : aucun Freeze avant la mort du boss malgré 4 Shattering Palm + Tempest Bell, Charged Staff actif.
-- Hollow Form n’a montré aucune contribution visible à l’accumulation de Gel.
-- Test avec Freeze support encore à effectuer avant correction.
+- Hollow Form n’a montré aucune contribution visible à l’accumulation de Gel avant correction.
+- **Contrainte verrouillée :** Shattering Palm = ~4 coups de setup, puis Tempest Bell ; Hollow Form doit ensuite assurer le DPS et participer lui-même au Freeze Buildup.
+- **Solution de travail intégrée : Freezing Mark + Ice Bite II sur Shattering Palm.**
+- **Ancestral Call II** passe en swap clear facultatif pour respecter la limite de 5 supports.
+- **Biting Frost II est exclu.**
+- Prochain test : vérifier le premier Freeze avec Freezing Mark + Ice Bite II, puis observer si la jauge continue à progresser sous Hollow Form pendant les buffs Cold.
 
 ## 12. Évaluation et priorités actuelles
 
 - Les dégâts bêta et le clear sont déjà **très élevés / très fluides** avec un équipement non-BiS.
 - Priorité n°1 : **sustain Mana**.
-- Priorité n°2 : **fiabiliser le Freeze des boss**.
+- Priorité n°2 : **valider en jeu le moteur Freeze Freezing Mark + Ice Bite II → Hollow Form**.
 - Priorité n°3 : conserver la défense Evasion + ES et surveiller les gros hits physiques.
 - Priorité n°4 : seulement ensuite reprendre critique / affixes offensifs / optimisation fine.
 - Règle de pruning : ne pas ajouter de mécanique qui ne soutient pas directement **Whirling Assault**, le contrôle nécessaire, le sustain ou la survie.
