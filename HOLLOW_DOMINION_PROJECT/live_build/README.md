@@ -81,3 +81,11 @@ Supports verrouillés :
 - **Mark for Death II**
 
 Le cinquième emplacement reste libre pour l'instant. **Biting Frost II reste exclu.**
+
+## Correction live-1.11 — Refonte des supports de Danseur du vent
+
+- **Lockdown est retiré** : indisponible dans le client actuel et désormais listé comme support désactivé par le wiki.
+- Le package de supports repasse en **REWORK**.
+- Supports actifs temporaires : **Maim + Pin I**.
+- Candidats prioritaires : **Blind II, Rage II, Her Declaration, Seraph's Heart**.
+- Le budget reste provisoirement à **30 Spirit** tant qu'aucun support avec multiplicateur/réservation supplémentaire n'est verrouillé.
