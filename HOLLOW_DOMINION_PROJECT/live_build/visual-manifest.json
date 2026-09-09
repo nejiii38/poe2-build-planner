@@ -1,35 +1,22 @@
 {
-  "reference_image": {
-    "filename": "ChatGPT Image 9 sept. 2026, 05_47_28(1).png",
-    "width": 1672,
-    "height": 941,
-    "status": "user-designated reference for build values, layout, and visual extraction",
-    "note": "Le live build affiche désormais les visuels extraits de cette image via des SVG embarquant des WebP compressés : une vignette par équipement et un sprite 3x3 pour les compétences."
+  "visual_source": {
+    "primary": "PoE2DB",
+    "policy": "Verify/update visual on every gear, skill, or support change",
+    "transparent_background": "preserve native transparency"
   },
-  "gear_crops": {
-    "helmet": [64, 133, 171, 286],
-    "gloves": [64, 310, 171, 468],
-    "weapon": [64, 493, 171, 648],
-    "chest": [878, 132, 993, 287],
-    "belt": [878, 310, 993, 466],
-    "boots": [878, 492, 993, 648],
-    "amulet": [1266, 132, 1379, 286],
-    "ring-amethyst": [1266, 310, 1379, 466],
-    "ring-topaz": [1266, 492, 1379, 648]
+  "display": {
+    "gear": "official PoE2DB item/base image",
+    "skills": "official PoE2DB skill icon",
+    "supports": "small icon left of unnumbered support line",
+    "lineage_supports": "official PoE2DB gem image when no support skill icon is exposed"
   },
-  "skill_crops": {
-    "hollow-form": [60, 650, 204, 802],
-    "shattering-palm": [208, 650, 368, 802],
-    "charged-staff": [370, 650, 528, 802],
-    "tempest-bell": [530, 650, 686, 802],
-    "hollow-resonance": [688, 650, 842, 802],
-    "hollow-focus": [845, 650, 1007, 802],
-    "charge-regulation": [1010, 650, 1161, 802],
-    "spirit-vessel": [1300, 650, 1440, 802],
-    "elemental-conflux": [1440, 650, 1602, 802]
-  },
-  "live_assets": {
+  "legacy_assets": {
     "gear": "assets/gear/*.svg",
-    "skills": "assets/skills/skills-sprite.svg"
-  }
+    "skills": "assets/skills/skills-sprite.svg",
+    "status": "retained for rollback only; not active visual source"
+  },
+  "audit": {
+    "Elemental Focus II": "Current PoE2DB lists Elemental Focus without II; visual mapped to current Elemental Focus icon, label unchanged pending build decision"
+  },
+  "last_verified": "2026-09-10"
 }
