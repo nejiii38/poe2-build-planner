@@ -33,6 +33,15 @@ Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — M
 - `Precision II` remplace donc l'ancien libellé français `Justesse II` dans Charge Regulation.
 - Ces trois supports de Danseur du vent ne modifient pas le budget actuel du live : **100 / 226 Esprit réservés**, soit **126 Esprit libres**.
 
+## Correction live-1.9 — Moteur Freeze boss
+
+- **Freezing Mark** est intégré comme aptitude active de setup boss.
+- **Ice Bite II** est intégré sur **Shattering Palm**.
+- **Ancestral Call II** passe en swap facultatif de clear pour respecter la limite de 5 supports.
+- **Biting Frost II est exclu**.
+- Rotation de travail : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
+- Statut : **PARTIELLEMENT RÉSOLU / EN TEST**.
+
 ## Source de vérité / priorité
 
 1. `../reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions de build.
