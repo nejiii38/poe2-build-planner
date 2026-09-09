@@ -79,6 +79,15 @@ Rôle : clear, setup du premier Freeze boss et overkill. **Ice Bite II est verro
 - Ce test renforce fortement l’hypothèse que le Freeze boss dépend surtout de Shattering Palm / des dégâts de froid réellement appliqués, et non du DPS brut de Hollow Form.
 - Ce test sert de baseline avant la correction désormais retenue : **Freezing Mark + Ice Bite II**.
 
+### Freezing Mark
+
+**Eternal Mark • Prolonged Duration II • Charged Mark • Mark for Death II**
+
+- Ces quatre supports sont **VERROUILLÉS**.
+- Le cinquième emplacement reste **libre / non verrouillé** pour l'instant.
+- **Biting Frost II reste exclu**.
+- Rôle : accélérer et prolonger le setup Freeze boss avant le passage sur Hollow Form.
+
 ### Charged Staff
 
 **Blind II • Perpetual Charge • Prolonged Duration II • Elemental Armament II • Innervate**
@@ -291,12 +300,19 @@ Conséquence importante :
 - Problème confirmé et quantifié par test réel.
 - Direction de résolution : **Mana Regeneration Rate + Lavianga**, puis révision arbre/gear.
 
+### RÉSOLU — Supports de Freezing Mark
+- Supports verrouillés : **Eternal Mark + Prolonged Duration II + Charged Mark + Mark for Death II**.
+- Cinquième slot laissé libre.
+- **Biting Frost II** reste exclu.
+
 ### PARTIELLEMENT RÉSOLU / EN TEST — Freeze boss
 - Problème confirmé malgré les +75% Freeze Buildup de l’arbre.
 - Test n°1 : aucun Freeze avant la mort du boss malgré 4 Shattering Palm + Tempest Bell, Charged Staff actif.
 - Hollow Form n’a montré aucune contribution visible à l’accumulation de Gel avant correction.
 - **Contrainte verrouillée :** Shattering Palm = ~4 coups de setup, puis Tempest Bell ; Hollow Form doit ensuite assurer le DPS et participer lui-même au Freeze Buildup.
 - **Solution de travail intégrée : Freezing Mark + Ice Bite II sur Shattering Palm.**
+- Supports de **Freezing Mark verrouillés** : **Eternal Mark • Prolonged Duration II • Charged Mark • Mark for Death II**.
+- Le 5e slot de Freezing Mark reste libre pour l'instant.
 - **Ancestral Call II** passe en swap clear facultatif pour respecter la limite de 5 supports.
 - **Biting Frost II est exclu.**
 - Prochain test : vérifier le premier Freeze avec Freezing Mark + Ice Bite II, puis observer si la jauge continue à progresser sous Hollow Form pendant les buffs Cold.
