@@ -1,5 +1,5 @@
 window.HOLLOW_DOMINION_DATA={
-meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.8-wind-dancer-supports",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel a été retiré car l'aptitude est octroyée par Forgotten Warden, incompatible avec notre Veste racée. Danseur du vent est désormais actif à sa place. Vitalité II est définitivement retirée de Régulation des charges. Pour cette phase, l'arbre et les bonus permanents de campagne sont des constantes verrouillées ; seule la couche équipement est modifiable dans l'interface et pilote les statistiques."},
+meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.9-freeze-engine",updated:"2026-09-09",note:"Stuff et compétences/supports intégrés au vrai live build. Spirit Vessel et Vitality II sont exclus. Danseur du vent est actif. Direction Freeze boss validée : Freezing Mark + Ice Bite II sur Shattering Palm afin que le premier Freeze donne ensuite à Hollow Form une composante Cold. Biting Frost II est exclu. Pour cette phase, l’arbre et les bonus permanents de campagne restent verrouillés."},
 rules:{endgameElementalPenalty:-60,endgameChaosPenalty:0,resistanceCap:75,ingenuityRounding:"floor-per-mod",qualityLocalDefenceMorePerPct:1},
 campaignFixed:{
 attributes:{strength:5,dexterity:5,intelligence:5},flatLife:20,maxLifePct:5,maxManaPct:5,spirit:100,manaRegenPct:25,kaomDefencesPct:30,resistances:{fire:15,cold:15,lightning:15,chaos:0},ancientVowsCharmChargesGainedPct:30,manaRecoveryFromFlasksPct:30,
@@ -18,7 +18,8 @@ ringTopaz:{slot:"Bague droite",name:"Bague de Topaze",rarity:"Rare BiS — trava
 },
 skills:[
 {name:"Hollow Form → Whirling Assault",role:"Main DPS boss",active:true,supports:["Heavy Swing","Heightened Charges","Blindside","Vorana's Siege"]},
-{name:"Shattering Palm",role:"Clear / Freeze / Overkill",active:true,supports:["Ancestral Call II","Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest"]},
+{name:"Shattering Palm",role:"Clear / setup Freeze boss / Overkill",active:true,supports:["Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest","Ice Bite II"],optionalSupports:["Ancestral Call II — clear swap"]},
+{name:"Freezing Mark",role:"Boss setup / amplification Freeze / Cold gain",active:true,supports:[]},
 {name:"Charged Staff",role:"Lightning / Shock / Blind / contrôle boss",active:true,supports:["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"]},
 {name:"Tempest Bell",role:"Burst élémentaire",active:true,supports:["Heavy Swing","Close Combat II","Ancestral Call II","Overabundance II","Rage III"]},
 {name:"Hollow Resonance",role:"Stun",active:true,supports:["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"]},
@@ -27,5 +28,12 @@ skills:[
 {name:"Danseur du vent",role:"Défense / Évasion / Repoussement / contrôle",active:true,spiritReservation:30,reservationBreakdown:"30 Esprit",supports:["Maim","Pin I","Lockdown"],optionalSupports:["Blind II","Her Declaration"]},
 {name:"Elemental Conflux",role:"Optionnel",active:false,spiritReservation:60,supports:["Elemental Focus II","Innervate"]}
 ],
-priorities:[{id:1,title:"Chance de critique réelle",status:"ACTIVE",note:"Utiliser les deux suffixes libres, comparer Duality 15% et les Jewel Sockets sans toucher à l'arbre."},{id:2,title:"Sustain Mana",status:"OPEN",note:"Tester Hollow Form / Whirling Assault prolongé avec +3 Mêlée et Attack Speed final."},{id:3,title:"Budget Spirit",status:"OPEN",note:"Spirit Vessel et Vitalité II supprimés ; Danseur du vent actif pour 30 Esprit. Réservation actuelle : 100 / 226, soit 126 Esprit libres. Elemental Conflux reste optionnel."},{id:4,title:"Gros hits physiques",status:"OPEN",note:"Améliorer sans casser ES/Evasion/contrôle."},{id:5,title:"Supports secondaires",status:"OPEN",note:"Danseur du vent : Maim + Pin I + Lockdown verrouillés ; Blind II et Her Declaration restent facultatifs. Auditer aussi Pinpoint Critical, Overabundance II, Rage III et Innervate boss."},{id:6,title:"Clear final",status:"LATER",note:"Ne pas sacrifier bossing/survie si Shattering Palm clear déjà instantanément."}]
+priorities:[
+{id:1,title:"Sustain Mana",status:"OPEN",note:"Problème réel quantifié sur la bêta ; priorité à Mana Regeneration Rate sans ralentir Hollow Form."},
+{id:2,title:"Freeze boss — moteur Hollow Form",status:"TEST",note:"Freezing Mark + Ice Bite II intégrés. Rotation de travail : Mark → ~4 Shattering Palm → Freeze → Tempest Bell → Hollow Form. Vérifier que Hollow Form entretient ensuite le Freeze."},
+{id:3,title:"Chance de critique réelle",status:"ACTIVE",note:"Utiliser les deux suffixes libres, comparer Duality 15% et les Jewel Sockets sans toucher à l'arbre."},
+{id:4,title:"Budget Spirit",status:"OPEN",note:"Réservation actuelle : 100 / 226, soit 126 Esprit libres. Elemental Conflux reste optionnel ; le +61 Spirit du torse est candidat au remplacement."},
+{id:5,title:"Gros hits physiques",status:"OPEN",note:"Améliorer sans casser ES/Evasion/contrôle."},
+{id:6,title:"Supports secondaires",status:"OPEN",note:"Danseur du vent : Maim + Pin I + Lockdown verrouillés ; Blind II et Her Declaration facultatifs. Ancestral Call II devient un clear swap pour Shattering Palm."}
+]
 };
