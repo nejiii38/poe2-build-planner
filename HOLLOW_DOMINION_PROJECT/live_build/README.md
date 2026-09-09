@@ -8,12 +8,14 @@ Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — M
 
 ## Visuels intégrés
 
-- les **9 équipements** affichent leur vignette extraite de l’image de référence ;
-- les compétences déjà présentes sur l’image de référence utilisent leurs vignettes extraites ;
-- **Danseur du vent** utilise temporairement le fallback visuel de l’interface, car il remplace Spirit Vessel qui figurait sur le poster de référence ;
-- les **Implicites / Préfixes / Suffixes / Effets uniques** restent séparés visuellement ;
-- les équipements sont servis depuis `assets/gear/*.svg` ;
-- les compétences de référence utilisent le sprite `assets/skills/skills-sprite.svg`.
+- les **9 équipements** utilisent leur visuel officiel référencé par **PoE2DB** ;
+- les **10 compétences** utilisent leur icône officielle référencée par **PoE2DB** ;
+- chaque **gemme de soutien** affiche un petit logo à gauche de sa ligne, sans numérotation ;
+- les transparences natives des images sont conservées ;
+- les Lineage Supports sans seconde icône de support exposée par PoE2DB utilisent leur image de gemme officielle PoE2DB ;
+- les anciens `assets/gear/*.svg` et `assets/skills/skills-sprite.svg` restent présents comme héritage/rollback, mais ne sont plus la source visuelle active.
+
+**Règle permanente :** lors de toute modification future d’un équipement, d’une compétence ou d’une gemme de soutien, son visuel doit être revérifié/récupéré sur PoE2DB et mis à jour dans le live build.
 
 ## Correction live-1.7 — Vitalité II supprimée
 
@@ -48,7 +50,7 @@ Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — M
 2. `../reference/HOLLOW_DOMINION_reference.build` — allocations exactes.
 3. `../../Skill Trees/0.5.2/data.json` — arbre structurel et stats passives.
 4. **`build-data.js` — état numérique de travail actuel de l'équipement, des stats et des supports.**
-5. `visual-manifest.json` identifie l’image utilisateur de référence et les zones utilisées pour les découpes visuelles.
+5. `visual-manifest.json` identifie la politique et les sources visuelles du live build.
 
 ## Règles importantes
 
@@ -69,7 +71,6 @@ python -m http.server 8000
 puis ouvrir `http://localhost:8000/`.
 
 Le bouton **Modifier le stuff** ouvre le panneau d'édition. Les modifications sont conservées dans le `localStorage` du navigateur. **Exporter JSON** produit un snapshot partageable.
-
 
 ## Correction live-1.10 — Supports de Freezing Mark
 
@@ -97,3 +98,12 @@ Le cinquième emplacement reste libre pour l'instant. **Biting Frost II reste ex
 - **Her Declaration** et **Seraph's Heart** restent des options non verrouillées.
 - `Blind II` applique un multiplicateur de coût de **110%** ; réservation de travail de Wind Dancer : **33 Spirit**.
 - Budget actif mis à jour : **103 / 226 Spirit réservés**, soit **123 Spirit libres**.
+
+## Correction live-1.15 — Visuels PoE2DB vérifiés
+
+- Audit individuel des **9 équipements, 10 compétences et 31 supports** du setup affiché.
+- Correction des mauvaises URLs du brouillon pour **Lochtonial Caress**, **Duality** et **Ingenuity**, ainsi que du chemin de base des **Daggerfoot Shoes**.
+- Correction des identifiants d’icônes de **Charged Mark, Mark for Death II, Innervate, Overabundance II, Stun III et Cooldown Recovery II**.
+- Les Lineage Supports **Vorana's Siege, Her Declaration, Seraph's Heart** utilisent leur image de gemme PoE2DB exacte.
+- `Elemental Focus II` reste affiché tel qu’il existe dans le build actuel, mais PoE2DB courant liste **Elemental Focus** sans `II` : le visuel emploie l’icône actuelle d’Elemental Focus et le nom reste en audit séparé.
+- La mise en forme générale reste inchangée : la couche `poe2db-visuals.*` est additive.
