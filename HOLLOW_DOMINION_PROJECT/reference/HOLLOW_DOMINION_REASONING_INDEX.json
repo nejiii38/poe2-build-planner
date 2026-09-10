@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "last_sync": "2026-09-10",
   "project": {
     "name": "HOLLOW DOMINION",
@@ -10,6 +10,23 @@
     "ascendancy": "Martial Artist",
     "weapon": "Quarterstaff",
     "gear_model_policy": "Beta non-BiS validates behavior; final model uses best legal 0.5.2 affixes/tiers/rolls after audit."
+  },
+  "identity": {
+    "locked_pillars": [
+      "Boss Freeze/chill must be quasi-instant and function as part of the opening boss-control cycle.",
+      "Cold and Lightning must both be practically usable; Charged Staff cannot remain a theoretical layer blocked by Power Charge friction.",
+      "Hollow Form → Whirling Assault remains main boss DPS.",
+      "Shattering Palm remains main clearing skill.",
+      "Preserve the current build's strong damage, clearing, survivability and boss stun while fixing identity gaps."
+    ],
+    "optimization_rule": "Do not rebuild or denigrate a beta that already performs very well. Fix the Cold/Lightning and boss-Freeze identity gaps without unnecessarily sacrificing validated strengths.",
+    "validated_strengths": {
+      "general_damage": "VERY_GOOD",
+      "clearing": "VERY_GOOD",
+      "clearing_survivability": "NEAR_PERFECT_VALIDATED",
+      "boss_stun": "VERY_GOOD_VALIDATED",
+      "mana_sustain": "RESOLVED_VALIDATED_INGAME"
+    }
   },
   "source_precedence": [
     "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_MASTER_CONTEXT.md",
@@ -47,7 +64,7 @@
     "Hollow Form → Whirling Assault": {"role":"MAIN_BOSS_DPS","supports":["Heavy Swing","Heightened Charges","Blindside","Vorana's Siege"]},
     "Shattering Palm": {"role":"MAIN_CLEAR_INITIAL_FREEZE_OVERKILL","supports":["Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest","Ice Bite II"],"clear_swap":["Ancestral Call II"],"rising_tempest_status":"DO_NOT_AUDIT_BEFORE_CHARGED_STAFF_RETEST"},
     "Freezing Mark": {"role":"BOSS_FREEZE_SETUP","supports_locked":["Eternal Mark","Prolonged Duration II","Charged Mark","Mark for Death II"],"fifth_slot":"OPEN","excluded":["Biting Frost II"]},
-    "Charged Staff": {"role":"LIGHTNING_SHOCK_CONTROL","supports":["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"]},
+    "Charged Staff": {"role":"LIGHTNING_SHOCK_CONTROL_IDENTITY_PILLAR","supports":["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"]},
     "Hollow Resonance": {"planned":true,"beta_acquired":false,"beta_tested":false,"status":"WAITING_BETA_VALIDATION","supports":["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"],"audit":["Pinpoint Critical"]},
     "Charge Regulation": {"supports":["Clarity II","Precision II"],"spirit":70,"excluded":["Vitality II"]},
     "Wind Dancer": {"status":"LOCKED","supports":["Maim","Blind II","Rage II"],"spirit":33,"excluded":["Pin I","Lockdown"]},
@@ -68,14 +85,16 @@
       "rule":"All current issues are pre-Hollow Resonance baseline. Do not lock structural corrections before testing Hollow Resonance."
     },
     "power_charge_economy": {
-      "status":"OPEN_WAITING_HOLLOW_RESONANCE_RETEST",
+      "status":"OPEN_IDENTITY_PRIORITY_WAITING_HOLLOW_RESONANCE_RETEST",
       "observation":"Hollow Form is the main observed Power Charge generator but consumes them almost immediately.",
-      "impact":"Charged Staff is too difficult to activate/maintain, making Lightning/Shock setup cumbersome.",
-      "next_if_persistent":"Treat first after Hollow Resonance test."
+      "impact":"Charged Staff is too difficult to activate/maintain, making Lightning/Shock setup cumbersome and preventing the intended Cold + Lightning identity from functioning naturally.",
+      "goal":"Make Charged Staff reliably available in the normal rotation without breaking Hollow Form or Charge Regulation.",
+      "next_if_persistent":"Treat as first structural correction after Hollow Resonance test."
     },
     "freeze_boss": {
-      "status":"OPEN_TESTING_CURRENT_SOLUTION_INSUFFICIENT_WAITING_HOLLOW_RESONANCE_RETEST",
-      "observation":"Boss freeze remains much too slow despite +75% Freeze Buildup and Freezing Mark + Ice Bite II.",
+      "status":"OPEN_IDENTITY_PRIORITY_CURRENT_SOLUTION_INSUFFICIENT_WAITING_HOLLOW_RESONANCE_RETEST",
+      "observation":"Boss Freeze/chill remains much too slow despite +75% Freeze Buildup and Freezing Mark + Ice Bite II.",
+      "identity_target":"Quasi-instant first Freeze/chill as part of the boss-opening control cycle.",
       "constraint":"Shattering Palm remains short setup; Hollow Form remains main boss DPS."
     },
     "charge_duration": {
@@ -84,12 +103,20 @@
     },
     "shattering_palm_overkill": {
       "status":"OPEN_DEPENDENT_ON_CHARGED_STAFF",
-      "observation":"Clear is good but overkill could improve.",
+      "observation":"Clear is already very good but overkill could improve.",
       "dependency":"Do not blame or replace Rising Tempest before Charged Staff is reliable and Shattering Palm is retested with Lightning active."
     },
     "clearing_survivability": {
-      "status":"VALIDATED",
+      "status":"VALIDATED_NEAR_PERFECT",
       "observation":"No deaths in clearing except major gameplay mistakes; preserve Evasion + ES + Wind Dancer."
+    },
+    "boss_stun": {
+      "status":"VALIDATED_VERY_GOOD",
+      "observation":"Boss stun is already very strong and should be preserved during Freeze/charge optimization."
+    },
+    "general_damage_and_clear": {
+      "status":"VALIDATED_VERY_GOOD",
+      "observation":"Current beta already has very good damage and very good clear; optimization is not a rebuild from zero."
     },
     "critical_strikes": {
       "status":"AUDIT",
@@ -98,15 +125,21 @@
   },
   "diagnostic_order": [
     "Acquire and test Hollow Resonance",
-    "Re-evaluate Power Charges / Charged Staff",
-    "Re-evaluate boss Freeze",
+    "Re-evaluate Power Charges / Charged Staff; if still problematic, treat as first structural identity correction",
+    "Re-evaluate boss Freeze and drive it toward quasi-instant opening control",
     "Re-evaluate charge duration / Charge Regulation",
     "Retest Shattering Palm overkill with reliable Charged Staff, then audit Rising Tempest only if needed",
     "Audit critical strike investment"
   ],
-  "preserve": ["Mana sustain resolved", "Clearing survivability validated"],
+  "preserve": [
+    "Mana sustain resolved",
+    "Very good general damage",
+    "Very good clearing",
+    "Near-perfect clearing survivability",
+    "Very good boss stun"
+  ],
   "spirit": {"active_reserved":103,"modeled_total":226,"modeled_free":123,"body_armour_plus_61_spirit":"Candidate for replacement"},
-  "defense": {"working_energy_shield":7168,"working_evasion":7159,"working_deflection":2362,"clearing_status":"VALIDATED"},
+  "defense": {"working_energy_shield":7168,"working_evasion":7159,"working_deflection":2362,"clearing_status":"VALIDATED_NEAR_PERFECT"},
   "gear": {"Ingenuity":{"status":"WORKING_BIS_TARGET","left_ring_bonus_percent":30,"right_ring_bonus_percent":30,"rounding":"floor-per-mod"},"Duality":{"status":"WORKING_ENDGAME_TARGET","base_crit_percent":10,"future_compare_base_crit_percent":15},"Topaz Ring attack speed":{"value_percent":30,"status":"AUDIT_INACTIVE"}},
   "visual_policy": {"source":"PoE2DB","audit_file":"HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md","verified_counts":{"gear":9,"skills":10,"supports":31},"Elemental Focus II":"AUDIT"},
   "maintenance_policy": [
