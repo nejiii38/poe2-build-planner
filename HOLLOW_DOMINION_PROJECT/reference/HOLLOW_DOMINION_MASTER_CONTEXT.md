@@ -1,46 +1,46 @@
 # HOLLOW DOMINION — MASTER CONTEXT
 
-**Path of Exile 2 • Martial Artist • Cold / Lightning • version 0.5.2 • by Nejib**
+**Path of Exile 2 • version 0.5.2 • Monk — Martial Artist • Quarterstaff • by Nejib**
 
-**Mise à jour opérationnelle : 2026-09-10 — inventaire bêta : priorité Charged Staff / Power Charges verrouillée avant diagnostic final de Shattering Palm ; Freeze boss, durée des charges et critique restent à traiter.**
+**Mise à jour opérationnelle : 2026-09-10 — inventaire bêta en cours. Hollow Resonance n’est pas encore acquis/testé ; toute optimisation structurelle est suspendue jusqu’à ce test.**
 
-Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMINION. En cas de contradiction avec une information plus ancienne, toute décision indiquée ici comme **VERROUILLÉE** prévaut.
+Ce fichier est la **référence opérationnelle prioritaire** du projet. En cas de contradiction avec une source plus ancienne, toute décision marquée **VERROUILLÉE** ici prévaut.
 
-## 1. Identité et règles verrouillées
+## 1. Identité mécanique — VERROUILLÉE
 
-- Nom : **HOLLOW DOMINION — by Nejib**.
-- Version de référence : **Path of Exile 2 — 0.5.2**.
+- Build : **HOLLOW DOMINION — by Nejib**.
 - Classe / Ascendancy : **Monk — Martial Artist**.
-- Arme : **Quarterstaff**. Ne jamais réintroduire Hollow Palm à partir d’anciens fichiers/presets.
-- **Fists of Stone** (Lochtonial Caress transformé via Way of the Stonefist) est obligatoire.
-- Boss DPS : **Hollow Form → Whirling Assault**.
-- Clear / Cold / Freeze : **Shattering Palm**.
-- Lightning / Shock / contrôle : **Charged Staff**.
-- Philosophie défensive : **Evasion + Energy Shield**, avec Freeze/Stun comme couches de contrôle.
+- Arme : **Quarterstaff**. Ne jamais réintroduire Hollow Palm depuis d’anciens fichiers/presets.
+- **Fists of Stone** via Lochtonial Caress transformé par **Way of the Stonefist** est obligatoire.
+- **Hollow Form → Whirling Assault** = source principale de DPS boss.
+- **Shattering Palm** = sort principal de clearing, Cold/Freeze et overkill.
+- **Charged Staff** = couche Lightning / Shock / contrôle.
+- Défense = **Evasion + Energy Shield**, avec Freeze/Stun comme contrôle.
 - Priorité vitesse : **Attack Speed >>> Cast Speed**. Ne pas chercher de Cast Speed sur le gear.
-- Convention live build : noms des supports en **anglais**.
-- Les dégâts et le clear de la bêta sont déjà très élevés avec du gear non-BiS : ne pas chercher de DPS supplémentaire au prix du sustain, du contrôle ou de la survivabilité.
+- Noms des supports dans le live build : **anglais**.
 
-### Bêta ingame ≠ stuff final BiS — VERROUILLÉ
+## 2. Bêta ingame ≠ stuff final BiS — VERROUILLÉ
 
-- Le personnage actuellement joué est une **version bêta non-BiS** destinée à valider les interactions, la jouabilité et les seuils réellement suffisants.
-- Les valeurs réellement portées en bêta sont conservées comme **mesures expérimentales**, jamais comme plafond ou roll final automatique.
-- Pour le stuff final, chaque emplacement doit utiliser les **meilleurs affixes / tiers / rolls légalement disponibles en PoE2 0.5.2 sur la base finale retenue**, après validation du pool réel.
-- Tout affixe/tier non encore validé reste **AUDIT** et ne contribue pas comme vérité certaine.
+Le personnage actuellement joué est une **version bêta non-BiS** destinée à valider le comportement réel du build, les interactions et les seuils suffisants.
 
-## 2. Arbre passif — vérité validée
+- Les rolls réellement portés en bêta sont conservés comme **mesures expérimentales**.
+- Ils ne deviennent jamais automatiquement des valeurs finales.
+- Le build final doit utiliser, sur chaque base retenue, les **meilleurs affixes / tiers / rolls légalement disponibles en PoE2 0.5.2**, après validation du pool réel.
+- Tout affixe ou tier non confirmé reste **AUDIT**.
 
-- **120/120** passifs principaux + **8/8** passifs Martial Artist.
-- `AscendancyMonk1Start` = origine graphique uniquement, non comptée.
-- Tous les IDs doivent exister dans `Skill Trees/0.5.2/data.json`.
-- Le visuel final est un arbre Default unique ; ne pas afficher/commenter les Weapon Sets.
-- Topologie : rendu déterministe depuis les IDs, coordonnées et connexions du `data.json`, contrôlé contre le vrai Build Planner.
-- **Interdiction d’utiliser un générateur d’images pour reconstruire la topologie de l’arbre.**
+## 3. Arbre passif — vérité validée
+
+- **120/120** passifs principaux.
+- **8/8** passifs Martial Artist.
+- `AscendancyMonk1Start` = origine graphique uniquement, non dépensée.
+- Tous les IDs viennent de `Skill Trees/0.5.2/data.json`.
 - Mapping exact : `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`.
-- Agrégats de travail live : **+179% Evasion, +179% ES, +14% Attack Speed, +19% Skill Speed, +48% Mana Regeneration Rate, 33% Evasion as Deflection**.
-- Les quatre allocations Freeze sont présentes : **+75% increased Freeze Buildup**.
+- Rendu final : arbre Default unique, Weapon Sets masqués/non commentés.
+- Topologie déterministe depuis `data.json` ; **interdiction d’utiliser un générateur d’images pour reconstruire l’arbre**.
+- Agrégats live de travail : **+179% Evasion, +179% ES, +14% Attack Speed, +19% Skill Speed, +48% Mana Regeneration Rate, 33% Evasion as Deflection**.
+- Freeze : **+75% increased Freeze Buildup** depuis quatre allocations.
 
-### Ascendancy dépensée — exact
+### Ascendancy exacte
 
 1. `AscendancyMonk1Small4` — Area of Effect
 2. `AscendancyMonk1Small6` — Additional Power Charge Chance
@@ -51,167 +51,169 @@ Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMIN
 7. `AscendancyMonk1Small5` — Area of Effect
 8. `AscendancyMonk1Notable4` — Hollow Resonance Technique
 
-**Way of the Mountain est retiré. Way of the Stonefist prévaut.**
+**Way of the Mountain est retiré.**
 
-## 3. Compétences / supports — état courant
+## 4. Compétences / supports — état de travail
 
-- **Hollow Form → Whirling Assault** : Heavy Swing • Heightened Charges • Blindside • Vorana’s Siege. Rôle : boss DPS principal.
-- **Shattering Palm** : Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest • Ice Bite II. `Ancestral Call II` = clear swap facultatif. Rôle : sort principal de clearing + setup initial Freeze/overkill.
+- **Hollow Form → Whirling Assault** : Heavy Swing • Heightened Charges • Blindside • Vorana’s Siege.
+- **Shattering Palm** : Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest • Ice Bite II. `Ancestral Call II` = clear swap facultatif.
 - **Freezing Mark** : Eternal Mark • Prolonged Duration II • Charged Mark • Mark for Death II — **VERROUILLÉS**. 5e slot libre. `Biting Frost II` exclu.
 - **Charged Staff** : Blind II • Perpetual Charge • Prolonged Duration II • Elemental Armament II • Innervate.
 - **Hollow Focus** : Cooldown Recovery II • Overabundance II • Magnified Area II • Close Combat II • Heft. `Overabundance II` = **AUDIT**.
 - **Hollow Resonance** : Stun III • Cooldown Recovery II • Close Combat II • Magnified Area II • Pinpoint Critical. `Pinpoint Critical` = **AUDIT**.
 - **Tempest Bell** : Heavy Swing • Close Combat II • Ancestral Call II • Overabundance II • Rage III. `Rage III` = **AUDIT** ; Magnified Area II alternative.
-- **Charge Regulation** : Clarity II • Precision II. Vitality II définitivement supprimée. Réservation : **70 Spirit**.
-- **Wind Dancer** : Maim • Blind II • Rage II — **VERROUILLÉS**. Réservation : **33 Spirit**. `Pin I` et `Lockdown` exclus ; Her Declaration / Seraph’s Heart optionnels.
-- **Spirit Vessel** : **EXCLU** car dépend de Forgotten Warden et entre en conflit avec la Veste racée.
+- **Charge Regulation** : Clarity II • Precision II. Vitality II définitivement supprimée. Réservation de travail : **70 Spirit**.
+- **Wind Dancer** : Maim • Blind II • Rage II — **VERROUILLÉS**. Réservation de travail : **33 Spirit**. `Pin I` et `Lockdown` exclus ; Her Declaration / Seraph’s Heart optionnels.
+- **Spirit Vessel** : **EXCLU**.
 - **Convalescence** : **EXCLU**.
-- **Elemental Conflux** : optionnel/inactif, 60 Spirit. `Elemental Focus II` reste **AUDIT** de nomenclature.
+- **Elemental Conflux** : optionnel / inactif, 60 Spirit. `Elemental Focus II` reste **AUDIT** de nomenclature.
 
-## 4. Défense / Spirit / gear de travail
+## 5. Défense / Spirit / gear de travail
 
-- Gear défensif : privilégier **Evasion + Energy Shield**.
+- Gear final : Evasion + Energy Shield autant que possible.
 - Spectral Ward : +1 Maximum ES par 12 Item Evasion sur le Body Armour.
-- Working gear final actuel : environ **7168 ES / 7159 Evasion / 2362 Deflection** avant conditions supplémentaires.
-- Recharge ES de travail : **40% faster start** permanent +20% sous condition correspondante.
-- Budget Spirit actif : Charge Regulation 70 + Wind Dancer 33 = **103 Spirit réservés**.
-- Modèle total actuel : **226 Spirit**, donc **123 libres**.
-- Sans le +61 Spirit du torse : environ **165 total / 103 réservés / 62 libres** ; le +61 Spirit de la Veste racée reste candidat au remplacement.
-- **Ingenuity** = cible BiS de travail, hypothèse live +30% gauche / +30% droite, calcul `floor-per-mod`.
+- Modèle actuel : environ **7168 ES / 7159 Evasion / 2362 Deflection** avant conditions supplémentaires.
+- ES recharge : 40% faster start permanent +20% sous condition correspondante.
+- Spirit actif : Charge Regulation 70 + Wind Dancer 33 = **103 réservés**.
+- Total modélisé actuel : **226 Spirit**, donc **123 libres**.
+- Sans le +61 Spirit du torse : ~165 total / 103 réservés / **62 libres**. Le +61 Spirit reste candidat au remplacement.
+- **Ingenuity** = cible BiS de travail ; modèle +30% bague gauche / +30% bague droite, `floor-per-mod`.
 - **Duality Warding Quarterstaff** = cible endgame de travail : base crit 10%, base 1.40 APS, +300% local Physical Damage, +22% local Attack Speed, +30% Critical Damage Bonus, 50 Runic Ward. Variante 15% base crit à comparer plus tard.
-- Bague Topaze : +30% Attack Speed reste **AUDIT / inactif** jusqu’à validation de sa légalité 0.5.2.
+- +30% Attack Speed sur la Bague Topaze : **AUDIT / inactif** jusqu’à validation de légalité 0.5.2.
 
-## 5. Mana — RÉSOLU / VALIDÉ EN JEU
+## 6. Mana — RÉSOLU / VALIDÉ EN JEU
 
 ### Baseline avant correction — 2026-09-09
 
-- Mana max : **624**.
-- Hollow Form affiché : **126 Mana**.
-- Regen affichée : **67.2 Mana/s**.
-- Mana vide en ~5 s sans flacon, ~7 s avec Lavianga.
-- Estimation empirique : consommation effective ~192 Mana/s, déficit net ~124.8 Mana/s, récupération totale avec flacon ~102.9 Mana/s, contribution observée du flacon ~35.7 Mana/s.
+- 624 Mana max.
+- Hollow Form affiché : 126 Mana.
+- Regen affichée : 67.2 Mana/s.
+- Vide en ~5 s sans flacon, ~7 s avec Lavianga.
+- Estimation empirique : ~192 Mana/s de consommation effective.
 
-### Solution bêta validée — 2026-09-10
+### Solution bêta — 2026-09-10
 
-- Un anneau : **+63% Mana Regeneration Rate**.
-- Autre anneau : **+68% Mana Regeneration Rate**.
-- **Ingenuity équipée** et amplifiant les bonus des anneaux.
-- Résultat utilisateur : **plus aucun problème de Mana** dans l’utilisation réelle du build bêta.
-- La solution permet de conserver l’Attack Speed et le rythme de Hollow Form / Whirling Assault.
-- **63% / 68% sont une baseline expérimentale suffisante, pas les rolls BiS finaux.** Les anneaux finaux devront utiliser les meilleurs rolls légaux 0.5.2 compatibles avec le reste du build et reproduire au minimum ce niveau de sustain.
-- Ne pas inventer de valeur post-Ingenuity exacte sans mesure/calcul validé.
+- Anneau 1 : **+63% Mana Regeneration Rate**.
+- Anneau 2 : **+68% Mana Regeneration Rate**.
+- **Ingenuity équipée**.
+- Résultat réel : **plus aucun problème de Mana**.
+- Cette solution permet de conserver l’Attack Speed de Hollow Form / Whirling Assault.
+- Les 63/68 sont une **baseline bêta suffisante**, pas des rolls BiS finaux. Le stuff final doit employer les meilleurs rolls légaux 0.5.2 compatibles avec le build et maintenir au minimum ce sustain.
+- Revalider seulement après changement important de Mana, coût de skill ou Attack Speed.
 
-**Statut : RÉSOLU / VALIDÉ EN JEU.** Recontrôler seulement après une modification importante de Mana, Attack Speed ou coût de Hollow Form.
+## 7. Inventaire bêta actuel — observations réelles
 
-## 6. Inventaire bêta — problématiques actives du 2026-09-10
+### EN ATTENTE DE TEST — Hollow Resonance
 
-### OUVERT / EN TEST — Freeze / frigorification des boss beaucoup trop lente
+- **Hollow Resonance n’est pas encore acquis sur le personnage bêta et n’a jamais été testé en jeu.**
+- Tous les retours actuels sur Freeze, Power Charges / Charged Staff, durée des charges, overkill de Shattering Palm et ressenti critique constituent donc une **baseline pré-Hollow Resonance**.
+- Hollow Resonance reste prévu dans le build final mais son apport réel est **NON TESTÉ / EN ATTENTE DE VALIDATION BÊTA**.
+- Il peut potentiellement modifier le contrôle, le rythme de combat ou la gestion pratique des charges ; **aucune correction structurelle ne doit être verrouillée avant son test**.
 
-- Le temps nécessaire pour frigorifier / Freeze un boss reste **beaucoup trop long** pour le rythme visé.
-- La bêta possède pourtant les +75% Freeze Buildup du tree.
-- Baseline précédente : Charged Staff actif, ~4 Shattering Palm, Tempest Bell puis Hollow Form ; le boss mourait avant le premier Freeze et Hollow Form ne faisait pas progresser visiblement la jauge.
-- Direction actuellement intégrée : **Freezing Mark + Ice Bite II**.
-- Rotation de test actuelle : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
-- **Nouveau retour bêta : même avec cette direction, le Freeze reste trop lent. La solution actuelle est donc insuffisante en pratique.**
-- Contrainte toujours verrouillée : Shattering Palm ne doit pas devenir un spam boss permanent ; il doit rester un setup court puis laisser Hollow Form assurer le DPS.
-- Objectif optimisation : réduire fortement le temps jusqu’au premier Freeze et/ou faire contribuer Hollow Form/Whirling Assault au Freeze de façon fiable sans casser le DPS boss.
+### OUVERT / EN TEST — Freeze / frigorification boss trop lente
 
-### OUVERT — économie des Power Charges / Charged Staff
+- Le Freeze boss reste **beaucoup trop long** malgré +75% Freeze Buildup.
+- Baseline initiale : ~4 Shattering Palm + Tempest Bell + Charged Staff actif, puis Hollow Form ; boss mort avant Freeze, Hollow Form sans contribution visible à la jauge.
+- Direction actuelle : **Freezing Mark + Ice Bite II**.
+- Rotation de test : Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form.
+- Retour bêta : la direction actuelle reste **trop lente en pratique**.
+- Contrainte verrouillée : Shattering Palm ne doit pas devenir un spam boss permanent ; Hollow Form reste le DPS principal.
+- Ce problème devra être **réévalué après ajout de Hollow Resonance** avant nouvelle correction.
 
-- Observation réelle : **Hollow Form est actuellement la source principale de génération des Power Charges mais les consomme presque immédiatement**.
-- Conséquence : il est trop difficile de garder des charges disponibles assez longtemps pour rendre **Charged Staff** simple et fiable à activer/maintenir.
-- Impact : la couche Lightning / Shock construite autour de Charged Staff devient **trop difficile à setup en jeu**.
-- Ne pas supprimer automatiquement Lightning : traiter d’abord le problème comme une **économie/disponibilité des charges**.
+### OUVERT — Power Charges / Charged Staff
+
+- Observation réelle : **Hollow Form est la source principale de génération des Power Charges mais les consomme presque immédiatement**.
+- Conséquence : Charged Staff est trop difficile à activer / maintenir.
+- Impact : la couche Lightning / Shock construite devient trop lourde à setup en jeu.
+- Ce problème était la priorité d’optimisation n°1, mais il est désormais **mis en attente du test Hollow Resonance**, car cette compétence pourrait modifier la dynamique de contrôle/charges.
+- Si le problème persiste après Hollow Resonance, il redevient la première correction structurelle à traiter.
 
 ### OUVERT — durée utile des charges / Charge Regulation
 
-- L’utilisateur souhaite que les charges durent **un peu plus longtemps** pour profiter davantage des bonus de **Charge Regulation**.
-- Hypothèse à tester : une augmentation modérée de durée/conservation des charges pourrait aussi réduire la friction de Charged Staff.
-- Aucune source de durée/conservation n’est encore verrouillée ; auditer le coût d’opportunité avant changement.
+- Les charges pourraient durer **un peu plus longtemps** pour profiter davantage des bonus liés à Charge Regulation.
+- Une augmentation modérée de durée/conservation peut également réduire la friction Charged Staff.
+- Aucune solution verrouillée ; réévaluer après test Hollow Resonance.
 
-### OUVERT / DÉPENDANT — Shattering Palm : clear bon, overkill perfectible
+### OUVERT / DÉPENDANT — Shattering Palm / overkill
 
-- **Shattering Palm est confirmé comme sort principal de clearing.**
-- Le clear est déjà bon, mais l’overkill / la puissance de nettoyage peut encore progresser.
-- **Nouvelle dépendance verrouillée : ne pas diagnostiquer Rising Tempest ni modifier le setup de Shattering Palm avant d’avoir résolu le problème Charged Staff / Power Charges.**
-- Motif : l’overkill actuellement observé peut être sous-évalué parce que **Charged Staff est trop difficile à activer/maintenir**, donc la couche Lightning prévue n’est pas disponible de façon fiable pendant le clear.
-- **Rising Tempest reste un suspect secondaire, pas une cause validée.**
-- Après correction de Charged Staff, refaire un test de clearing/overkill avec Charged Staff réellement actif et stable.
-- Seulement si l’overkill reste insuffisant après ce retest, comparer Rising Tempest à des alternatives de support.
+- Shattering Palm est confirmé comme **sort principal de clearing**.
+- Le clear est bon mais l’overkill paraît perfectible.
+- **Rising Tempest n’est qu’un suspect secondaire**, pas une cause validée.
+- **Dépendance verrouillée : ne pas modifier Rising Tempest avant d’avoir obtenu un Charged Staff fiable et retesté le clear avec la couche Lightning réellement active.**
+- Le manque d’overkill actuel peut provenir en partie de l’impossibilité de profiter correctement de Charged Staff.
+- Après test Hollow Resonance puis correction/validation Charged Staff, refaire un test de clear. N’auditer Rising Tempest qu’ensuite si le problème persiste.
 
-### VALIDÉ EN CLEARING — survivabilité
+### VALIDÉ — survivabilité clearing
 
-- Malgré l’exposition créée par Shattering Palm au corps-à-corps, l’utilisateur juge la survivabilité **parfaite en clearing**.
-- Aucune mort hors faute grave de gameplay.
-- La couche **Evasion + Energy Shield + Wind Dancer** est donc une réussite fonctionnelle et doit être **préservée pendant l’optimisation**.
+- Malgré l’exposition de Shattering Palm, **aucune mort hors faute grave de gameplay**.
+- La couche **Evasion + ES + Wind Dancer** est validée en clearing et doit être préservée.
 - Ne pas sacrifier cette robustesse pour un gain offensif marginal.
-- Les gros hits physiques / slams restent un point de vigilance boss/endgame, pas un échec confirmé du clear.
+- Les gros hits physiques / slams restent seulement un point de vigilance boss/endgame.
 
-### AUDIT — chance de critique réelle
+### AUDIT — critique
 
-- En jeu, l’utilisateur ne distingue pas visuellement un hit normal d’un hit critique.
-- Ce manque de feedback ne permet pas de conclure que le taux de critique est trop faible ou suffisant.
-- La décision d’augmenter ou non le critique doit venir d’un **audit mécanique du taux réel, de la base crit, des multiplicateurs et du gain DPS marginal**, puis éventuellement d’un test ciblé.
-- Ne pas investir davantage en critique avant cet audit.
+- Les hits critiques ne sont pas distinguables visuellement de façon fiable en jeu.
+- Ne pas conclure à partir du ressenti.
+- Décider d’augmenter ou non le critique via audit du taux réel, base crit, multiplicateurs et gain DPS marginal, puis test ciblé si nécessaire.
 
-## 7. Priorités après l’inventaire actuel
+## 8. Ordre de diagnostic temporaire — VERROUILLÉ
 
-1. **Économie des Power Charges / Charged Staff** — première optimisation à traiter ; rendre Lightning réellement exploitable en jeu.
-2. **Freeze boss** — trop lent, solution actuelle insuffisante.
-3. **Durée/conservation des charges / Charge Regulation** — à étudier avec le problème Charged Staff car les deux sujets sont directement liés.
-4. **Shattering Palm clear / overkill** — **DÉPENDANT de Charged Staff** ; retester d’abord le clear avec Charged Staff fiable, puis seulement auditer Rising Tempest si nécessaire.
-5. **Critique** — audit du taux réel et de la valeur d’un investissement supplémentaire.
+1. **Débloquer et tester Hollow Resonance en jeu.**
+2. Réévaluer **Power Charges / Charged Staff**.
+3. Réévaluer **Freeze boss**.
+4. Réévaluer **durée/conservation des charges / Charge Regulation**.
+5. Retester **Shattering Palm / overkill** avec setup complet ; auditer Rising Tempest uniquement si le problème persiste.
+6. Auditer le **critique** si toujours pertinent.
 
-Points à préserver : **Mana résolu** et **survivabilité clearing validée**.
+À préserver : **Mana résolu** et **survivabilité clearing validée**.
 
-Ce classement reste provisoire jusqu’à la fin de l’inventaire complet des problématiques bêta fourni par l’utilisateur. L’optimisation générale commencera ensuite, **une étape à la fois**.
+## 9. Checklist avant build final 100%
 
-## 8. Checklist avant build final 100%
-
-- Reprendre le moteur Freeze boss ; Freezing Mark + Ice Bite II reste trop lent en pratique.
-- **Traiter en premier l’économie des Power Charges pour Charged Staff** sans casser Hollow Form.
-- Auditer en même temps une augmentation modérée de durée/conservation des charges et son effet sur Charge Regulation / Charged Staff.
-- **Après seulement**, retester Shattering Palm / overkill avec Charged Staff réellement actif ; comparer Rising Tempest à des alternatives uniquement si le problème persiste.
-- Auditer le taux de critique réel et son gain marginal.
-- Revalider Mana seulement après changement susceptible d’affecter le sustain.
-- Auditer les meilleurs rolls légaux de Mana Regeneration Rate sur les deux anneaux finaux ; reproduire au minimum la baseline bêta 63/68 + Ingenuity.
+- Tester Hollow Resonance en conditions réelles.
+- Refaire l’inventaire des symptômes après Hollow Resonance.
+- Si nécessaire, corriger l’économie Power Charges / Charged Staff sans casser Hollow Form.
+- Reprendre le Freeze boss si toujours trop lent.
+- Auditer une augmentation modérée de durée/conservation des charges.
+- Retester Shattering Palm / overkill avec Charged Staff réellement actif ; Rising Tempest ensuite seulement.
+- Auditer le critique réel.
+- Auditer les meilleurs rolls légaux de Mana Regeneration Rate sur les anneaux finaux ; maintenir au minimum la baseline bêta 63/68 + Ingenuity.
 - Auditer le remplacement du +61 Spirit du torse.
-- Valider Overabundance II, Pinpoint Critical, Rage III et `Elemental Focus II`.
+- Valider Overabundance II, Pinpoint Critical, Rage III et Elemental Focus II.
 - Valider chaque affixe final contre le pool réel 0.5.2.
 - Recalculer Spirit, Mana, ES, Evasion, Deflection et toute stat touchée après chaque modification verrouillée.
 - Créer le diaporama final seulement après stabilisation complète.
 
-## 9. Protocole automatique de maintenance — VERROUILLÉ
+## 10. Protocole automatique de maintenance — VERROUILLÉ
 
-- Chaque nouvelle problématique significative de theorycraft ou bêta est ajoutée automatiquement au MASTER CONTEXT.
-- Chaque problème résolu conserve cause, solution, impact et nouveau statut.
+- Toute nouvelle problématique significative de theorycraft ou bêta est ajoutée automatiquement au MASTER CONTEXT.
+- Toute problématique résolue conserve cause, solution, impact et statut final.
 - Statuts : **OUVERT, EN TEST, PARTIELLEMENT RÉSOLU, RÉSOLU, VERROUILLÉ, AUDIT**.
 - Mesures réelles en jeu et projections théoriques restent séparées.
 - Une hypothèse ne devient jamais une décision verrouillée sans validation.
-- Avant toute modification du MASTER CONTEXT : synchroniser l’état actuel, créer un **backup local daté**, modifier la copie locale, appliquer la même mise à jour à GitHub, puis vérifier la branche.
-- MASTER CONTEXT et live build doivent rester cohérents ; toute décision verrouillée affectant le live build doit être répercutée automatiquement.
-- Chaque nouveau fichier de référence doit être enregistré dans le MASTER CONTEXT avec **rôle, niveau d’autorité, statut et emplacement canonique**.
-- Toute référence active doit exister dans le bon dossier GitHub (`reference/`, `images/`, `live_build/` ou emplacement canonique existant comme `Skill Trees/0.5.2/`).
-- Toute modification d’une référence active doit synchroniser les dépendances concernées : MASTER CONTEXT, Knowledge Base, Reasoning Index, live build, manifestes/visuels et documentation.
-- Après toute synchronisation GitHub, relire/vérifier le contenu réellement présent sur `hollow-dominion-live` avant de considérer l’opération terminée.
-- Pendant la phase d’inventaire bêta actuelle, **enregistrer les observations sans modifier prématurément les mécaniques du build**. Les changements d’optimisation commenceront après l’inventaire complet.
+- Avant modification du MASTER CONTEXT : synchroniser l’état actuel, créer un **backup local daté**, modifier la copie locale, appliquer à GitHub puis vérifier la branche.
+- Une décision verrouillée affectant le live build doit synchroniser automatiquement les fichiers live concernés.
+- Chaque nouveau fichier de référence doit être enregistré ici avec **rôle, niveau d’autorité, statut et emplacement canonique**.
+- Chaque référence active doit exister dans son dossier GitHub canonique.
+- Toute modification d’une référence active synchronise les dépendances concernées : MASTER CONTEXT, Knowledge Base, Reasoning Index, live build, manifestes/visuels et documentation.
+- Après synchronisation, relire réellement la branche `hollow-dominion-live`.
+- Pendant la phase actuelle d’inventaire bêta, **enregistrer les observations sans modifier prématurément les mécaniques du build**.
 
-## 10. Sources associées du projet
+## 11. Sources associées du projet
 
 ### Niveau 1 — autorité opérationnelle
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — source prioritaire. **ACTIF / VERROUILLÉ**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — **ACTIF / VERROUILLÉ**.
 
-### Niveau 2 — allocations et topologie
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_reference.build` — allocations passives exactes. **ACTIF**.
-- `Skill Trees/0.5.2/data.json` — IDs, noms, stats, coordonnées, groupes et connexions. **ACTIF / SOURCE TOPOLOGIQUE**.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping validé 120 + 8. **ACTIF**.
+### Niveau 2 — arbre
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_reference.build` — allocations passives exactes — **ACTIF**.
+- `Skill Trees/0.5.2/data.json` — topologie / IDs / stats / coordonnées / connexions — **ACTIF / SOURCE TOPOLOGIQUE**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping 120+8 — **ACTIF**.
 
 ### Niveau 3 — index / audits
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — synthèse secondaire. **ACTIF SECONDAIRE**, toujours subordonné au Master.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_REASONING_INDEX.json` — index mécanique structuré. **ACTIF SECONDAIRE**.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` — audit visuel. **ACTIF — AUDIT VISUEL**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — **ACTIF SECONDAIRE**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_REASONING_INDEX.json` — **ACTIF SECONDAIRE**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` — **ACTIF / AUDIT VISUEL**.
 
-### Niveau 4 — live build actif
+### Niveau 4 — live build
 - `live_build/build-data.js`
 - `live_build/tree-state.js`
 - `live_build/calculations.js`
@@ -223,30 +225,31 @@ Ce classement reste provisoire jusqu’à la fin de l’inventaire complet des p
 - `live_build/visual-manifest.json`
 - `live_build/README.md`
 
+Tous sont **ACTIFS** et synchronisés lorsqu’une décision verrouillée les affecte.
+
 ### Niveau 5 — visuels
 - `images/passive_tree_master.webp` — **ACTIF**.
-- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png` — référence connue ; fichier à restaurer si maintenu actif.
-- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png` — référence connue ; fichier à restaurer si maintenu actif.
-- `hollow dominion by nejib(1).png` — référence esthétique connue ; fichier à restaurer si maintenu actif.
-- `Guide des anneaux Ingenuity du Moine.png` — référence esthétique secondaire disponible en Library.
+- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png` — référence connue / fichier à restaurer si maintenu actif.
+- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png` — référence connue / fichier à restaurer si maintenu actif.
+- `hollow dominion by nejib(1).png` — référence esthétique connue / fichier à restaurer si maintenu actif.
+- `Guide des anneaux Ingenuity du Moine.png` — référence esthétique secondaire Library.
 
 Les anciens Master Context, posters, builds Hollow Palm, workspaces HTML et prototypes sont **historiques / non autoritatifs**.
 
-## 11. Politique visuelle du live build — VERROUILLÉE
+## 12. Politique visuelle du live build — VERROUILLÉE
 
-- **PoE2DB** est la source visuelle de référence pour gear, skills et supports.
-- Toute modification d’un item/skill/support doit entraîner la vérification/récupération de son visuel PoE2DB puis la synchronisation du live build.
+- **PoE2DB** est la source visuelle de référence pour équipements, skills et supports.
+- Toute modification item/skill/support implique vérification PoE2DB puis synchronisation du live build.
 - Conserver les fonds transparents natifs.
 - Supports sans numérotation, petit logo à gauche.
-- Pour les Lineage Supports sans seconde icône exposée, utiliser l’image officielle de gemme PoE2DB.
+- Lineage Support sans seconde icône exposée : image officielle de gemme PoE2DB.
 - Anciens SVG/sprites = rollback uniquement.
 - Audit actuel : **9 équipements / 10 compétences / 31 supports**.
-- Lochtonial Caress, Duality, Ingenuity, Daggerfoot Shoes et plusieurs IDs de supports ont déjà été corrigés dans l’audit canonique.
-- `Elemental Focus II` reste **AUDIT** : visuel Elemental Focus actuel utilisé, mais le nom/support n’est pas modifié sans validation explicite.
+- `Elemental Focus II` reste **AUDIT** : visuel Elemental Focus actuel, sans renommer le support avant validation.
 
-## 12. Futur visuel / diaporama
+## 13. Futur visuel / diaporama
 
-- Conserver la référence esthétique skills/supports validée, sans jamais l’utiliser comme source mécanique.
+- Référence esthétique skills/supports conservée, jamais utilisée comme source mécanique.
 - Arbre final : 120 principaux + 8 Ascendancy ; chemin réel lumineux, Notables importants rouges, Ascendancy violet, non-alloué gris sombre.
-- Le visuel doit être reproductible nœud par nœud par un débutant.
-- Ensuite créer un visuel de levelling depuis exactement le même master, en 8–12 grandes étapes.
+- Visuel reproductible nœud par nœud par un débutant.
+- Ensuite visuel de levelling depuis le même master, en 8–12 grandes étapes.
