@@ -23,5 +23,15 @@
   "audit": {
     "Elemental Focus II": "Current PoE2DB lists Elemental Focus without II; visual mapped to current Elemental Focus icon, label unchanged pending build decision"
   },
-  "last_verified": "2026-09-10"
+  "last_verified": "2026-09-10",
+  "hotfix": {
+    "date": "2026-09-10",
+    "reason": "Several PoE2DB visuals did not render in browser",
+    "changes": [
+      "added multi-URL fallback chains for gear/skills/supports",
+      "added extension fallback webp -> png",
+      "skills revert to original local visual if every PoE2DB candidate fails",
+      "gear reuses original local slot visual as last-resort fallback"
+    ]
+  }
 }
