@@ -322,6 +322,14 @@ Conséquence importante :
 - **Biting Frost II est exclu.**
 - Prochain test : vérifier le premier Freeze avec Freezing Mark + Ice Bite II, puis observer si la jauge continue à progresser sous Hollow Form pendant les buffs Cold.
 
+
+### RÉSOLU / EN TEST — Visuels PoE2DB cassés dans le navigateur
+- Observation utilisateur : plusieurs icônes PoE2DB affichaient le texte alternatif / une vignette cassée sur le live build malgré une correspondance logique correcte.
+- Cause retenue : certaines URLs directes de CDN PoE2DB sont fragiles selon le navigateur/cache et peuvent renvoyer 403 ou cache miss.
+- Correctif : chaque visuel utilise désormais une chaîne de fallback (`webp` puis `png` quand applicable) ; les skills reviennent au visuel local précédent si toutes les URLs PoE2DB échouent, et le gear garde également son visuel local comme dernier recours.
+- La mise en forme générale reste inchangée.
+- Statut : **RÉSOLU / EN TEST** — à confirmer visuellement sur le navigateur utilisateur après cache-bust.
+
 ## 12. Évaluation et priorités actuelles
 
 - Les dégâts bêta et le clear sont déjà **très élevés / très fluides** avec un équipement non-BiS.
