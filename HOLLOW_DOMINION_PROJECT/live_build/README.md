@@ -1,109 +1,102 @@
 # HOLLOW DOMINION — Live Build App
 
-Application statique de travail pour **HOLLOW DOMINION** (PoE2 0.5.2, Monk — Martial Artist).
+Application statique de travail pour **HOLLOW DOMINION** — Path of Exile 2 **0.5.2**, Monk — Martial Artist.
 
-## But
-
-Éviter de régénérer une image entière à chaque changement de valeur. Les décisions numériques restent centralisées dans `build-data.js`; l'interface les affiche immédiatement et `calculations.js` recalcule les statistiques du personnage.
-
-## Visuels intégrés
-
-- les **9 équipements** utilisent leur visuel officiel référencé par **PoE2DB** ;
-- les **10 compétences** utilisent leur icône officielle référencée par **PoE2DB** ;
-- chaque **gemme de soutien** affiche un petit logo à gauche de sa ligne, sans numérotation ;
-- les transparences natives des images sont conservées ;
-- les Lineage Supports sans seconde icône de support exposée par PoE2DB utilisent leur image de gemme officielle PoE2DB ;
-- les anciens `assets/gear/*.svg` et `assets/skills/skills-sprite.svg` restent présents comme héritage/rollback, mais ne sont plus la source visuelle active.
-
-**Règle permanente :** lors de toute modification future d’un équipement, d’une compétence ou d’une gemme de soutien, son visuel doit être revérifié/récupéré sur PoE2DB et mis à jour dans le live build.
-
-## Correction live-1.7 — Vitalité II supprimée
-
-- **Spirit Vessel est supprimé** du setup actif : cette aptitude est octroyée par **Forgotten Warden**, qui occuperait l’emplacement d’armure de torse à la place de notre **Veste racée**.
-- **Danseur du vent** le remplace comme aptitude persistante active et réserve **30 Esprit**.
-- **Vitalité II est définitivement retirée de Régulation des charges.**
-- Régulation des charges réserve désormais **70 Esprit** : 30 de base + 20 Clarity II + 20 Precision II.
-- Budget actuel : **100 / 226 Esprit réservés**, soit **126 Esprit libres**.
-- **Elemental Conflux reste optionnel et inactif** pour la version bêta actuelle.
-- Le visuel de Danseur du vent utilise temporairement le fallback de l’interface ; le sprite de référence reste inchangé tant qu’un visuel dédié n’a pas été validé.
-
-## Correction live-1.8 — Supports de Danseur du vent
-
-- Supports retenus : **Maim + Pin I + Lockdown**.
-- Supports laissés facultatifs : **Blind II + Her Declaration**.
-- Les noms des **gemmes de soutien restent désormais en anglais dans le live build**.
-- `Precision II` remplace donc l'ancien libellé français `Justesse II` dans Charge Regulation.
-- Ces trois supports de Danseur du vent ne modifient pas le budget actuel du live : **100 / 226 Esprit réservés**, soit **126 Esprit libres**.
-
-## Correction live-1.9 — Moteur Freeze boss
-
-- **Freezing Mark** est intégré comme aptitude active de setup boss.
-- **Ice Bite II** est intégré sur **Shattering Palm**.
-- **Ancestral Call II** passe en swap facultatif de clear pour respecter la limite de 5 supports.
-- **Biting Frost II est exclu**.
-- Rotation de travail : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
-- Statut : **PARTIELLEMENT RÉSOLU / EN TEST**.
+Dernière synchronisation documentaire : **2026-09-10 — live-1.16-reference-sync**.
 
 ## Source de vérité / priorité
 
-1. `../reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions de build.
+1. `../reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions verrouillées et état courant.
 2. `../reference/HOLLOW_DOMINION_reference.build` — allocations exactes.
-3. `../../Skill Trees/0.5.2/data.json` — arbre structurel et stats passives.
-4. **`build-data.js` — état numérique de travail actuel de l'équipement, des stats et des supports.**
-5. `visual-manifest.json` identifie la politique et les sources visuelles du live build.
+3. `../../Skill Trees/0.5.2/data.json` — arbre structurel, coordonnées, connexions et stats passives.
+4. `../reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping validé 120 + 8.
+5. `build-data.js` — état numérique de travail actuel du gear, des skills/supports et des priorités.
+6. `calculations.js` et `tree-state.js` — calculs et agrégats programmables.
 
-## Règles importantes
+En cas de contradiction, le MASTER CONTEXT prévaut sur toute ancienne documentation du live build.
 
-- **Convalescence est définitivement exclue.**
-- Arbre : **Default 120 + 8**, aucun Weapon Set dans le theorycraft courant.
-- Les suffixes actuellement libérés sur **Masque souriant** et **Amulette solaire** restent volontairement `free` et valent 0 tant qu'ils ne sont pas verrouillés.
-- Le gros mod Attack Speed de la Bague de Topaze reste marqué `audit` tant que sa légalité 0.5.2 n'est pas confirmée.
-- Les fichiers visuels ne remplacent jamais la source mécanique du build.
+## État actuel verrouillé
 
-## Utilisation
+- **Quarterstaff**, jamais Hollow Palm.
+- **Fists of Stone / Way of the Stonefist** obligatoire.
+- Boss DPS : **Hollow Form → Whirling Assault**.
+- Clear / premier Freeze : **Shattering Palm**.
+- Lightning / Shock : **Charged Staff**.
+- Défense : **Evasion + Energy Shield**.
+- **Spirit Vessel exclu**.
+- **Convalescence exclue**.
+- **Vitality II supprimée** de Charge Regulation.
 
-Lancer un petit serveur HTTP dans ce dossier, par exemple :
+## Compétences / supports
 
-```bash
-python -m http.server 8000
-```
+- Hollow Form → Whirling Assault : **Heavy Swing • Heightened Charges • Blindside • Vorana's Siege**.
+- Shattering Palm : **Rapid Attacks II • Magnified Area II • Elemental Armament II • Rising Tempest • Ice Bite II**. `Ancestral Call II` = clear swap facultatif.
+- Freezing Mark : **Eternal Mark • Prolonged Duration II • Charged Mark • Mark for Death II**. Cinquième slot libre. `Biting Frost II` exclu.
+- Charged Staff : **Blind II • Perpetual Charge • Prolonged Duration II • Elemental Armament II • Innervate**.
+- Hollow Focus : Cooldown Recovery II, Overabundance II, Magnified Area II, Close Combat II, Heft. `Overabundance II` = AUDIT.
+- Hollow Resonance : Stun III, Cooldown Recovery II, Close Combat II, Magnified Area II, Pinpoint Critical. `Pinpoint Critical` = AUDIT.
+- Tempest Bell : Heavy Swing, Close Combat II, Ancestral Call II, Overabundance II, Rage III. `Rage III` = AUDIT ; Magnified Area II alternative.
+- Charge Regulation : **Clarity II • Precision II**, réservation de travail **70 Spirit**.
+- Wind Dancer : **Maim • Blind II • Rage II — VERROUILLÉS**, réservation de travail **33 Spirit**. `Pin I` et `Lockdown` exclus ; Her Declaration / Seraph's Heart optionnels.
+- Elemental Conflux : optionnel / inactif, 60 Spirit. `Elemental Focus II` reste en **AUDIT** de nomenclature.
 
-puis ouvrir `http://localhost:8000/`.
+## Freeze boss
 
-Le bouton **Modifier le stuff** ouvre le panneau d'édition. Les modifications sont conservées dans le `localStorage` du navigateur. **Exporter JSON** produit un snapshot partageable.
+Direction mécanique retenue : **Freezing Mark + Ice Bite II**.
 
-## Correction live-1.10 — Supports de Freezing Mark
+Rotation de test : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
 
-Supports verrouillés :
+Statut : **PARTIELLEMENT RÉSOLU / EN TEST**. Il reste à confirmer que les buffs Cold permettent à Hollow Form / Whirling Assault de poursuivre l’accumulation de Gel après le premier Freeze.
 
-- **Eternal Mark**
-- **Prolonged Duration II**
-- **Charged Mark**
-- **Mark for Death II**
+## Mana / Spirit / défense
 
-Le cinquième emplacement reste libre pour l'instant. **Biting Frost II reste exclu.**
+### Mana
+Priorité n°1. Test bêta : **624 Mana**, Hollow Form affiché à **126 Mana**, regen **67.2 Mana/s**, Mana vide en ~5 s sans flacon et ~7 s avec Lavianga. Direction : **Mana Regeneration Rate + flacon**, sans réduire l’Attack Speed tant qu’une solution de sustain reste possible.
 
-## Correction live-1.11 — Refonte des supports de Danseur du vent
+### Spirit
+- Charge Regulation : 70
+- Wind Dancer : 33
+- Total actif : **103 / 226**
+- Libre : **123 Spirit**
+- Elemental Conflux inactif
+- Le **+61 Spirit** du torse est candidat au remplacement.
 
-- **Lockdown est retiré** : indisponible dans le client actuel et désormais listé comme support désactivé par le wiki.
-- Le package de supports repasse en **REWORK**.
-- Supports actifs temporaires : **Maim + Pin I**.
-- Candidats prioritaires : **Blind II, Rage II, Her Declaration, Seraph's Heart**.
-- Le budget reste provisoirement à **30 Spirit** tant qu'aucun support avec multiplicateur/réservation supplémentaire n'est verrouillé.
+### Défense
+Préserver **Evasion + Energy Shield**. Faiblesse principale à surveiller : **gros hits physiques / slams**.
 
-## Correction live-1.12 — Supports de Danseur du vent verrouillés
+## Priorités live actuelles
 
-- Supports retenus : **Maim + Blind II + Rage II**.
-- **Pin I est retiré / exclu** du setup : le contrôle Pin n'est pas jugé suffisamment convaincant pour justifier le slot.
-- **Her Declaration** et **Seraph's Heart** restent des options non verrouillées.
-- `Blind II` applique un multiplicateur de coût de **110%** ; réservation de travail de Wind Dancer : **33 Spirit**.
-- Budget actif mis à jour : **103 / 226 Spirit réservés**, soit **123 Spirit libres**.
+1. **Sustain Mana**.
+2. **Valider le moteur Freeze Freezing Mark + Ice Bite II → Hollow Form**.
+3. **Préserver Evasion + ES / surveiller les gros hits physiques**.
+4. **Seulement ensuite** reprendre critique et affixes offensifs.
+5. Finaliser les audits de supports et de légalité des affixes.
 
-## Correction live-1.15 — Visuels PoE2DB vérifiés
+## Visuels intégrés
 
-- Audit individuel des **9 équipements, 10 compétences et 31 supports** du setup affiché.
-- Correction des mauvaises URLs du brouillon pour **Lochtonial Caress**, **Duality** et **Ingenuity**, ainsi que du chemin de base des **Daggerfoot Shoes**.
-- Correction des identifiants d’icônes de **Charged Mark, Mark for Death II, Innervate, Overabundance II, Stun III et Cooldown Recovery II**.
-- Les Lineage Supports **Vorana's Siege, Her Declaration, Seraph's Heart** utilisent leur image de gemme PoE2DB exacte.
-- `Elemental Focus II` reste affiché tel qu’il existe dans le build actuel, mais PoE2DB courant liste **Elemental Focus** sans `II` : le visuel emploie l’icône actuelle d’Elemental Focus et le nom reste en audit séparé.
-- La mise en forme générale reste inchangée : la couche `poe2db-visuals.*` est additive.
+- **9 équipements**, **10 compétences** et **31 supports** couverts par l’audit PoE2DB.
+- Les supports sont affichés sans numérotation avec une petite icône à gauche.
+- Les transparences natives sont conservées.
+- Les Lineage Supports utilisent leur image de gemme officielle lorsque nécessaire.
+- Les anciens SVG/sprites sont uniquement des fallbacks/rollbacks.
+
+Référence canonique : `../reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`.
+
+**Règle permanente :** toute modification d’un équipement, skill ou support doit entraîner la vérification de son visuel PoE2DB puis la synchronisation du live build et du registre de références si nécessaire.
+
+## Fichiers du live build
+
+- `index.html` — interface.
+- `build-data.js` — données de travail.
+- `calculations.js` — calculs du personnage.
+- `tree-state.js` — agrégats de l’arbre.
+- `app.js` — logique de rendu/édition.
+- `style.css` — styles principaux.
+- `poe2db-visuals.js` / `poe2db-visuals.css` — couche visuelle PoE2DB.
+- `visual-manifest.json` — manifeste visuel.
+
+## Politique de synchronisation
+
+Toute décision verrouillée affectant le live build doit mettre à jour les fichiers concernés **dans la même séquence de travail**, puis le contenu publié sur la branche `hollow-dominion-live` doit être relu/vérifié avant de considérer la synchronisation terminée.
+
+Les anciens changelogs live-1.7 à live-1.15 restent disponibles dans l’historique Git ; ce README décrit uniquement **l’état courant** afin d’éviter qu’une correction ancienne soit prise pour une configuration active.
