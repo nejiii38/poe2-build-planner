@@ -1,28 +1,12 @@
 # HOLLOW DOMINION — Project Archive
 
-Dossier de référence persistant pour **HOLLOW DOMINION** — Path of Exile 2, version **0.5.2**.
+Dossier de référence persistant pour **HOLLOW DOMINION** — Path of Exile 2 **0.5.2**.
 
 ## Règle de travail
 
-Toute reprise du projet doit commencer par `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md`. Ce fichier est l’autorité opérationnelle prioritaire ; toute décision verrouillée qu’il contient prévaut sur les anciens documents, posters, prototypes et descriptions historiques.
+Toute reprise commence par `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md`, autorité opérationnelle prioritaire. Toute référence active ou modification significative doit synchroniser les fichiers secondaires concernés et être vérifiée sur `hollow-dominion-live`.
 
-À chaque nouvelle référence ou modification significative :
-
-1. mettre à jour le MASTER CONTEXT et son registre de sources ;
-2. synchroniser les fichiers secondaires concernés ;
-3. placer chaque référence active dans son emplacement GitHub canonique ;
-4. vérifier le contenu réellement publié sur la branche `hollow-dominion-live`.
-
-## Ordre de priorité des sources
-
-1. `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions verrouillées et état courant.
-2. `reference/HOLLOW_DOMINION_reference.build` — allocations exactes de l’arbre.
-3. `../Skill Trees/0.5.2/data.json` — IDs, stats, coordonnées, groupes et connexions réelles.
-4. `reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping validé 120 + 8.
-5. `reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` et `reference/HOLLOW_DOMINION_REASONING_INDEX.json` — index secondaires synchronisés.
-6. Références techniques/visuelles approuvées — présentation et contrôle seulement.
-
-## Références actives
+## Sources actives
 
 ### `reference/`
 - `HOLLOW_DOMINION_MASTER_CONTEXT.md`
@@ -32,67 +16,44 @@ Toute reprise du projet doit commencer par `reference/HOLLOW_DOMINION_MASTER_CON
 - `HOLLOW_DOMINION_REASONING_INDEX.json`
 - `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`
 
+### Source topologique
+- `../Skill Trees/0.5.2/data.json`
+
+### `live_build/`
+- `build-data.js`, `tree-state.js`, `calculations.js`, `app.js`, `index.html`, `style.css`, `poe2db-visuals.js`, `poe2db-visuals.css`, `visual-manifest.json`, `README.md`
+
 ### `images/`
 - `passive_tree_master.webp`
 
-### `live_build/`
-- `build-data.js`
-- `tree-state.js`
-- `calculations.js`
-- `app.js`
-- `index.html`
-- `style.css`
-- `poe2db-visuals.js`
-- `poe2db-visuals.css`
-- `visual-manifest.json`
-- `README.md`
+## Identité verrouillée
 
-### Source topologique canonique
-- `../Skill Trees/0.5.2/data.json`
+- Monk — Martial Artist — Quarterstaff.
+- Fists of Stone / Way of the Stonefist obligatoire.
+- Hollow Form → Whirling Assault = boss DPS.
+- Shattering Palm = clear principal / Cold / overkill.
+- Charged Staff = Lightning / Shock / contrôle.
+- Evasion + Energy Shield.
+- Hollow Palm, Spirit Vessel et Convalescence exclus.
 
-## Identité verrouillée du build
+## Bêta actuelle
 
-- **HOLLOW DOMINION — by Nejib**
-- **Monk — Martial Artist — Quarterstaff**
-- **Fists of Stone / Way of the Stonefist** obligatoire
-- Boss DPS : **Hollow Form → Whirling Assault**
-- Clear / premier Freeze : **Shattering Palm**
-- Lightning / Shock : **Charged Staff**
-- Défense : **Evasion + Energy Shield**
-- Hollow Palm : **exclu**
-- Spirit Vessel : **exclu**
-- Convalescence : **exclu**
+Le personnage joué est une **version bêta non-BiS**. Ses rolls servent de mesures expérimentales ; le stuff final utilisera les meilleurs affixes / tiers / rolls légaux **0.5.2** après audit.
 
-## Arbre passif
+- Mana : **RÉSOLU / VALIDÉ EN JEU** avec +63% et +68% Mana Regeneration Rate sur les anneaux bêta + Ingenuity.
+- Survivabilité clearing : **VALIDÉE**, à préserver.
+- Hollow Resonance : **pas encore acquis ni testé sur la bêta**.
 
-- **120/120** passifs principaux.
-- **8/8** passifs Martial Artist dépensés.
-- `AscendancyMonk1Start` est uniquement l’origine graphique.
-- Ne pas afficher ni commenter les Weapon Sets dans le visuel final.
-- Toute reconstruction de la topologie doit être déterministe depuis `Skill Trees/0.5.2/data.json`.
-- **Interdiction d’utiliser un générateur d’images pour reconstruire la topologie technique de l’arbre.**
+## Verrou de diagnostic actuel
 
-## Compétences / état courant
+Toutes les observations de gameplay actuelles sont une **baseline pré-Hollow Resonance**. Avant toute correction structurelle :
 
-- Hollow Form → Whirling Assault : Heavy Swing, Heightened Charges, Blindside, Vorana’s Siege.
-- Shattering Palm : Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest, **Ice Bite II** ; Ancestral Call II = clear swap.
-- Freezing Mark : **Eternal Mark, Prolonged Duration II, Charged Mark, Mark for Death II** ; 5e slot libre.
-- Charge Regulation : **Clarity II + Precision II** ; Vitality II supprimée.
-- Wind Dancer : **Maim + Blind II + Rage II** verrouillés.
-- `Biting Frost II`, `Pin I` et `Lockdown` sont exclus dans leurs setups concernés.
-- Elemental Conflux reste optionnel / inactif.
+1. débloquer/tester Hollow Resonance ;
+2. réévaluer Power Charges / Charged Staff ;
+3. réévaluer Freeze boss ;
+4. réévaluer durée des charges / Charge Regulation ;
+5. retester Shattering Palm / overkill avec Charged Staff fiable ; Rising Tempest seulement ensuite si nécessaire ;
+6. audit critique.
 
-## Priorités actuelles
+Les anciens posters, builds Hollow Palm, anciennes versions du Master Context et workspaces HTML restent **historiques / non autoritatifs**.
 
-1. **Sustain Mana**.
-2. Valider en jeu **Freezing Mark + Ice Bite II → Hollow Form** pour le Freeze boss.
-3. Préserver Evasion + ES et surveiller les gros hits physiques.
-4. Ensuite seulement reprendre critique et affixes offensifs.
-
-## Politique visuelle
-
-**PoE2DB** est la source visuelle de référence pour les équipements, compétences et supports du live build. L’audit canonique est `reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`.
-
-Les anciens posters, anciens arbres générés, anciens `.build` Hollow Palm, anciennes versions du Master Context et workspaces HTML sont **historiques / non autoritatifs**.
-
-Pour toute décision détaillée ou valeur en conflit, revenir au MASTER CONTEXT puis aux sources techniques selon l’ordre ci-dessus.
+PoE2DB reste la source visuelle de référence pour gear, skills et supports.
