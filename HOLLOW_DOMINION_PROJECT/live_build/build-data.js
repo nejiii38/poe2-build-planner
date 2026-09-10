@@ -1,12 +1,20 @@
 window.HOLLOW_DOMINION_DATA={
-meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.18-hollow-resonance-test-gate",updated:"2026-09-10",note:"Stuff final BiS et validation bêta sont deux couches distinctes. Mana est résolu en bêta avec +63% et +68% Mana Regeneration Rate sur les anneaux + Ingenuity. La survivabilité clearing est validée. Hollow Resonance est prévu dans le build final mais n'est pas encore acquis/testé sur la bêta : les problèmes Freeze, Power Charges/Charged Staff, durée des charges, Shattering Palm/overkill et critique sont donc une baseline pré-Hollow Resonance. Ne pas verrouiller de correction structurelle avant ce test."},
-rules:{endgameElementalPenalty:-60,endgameChaosPenalty:0,resistanceCap:75,ingenuityRounding:"floor-per-mod",qualityLocalDefenceMorePerPct:1,betaAndFinalGearSeparated:true,finalGearPolicy:"best-legal-0.5.2-affixes-tiers-rolls-after-audit",betaInventoryNoPrematureStructuralChanges:true},
+meta:{name:"HOLLOW DOMINION",author:"Nejib",gameVersion:"0.5.2",className:"Monk",ascendancy:"Martial Artist",passiveTree:"Default 120 + 8",referenceImage:"ChatGPT Image 9 sept. 2026, 05_47_28(1).png",stateVersion:"live-1.19-identity-pillars",updated:"2026-09-10",note:"Identité verrouillée : Freeze/frigorification boss quasi instantanée + hybridation Cold/Lightning réellement jouable. Charged Staff doit devenir fiable dans la rotation. Ces objectifs doivent être atteints sans dégrader inutilement les forces déjà validées de la bêta : très bons dégâts, très bon clear, survivabilité clearing quasi parfaite, très bon stun boss et Mana résolu. Hollow Resonance n'est pas encore acquis/testé : aucune correction structurelle définitive avant ce test."},
+rules:{endgameElementalPenalty:-60,endgameChaosPenalty:0,resistanceCap:75,ingenuityRounding:"floor-per-mod",qualityLocalDefenceMorePerPct:1,betaAndFinalGearSeparated:true,finalGearPolicy:"best-legal-0.5.2-affixes-tiers-rolls-after-audit",betaInventoryNoPrematureStructuralChanges:true,identityFreezeBossTarget:"quasi-instant",identityColdLightningPractical:true,preserveValidatedStrengths:true},
+identity:{
+lockedPillars:["Boss Freeze/chill quasi-instant as an opening-control mechanic","Cold + Lightning both practically usable; Charged Staff must be reliable","Hollow Form → Whirling Assault remains main boss DPS","Shattering Palm remains main clearing skill"],
+validatedStrengths:{generalDamage:"VERY_GOOD",clearing:"VERY_GOOD",clearingSurvivability:"NEAR_PERFECT_VALIDATED",bossStun:"VERY_GOOD_VALIDATED",manaSustain:"RESOLVED_VALIDATED_INGAME"},
+optimizationRule:"Fix Freeze and Lightning identity gaps without unnecessarily sacrificing the beta build's already-validated damage, clear, survivability, stun or Mana sustain."
+},
 betaValidation:{
 gearStatus:"non-BiS experimental",
 purpose:"validate real build behaviour and sufficient thresholds, not final item ceilings",
 mana:{status:"RESOLVED",date:"2026-09-10",ringManaRegenPct:[63,68],ingenuityEquipped:true,observedResult:"no Mana sustain problem in real beta play",rule:"Do not copy 63/68 as final BiS rolls; use the best legal 0.5.2 Mana Regeneration Rate rolls on final ring bases and revalidate sustain."},
 hollowResonance:{plannedInFinalBuild:true,betaAcquired:false,betaTested:false,status:"WAITING_BETA_VALIDATION",rule:"Treat all current gameplay issues as pre-Hollow Resonance baseline and do not lock structural corrections until Hollow Resonance is tested."},
-clearingSurvivability:{status:"VALIDATED",observedResult:"No deaths in clearing except major gameplay mistakes; preserve Evasion + ES + Wind Dancer."}
+clearingSurvivability:{status:"NEAR_PERFECT_VALIDATED",observedResult:"No deaths in clearing except major gameplay mistakes; preserve Evasion + ES + Wind Dancer."},
+bossStun:{status:"VERY_GOOD_VALIDATED",observedResult:"Boss stun is already very good and must be preserved while optimizing Freeze and charge economy."},
+generalDamage:{status:"VERY_GOOD_VALIDATED"},
+clearing:{status:"VERY_GOOD_VALIDATED",note:"Shattering Palm overkill may still be improved after Charged Staff is made reliable."}
 },
 campaignFixed:{attributes:{strength:5,dexterity:5,intelligence:5},flatLife:20,maxLifePct:5,maxManaPct:5,spirit:100,manaRegenPct:25,kaomDefencesPct:30,resistances:{fire:15,cold:15,lightning:15,chaos:0},ancientVowsCharmChargesGainedPct:30,manaRecoveryFromFlasksPct:30,note:"Choix verrouillés : Ancient Vows +30% Charm Charges gained ; Venom Crypts +25% Mana Regeneration Rate ; +5 STR/DEX/INT ; Kaom's Lesson +30% Armour/Evasion/ES ; Goddess of Justice +30% Mana Recovery from Flasks ; Tabana +5% all Elemental Resistances. Les résistances incluent aussi les +10% fixes Feu/Froid/Foudre de campagne."},
 gear:{
@@ -23,8 +31,8 @@ ringTopaz:{slot:"Bague droite",name:"Bague de Topaze",rarity:"Rare BiS — trava
 skills:[
 {name:"Hollow Form → Whirling Assault",role:"Main DPS boss",active:true,supports:["Heavy Swing","Heightened Charges","Blindside","Vorana's Siege"]},
 {name:"Shattering Palm",role:"Clear / setup Freeze boss / Overkill",active:true,supports:["Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest","Ice Bite II"],optionalSupports:["Ancestral Call II — clear swap"],betaIssue:"Overkill perfectible; do not audit Rising Tempest before reliable Charged Staff retest."},
-{name:"Freezing Mark",role:"Boss setup / amplification Freeze / Cold gain",active:true,supports:["Eternal Mark","Prolonged Duration II","Charged Mark","Mark for Death II"],betaStatus:"Freeze still too slow; re-evaluate after Hollow Resonance test."},
-{name:"Charged Staff",role:"Lightning / Shock / Blind / contrôle boss",active:true,supports:["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"],betaIssue:"Hollow Form generates but rapidly consumes Power Charges, making Charged Staff difficult to activate/maintain; re-evaluate after Hollow Resonance test."},
+{name:"Freezing Mark",role:"Boss setup / amplification Freeze / Cold gain",active:true,supports:["Eternal Mark","Prolonged Duration II","Charged Mark","Mark for Death II"],betaStatus:"Freeze still too slow; identity target is quasi-instant opening Freeze; re-evaluate after Hollow Resonance test."},
+{name:"Charged Staff",role:"Lightning / Shock / Blind / contrôle boss — identity pillar",active:true,supports:["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"],betaIssue:"Hollow Form generates but rapidly consumes Power Charges, making Charged Staff difficult to activate/maintain; must become reliable to restore Cold + Lightning identity; re-evaluate after Hollow Resonance test."},
 {name:"Tempest Bell",role:"Burst élémentaire",active:true,supports:["Heavy Swing","Close Combat II","Ancestral Call II","Overabundance II","Rage III"]},
 {name:"Hollow Resonance",role:"Stun",active:true,supports:["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"],betaAcquired:false,betaTested:false,betaStatus:"WAITING_BETA_VALIDATION"},
 {name:"Hollow Focus",role:"Heavy Stun",active:true,supports:["Cooldown Recovery II","Overabundance II","Magnified Area II","Close Combat II","Heft"]},
@@ -34,12 +42,14 @@ skills:[
 ],
 priorities:[
 {id:0,title:"Test Hollow Resonance",status:"WAITING_BETA_VALIDATION",note:"Hollow Resonance n'est pas encore acquis/testé. Tous les problèmes actuels sont une baseline pré-Hollow Resonance. Ne pas verrouiller de correction structurelle avant ce test."},
-{id:1,title:"Power Charges / Charged Staff",status:"OPEN_WAITING_RETEST",note:"Si le problème persiste après Hollow Resonance, première correction structurelle à traiter : rendre les Power Charges disponibles assez longtemps pour Charged Staff sans casser Hollow Form."},
-{id:2,title:"Freeze boss",status:"OPEN_WAITING_RETEST",note:"Freeze encore trop lent malgré Freezing Mark + Ice Bite II ; réévaluer après Hollow Resonance."},
+{id:1,title:"Power Charges / Charged Staff",status:"OPEN_IDENTITY_PRIORITY_WAITING_RETEST",note:"Si le problème persiste après Hollow Resonance, première correction structurelle : rendre les Power Charges disponibles assez longtemps pour Charged Staff sans casser Hollow Form. Lightning doit être réellement jouable."},
+{id:2,title:"Freeze boss",status:"OPEN_IDENTITY_PRIORITY_WAITING_RETEST",note:"Freeze encore trop lent malgré Freezing Mark + Ice Bite II. Objectif identitaire verrouillé : frigorification / premier Freeze quasi instantané dans l'ouverture du boss."},
 {id:3,title:"Durée des charges / Charge Regulation",status:"OPEN_WAITING_RETEST",note:"Étudier une légère hausse de durée/conservation après test Hollow Resonance, en lien avec Charged Staff."},
 {id:4,title:"Shattering Palm / overkill",status:"DEPENDENT",note:"Retester seulement après Charged Staff fiable ; Rising Tempest reste suspect secondaire, pas cause validée."},
 {id:5,title:"Critique",status:"AUDIT",note:"Décider via taux réel et gain DPS marginal, pas via ressenti visuel."},
 {id:6,title:"Sustain Mana",status:"RESOLVED",note:"Validé avec +63%/+68% Mana Regen Rate sur anneaux bêta + Ingenuity. Baseline bêta uniquement."},
-{id:7,title:"Survivabilité clearing",status:"VALIDATED",note:"Préserver Evasion + ES + Wind Dancer ; aucune mort hors faute grave de gameplay."}
+{id:7,title:"Survivabilité clearing",status:"NEAR_PERFECT_VALIDATED",note:"Préserver Evasion + ES + Wind Dancer ; aucune mort hors faute grave de gameplay."},
+{id:8,title:"Dégâts / clearing",status:"VERY_GOOD_VALIDATED",note:"Base offensive déjà très solide ; ne pas reconstruire inutilement le build."},
+{id:9,title:"Stun boss",status:"VERY_GOOD_VALIDATED",note:"Contrôle stun déjà très bon ; préserver ce résultat pendant l'optimisation Freeze/charges."}
 ]
 };
