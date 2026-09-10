@@ -1,183 +1,161 @@
 # HOLLOW DOMINION — KNOWLEDGE BASE
 
-> Base de référence consolidée pour le theorycraft et les raisonnements futurs.  
-> Version de jeu de référence : **Path of Exile 2 — 0.5.2**.  
-> Build : **Monk / Martial Artist / Quarterstaff — HOLLOW DOMINION by Nejib**.
+> Base consolidée secondaire pour le theorycraft et les raisonnements futurs.  
+> Version de jeu : **Path of Exile 2 — 0.5.2**.  
+> Build : **Monk / Martial Artist / Quarterstaff — HOLLOW DOMINION by Nejib**.  
+> Dernière synchronisation : **2026-09-10**.
 
 ## 1. Ordre de priorité des sources
 
-1. **MASTER CONTEXT** — décisions verrouillées et état courant.
-2. **`.build` de référence** — allocations sérialisées exactes. Le champ `description` est ancien et ne doit pas être utilisé comme vérité.
-3. **`Skill Trees/0.5.2/data.json`** — IDs, noms, stats, coordonnées, groupes et connexions.
-4. **Rapport `120 default + 8 ascendancy`** — correspondance validée ID / nom / type / coordonnées.
-5. **Trace/master technique** — contrôle géométrique.
-6. **Posters approuvés** — style et présentation seulement lorsqu'ils contredisent une source supérieure.
+1. **`HOLLOW_DOMINION_MASTER_CONTEXT.md`** — décisions verrouillées et état courant. Il prévaut toujours en cas de contradiction.
+2. **`HOLLOW_DOMINION_reference.build`** — allocations sérialisées exactes. Utiliser les allocations, jamais un ancien texte de description comme vérité.
+3. **`Skill Trees/0.5.2/data.json`** — IDs, noms, stats, coordonnées, groupes et connexions réelles.
+4. **`HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`** — correspondance validée 120 + 8.
+5. **`HOLLOW_DOMINION_REASONING_INDEX.json`** — index structuré secondaire, synchronisé avec le Master Context.
+6. **Références visuelles approuvées** — contrôle technique ou esthétique seulement ; elles ne remplacent jamais une source mécanique supérieure.
+
+Toute nouvelle référence active doit être enregistrée dans le MASTER CONTEXT avec son rôle, son statut, son niveau d’autorité et son emplacement canonique, puis synchronisée dans le dossier GitHub approprié.
 
 ## 2. Identité mécanique verrouillée
 
-- **Quarterstaff**, pas Hollow Palm.
+- **Quarterstaff**, jamais Hollow Palm.
 - **Fists of Stone** via **Way of the Stonefist** est obligatoire.
 - **Hollow Form → Whirling Assault** = moteur principal de DPS boss.
-- **Shattering Palm** = clear / Cold / Chill / Freeze / overkill.
-- **Charged Staff / Lightning / Shock** = dégâts secondaires, contrôle et charges.
-- Défense : **Evasion + Energy Shield**, avec Freeze/Daze/Stun comme contrôle.
-- Règle de pruning : ne conserver que ce qui soutient Whirling Assault, le contrôle nécessaire ou la survie.
+- **Shattering Palm** = clear, setup du premier Freeze et overkill.
+- **Charged Staff** = couche Lightning / Shock / contrôle.
+- Défense = **Evasion + Energy Shield**.
+- Priorité actuelle : **Mana sustain → validation Freeze boss → survie → optimisation offensive**.
+- Règle de pruning : ne conserver que les mécaniques qui soutiennent directement Whirling Assault, le contrôle nécessaire, le sustain ou la survie.
 
 ## 3. Arbre passif validé
 
 - **120 / 120** passifs principaux.
 - **8 / 8** passifs Martial Artist dépensés.
 - `AscendancyMonk1Start` = origine graphique, non comptée.
-- **0 ID manquant** dans `data.json`.
-- **122 connexions réelles** entre les 120 passifs sélectionnés.
-- **120/120** nœuds dans un seul composant connecté.
-- Jewel Sockets : `jewel_slot1961`, `jewel_slot1976`.
+- Tous les IDs doivent être résolus depuis `Skill Trees/0.5.2/data.json`.
+- Le visuel final masque les Weapon Sets et présente l’union des 120 passifs.
+- La topologie doit être rendue de manière déterministe depuis `data.json` ; **aucun générateur d’images ne doit reconstruire l’arbre**.
+- Agrégats de travail du live build : **+179% Evasion**, **+179% Energy Shield**, **+14% Attack Speed**, **+19% Skill Speed**, **+48% Mana Regeneration Rate**, **33% Evasion as Deflection**.
+- Freeze Buildup de travail : **+75%**.
 
-Le `.build` conserve les tags sérialisés d'origine : **88 common + 14 Weapon Set 1 + 18 Weapon Set 2**. Pour le **visuel final**, ces tags sont volontairement masqués et l'arbre est présenté comme l'union des 120 passifs.
-
-## 4. Index mécanique dérivé du vrai `data.json`
-
-Ces chiffres sont des sommes arithmétiques des modificateurs explicites sélectionnés. Les conditions restent séparées.
-
-### Baseline commun + Ascendancy
-
-- **+99% maximum Energy Shield**
-- **+99% Evasion Rating**
-- **18% faster start of ES Recharge** inconditionnel
-- **38%** avec la condition *not Full Life* de Mending Deflection
-- Skill Speed brut commun : **+13%** ; le MASTER CONTEXT retient **+16%** comme valeur de travail de l'arbre Default
-- **24% Cold Penetration**
-- **75% Freeze Buildup**
-- **76% increased Shock chance**
-- **50% Shock magnitude**
-- **30% Chill magnitude**
-- **+27% chance to inflict Ailments** inconditionnel, plus **+20% contre les ennemis avec Exposure**
-- **20% chance to Daze** sur le tronc commun
-- **30% Daze magnitude**
-- **+115% Critical Damage Bonus** commun
-- **-20% Critical Hit Chance** commun via Throatseeker
-- **+136% Attack Damage** inconditionnel
-- **+70% Elemental Damage** inconditionnel
-- +30% Elemental Damage si Chill récent
-- +30% Elemental Damage si Shock récent
-- **+67% Physical Damage**
-- **+41% Attack Area Damage**
-- **+32% Attack AoE** commun + **+16% generic AoE** d'Ascendancy
-- **+33% Mana Regeneration Rate** commun, plus **+25%** si Shock récent
-- Deflection Rating = **10% de l'Evasion** sur le tronc commun
-- Spectral Ward : **+1 Maximum ES par 12 Item Evasion du Body Armour**
-
-### Lignes conditionnelles structurantes
-
-- Crashing Wave : +25% Damage après un Critical Hit récent.
-- Killer Instinct : +40% Attack Damage à Full Life / +60% à Low Life.
-- Electrifying Daze : 12% du Physical comme Extra Lightning contre Dazed.
-- Shattering Daze : 12% du Physical comme Extra Cold contre Dazed.
-- Chakra of Impact : +8% Damage par Combo consommé, jusqu'à +40%.
-- Material Solidification : 8% du Damage comme Extra Physical.
-
-### Métadonnées Weapon Set conservées pour les futurs calculs
-
-**Weapon Set 1** ajoute notamment : +3% Skill Speed, +12% Attack AoE, +3% Quarterstaff Attack Speed, +2 Maximum Power Charges, +25% Daze chance, +25% Crit Chance vs Dazed et +30% Damage vs Dazed.
-
-**Weapon Set 2** ajoute notamment : +3% Skill Speed, +8% Attack/Cast Speed, +80% ES, +80% Evasion, +60% Critical Damage Bonus après consommation récente de Power Charge, des couches Deflection/ES recharge, +4% Movement Speed et The Hollowkeeper.
-
-> Ne pas utiliser ces deux blocs pour le visuel final. Les conserver seulement pour les raisonnements mécaniques où les Weapon Sets deviennent pertinents.
-
-## 5. Ascendancy Martial Artist
+## 4. Ascendancy Martial Artist
 
 Dépensés :
-- Area of Effect (+8%)
-- Additional Power Charge Chance (10%)
-- Evasion and Energy Shield (+15% / +15%)
-- Hollow Focus Technique
-- Hollow Form Technique
-- Way of the Stonefist
-- Area of Effect (+8%)
-- Hollow Resonance Technique
+- `AscendancyMonk1Small4` — Area of Effect
+- `AscendancyMonk1Small6` — Additional Power Charge Chance
+- `AscendancyMonk1Small3` — Evasion and Energy Shield
+- `AscendancyMonk1Notable3` — Hollow Focus Technique
+- `AscendancyMonk1Notable7` — Hollow Form Technique
+- `AscendancyMonk1Notable8` — Way of the Stonefist
+- `AscendancyMonk1Small5` — Area of Effect
+- `AscendancyMonk1Notable4` — Hollow Resonance Technique
 
 **Way of the Mountain est retiré. Way of the Stonefist prévaut.**
 
-## 6. Compétences / supports — état courant
+## 5. Compétences / supports — état courant
 
-| Compétence | Rôle | Supports actuels | À auditer |
-|---|---|---|---|
-| Hollow Form → Whirling Assault | Boss DPS | Heavy Swing, Heightened Charges, Blindside, Vorana's Siege | — |
-| Shattering Palm | Clear / Freeze | Ancestral Call II, Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest | — |
-| Charged Staff | Lightning / Shock | Blind II, Perpetual Charge, Prolonged Duration II, Elemental Armament II, Innervate | — |
-| Hollow Focus | Heavy Stun | Cooldown Recovery II, Overabundance II, Magnified Area II, Close Combat II, Heft | Overabundance II |
-| Hollow Resonance | Stun / contrôle | Stun III, Cooldown Recovery II, Close Combat II, Magnified Area II, Pinpoint Critical | Pinpoint Critical |
-| Tempest Bell | Burst / élémental | Heavy Swing, Close Combat II, Ancestral Call II, Overabundance II, Rage III | Rage III ; Magnified Area II alternative |
-| Charge Regulation | Charges / crit | Vitality II, Clarity II, Precision II | **provisoires**, Spirit à auditer |
-| Convalescence | Urgence ES | Prolonged Duration II, Cooldown Recovery II | — |
-| Spirit Vessel | Défense/utilitaire | Meat Shield II, Wing Blast, Romira's Requital, Amanamu's Tithe | — |
-| Elemental Conflux | Option luxe | aucun support verrouillé | 60 Spirit, package final à définir |
+| Compétence | Rôle | Supports / statut |
+|---|---|---|
+| Hollow Form → Whirling Assault | Boss DPS | Heavy Swing, Heightened Charges, Blindside, Vorana's Siege |
+| Shattering Palm | Clear + premier Freeze | Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest, **Ice Bite II** ; Ancestral Call II = clear swap |
+| Freezing Mark | Setup Freeze boss | **Eternal Mark, Prolonged Duration II, Charged Mark, Mark for Death II** ; 5e slot libre |
+| Charged Staff | Lightning / Blind | Blind II, Perpetual Charge, Prolonged Duration II, Elemental Armament II, Innervate |
+| Hollow Focus | Stun | Cooldown Recovery II, Overabundance II, Magnified Area II, Close Combat II, Heft ; Overabundance II = AUDIT |
+| Hollow Resonance | Stun / contrôle | Stun III, Cooldown Recovery II, Close Combat II, Magnified Area II, Pinpoint Critical ; Pinpoint Critical = AUDIT |
+| Tempest Bell | Burst | Heavy Swing, Close Combat II, Ancestral Call II, Overabundance II, Rage III ; Rage III = AUDIT |
+| Charge Regulation | Charges / sustain | **Clarity II, Precision II** ; Vitality II supprimée |
+| Wind Dancer | Défense/utilitaire | **Maim, Blind II, Rage II — VERROUILLÉS** |
+| Spirit Vessel | — | **EXCLU** |
+| Convalescence | — | **EXCLU** |
+| Elemental Conflux | Option | **Inactif**, 60 Spirit ; ne pas compter dans le budget actif |
 
-Le poster Skills/Supports reste une référence esthétique. **Elemental Conflux y affiche Elemental Focus II + Innervate, mais ce package n'est pas verrouillé.**
+**Biting Frost II est exclu.** `Lockdown` et `Pin I` sont exclus de Wind Dancer.
 
-## 7. Défense, vitesse, Mana, Spirit
+## 6. Freeze boss
 
-- Gear prévu : Evasion + ES lorsque possible.
-- ES avant jewels : **~2300–2450**, objectif ambitieux ~2500 si le DPS reste intact.
-- Faiblesse : gros coups physiques / slams.
-- Attack Speed permanent visé : **~40–50%, autour de 45%**.
-- **Attack Speed >>> Cast Speed** ; ne pas chercher Cast Speed sur le gear.
-- Mana = risque majeur, particulièrement avec Whirling Assault et l'augmentation d'Attack Speed.
-- Ancien budget Spirit : 30 + 30 + 87 = **147**, +60 Elemental Conflux = **207**.
-- Ce budget **n'intègre pas forcément** les réservations de Vitality II / Clarity II / Precision II : il reste à réauditer.
+### Baseline bêta
+
+Avec Charged Staff actif, 4 Shattering Palm, Tempest Bell puis Hollow Form, le boss est mort avant le premier Freeze et Hollow Form n’a montré aucune contribution visible à la jauge.
+
+### Direction verrouillée
+
+**Freezing Mark + Ice Bite II**.
+
+Rotation de test : **Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form**.
+
+Objectif : le premier Freeze doit déclencher les gains Cold permettant ensuite à Hollow Form / Whirling Assault de participer à l’accumulation de Gel. Statut : **PARTIELLEMENT RÉSOLU / EN TEST**.
+
+## 7. Mana / Spirit / défense
+
+### Mana
+- Problème **OUVERT / PRIORITAIRE**.
+- Test réel : 624 Mana, coût Hollow Form 126, regen 67.2 Mana/s, vide en ~5 s sans flacon et ~7 s avec Lavianga.
+- Consommation effective estimée : ~192 Mana/s.
+- Direction : **Mana Regeneration Rate + flacon**, sans sacrifier prématurément l’Attack Speed.
+
+### Spirit
+- Charge Regulation : **70 Spirit**.
+- Wind Dancer : **33 Spirit**.
+- Total actif : **103 Spirit**.
+- Modèle gear actuel : **226 Spirit**, soit **123 libres**.
+- Le +61 Spirit du torse est candidat au remplacement.
+
+### Défense
+- Direction : armures **Evasion + Energy Shield**.
+- Working gear : ~7168 ES, ~7159 Evasion, ~2362 Deflection avant conditions supplémentaires.
+- Faiblesse à surveiller : gros coups physiques / slams.
 
 ## 8. Gear
 
 ### Quarterstaff
-**Duality Warding Quarterstaff** = candidat endgame sérieux, pas encore définitivement verrouillé.
+**Duality Warding Quarterstaff** = cible endgame de travail.
 
-Priorités : Physical Damage + Attack Speed. Secondaires : Critical Damage Bonus + Guard.
-
-Référence observée : ~948.66 pDPS, 1.63 APS, 275% increased Physical Damage, +30% Critical Damage Bonus, 16% Attack Speed, 998 Guard/Combo.
+Live model : base crit 10%, base 1.40 APS, +300% local Physical Damage, +22% local Attack Speed, +30% Critical Damage Bonus, 50 Runic Ward. Variante 15% crit à comparer ultérieurement.
 
 ### Ingenuity
-Candidat BiS **conditionnel** :
-- +23% bonus bague gauche
-- +29% bonus bague droite
-- +20% Charm Charges gained
-- +7% Charm Charges used
-- 1 Charm slot
+Cible BiS de travail : **+30% bague gauche / +30% bague droite**, calcul `floor-per-mod`.
 
-Si retenue : meilleur anneau à droite.
+La Bague Topaze possède encore un **+30% Attack Speed AUDIT / inactif** tant que sa légalité exacte n’est pas validée contre le pool 0.5.2.
 
-**Les affixes des deux anneaux illustrés ne sont PAS validés contre le pool réel 0.5.2.** Ils sont des concepts visuels, pas une source de vérité mécanique.
+## 9. Visuels et audit PoE2DB
 
-## 9. Registre des visuels
+- **PoE2DB** est la source visuelle de référence pour gear, skills et supports.
+- Audit canonique : `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`.
+- Résultat audit : **9 équipements, 10 compétences, 31 supports** couverts.
+- Les supports s’affichent sans numérotation avec une petite icône à gauche.
+- Les assets transparents doivent rester transparents.
+- `Elemental Focus II` reste **AUDIT** : visuel officiel Elemental Focus utilisé, nom du build non modifié sans validation.
 
-**Techniques :**
-- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png`
-- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png`
+## 10. Références GitHub actives
 
-**Approuvés pour le style :**
-- `a_wide_graphic_poster_infographic_style_image_dar.png` — poster arbre thématisé
-- `hollow dominion by nejib(1).png` — skills/supports
-- `Guide des anneaux Ingenuity du Moine(1).png` — Ingenuity / anneaux
+### `HOLLOW_DOMINION_PROJECT/reference/`
+- `HOLLOW_DOMINION_MASTER_CONTEXT.md`
+- `HOLLOW_DOMINION_reference.build`
+- `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`
+- `HOLLOW_DOMINION_KNOWLEDGE_BASE.md`
+- `HOLLOW_DOMINION_REASONING_INDEX.json`
+- `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`
 
-Les anciens arbres générés, anciens fichiers Hollow Palm et workspaces HTML sont **historiques / non autoritatifs**.
+### `Skill Trees/0.5.2/`
+- `data.json`
 
-## 10. Points ouverts obligatoires
+### `HOLLOW_DOMINION_PROJECT/live_build/`
+- `build-data.js`, `tree-state.js`, `calculations.js`, `app.js`, `index.html`, `style.css`, `poe2db-visuals.js`, `poe2db-visuals.css`, `visual-manifest.json`, `README.md`
 
-1. Réauditer le Spirit réel de Charge Regulation et de ses supports.
-2. Tester le Mana avec l'Attack Speed final de Whirling Assault.
-3. Valider Overabundance II, Pinpoint Critical et Rage III.
-4. Fixer le Quarterstaff final et les seuils Attack Speed / crit / Freeze / Daze/Stun.
-5. Auditer chaque affixe de gear, en particulier les anneaux, contre le pool 0.5.2.
-6. Corriger Spirit et attributs sur l'infographie avant publication.
-7. Définir le package d'Elemental Conflux si l'option est conservée.
-8. Créer le guide/diaporama final seulement après résolution de ces points.
+### `HOLLOW_DOMINION_PROJECT/images/`
+- `passive_tree_master.webp`
 
-## 11. Règle pour les raisonnements futurs
+Les anciens posters, anciens Master Context, anciens fichiers Hollow Palm et anciens workspaces HTML sont **historiques / non autoritatifs**.
 
-Toujours distinguer :
-- **verrouillé**
-- **configuration de travail**
-- **provisoire / à auditer**
+## 11. Politique de maintenance
 
-Ne jamais transformer une valeur conditionnelle en bonus permanent. Ne jamais prendre le texte d'un ancien poster ou d'un ancien `.build` comme vérité s'il contredit le MASTER CONTEXT ou `data.json`.
+Toujours distinguer **VERROUILLÉ**, **configuration de travail**, **EN TEST**, **AUDIT** et **historique**.
 
-Le fichier JSON compagnon contient l'index mécanique structuré et pointe vers les sources exactes pour les 120 passifs, leurs stats/coordonnées et les connexions.
+Pour chaque modification significative :
+1. mettre à jour le MASTER CONTEXT ;
+2. ajouter/mettre à jour les références associées dans sa section dédiée ;
+3. synchroniser Knowledge Base, Reasoning Index, live build ou visuels si impactés ;
+4. synchroniser le dossier GitHub canonique ;
+5. vérifier le contenu réellement publié sur `hollow-dominion-live`.
+
+Une hypothèse ne devient jamais une vérité verrouillée sans validation.
