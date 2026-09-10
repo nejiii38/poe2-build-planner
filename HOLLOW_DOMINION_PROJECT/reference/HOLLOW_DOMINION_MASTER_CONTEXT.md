@@ -2,7 +2,7 @@
 
 **Path of Exile 2 • Martial Artist • Cold / Lightning • version 0.5.2 • by Nejib**
 
-**Mise à jour opérationnelle : 2026-09-09 — tests bêta en maps, sustain Mana, Freeze boss, Spirit Vessel / Wind Dancer.**
+**Mise à jour opérationnelle : 2026-09-10 — politique de références et synchronisation GitHub verrouillée.**
 
 Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMINION. Il sert à poursuivre le theorycraft, la validation technique, la reconstruction de l’arbre, le live build et le futur guide/diaporama.
 
@@ -322,7 +322,6 @@ Conséquence importante :
 - **Biting Frost II est exclu.**
 - Prochain test : vérifier le premier Freeze avec Freezing Mark + Ice Bite II, puis observer si la jauge continue à progresser sous Hollow Form pendant les buffs Cold.
 
-
 ### RÉSOLU / EN TEST — Visuels PoE2DB cassés dans le navigateur
 - Observation utilisateur : plusieurs icônes PoE2DB affichaient le texte alternatif / une vignette cassée sur le live build malgré une correspondance logique correcte.
 - Cause retenue : certaines URLs directes de CDN PoE2DB sont fragiles selon le navigateur/cache et peuvent renvoyer 403 ou cache miss.
@@ -362,6 +361,10 @@ Conséquence importante :
 - Une hypothèse ne doit jamais être transformée en décision verrouillée sans validation.
 - Pour toute modification du MASTER CONTEXT : synchroniser la version actuelle, créer un backup local daté, modifier la copie locale, puis appliquer la même mise à jour sur la branche GitHub du projet et vérifier le résultat.
 - Ce fichier doit rester cohérent avec le live build ; lorsqu’une décision est verrouillée, **MASTER CONTEXT et live build doivent être alignés automatiquement**.
+- **Chaque fichier nouvellement désigné comme référence du projet doit être ajouté automatiquement à la section “Sources associées du projet”, avec son rôle, son niveau d’autorité, son statut et son emplacement canonique.**
+- **Chaque référence active doit être présente dans le dossier GitHub approprié du projet** (`reference/`, `images/`, `live_build/` ou emplacement canonique existant comme `Skill Trees/0.5.2/`). Si une référence est remplacée ou devient obsolète, son statut doit être indiqué explicitement et la structure GitHub mise à jour en conséquence.
+- **Toute modification d’une référence active doit entraîner la synchronisation des fichiers dépendants concernés** : MASTER CONTEXT, Knowledge Base, Reasoning Index, live build, manifestes/visuels et documentation de projet selon le cas.
+- **Après chaque synchronisation GitHub, vérifier le contenu réellement présent sur la branche de travail avant de considérer l’opération terminée.**
 
 ## 15. Visuels et futur diaporama
 
@@ -372,11 +375,42 @@ Conséquence importante :
 
 ## Sources associées du projet
 
-- `HOLLOW_DOMINION_reference.build` — allocations de référence.
-- `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — rapport exact 120 + 8, IDs/noms/types/coordonnées.
-- `../../Skill Trees/0.5.2/data.json` — topologie officielle de l’arbre PoE2 0.5.2.
-- `../live_build/build-data.js` — état de travail actuel du gear / compétences / supports.
-- `../live_build/tree-state.js` — agrégats programmables de l’arbre.
+### Niveau 1 — autorité opérationnelle
+- `HOLLOW_DOMINION_MASTER_CONTEXT.md` — **source prioritaire** des décisions verrouillées et de l’état courant. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF / VERROUILLÉ**.
+
+### Niveau 2 — allocations et topologie de l’arbre
+- `HOLLOW_DOMINION_reference.build` — allocations passives sérialisées de référence. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF**.
+- `Skill Trees/0.5.2/data.json` — IDs, noms, stats, coordonnées, groupes et connexions de l’arbre PoE2 0.5.2. Emplacement canonique : `Skill Trees/0.5.2/`. Statut : **ACTIF / SOURCE TOPOLOGIQUE**.
+- `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — correspondance validée des 120 passifs principaux + 8 Ascendancy. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF**.
+
+### Niveau 3 — index, raisonnement et audits
+- `HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — base consolidée de theorycraft et hiérarchie des sources. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF SECONDAIRE** ; doit rester synchronisé avec le MASTER CONTEXT et ne peut jamais le contredire.
+- `HOLLOW_DOMINION_REASONING_INDEX.json` — index mécanique structuré et liens vers les sources exactes. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF SECONDAIRE** ; doit rester synchronisé avec le MASTER CONTEXT.
+- `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` — audit des visuels PoE2DB du live build. Emplacement canonique : `HOLLOW_DOMINION_PROJECT/reference/`. Statut : **ACTIF — AUDIT VISUEL**.
+
+### Niveau 4 — état exécutable du live build
+- `live_build/build-data.js` — état courant gear / compétences / supports.
+- `live_build/tree-state.js` — agrégats programmables de l’arbre.
+- `live_build/calculations.js` — moteur de calcul du personnage.
+- `live_build/app.js` — logique de l’interface live build.
+- `live_build/index.html` — page principale.
+- `live_build/style.css` — mise en forme principale.
+- `live_build/poe2db-visuals.js` — mapping/fallbacks des visuels PoE2DB.
+- `live_build/poe2db-visuals.css` — styles des visuels PoE2DB.
+- `live_build/visual-manifest.json` — manifeste des visuels.
+- `live_build/README.md` — documentation du live build.
+- Tous ces fichiers sont **ACTIFS** et doivent être synchronisés lorsqu’une décision verrouillée les affecte.
+
+### Niveau 5 — références visuelles techniques / esthétiques
+- `images/passive_tree_master.webp` — visuel maître actuellement présent dans le dépôt. Statut : **ACTIF**.
+- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png` — trace technique historique connue. Statut : **RÉFÉRENCE CONNUE / FICHIER À RESTAURER SI MAINTENU ACTIF** ; ne pas prétendre qu’il est disponible tant qu’il n’est pas présent dans le dépôt.
+- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png` — validation technique historique connue. Statut : **RÉFÉRENCE CONNUE / FICHIER À RESTAURER SI MAINTENU ACTIF**.
+- `hollow dominion by nejib(1).png` — référence esthétique skills/supports historique connue. Statut : **RÉFÉRENCE CONNUE / FICHIER À RESTAURER SI MAINTENU ACTIF**.
+- `Guide des anneaux Ingenuity du Moine.png` — référence esthétique Ingenuity / anneaux disponible en Library. Statut : **RÉFÉRENCE ESTHÉTIQUE SECONDAIRE** ; ne remplace jamais les validations mécaniques.
+
+### Références historiques / non autoritatives
+- Anciens MASTER CONTEXT, anciens posters, anciens `.build` Hollow Palm, workspaces HTML et prototypes restent des archives uniquement.
+- Ils ne doivent jamais écraser une décision ou une donnée issue d’une source de niveau supérieur.
 
 Ce fichier doit être lu avant toute modification majeure du build, de l’arbre, du gear ou du guide final.
 
