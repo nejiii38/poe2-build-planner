@@ -2,7 +2,7 @@
 
 **Path of Exile 2 • version 0.5.2 • Monk — Martial Artist • Quarterstaff • by Nejib**
 
-**Mise à jour opérationnelle : 2026-09-10 — inventaire bêta en cours. Hollow Resonance n’est pas encore acquis/testé ; toute optimisation structurelle est suspendue jusqu’à ce test.**
+**Mise à jour opérationnelle : 2026-09-10 — identité du build verrouillée : Freeze boss quasi instantané + hybridation Cold/Lightning, tout en préservant dégâts, clear, survivabilité et stun déjà validés. Hollow Resonance reste à tester en bêta avant toute correction structurelle.**
 
 Ce fichier est la **référence opérationnelle prioritaire** du projet. En cas de contradiction avec une source plus ancienne, toute décision marquée **VERROUILLÉE** ici prévaut.
 
@@ -14,10 +14,32 @@ Ce fichier est la **référence opérationnelle prioritaire** du projet. En cas 
 - **Fists of Stone** via Lochtonial Caress transformé par **Way of the Stonefist** est obligatoire.
 - **Hollow Form → Whirling Assault** = source principale de DPS boss.
 - **Shattering Palm** = sort principal de clearing, Cold/Freeze et overkill.
-- **Charged Staff** = couche Lightning / Shock / contrôle.
+- **Charged Staff** = couche Lightning / Shock / contrôle ; cette couche doit être réellement exploitable en jeu, pas seulement correcte sur le papier.
 - Défense = **Evasion + Energy Shield**, avec Freeze/Stun comme contrôle.
 - Priorité vitesse : **Attack Speed >>> Cast Speed**. Ne pas chercher de Cast Speed sur le gear.
 - Noms des supports dans le live build : **anglais**.
+
+### Piliers identitaires non négociables — VERROUILLÉS
+
+1. **Frigorification / Freeze des boss quasi instantanée.**
+   - Le build doit être capable d’entrer rapidement dans son cycle de contrôle Cold sur les boss.
+   - Un Freeze trop tardif, même avec de bons dégâts, est considéré comme une perte d’identité du build et doit être corrigé.
+2. **Hybridation Cold + Lightning réellement jouable.**
+   - Le froid ne doit pas être une simple décoration du clear.
+   - La foudre ne doit pas être une couche théorique trop difficile à activer.
+   - **Charged Staff** doit pouvoir être utilisé de manière fiable avec l’économie de Power Charges du build.
+3. **Préserver les forces déjà validées du build actuel.**
+   - **Très bons dégâts.**
+   - **Très bon clearing.**
+   - **Survivabilité quasi parfaite en clearing** hors faute grave de gameplay.
+   - **Très bon stun sur les boss.**
+
+### Règle d’optimisation — VERROUILLÉE
+
+- Ne pas dénigrer ni déconstruire le build actuel sous prétexte que le Freeze ou Charged Staff doivent être améliorés : la base fonctionne déjà très bien.
+- Toute optimisation doit viser à **corriger les deux piliers identitaires insuffisants — Freeze boss et accès fiable à Lightning — sans sacrifier inutilement les quatre qualités déjà validées**.
+- Un gain marginal de DPS n’est pas prioritaire face à une correction qui restaure l’identité Cold/Lightning ou le Freeze boss.
+- Une solution qui améliore le Freeze mais détruit le clear, la survivabilité, le stun boss ou le DPS principal doit être considérée comme mauvaise sauf absence d’alternative.
 
 ## 2. Bêta ingame ≠ stuff final BiS — VERROUILLÉ
 
@@ -110,7 +132,7 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 - Hollow Resonance reste prévu dans le build final mais son apport réel est **NON TESTÉ / EN ATTENTE DE VALIDATION BÊTA**.
 - Il peut potentiellement modifier le contrôle, le rythme de combat ou la gestion pratique des charges ; **aucune correction structurelle ne doit être verrouillée avant son test**.
 
-### OUVERT / EN TEST — Freeze / frigorification boss trop lente
+### OUVERT / PRIORITÉ IDENTITÉ — Freeze / frigorification boss trop lente
 
 - Le Freeze boss reste **beaucoup trop long** malgré +75% Freeze Buildup.
 - Baseline initiale : ~4 Shattering Palm + Tempest Bell + Charged Staff actif, puis Hollow Form ; boss mort avant Freeze, Hollow Form sans contribution visible à la jauge.
@@ -118,15 +140,19 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 - Rotation de test : Freezing Mark → ~4 Shattering Palm → premier Freeze → Tempest Bell → Hollow Form.
 - Retour bêta : la direction actuelle reste **trop lente en pratique**.
 - Contrainte verrouillée : Shattering Palm ne doit pas devenir un spam boss permanent ; Hollow Form reste le DPS principal.
-- Ce problème devra être **réévalué après ajout de Hollow Resonance** avant nouvelle correction.
+- **Critère de réussite : viser une frigorification / un premier Freeze quasi instantané ou suffisamment rapide pour constituer réellement l’ouverture du combat boss.**
+- Ce problème est désormais considéré comme un **écart majeur à l’identité du build**, pas comme un simple manque d’optimisation.
+- Réévaluer après ajout de Hollow Resonance avant nouvelle correction structurelle.
 
-### OUVERT — Power Charges / Charged Staff
+### OUVERT / PRIORITÉ IDENTITÉ — Power Charges / Charged Staff
 
 - Observation réelle : **Hollow Form est la source principale de génération des Power Charges mais les consomme presque immédiatement**.
 - Conséquence : Charged Staff est trop difficile à activer / maintenir.
 - Impact : la couche Lightning / Shock construite devient trop lourde à setup en jeu.
-- Ce problème était la priorité d’optimisation n°1, mais il est désormais **mis en attente du test Hollow Resonance**, car cette compétence pourrait modifier la dynamique de contrôle/charges.
-- Si le problème persiste après Hollow Resonance, il redevient la première correction structurelle à traiter.
+- Cette difficulté empêche le build d’exprimer correctement son identité **Cold + Lightning**.
+- Ce problème reste mis en attente du test Hollow Resonance, car cette compétence pourrait modifier la dynamique de contrôle/charges.
+- **Si le problème persiste après Hollow Resonance, il redevient la première correction structurelle à traiter.**
+- Objectif : rendre Charged Staff naturellement disponible dans la rotation sans casser Hollow Form ni supprimer l’intérêt de Charge Regulation.
 
 ### OUVERT — durée utile des charges / Charge Regulation
 
@@ -150,6 +176,18 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 - Ne pas sacrifier cette robustesse pour un gain offensif marginal.
 - Les gros hits physiques / slams restent seulement un point de vigilance boss/endgame.
 
+### VALIDÉ — stun boss
+
+- Retour bêta : le build possède déjà un **très bon stun sur les boss**.
+- Cette qualité fait partie des acquis à préserver pendant l’optimisation du Freeze et de l’économie des charges.
+- Ne pas modifier lourdement les éléments de contrôle/stun sans mesurer le coût réel sur cette force déjà validée.
+
+### VALIDÉ — dégâts généraux et clearing
+
+- Retour bêta : les **dégâts généraux sont très bons**.
+- Le **clearing est très bon**, même si l’overkill de Shattering Palm peut encore être perfectionné.
+- La phase d’optimisation n’a donc pas pour objectif de reconstruire l’offense depuis zéro ; elle doit surtout remettre le Freeze et Lightning au niveau attendu de l’identité du build.
+
 ### AUDIT — critique
 
 - Les hits critiques ne sont pas distinguables visuellement de façon fiable en jeu.
@@ -159,23 +197,31 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 ## 8. Ordre de diagnostic temporaire — VERROUILLÉ
 
 1. **Débloquer et tester Hollow Resonance en jeu.**
-2. Réévaluer **Power Charges / Charged Staff**.
-3. Réévaluer **Freeze boss**.
+2. Réévaluer **Power Charges / Charged Staff** — priorité structurelle Cold/Lightning si le problème persiste.
+3. Réévaluer et corriger **Freeze boss** — objectif identitaire : frigorification quasi instantanée.
 4. Réévaluer **durée/conservation des charges / Charge Regulation**.
 5. Retester **Shattering Palm / overkill** avec setup complet ; auditer Rising Tempest uniquement si le problème persiste.
 6. Auditer le **critique** si toujours pertinent.
 
-À préserver : **Mana résolu** et **survivabilité clearing validée**.
+### Acquis à préserver pendant toutes les étapes
+
+- **Mana : RÉSOLU / VALIDÉ EN JEU.**
+- **Dégâts : TRÈS BONS.**
+- **Clearing : TRÈS BON.**
+- **Survivabilité clearing : QUASI PARFAITE / VALIDÉE.**
+- **Stun boss : TRÈS BON / VALIDÉ.**
 
 ## 9. Checklist avant build final 100%
 
 - Tester Hollow Resonance en conditions réelles.
 - Refaire l’inventaire des symptômes après Hollow Resonance.
 - Si nécessaire, corriger l’économie Power Charges / Charged Staff sans casser Hollow Form.
-- Reprendre le Freeze boss si toujours trop lent.
+- Obtenir une **frigorification boss quasi instantanée ou réellement immédiate dans la rotation prévue**.
+- Conserver une vraie identité **Cold + Lightning**, avec Charged Staff suffisamment fiable pour être utilisé en pratique.
 - Auditer une augmentation modérée de durée/conservation des charges.
 - Retester Shattering Palm / overkill avec Charged Staff réellement actif ; Rising Tempest ensuite seulement.
 - Auditer le critique réel.
+- Préserver les très bons dégâts, le très bon clear, la survivabilité quasi parfaite et le très bon stun boss.
 - Auditer les meilleurs rolls légaux de Mana Regeneration Rate sur les anneaux finaux ; maintenir au minimum la baseline bêta 63/68 + Ingenuity.
 - Auditer le remplacement du +61 Spirit du torse.
 - Valider Overabundance II, Pinpoint Critical, Rage III et Elemental Focus II.
@@ -190,7 +236,7 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 - Statuts : **OUVERT, EN TEST, PARTIELLEMENT RÉSOLU, RÉSOLU, VERROUILLÉ, AUDIT**.
 - Mesures réelles en jeu et projections théoriques restent séparées.
 - Une hypothèse ne devient jamais une décision verrouillée sans validation.
-- Avant modification du MASTER CONTEXT : synchroniser l’état actuel, créer un **backup local daté**, modifier la copie locale, appliquer à GitHub puis vérifier la branche.
+- Avant modification du MASTER CONTEXT : synchroniser l’état actuel, créer un **backup local daté / point de restauration exact**, modifier la copie locale, appliquer à GitHub puis vérifier la branche.
 - Une décision verrouillée affectant le live build doit synchroniser automatiquement les fichiers live concernés.
 - Chaque nouveau fichier de référence doit être enregistré ici avec **rôle, niveau d’autorité, statut et emplacement canonique**.
 - Chaque référence active doit exister dans son dossier GitHub canonique.
@@ -206,14 +252,14 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 ### Niveau 2 — arbre
 - `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_reference.build` — allocations passives exactes — **ACTIF**.
 - `Skill Trees/0.5.2/data.json` — topologie / IDs / stats / coordonnées / connexions — **ACTIF / SOURCE TOPOLOGIQUE**.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping 120+8 — **ACTIF**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping validé 120 + 8 — **ACTIF**.
 
 ### Niveau 3 — index / audits
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — **ACTIF SECONDAIRE**.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_REASONING_INDEX.json` — **ACTIF SECONDAIRE**.
-- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` — **ACTIF / AUDIT VISUEL**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — synthèse secondaire — **ACTIF SECONDAIRE**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_REASONING_INDEX.json` — index mécanique structuré — **ACTIF SECONDAIRE**.
+- `HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` — audit visuel — **ACTIF — AUDIT VISUEL**.
 
-### Niveau 4 — live build
+### Niveau 4 — live build actif
 - `live_build/build-data.js`
 - `live_build/tree-state.js`
 - `live_build/calculations.js`
@@ -225,31 +271,29 @@ Le personnage actuellement joué est une **version bêta non-BiS** destinée à 
 - `live_build/visual-manifest.json`
 - `live_build/README.md`
 
-Tous sont **ACTIFS** et synchronisés lorsqu’une décision verrouillée les affecte.
-
 ### Niveau 5 — visuels
 - `images/passive_tree_master.webp` — **ACTIF**.
-- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png` — référence connue / fichier à restaurer si maintenu actif.
-- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png` — référence connue / fichier à restaurer si maintenu actif.
-- `hollow dominion by nejib(1).png` — référence esthétique connue / fichier à restaurer si maintenu actif.
-- `Guide des anneaux Ingenuity du Moine.png` — référence esthétique secondaire Library.
+- `HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png` — référence connue ; fichier à restaurer si maintenu actif.
+- `HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png` — référence connue ; fichier à restaurer si maintenu actif.
+- `hollow dominion by nejib(1).png` — référence esthétique connue ; fichier à restaurer si maintenu actif.
+- `Guide des anneaux Ingenuity du Moine.png` — référence esthétique secondaire disponible en Library.
 
 Les anciens Master Context, posters, builds Hollow Palm, workspaces HTML et prototypes sont **historiques / non autoritatifs**.
 
 ## 12. Politique visuelle du live build — VERROUILLÉE
 
-- **PoE2DB** est la source visuelle de référence pour équipements, skills et supports.
-- Toute modification item/skill/support implique vérification PoE2DB puis synchronisation du live build.
+- **PoE2DB** est la source visuelle de référence pour gear, skills et supports.
+- Toute modification d’un item/skill/support doit entraîner la vérification/récupération de son visuel PoE2DB puis la synchronisation du live build.
 - Conserver les fonds transparents natifs.
 - Supports sans numérotation, petit logo à gauche.
-- Lineage Support sans seconde icône exposée : image officielle de gemme PoE2DB.
+- Pour les Lineage Supports sans seconde icône exposée, utiliser l’image officielle de gemme PoE2DB.
 - Anciens SVG/sprites = rollback uniquement.
 - Audit actuel : **9 équipements / 10 compétences / 31 supports**.
-- `Elemental Focus II` reste **AUDIT** : visuel Elemental Focus actuel, sans renommer le support avant validation.
+- `Elemental Focus II` reste **AUDIT** : visuel Elemental Focus actuel utilisé, mais le nom/support n’est pas modifié sans validation explicite.
 
 ## 13. Futur visuel / diaporama
 
-- Référence esthétique skills/supports conservée, jamais utilisée comme source mécanique.
+- Conserver la référence esthétique skills/supports validée, sans jamais l’utiliser comme source mécanique.
 - Arbre final : 120 principaux + 8 Ascendancy ; chemin réel lumineux, Notables importants rouges, Ascendancy violet, non-alloué gris sombre.
-- Visuel reproductible nœud par nœud par un débutant.
-- Ensuite visuel de levelling depuis le même master, en 8–12 grandes étapes.
+- Le visuel doit être reproductible nœud par nœud par un débutant.
+- Ensuite créer un visuel de levelling depuis exactement le même master, en 8–12 grandes étapes.
