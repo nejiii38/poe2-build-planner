@@ -2,7 +2,7 @@
 
 **Path of Exile 2 • Martial Artist • Cold / Lightning • version 0.5.2 • by Nejib**
 
-**Mise à jour opérationnelle : 2026-09-10 — politique de références et synchronisation GitHub verrouillée.**
+**Mise à jour opérationnelle : 2026-09-10 — sustain Mana résolu en jeu par affixes de régénération sur les deux anneaux.**
 
 Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMINION. Il sert à poursuivre le theorycraft, la validation technique, la reconstruction de l’arbre, le live build et le futur guide/diaporama.
 
@@ -20,6 +20,7 @@ Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMIN
 - Philosophie : build très offensif, avec contrôle Freeze/Stun et une vraie couche **Evasion + Energy Shield**.
 - Constat bêta : avec les uniques clés mais des rares encore lambda, **les dégâts sont déjà impressionnants et le clear est très fluide**. Ne pas chercher à augmenter l’offense tant que Mana / contrôle boss / survie ne sont pas fiabilisés.
 - Convention live build : **les noms des gemmes de soutien restent en anglais**.
+- **Règle bêta / stuff final — VERROUILLÉE :** le personnage joué en jeu est une **version bêta non-BiS** destinée à valider le comportement réel du build. Ses objets et rolls sont conservés comme **mesures expérimentales**, jamais comme plafond du build final. Le modèle final doit utiliser, pour chaque emplacement, **les meilleurs affixes / tiers / rolls légalement disponibles en Path of Exile 2 0.5.2 sur la base concernée**, après validation du pool réel. Une valeur bêta ne doit jamais remplacer automatiquement une valeur BiS finale.
 
 ## 2. Arbre passif — vérité validée
 
@@ -134,7 +135,7 @@ Rôle : couche Lightning et application de Blind.
 ### Spirit Vessel — EXCLU
 
 - **Définitivement retiré du build actuel.**
-- Motif : l’aptitude est octroyée par **Forgotten Warden**, ce qui entrerait en conflit avec notre armure de torse **Veste racée**.
+- Motif : l’aptitude est octro{3�e par **Forgotten Warden**, ce qui entrerait en conflit avec notre armure de torse **Veste racée**.
 - Remplacement retenu : **Danseur du vent**.
 
 ### Convalescence — EXCLU
@@ -158,7 +159,7 @@ Rôle : couche Lightning et application de Blind.
 - Danseur du vent devient la couche persistante défensive/utilitaire retenue à la place de Spirit Vessel.
 - Faiblesse toujours à surveiller : **gros coups physiques / slams**.
 
-## 6. Mana, vitesse et charges — problème majeur quantifié
+## 6. Mana, vitesse et charges — sustain résolu en jeu
 
 ### Orientation verrouillée
 
@@ -192,9 +193,19 @@ Estimation empirique dérivée des mesures :
 - Avec le flacon, récupération totale effective : **~102.9 Mana/s**.
 - Apport observé du flacon par rapport à la regen naturelle : **~35.7 Mana/s**.
 
+### Test bêta réel — 2026-09-10 — solution validée
+
+- Le problème de sustain Mana a été **résolu en jeu**.
+- Solution appliquée : **un affixe de Mana Regeneration Rate sur chacun des deux anneaux**.
+- Valeurs réellement équipées sur la bêta : **+63% Mana Regeneration Rate** sur un anneau et **+68% Mana Regeneration Rate** sur l’autre.
+- **Ingenuity est équipée** et augmente les bonus des deux anneaux ; aucune valeur effective post-Ingenuity n’est inventée ici tant que l’affichage / l’arrondi exact n’a pas été relevé séparément.
+- Résultat observé : **plus aucun problème de Mana** dans l’utilisation réelle du build bêta.
+- Cette solution conserve l’orientation offensive du build et évite de réduire l’Attack Speed de Hollow Form / Whirling Assault.
+- La présence réelle de ces affixes valide leur **type** sur les anneaux utilisés en bêta. Pour le build final, leurs tiers/rolls devront être remplacés par les **meilleures valeurs légales 0.5.2** disponibles sur les bases finales, après audit du pool réel.
+
 ### Statut
 
-**OUVERT / PRIORITAIRE.** Le flacon aide nettement mais ne résout pas seul le sustain. La régénération de Mana doit devenir un critère majeur lors de la prochaine révision de l’arbre et/ou du gear final.
+**RÉSOLU / VALIDÉ EN JEU.** Le sustain Mana n’est plus une problématique prioritaire. Les anciennes mesures du 2026-09-09 sont conservées comme baseline avant correction.
 
 ## 7. Spirit — problème largement désamorcé
 
@@ -226,6 +237,8 @@ Conséquence importante :
 - L’effet est modélisé avec arrondi `floor-per-mod`.
 - Bague Améthyste gauche : concept de travail déjà intégré.
 - Bague Topaze droite : le mod **+30% Attack Speed** reste marqué **audit / inactive** tant que sa légalité exacte n’est pas confirmée.
+- **Validation bêta 2026-09-10 :** les deux anneaux portés en jeu ont respectivement **+63%** et **+68% Mana Regeneration Rate**. Avec **Ingenuity** équipée, cet ensemble supprime le problème de sustain Mana observé.
+- Ces valeurs sont conservées comme **baseline expérimentale bêta**, pas comme rolls BiS finaux. Lors de l’optimisation finale des anneaux, utiliser les **meilleurs tiers/rolls légaux 0.5.2** sur les bases finales et vérifier qu’ils maintiennent au minimum le sustain validé.
 - Ne pas transformer un affixe “audit” en vérité mécanique sans validation.
 
 ## 10. Freeze boss — problème actif à diagnostiquer
@@ -301,9 +314,12 @@ Conséquence importante :
 - Elemental Conflux reste inactif.
 - Le +61 Spirit du torse est maintenant probablement superflu pour la bêta actuelle.
 
-### OUVERT — Mana
-- Problème confirmé et quantifié par test réel.
-- Direction de résolution : **Mana Regeneration Rate + Lavianga**, puis révision arbre/gear.
+### RÉSOLU / VALIDÉ EN JEU — Mana
+- Problème initial confirmé et quantifié par test réel le 2026-09-09.
+- **Solution validée en jeu le 2026-09-10 : +63% Mana Regeneration Rate sur un anneau et +68% sur l’autre, avec Ingenuity équipée.**
+- Résultat utilisateur : **plus aucun problème de Mana** dans le build bêta.
+- Le sustain est désormais considéré comme résolu sans réduction de l’Attack Speed.
+- Pour le stuff final BiS, conserver cette fonction de sustain avec les **meilleurs affixes légaux 0.5.2** ; les valeurs 63/68 restent une baseline de test et ne sont pas des valeurs finales imposées.
 
 ### RÉSOLU — Supports de Freezing Mark
 - Supports verrouillés : **Eternal Mark + Prolonged Duration II + Charged Mark + Mark for Death II**.
@@ -322,6 +338,7 @@ Conséquence importante :
 - **Biting Frost II est exclu.**
 - Prochain test : vérifier le premier Freeze avec Freezing Mark + Ice Bite II, puis observer si la jauge continue à progresser sous Hollow Form pendant les buffs Cold.
 
+
 ### RÉSOLU / EN TEST — Visuels PoE2DB cassés dans le navigateur
 - Observation utilisateur : plusieurs icônes PoE2DB affichaient le texte alternatif / une vignette cassée sur le live build malgré une correspondance logique correcte.
 - Cause retenue : certaines URLs directes de CDN PoE2DB sont fragiles selon le navigateur/cache et peuvent renvoyer 403 ou cache miss.
@@ -332,17 +349,18 @@ Conséquence importante :
 ## 12. Évaluation et priorités actuelles
 
 - Les dégâts bêta et le clear sont déjà **très élevés / très fluides** avec un équipement non-BiS.
-- Priorité n°1 : **sustain Mana**.
-- Priorité n°2 : **valider en jeu le moteur Freeze Freezing Mark + Ice Bite II → Hollow Form**.
-- Priorité n°3 : conserver la défense Evasion + ES et surveiller les gros hits physiques.
-- Priorité n°4 : seulement ensuite reprendre critique / affixes offensifs / optimisation fine.
+- **Sustain Mana : RÉSOLU / validé en jeu** avec **+63% / +68% Mana Regeneration Rate sur les deux anneaux bêta + Ingenuity**.
+- Priorité n°1 : **valider en jeu le moteur Freeze Freezing Mark + Ice Bite II → Hollow Form**.
+- Priorité n°2 : conserver la défense Evasion + ES et surveiller les gros hits physiques.
+- Le classement définitif des optimisations sera refait **après l’inventaire complet des problématiques bêta** fourni par l’utilisateur.
+- Ensuite seulement reprendre l’optimisation générale du build, dont critique / affixes offensifs / efficacité globale, une étape à la fois.
 - Règle de pruning : ne pas ajouter de mécanique qui ne soutient pas directement **Whirling Assault**, le contrôle nécessaire, le sustain ou la survie.
 
 ## 13. Checklist avant build final 100%
 
 - Terminer les tests Freeze boss.
-- Mesurer le sustain Hollow Form après chaque modification importante de Mana / Attack Speed.
-- Réviser l’arbre si nécessaire pour intégrer davantage de **Mana Regeneration Rate** sans dégrader inutilement le DPS.
+- Le sustain Hollow Form est actuellement **résolu** ; le recontrôler uniquement après une modification importante de Mana / Attack Speed susceptible de remettre cette validation en cause.
+- Auditer les **meilleurs tiers/rolls légaux de Mana Regeneration Rate sur les deux anneaux finaux** et vérifier qu’ils reproduisent au minimum le sustain validé par la baseline bêta **63% / 68% + Ingenuity**.
 - Auditer le meilleur remplacement du **+61 Spirit** sur la Veste racée.
 - Valider les supports encore marqués provisoires.
 - Fixer les seuils finaux Attack Speed / crit / Freeze / Stun.
@@ -358,11 +376,12 @@ Conséquence importante :
 - **Chaque problématique solutionnée doit être mise à jour automatiquement**, avec la cause retenue, la solution, l’impact sur le build et son nouveau statut.
 - Statuts à utiliser : **OUVERT**, **EN TEST**, **PARTIELLEMENT RÉSOLU**, **RÉSOLU**, **VERROUILLÉ**, **AUDIT**.
 - Les mesures réelles en jeu doivent être conservées séparément des projections théoriques.
+- **Le build bêta et le modèle BiS final doivent rester deux couches distinctes** : la bêta valide les interactions et les seuils réellement suffisants ; le modèle final utilise les meilleurs affixes / tiers / rolls légaux 0.5.2 après audit. Ne jamais déduire qu’un roll bêta est le roll final simplement parce qu’il fonctionne en jeu.
 - Une hypothèse ne doit jamais être transformée en décision verrouillée sans validation.
 - Pour toute modification du MASTER CONTEXT : synchroniser la version actuelle, créer un backup local daté, modifier la copie locale, puis appliquer la même mise à jour sur la branche GitHub du projet et vérifier le résultat.
 - Ce fichier doit rester cohérent avec le live build ; lorsqu’une décision est verrouillée, **MASTER CONTEXT et live build doivent être alignés automatiquement**.
 - **Chaque fichier nouvellement désigné comme référence du projet doit être ajouté automatiquement à la section “Sources associées du projet”, avec son rôle, son niveau d’autorité, son statut et son emplacement canonique.**
-- **Chaque référence active doit être présente dans le dossier GitHub approprié du projet** (`reference/`, `images/`, `live_build/` ou emplacement canonique existant comme `Skill Trees/0.5.2/`). Si une référence est remplacée ou devient obsolète, son statut doit être indiqué explicitement et la structure GitHub mise à jour en conséquence.
+- **Chaque référence active doit être présente dans le dossier GitHub approprié du projet** (`reference/`, `images/`, `live_build/` ou emplacement canonique existant comme `Skill Trees/0.5.2/`). Si une référence est remplacée ou devient obsolète, son statut doit être indiqté explicitement et la structure GitHub mise à jour en conséquence.
 - **Toute modification d’une référence active doit entraîner la synchronisation des fichiers dépendants concernés** : MASTER CONTEXT, Knowledge Base, Reasoning Index, live build, manifestes/visuels et documentation de projet selon le cas.
 - **Après chaque synchronisation GitHub, vérifier le contenu réellement présent sur la branche de travail avant de considérer l’opération terminée.**
 
