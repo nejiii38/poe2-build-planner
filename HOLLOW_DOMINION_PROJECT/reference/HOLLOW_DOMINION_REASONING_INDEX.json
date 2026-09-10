@@ -1,5 +1,6 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "last_sync": "2026-09-10",
   "project": {
     "name": "HOLLOW DOMINION",
     "author": "Nejib / Nejiii38",
@@ -8,112 +9,255 @@
     "class": "Monk",
     "ascendancy": "Martial Artist",
     "weapon": "Quarterstaff",
-    "build_identity": [
+    "locked_identity": [
       "Hollow Form → Whirling Assault = main boss DPS",
-      "Shattering Palm = clear / Cold / Chill / Freeze / overkill",
-      "Lightning / Shock / Charged Staff = secondary damage + control",
-      "Freeze + Daze/Stun control",
-      "Evasion + Energy Shield defensive core"
-    ],
-    "locked_mechanical_rules": [
-      "Do not reintroduce Hollow Palm despite legacy filenames/descriptions.",
-      "Fists of Stone via Way of the Stonefist is mechanically mandatory.",
-      "For passive-tree visuals, use the union of 120 main passives + 8 spent Martial Artist passives; do not display or discuss Weapon Sets.",
-      "Do not use generative image tools to reconstruct passive-tree topology."
+      "Shattering Palm = clear + initial Freeze setup + overkill",
+      "Charged Staff = Lightning / Shock / control layer",
+      "Freeze + Stun control",
+      "Evasion + Energy Shield defensive core",
+      "Fists of Stone via Way of the Stonefist is mandatory",
+      "Do not reintroduce Hollow Palm"
     ]
   },
   "source_precedence": [
-    {"priority": 1, "source": "HOLLOW DOMINION — MASTER CONTEXT.docx / HOLLOW_DOMINION_MASTER_CONTEXT.md", "role": "Locked decisions and current project state", "rule": "If it conflicts with older project information, Master Context wins."},
-    {"priority": 2, "source": "HOLLOW_DOMINION_reference.build / HOLLOW DOMINION by nejib(2).build", "role": "Exact serialized passive allocations and original weapon_set tags", "rule": "Use passives array, not stale description text."},
-    {"priority": 3, "source": "Skill Trees/0.5.2/data.json", "role": "Node IDs, names, stats, coordinates, groups and real connections"},
-    {"priority": 4, "source": "HOLLOW_DOMINION_identification_120_default_8_ascendancy.md", "role": "Validated 120+8 ID/name/type/coordinate mapping"},
-    {"priority": 5, "source": "HOLLOW_DOMINION_trace_exact_120_plus_8_v2 / MASTER_PASSIVE_TREE_v2_NOTABLES_EXACTS", "role": "Deterministic technical visual validation"},
-    {"priority": 6, "source": "Approved HOLLOW DOMINION posters", "role": "Visual identity and working presentation only; never override locked mechanical facts"}
+    {
+      "priority": 1,
+      "source": "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_MASTER_CONTEXT.md",
+      "role": "Locked decisions and current project state",
+      "status": "ACTIVE_LOCKED",
+      "rule": "If it conflicts with any older project information, Master Context wins."
+    },
+    {
+      "priority": 2,
+      "source": "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_reference.build",
+      "role": "Exact serialized passive allocations",
+      "status": "ACTIVE"
+    },
+    {
+      "priority": 3,
+      "source": "Skill Trees/0.5.2/data.json",
+      "role": "Node IDs, names, stats, coordinates, groups and real connections",
+      "status": "ACTIVE_TOPOLOGY_SOURCE"
+    },
+    {
+      "priority": 4,
+      "source": "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md",
+      "role": "Validated 120+8 mapping",
+      "status": "ACTIVE"
+    },
+    {
+      "priority": 5,
+      "source": "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md",
+      "role": "Consolidated secondary reasoning reference",
+      "status": "ACTIVE_SECONDARY"
+    },
+    {
+      "priority": 6,
+      "source": "Approved technical and aesthetic references",
+      "role": "Visual validation or presentation only",
+      "status": "SECONDARY"
+    }
   ],
   "passive_tree": {
-    "validation": {
-      "main_passives": 120,
-      "ascendancy_entries_in_build_including_start": 9,
-      "ascendancy_spent": 8,
-      "ascendancy_start_id": "AscendancyMonk1Start",
-      "selected_main_edges": 122,
-      "main_connected_component_size": 120,
-      "missing_ids_in_data_json": 0,
-      "jewel_sockets": ["jewel_slot1961", "jewel_slot1976"]
-    },
-    "serialized_scope_counts": {"common": 88, "weapon_set_1": 14, "weapon_set_2": 18, "note": "These tags are preserved only as source metadata. The final passive-tree visual intentionally hides Weapon Sets."},
-    "derived_mechanical_index": {
-      "baseline_common_plus_ascendancy": {
-        "increased_maximum_energy_shield_percent": 99,
-        "increased_evasion_rating_percent": 99,
-        "faster_start_energy_shield_recharge_percent_unconditional": 18,
-        "faster_start_energy_shield_recharge_percent_if_not_full_life": 38,
-        "generic_skill_speed_percent_common_only": 13,
-        "master_context_reported_default_skill_speed_percent": 16,
-        "cold_penetration_percent": 24,
-        "freeze_buildup_percent": 75,
-        "shock_chance_percent": 76,
-        "shock_magnitude_percent": 50,
-        "chill_magnitude_percent": 30,
-        "unconditional_ailment_chance_percent": 27,
-        "additional_ailment_chance_vs_exposed_enemies_percent": 20,
-        "daze_chance_percent_common": 20,
-        "daze_magnitude_percent": 30,
-        "critical_damage_bonus_percent_common": 115,
-        "critical_hit_chance_modifier_percent_common": -20,
-        "unconditional_attack_damage_percent": 136,
-        "unconditional_elemental_damage_percent": 70,
-        "conditional_elemental_damage_if_chilled_recently_percent": 30,
-        "conditional_elemental_damage_if_shocked_recently_percent": 30,
-        "increased_physical_damage_percent": 67,
-        "attack_area_damage_percent": 41,
-        "attack_area_of_effect_percent_common": 32,
-        "generic_area_of_effect_percent_ascendancy": 16,
-        "mana_regeneration_rate_percent_unconditional_common": 33,
-        "additional_mana_regeneration_if_shocked_enemy_recently_percent": 25,
-        "deflection_rating_as_percent_of_evasion_common": 10,
-        "spectral_ward": "Maximum ES gains +1 per 12 Item Evasion on equipped Body Armour."
-      },
-      "serialized_weapon_set_1_additions": {"generic_skill_speed_percent": 3, "attack_area_of_effect_percent": 12, "quarterstaff_attack_speed_percent": 3, "maximum_power_charges": 2, "daze_chance_percent": 25, "critical_hit_chance_vs_dazed_percent": 25, "damage_vs_dazed_percent": 30, "generic_attribute_nodes_count": 6},
-      "serialized_weapon_set_2_additions": {"generic_skill_speed_percent": 3, "attack_and_cast_speed_percent": 8, "increased_maximum_energy_shield_percent": 80, "increased_evasion_rating_percent": 80, "mana_regeneration_rate_percent": 15, "critical_damage_bonus_if_power_charge_consumed_recently_percent": 60, "critical_hit_chance_percent": 10, "deflection_rating_as_percent_of_evasion": 23, "faster_start_energy_shield_recharge_percent": 22, "movement_speed_percent": 4, "cold_resistance_percent": 5, "lightning_resistance_percent": 5, "fire_resistance_percent": 5, "chaos_resistance_percent": 5, "reduced_curse_effect_percent": 50, "reduced_non_damaging_ailment_effect_percent": 35},
-      "important_conditional_damage_lines": [
-        "Crashing Wave: 25% increased Damage after a Critical Hit in the past 8 seconds.",
-        "Killer Instinct: 40% increased Attack Damage on Full Life / 60% increased Attack Damage on Low Life.",
-        "Electrifying Daze: gain 12% of Physical Damage as Extra Lightning against Dazed enemies.",
-        "Shattering Daze: gain 12% of Physical Damage as Extra Cold against Dazed enemies.",
-        "Chakra of Impact: 8% increased Damage per Combo consumed, up to 40%.",
-        "Material Solidification: gain 8% of Damage as Extra Physical Damage."
-      ],
-      "interpretation_warning": "Totals above are arithmetic summaries of explicit selected-node modifiers from data.json and serialized allocation tags. They are not a full PoE damage calculation and do not resolve in-game interaction order, gear, skill-local modifiers or unverified Weapon Set behavior."
-    },
-    "exact_detail_sources": {"allocations": "HOLLOW_DOMINION_reference.build", "id_name_type_coordinates": "HOLLOW_DOMINION_identification_120_default_8_ascendancy.md", "stats_connections": "../../Skill Trees/0.5.2/data.json"}
+    "main_passives": 120,
+    "ascendancy_spent": 8,
+    "ascendancy_start_id": "AscendancyMonk1Start",
+    "visual_rule": "Render deterministically from data.json; hide Weapon Sets; never reconstruct topology with generative image tools.",
+    "working_aggregates": {
+      "increased_evasion_percent": 179,
+      "increased_energy_shield_percent": 179,
+      "attack_speed_percent": 14,
+      "skill_speed_percent": 19,
+      "mana_regeneration_rate_percent": 48,
+      "evasion_as_deflection_percent": 33,
+      "freeze_buildup_percent": 75
+    }
+  },
+  "ascendancy": {
+    "spent": [
+      "AscendancyMonk1Small4",
+      "AscendancyMonk1Small6",
+      "AscendancyMonk1Small3",
+      "AscendancyMonk1Notable3",
+      "AscendancyMonk1Notable7",
+      "AscendancyMonk1Notable8",
+      "AscendancyMonk1Small5",
+      "AscendancyMonk1Notable4"
+    ],
+    "locked": [
+      "Way of the Stonefist",
+      "Hollow Focus Technique",
+      "Hollow Form Technique",
+      "Hollow Resonance Technique"
+    ],
+    "excluded": ["Way of the Mountain"]
   },
   "skills": {
-    "status": "Current working configuration from Master Context; items explicitly marked audit/provisional are not locked.",
-    "entries": [
-      {"skill":"Hollow Form → Whirling Assault","role":"Main boss DPS","supports":["Heavy Swing","Heightened Charges","Blindside","Vorana's Siege"],"audit":[]},
-      {"skill":"Shattering Palm","role":"Clear / Chill / Freeze / overkill","supports":["Ancestral Call II","Rapid Attacks II","Magnified Area II","Elemental Armament II","Rising Tempest"],"audit":[]},
-      {"skill":"Charged Staff","role":"Lightning / Shock / Blind / charges","supports":["Blind II","Perpetual Charge","Prolonged Duration II","Elemental Armament II","Innervate"],"audit":[]},
-      {"skill":"Hollow Focus","role":"Heavy Stun / fragile enemies","supports":["Cooldown Recovery II","Overabundance II","Magnified Area II","Close Combat II","Heft"],"audit":["Overabundance II"]},
-      {"skill":"Hollow Resonance","role":"Stun / triggered control","supports":["Stun III","Cooldown Recovery II","Close Combat II","Magnified Area II","Pinpoint Critical"],"audit":["Pinpoint Critical"]},
-      {"skill":"Tempest Bell","role":"Burst / elemental synergy","supports":["Heavy Swing","Close Combat II","Ancestral Call II","Overabundance II","Rage III"],"audit":["Rage III"],"alternative":["Magnified Area II"]},
-      {"skill":"Charge Regulation","role":"Charges / crit / utility","supports":["Vitality II","Clarity II","Precision II"],"status":"provisional","audit":["Exact Spirit cost and support reservations"]},
-      {"skill":"Convalescence","role":"Emergency Energy Shield recharge","supports":["Prolonged Duration II","Cooldown Recovery II"],"audit":[]},
-      {"skill":"Spirit Vessel","role":"Passive defensive / utility companion","supports":["Meat Shield II","Wing Blast","Romira's Requital","Amanamu's Tithe"],"audit":[]},
-      {"skill":"Elemental Conflux","role":"Optional luxury elemental damage","spirit_base":60,"supports":[],"status":"optional; no essential support locked"}
-    ],
-    "poster_discrepancies": {"Elemental Conflux":"Poster shows Elemental Focus II + Innervate, but Master Context says no essential supports are locked.","Spirit_and_attributes":"Poster values are visual/work estimates and must be audited before publication."}
+    "Hollow Form → Whirling Assault": {
+      "role": "Main boss DPS",
+      "supports": ["Heavy Swing", "Heightened Charges", "Blindside", "Vorana's Siege"]
+    },
+    "Shattering Palm": {
+      "role": "Clear + first Freeze setup + overkill",
+      "supports": ["Rapid Attacks II", "Magnified Area II", "Elemental Armament II", "Rising Tempest", "Ice Bite II"],
+      "clear_swap": ["Ancestral Call II"]
+    },
+    "Freezing Mark": {
+      "role": "Boss Freeze setup",
+      "supports_locked": ["Eternal Mark", "Prolonged Duration II", "Charged Mark", "Mark for Death II"],
+      "fifth_slot": "OPEN",
+      "excluded": ["Biting Frost II"]
+    },
+    "Charged Staff": {
+      "role": "Lightning + Blind",
+      "supports": ["Blind II", "Perpetual Charge", "Prolonged Duration II", "Elemental Armament II", "Innervate"]
+    },
+    "Hollow Focus": {
+      "supports": ["Cooldown Recovery II", "Overabundance II", "Magnified Area II", "Close Combat II", "Heft"],
+      "audit": ["Overabundance II"]
+    },
+    "Hollow Resonance": {
+      "supports": ["Stun III", "Cooldown Recovery II", "Close Combat II", "Magnified Area II", "Pinpoint Critical"],
+      "audit": ["Pinpoint Critical"]
+    },
+    "Tempest Bell": {
+      "supports": ["Heavy Swing", "Close Combat II", "Ancestral Call II", "Overabundance II", "Rage III"],
+      "audit": ["Rage III"],
+      "alternative": ["Magnified Area II"]
+    },
+    "Charge Regulation": {
+      "supports": ["Clarity II", "Precision II"],
+      "spirit": 70,
+      "excluded": ["Vitality II"]
+    },
+    "Wind Dancer": {
+      "status": "LOCKED",
+      "supports": ["Maim", "Blind II", "Rage II"],
+      "spirit": 33,
+      "excluded": ["Pin I", "Lockdown"],
+      "optional": ["Her Declaration", "Seraph's Heart"]
+    },
+    "Spirit Vessel": {"status": "EXCLUDED"},
+    "Convalescence": {"status": "EXCLUDED"},
+    "Elemental Conflux": {"status": "OPTIONAL_INACTIVE", "spirit": 60}
   },
-  "defense": {"gear_direction":"Prefer Evasion Rating + Energy Shield armour where possible.","baseline_tree_plus_ascendancy_max_es_percent":99,"spectral_ward":"+1 Maximum ES per 12 Item Evasion on equipped Body Armour.","energy_shield_recharge":"18% faster start unconditional in current baseline; 38% when Mending Deflection's not-Full-Life condition applies.","working_es_estimate_before_jewels":"~2300–2450","ambitious_es_target_before_jewels":"~2500 if DPS remains intact","known_weakness":"Large physical hits / slams"},
-  "speed_mana_charges": {"master_context_skill_speed_percent":16,"gear_priority":"Attack Speed >>> Cast Speed; do not seek Cast Speed on gear.","permanent_attack_speed_target":"~40–50%, around 45% provisional target","mana_risk":"Major unresolved constraint; Hollow Form images spend 80% of Whirling Assault cost and more Attack Speed increases pressure.","charge_regulation":"Uses Power / Endurance / Frenzy; quality and Spirit costs still require precise validation."},
-  "spirit": {"status":"Unresolved / must be re-audited before final gear.","old_working_budget":{"Charge Regulation":30,"Convalescence":30,"Spirit Vessel":87,"subtotal_without_Elemental_Conflux":147,"Elemental Conflux_optional":60,"total_with_option":207},"warning":"These figures may omit extra reservations from Vitality II / Clarity II / Precision II."},
+  "freeze_boss": {
+    "status": "PARTIALLY_RESOLVED_TESTING",
+    "baseline_test": "Charged Staff active; 4 Shattering Palm; Tempest Bell; Hollow Form; boss died before first Freeze and Hollow Form showed no visible Freeze buildup contribution.",
+    "locked_direction": "Freezing Mark + Ice Bite II",
+    "rotation": ["Freezing Mark", "~4 Shattering Palm", "first Freeze", "Tempest Bell", "Hollow Form"],
+    "remaining_validation": "Confirm Cold buffs let Hollow Form / Whirling Assault visibly build Freeze and obtain subsequent Freeze before buffs expire."
+  },
+  "mana": {
+    "status": "OPEN_PRIORITY_1",
+    "theoretical_final_mana": 834,
+    "theoretical_regen_with_clarity_mana_per_second": 74.4,
+    "beta_test": {
+      "max_mana": 624,
+      "hollow_form_displayed_cost": 126,
+      "displayed_regen_mana_per_second": 67.2,
+      "seconds_to_empty_without_flask": 5,
+      "seconds_to_empty_with_lavianga": 7,
+      "estimated_effective_consumption_mana_per_second": 192
+    },
+    "direction": "Prioritize Mana Regeneration Rate supported by a suitable Mana flask; do not sacrifice offensive speed prematurely."
+  },
+  "spirit": {
+    "active_reservations": {
+      "Charge Regulation": 70,
+      "Wind Dancer": 33,
+      "total": 103
+    },
+    "modeled_total": 226,
+    "modeled_free": 123,
+    "body_armour_plus_61_spirit": "Candidate for replacement"
+  },
+  "defense": {
+    "direction": "Evasion Rating + Energy Shield",
+    "working_gear": {
+      "energy_shield": 7168,
+      "evasion": 7159,
+      "deflection": 2362
+    },
+    "known_weakness": "Large physical hits / slams"
+  },
   "gear": {
-    "quarterstaff": {"candidate":"Duality Warding Quarterstaff","status":"Serious endgame candidate, not yet final","priority_rolls":["Physical Damage","Attack Speed"],"secondary_rolls":["Critical Damage Bonus","Guard"],"observed_reference":{"physical_dps":948.66,"attacks_per_second":1.63,"increased_physical_damage_percent":275,"critical_damage_bonus_percent":30,"increased_attack_speed_percent":16,"guard_combo":998},"runemaster_recipe":["Duality Warding Quarterstaff","20 Exceptional Verisium","1 Olroth's Crest of the Sun"],"farming_note":"Warding Starlit Ore Duality Warding Quarterstaff at the Verisium Anvil; farming preferred over purchase."},
-    "mandatory_glove_mechanic":"Fists of Stone via Way of the Stonefist.",
-    "ingenuity": {"status":"Conditional BiS candidate","reference_values":{"left_ring_bonus_percent":23,"right_ring_bonus_percent":29,"charm_charges_gained_percent":20,"charm_charges_used_percent":7,"charm_slots":1},"placement_rule":"If Ingenuity is retained, put the stronger ring in the right slot.","ring_concepts_status":"The two illustrated rings are style/concept references only. Their affixes have NOT been technically validated against the real 0.5.2 affix pool."}
+    "quarterstaff": {
+      "target": "Duality Warding Quarterstaff",
+      "status": "WORKING_ENDGAME_TARGET",
+      "live_model": {
+        "base_crit_percent": 10,
+        "base_aps": 1.4,
+        "local_physical_damage_percent": 300,
+        "local_attack_speed_percent": 22,
+        "critical_damage_bonus_percent": 30,
+        "runic_ward": 50
+      },
+      "future_compare": "15% base crit variant"
+    },
+    "Ingenuity": {
+      "status": "WORKING_BIS_TARGET",
+      "left_ring_bonus_percent": 30,
+      "right_ring_bonus_percent": 30,
+      "rounding": "floor-per-mod"
+    },
+    "Topaz Ring": {
+      "attack_speed_percent": 30,
+      "status": "AUDIT_INACTIVE_UNTIL_LEGALITY_CONFIRMED"
+    }
   },
-  "risk_register": [{"risk":"Mana sustainability","priority":"high"},{"risk":"Spirit budget","priority":"high"},{"risk":"Overinvestment in Shattering Palm","priority":"medium"},{"risk":"Overinvestment in Stun/Daze","priority":"medium"},{"risk":"Large physical hits/slams","priority":"high"}],
-  "pruning_rule": "Do not add mechanics that do not directly support Whirling Assault, necessary control, or survival.",
-  "unresolved_audits": ["Exact Spirit cost/reservations of Charge Regulation supports.","Real-world Mana sustain with final Whirling Assault Attack Speed.","Overabundance II on Hollow Focus.","Pinpoint Critical on Hollow Resonance.","Rage III vs Magnified Area II on Tempest Bell.","Final Quarterstaff and exact Attack Speed / crit / Freeze / Daze/Stun thresholds.","Every ring and gear affix against the real 0.5.2 affix pool.","Spirit and attribute numbers on the published infographic.","Final Elemental Conflux support package, if the optional skill is retained."],
-  "reasoning_policy": ["Distinguish locked facts, current working choices, and unresolved items.","Never treat a poster's text as stronger evidence than Master Context or data.json.","When calculating tree bonuses, use node stats from data.json and preserve conditions instead of flattening conditional modifiers.","When a question depends on Weapon Sets, revisit serialized weapon_set tags explicitly; do not infer from the 120-node union visual.","When a question depends on gear affixes, do not use the concept ring affixes as real 0.5.2 availability without a fresh audit."]
+  "visual_policy": {
+    "source": "PoE2DB",
+    "audit_file": "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md",
+    "verified_counts": {"gear": 9, "skills": 10, "supports": 31},
+    "transparent_assets_required": true,
+    "support_numbering": false,
+    "support_icon_left": true,
+    "Elemental Focus II": "AUDIT — use current Elemental Focus visual but do not rename build support without explicit validation"
+  },
+  "reference_registry": {
+    "active_reference_files": [
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_MASTER_CONTEXT.md",
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_reference.build",
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md",
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md",
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_REASONING_INDEX.json",
+      "HOLLOW_DOMINION_PROJECT/reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md",
+      "Skill Trees/0.5.2/data.json",
+      "HOLLOW_DOMINION_PROJECT/images/passive_tree_master.webp"
+    ],
+    "active_live_build_files": [
+      "HOLLOW_DOMINION_PROJECT/live_build/build-data.js",
+      "HOLLOW_DOMINION_PROJECT/live_build/tree-state.js",
+      "HOLLOW_DOMINION_PROJECT/live_build/calculations.js",
+      "HOLLOW_DOMINION_PROJECT/live_build/app.js",
+      "HOLLOW_DOMINION_PROJECT/live_build/index.html",
+      "HOLLOW_DOMINION_PROJECT/live_build/style.css",
+      "HOLLOW_DOMINION_PROJECT/live_build/poe2db-visuals.js",
+      "HOLLOW_DOMINION_PROJECT/live_build/poe2db-visuals.css",
+      "HOLLOW_DOMINION_PROJECT/live_build/visual-manifest.json",
+      "HOLLOW_DOMINION_PROJECT/live_build/README.md"
+    ],
+    "known_but_not_currently_resolved_files": [
+      "HOLLOW_DOMINION_trace_exact_120_plus_8_v2(2).png",
+      "HOLLOW_DOMINION_MASTER_PASSIVE_TREE_0.5.2_v2_NOTABLES_EXACTS(1).png",
+      "hollow dominion by nejib(1).png"
+    ],
+    "historical_policy": "Old Master Context versions, posters, Hollow Palm builds and HTML workspaces are archival only and never override active references."
+  },
+  "maintenance_policy": [
+    "Every new significant theorycraft or beta issue must be added to Master Context with a status.",
+    "Every solved issue must record cause, solution, impact and new status.",
+    "Every newly designated reference file must be added to Master Context with role, authority, status and canonical location.",
+    "Every active reference must exist in the appropriate GitHub project folder or canonical repository location.",
+    "Changes to active references must synchronize affected Master Context, Knowledge Base, Reasoning Index, live build, visual manifests and project documentation.",
+    "After every GitHub synchronization, verify the actual branch contents before treating the operation as complete.",
+    "Never promote an unvalidated hypothesis to a locked fact."
+  ],
+  "priority_order": [
+    "Mana sustain",
+    "Validate Freezing Mark + Ice Bite II → Hollow Form Freeze engine",
+    "Preserve Evasion + Energy Shield and monitor large physical hits",
+    "Then optimize critical/offensive affixes"
+  ]
 }
