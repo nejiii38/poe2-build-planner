@@ -1,107 +1,72 @@
 # HOLLOW DOMINION — KNOWLEDGE BASE
 
-> Référence secondaire synchronisée avec `HOLLOW_DOMINION_MASTER_CONTEXT.md`.  
-> Path of Exile 2 **0.5.2** • Monk / Martial Artist / Quarterstaff • HOLLOW DOMINION by Nejib.  
-> Synchronisation : **2026-09-10 — inventaire bêta gameplay**.
+> Référence secondaire. Le `HOLLOW_DOMINION_MASTER_CONTEXT.md` prévaut toujours.  
+> PoE2 **0.5.2** • Monk / Martial Artist / Quarterstaff • by Nejib.  
+> Sync : **2026-09-10 — Hollow Resonance non encore testé**.
 
-## Source precedence
+## Sources
 
-1. `HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions verrouillées et état courant.
+1. `HOLLOW_DOMINION_MASTER_CONTEXT.md` — autorité opérationnelle.
 2. `HOLLOW_DOMINION_reference.build` — allocations exactes.
-3. `Skill Trees/0.5.2/data.json` — topologie, IDs, stats et connexions.
-4. `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping 120 + 8.
-5. Cette Knowledge Base et `HOLLOW_DOMINION_REASONING_INDEX.json` — index secondaires uniquement.
-6. Références visuelles approuvées — contrôle/présentation, jamais vérité mécanique supérieure.
+3. `Skill Trees/0.5.2/data.json` — topologie réelle.
+4. `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping 120+8.
+5. `HOLLOW_DOMINION_REASONING_INDEX.json` — index secondaire.
 
-## Identité verrouillée
+## Identité
 
-- **Quarterstaff**, jamais Hollow Palm.
-- **Fists of Stone / Way of the Stonefist** obligatoire.
-- Hollow Form → Whirling Assault = boss DPS principal.
-- Shattering Palm = sort principal de clearing + setup Freeze court.
-- Charged Staff = couche Lightning / Shock / contrôle.
-- Défense = Evasion + Energy Shield.
-- Attack Speed >>> Cast Speed.
+Quarterstaff uniquement. Fists of Stone / Way of the Stonefist obligatoire. Hollow Form → Whirling Assault = boss DPS. Shattering Palm = clear principal / Cold / overkill. Charged Staff = Lightning / Shock / contrôle. Défense = Evasion + ES. Attack Speed >>> Cast Speed.
 
-## Bêta non-BiS / modèle final BiS
+## Bêta vs BiS
 
-Le personnage joué sert à valider les interactions et les seuils suffisants. Ses rolls ne sont pas des cibles finales automatiques. Le build final doit utiliser les **meilleurs affixes, tiers et rolls légalement disponibles en 0.5.2 sur chaque base finale**, après audit du pool réel. Un affixe non validé reste `AUDIT`.
+La bêta actuelle est **non-BiS** et sert à valider le comportement. Les rolls bêta sont des mesures expérimentales. Le modèle final utilise les **meilleurs affixes / tiers / rolls légaux 0.5.2** après audit du pool réel ; un affixe non validé reste `AUDIT`.
 
 ## Arbre
 
-- 120 passifs principaux + 8 Martial Artist.
-- `AscendancyMonk1Start` non compté.
-- +179% Evasion, +179% ES, +14% Attack Speed, +19% Skill Speed, +48% Mana Regeneration Rate, 33% Evasion as Deflection.
-- +75% increased Freeze Buildup.
-- Topologie toujours issue de `data.json`; jamais de reconstruction générative.
+120 principaux + 8 Martial Artist. +179% Evasion, +179% ES, +14% Attack Speed, +19% Skill Speed, +48% Mana Regen Rate, 33% Evasion as Deflection, +75% Freeze Buildup. Topologie uniquement depuis `data.json`, jamais générée.
 
-## Skills/supports actuels
+## Setup actuel
 
 - Hollow Form → Whirling Assault : Heavy Swing, Heightened Charges, Blindside, Vorana's Siege.
 - Shattering Palm : Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest, Ice Bite II ; Ancestral Call II = clear swap.
 - Freezing Mark : Eternal Mark, Prolonged Duration II, Charged Mark, Mark for Death II ; 5e slot libre ; Biting Frost II exclu.
 - Charged Staff : Blind II, Perpetual Charge, Prolonged Duration II, Elemental Armament II, Innervate.
-- Hollow Focus : Cooldown Recovery II, Overabundance II, Magnified Area II, Close Combat II, Heft ; Overabundance II = AUDIT.
 - Hollow Resonance : Stun III, Cooldown Recovery II, Close Combat II, Magnified Area II, Pinpoint Critical ; Pinpoint Critical = AUDIT.
-- Tempest Bell : Heavy Swing, Close Combat II, Ancestral Call II, Overabundance II, Rage III ; Rage III = AUDIT.
-- Charge Regulation : Clarity II + Precision II ; 70 Spirit ; Vitality II exclue.
-- Wind Dancer : Maim + Blind II + Rage II verrouillés ; 33 Spirit ; Pin I/Lockdown exclus.
-- Spirit Vessel et Convalescence exclus. Elemental Conflux optionnel/inactif.
+- Charge Regulation : Clarity II + Precision II, 70 Spirit ; Vitality II exclue.
+- Wind Dancer : Maim + Blind II + Rage II verrouillés, 33 Spirit.
+- Spirit Vessel / Convalescence exclus. Elemental Conflux optionnel/inactif.
 
 ## Mana — RÉSOLU / VALIDÉ EN JEU
 
-Baseline avant correction : 624 Mana, Hollow Form 126 Mana, regen 67.2 Mana/s, ~5 s avant vide sans flacon, ~7 s avec Lavianga.
+Baseline avant correction : 624 Mana, Hollow Form 126 Mana, regen 67.2 Mana/s, vide ~5 s sans flacon / ~7 s avec Lavianga.
 
-Solution bêta validée le 2026-09-10 : **+63% Mana Regeneration Rate sur un anneau +68% sur l’autre, Ingenuity équipée**. Résultat utilisateur : plus aucun problème de Mana. Les 63/68 sont une baseline expérimentale suffisante, pas les rolls BiS finaux.
+Solution bêta : **+63% et +68% Mana Regeneration Rate sur les deux anneaux + Ingenuity**. Résultat : plus aucun problème de Mana. Ces rolls sont une baseline suffisante, pas les rolls BiS finaux.
 
-## Inventaire bêta actif — 2026-09-10
+## Baseline bêta pré-Hollow Resonance
 
-### Freeze boss — OUVERT / EN TEST
+**Hollow Resonance n’est pas encore acquis ni testé en jeu.** Les problèmes ci-dessous ont donc tous été observés **sans Hollow Resonance** et doivent être réévalués après son déblocage.
 
-La frigorification reste **beaucoup trop lente** malgré +75% Freeze Buildup et la direction actuelle Freezing Mark + Ice Bite II. La solution actuelle est insuffisante en pratique. Shattering Palm doit rester un setup court ; l’objectif est de rendre le premier Freeze plus rapide et/ou de faire contribuer Hollow Form de façon fiable.
+- **Power Charges / Charged Staff — OUVERT :** Hollow Form génère les Power Charges mais les consomme presque immédiatement ; Charged Staff est trop difficile à activer/maintenir et la couche Lightning est trop lourde à setup.
+- **Freeze boss — OUVERT / EN TEST :** frigorification encore beaucoup trop lente malgré +75% Freeze Buildup et Freezing Mark + Ice Bite II.
+- **Durée des charges — OUVERT :** une légère hausse pourrait améliorer Charge Regulation et Charged Staff.
+- **Shattering Palm / overkill — OUVERT / DÉPENDANT :** clear bon, overkill perfectible, mais ne pas accuser Rising Tempest avant d’avoir corrigé/validé Charged Staff puis retesté le clear avec Lightning réellement actif.
+- **Survivabilité clearing — VALIDÉE :** aucune mort hors faute grave ; préserver Evasion + ES + Wind Dancer.
+- **Critique — AUDIT :** feedback visuel insuffisant ; décider via calcul du taux réel et du gain marginal.
 
-### Power Charges / Charged Staff — OUVERT
+## Ordre de diagnostic verrouillé pendant la bêta
 
-Hollow Form est observé comme source principale de Power Charges mais les consomme presque immédiatement. Charged Staff devient trop difficile à activer/maintenir, ce qui rend la couche Lightning/Shock trop lourde à setup. Traiter d’abord l’économie/disponibilité des charges avant de décider de conserver ou réduire la couche Lightning.
+1. **Débloquer et tester Hollow Resonance.**
+2. Réévaluer Power Charges / Charged Staff.
+3. Réévaluer Freeze boss.
+4. Réévaluer durée/conservation des charges / Charge Regulation.
+5. Retester Shattering Palm / overkill avec setup complet ; Rising Tempest seulement si le problème persiste.
+6. Audit critique.
 
-### Durée des charges / Charge Regulation — OUVERT
-
-Un léger allongement de durée/conservation est souhaité pour profiter plus longtemps des bonus de Charge Regulation et potentiellement améliorer la fenêtre Charged Staff. Aucune solution n’est verrouillée.
-
-### Shattering Palm / Rising Tempest — OUVERT
-
-Le clear est déjà bon mais l’overkill peut être amélioré. **Rising Tempest est seulement un suspect** : son apport de dégâts paraît insuffisant pour le clearing. Comparer à des alternatives avant toute suppression.
-
-### Survivabilité clearing — VALIDÉE
-
-Malgré l’exposition de Shattering Palm, aucune mort hors faute grave de gameplay. La couche **Evasion + ES + Wind Dancer** est une réussite et doit être préservée ; ne pas la sacrifier pour un gain offensif marginal.
-
-### Critique — AUDIT
-
-Les critiques ne sont pas distinguables visuellement en jeu. La décision d’augmenter ou non le critique doit venir d’un calcul du taux réel et du gain DPS marginal, pas de l’impression visuelle.
-
-## Priorités provisoires
-
-1. Freeze boss.
-2. Économie Power Charges / Charged Staff.
-3. Shattering Palm / overkill / Rising Tempest.
-4. Durée des charges / Charge Regulation.
-5. Audit critique.
-
-À préserver : **Mana résolu** et **survivabilité clearing validée**. Le classement final sera refait une fois l’inventaire bêta terminé.
+À préserver : **Mana résolu** et **survivabilité clearing validée**.
 
 ## Gear / Spirit
 
-- Ingenuity = cible BiS de travail, +30% gauche / +30% droite dans le modèle, `floor-per-mod`.
-- Duality = cible Quarterstaff endgame de travail ; variante 15% base crit à comparer plus tard.
-- +30% Attack Speed sur Bague Topaze = AUDIT/inactif.
-- Spirit actif : 103 ; total modèle 226 ; libre 123. Le +61 Spirit du torse reste candidat au remplacement.
-- Working defense model : ~7168 ES / ~7159 Evasion / ~2362 Deflection.
+Ingenuity = cible BiS de travail (+30% gauche / +30% droite dans le modèle, floor-per-mod). Duality = Quarterstaff endgame de travail. +30% Attack Speed Bague Topaze = AUDIT/inactif. Spirit actif 103 ; total modélisé 226 ; +61 Spirit du torse candidat au remplacement. Working defense ~7168 ES / 7159 Evasion / 2362 Deflection.
 
-## Visuels
+## Visuels / maintenance
 
-PoE2DB est la source visuelle active. Audit canonique : `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md` ; 9 équipements, 10 skills, 31 supports couverts. Les anciens SVG/sprites sont rollback uniquement. `Elemental Focus II` reste AUDIT.
-
-## Maintenance
-
-Toute nouvelle problématique ou résolution significative met à jour le Master Context, cette Knowledge Base, le Reasoning Index et les fichiers live/documentaires réellement affectés. Les mesures bêta restent distinctes des projections BiS. Après toute synchronisation, vérifier la branche `hollow-dominion-live`. Pendant l’inventaire actuel, enregistrer les observations **sans modifier prématurément les mécaniques du build**.
+PoE2DB est la source visuelle active ; audit canonique `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`. Toute modification significative synchronise Master Context, Knowledge Base, Reasoning Index et fichiers live/documentaires affectés. Pendant l’inventaire bêta, enregistrer les observations sans modifier prématurément les mécaniques.
