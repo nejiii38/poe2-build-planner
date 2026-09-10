@@ -2,7 +2,7 @@
 
 **Path of Exile 2 • Martial Artist • Cold / Lightning • version 0.5.2 • by Nejib**
 
-**Mise à jour opérationnelle : 2026-09-10 — inventaire bêta : Mana résolu, Freeze boss trop lent, économie des Power Charges, clear Shattering Palm, durée des charges, survivabilité et critique.**
+**Mise à jour opérationnelle : 2026-09-10 — inventaire bêta : priorité Charged Staff / Power Charges verrouillée avant diagnostic final de Shattering Palm ; Freeze boss, durée des charges et critique restent à traiter.**
 
 Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMINION. En cas de contradiction avec une information plus ancienne, toute décision indiquée ici comme **VERROUILLÉE** prévaut.
 
@@ -129,13 +129,15 @@ Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMIN
 - Hypothèse à tester : une augmentation modérée de durée/conservation des charges pourrait aussi réduire la friction de Charged Staff.
 - Aucune source de durée/conservation n’est encore verrouillée ; auditer le coût d’opportunité avant changement.
 
-### OUVERT — Shattering Palm : clear bon, overkill perfectible
+### OUVERT / DÉPENDANT — Shattering Palm : clear bon, overkill perfectible
 
 - **Shattering Palm est confirmé comme sort principal de clearing.**
 - Le clear est déjà bon, mais l’overkill / la puissance de nettoyage peut encore progresser.
-- **Rising Tempest est un suspect, pas une cause validée** : son apport de dégâts paraît insuffisant pour le clearing.
-- Pendant l’optimisation, comparer Rising Tempest à des alternatives qui augmentent réellement clear/overkill sans détériorer le rôle Freeze/setup de Shattering Palm.
-- Ne pas retirer Rising Tempest avant comparaison mécanique et test en jeu.
+- **Nouvelle dépendance verrouillée : ne pas diagnostiquer Rising Tempest ni modifier le setup de Shattering Palm avant d’avoir résolu le problème Charged Staff / Power Charges.**
+- Motif : l’overkill actuellement observé peut être sous-évalué parce que **Charged Staff est trop difficile à activer/maintenir**, donc la couche Lightning prévue n’est pas disponible de façon fiable pendant le clear.
+- **Rising Tempest reste un suspect secondaire, pas une cause validée.**
+- Après correction de Charged Staff, refaire un test de clearing/overkill avec Charged Staff réellement actif et stable.
+- Seulement si l’overkill reste insuffisant après ce retest, comparer Rising Tempest à des alternatives de support.
 
 ### VALIDÉ EN CLEARING — survivabilité
 
@@ -154,10 +156,10 @@ Ce fichier est la référence opérationnelle prioritaire du projet HOLLOW DOMIN
 
 ## 7. Priorités après l’inventaire actuel
 
-1. **Freeze boss** — trop lent, solution actuelle insuffisante.
-2. **Économie des Power Charges / Charged Staff** — rendre Lightning réellement exploitable en jeu.
-3. **Shattering Palm clear / overkill** — auditer Rising Tempest et alternatives.
-4. **Durée/conservation des charges / Charge Regulation** — améliorer la fenêtre utile si rentable.
+1. **Économie des Power Charges / Charged Staff** — première optimisation à traiter ; rendre Lightning réellement exploitable en jeu.
+2. **Freeze boss** — trop lent, solution actuelle insuffisante.
+3. **Durée/conservation des charges / Charge Regulation** — à étudier avec le problème Charged Staff car les deux sujets sont directement liés.
+4. **Shattering Palm clear / overkill** — **DÉPENDANT de Charged Staff** ; retester d’abord le clear avec Charged Staff fiable, puis seulement auditer Rising Tempest si nécessaire.
 5. **Critique** — audit du taux réel et de la valeur d’un investissement supplémentaire.
 
 Points à préserver : **Mana résolu** et **survivabilité clearing validée**.
@@ -167,9 +169,9 @@ Ce classement reste provisoire jusqu’à la fin de l’inventaire complet des p
 ## 8. Checklist avant build final 100%
 
 - Reprendre le moteur Freeze boss ; Freezing Mark + Ice Bite II reste trop lent en pratique.
-- Auditer l’économie des Power Charges pour Charged Staff et Charge Regulation sans casser Hollow Form.
-- Auditer une augmentation modérée de durée/conservation des charges.
-- Comparer Rising Tempest à des alternatives de support pour Shattering Palm.
+- **Traiter en premier l’économie des Power Charges pour Charged Staff** sans casser Hollow Form.
+- Auditer en même temps une augmentation modérée de durée/conservation des charges et son effet sur Charge Regulation / Charged Staff.
+- **Après seulement**, retester Shattering Palm / overkill avec Charged Staff réellement actif ; comparer Rising Tempest à des alternatives uniquement si le problème persiste.
 - Auditer le taux de critique réel et son gain marginal.
 - Revalider Mana seulement après changement susceptible d’affecter le sustain.
 - Auditer les meilleurs rolls légaux de Mana Regeneration Rate sur les deux anneaux finaux ; reproduire au minimum la baseline bêta 63/68 + Ingenuity.
