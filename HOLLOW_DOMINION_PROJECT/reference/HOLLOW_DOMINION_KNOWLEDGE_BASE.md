@@ -3,7 +3,7 @@
 > Base consolidée secondaire pour le theorycraft et les raisonnements futurs.  
 > Version de jeu : **Path of Exile 2 — 0.5.2**.  
 > Build : **Monk / Martial Artist / Quarterstaff — HOLLOW DOMINION by Nejib**.  
-> Dernière synchronisation : **2026-09-10**.
+> Dernière synchronisation : **2026-09-10 — Mana bêta résolu / séparation bêta-BiS verrouillée**.
 
 ## 1. Ordre de priorité des sources
 
@@ -24,8 +24,16 @@ Toute nouvelle référence active doit être enregistrée dans le MASTER CONTEXT
 - **Shattering Palm** = clear, setup du premier Freeze et overkill.
 - **Charged Staff** = couche Lightning / Shock / contrôle.
 - Défense = **Evasion + Energy Shield**.
-- Priorité actuelle : **Mana sustain → validation Freeze boss → survie → optimisation offensive**.
+- **Mana sustain = RÉSOLU / VALIDÉ EN JEU** sur la bêta actuelle.
+- Priorités actives après inventaire bêta : **validation Freeze boss → survie Evasion/ES → optimisation globale/offensive**.
 - Règle de pruning : ne conserver que les mécaniques qui soutiennent directement Whirling Assault, le contrôle nécessaire, le sustain ou la survie.
+
+### Séparation bêta / build final BiS — VERROUILLÉE
+
+- Le personnage actuellement joué est une **version bêta non-BiS** destinée à valider les interactions, problèmes et seuils réellement suffisants.
+- Les rolls observés sur cette bêta sont des **mesures expérimentales**, pas des objectifs finaux automatiques.
+- Pour le build final, chaque emplacement doit utiliser les **meilleurs affixes, tiers et rolls légalement disponibles en PoE2 0.5.2 sur la base finale concernée**, après validation du pool réel.
+- Un affixe ou tier non encore validé reste **AUDIT** et n'est jamais promu en fait mécanique.
 
 ## 3. Arbre passif validé
 
@@ -87,11 +95,17 @@ Objectif : le premier Freeze doit déclencher les gains Cold permettant ensuite 
 
 ## 7. Mana / Spirit / défense
 
-### Mana
-- Problème **OUVERT / PRIORITAIRE**.
-- Test réel : 624 Mana, coût Hollow Form 126, regen 67.2 Mana/s, vide en ~5 s sans flacon et ~7 s avec Lavianga.
-- Consommation effective estimée : ~192 Mana/s.
-- Direction : **Mana Regeneration Rate + flacon**, sans sacrifier prématurément l’Attack Speed.
+### Mana — RÉSOLU / VALIDÉ EN JEU
+
+Baseline avant correction : **624 Mana**, Hollow Form affiché à **126 Mana**, regen affichée **67.2 Mana/s**, Mana vide en ~5 s sans flacon et ~7 s avec Lavianga.
+
+Validation bêta du **2026-09-10** :
+- un anneau porte **+63% Mana Regeneration Rate** ;
+- l’autre porte **+68% Mana Regeneration Rate** ;
+- **Ingenuity est équipée** et amplifie les bonus des anneaux ;
+- résultat observé par l’utilisateur : **plus aucun problème de Mana** dans l’utilisation réelle du build.
+
+Ces valeurs **63% / 68% sont une baseline expérimentale bêta**. Elles ne deviennent pas les rolls BiS finaux. Lors de l’optimisation finale, les anneaux doivent utiliser les **meilleurs rolls de Mana Regeneration Rate légalement disponibles en 0.5.2** sur les bases retenues, puis vérifier qu’ils maintiennent au minimum le niveau de sustain validé en jeu. Ne pas inventer de valeur effective post-Ingenuity sans mesure ou calcul validé.
 
 ### Spirit
 - Charge Regulation : **70 Spirit**.
@@ -107,13 +121,19 @@ Objectif : le premier Freeze doit déclencher les gains Cold permettant ensuite 
 
 ## 8. Gear
 
+### Politique du gear final
+
+Le stuff du live build représente une **cible BiS de travail**, distincte du stuff bêta réellement porté. Tout affixe final doit être contrôlé contre le pool PoE2 **0.5.2** de la base concernée et, une fois son rôle retenu, utiliser le meilleur tier/roll légal pertinent pour le build.
+
 ### Quarterstaff
 **Duality Warding Quarterstaff** = cible endgame de travail.
 
 Live model : base crit 10%, base 1.40 APS, +300% local Physical Damage, +22% local Attack Speed, +30% Critical Damage Bonus, 50 Runic Ward. Variante 15% crit à comparer ultérieurement.
 
-### Ingenuity
+### Ingenuity / anneaux
 Cible BiS de travail : **+30% bague gauche / +30% bague droite**, calcul `floor-per-mod`.
+
+Validation bêta Mana : **+63% / +68% Mana Regeneration Rate** sur les deux anneaux portés avec Ingenuity ; sustain Mana résolu. Ces rolls restent une référence de fonctionnement, pas une cible BiS imposée.
 
 La Bague Topaze possède encore un **+30% Attack Speed AUDIT / inactif** tant que sa légalité exacte n’est pas validée contre le pool 0.5.2.
 
@@ -149,7 +169,7 @@ Les anciens posters, anciens Master Context, anciens fichiers Hollow Palm et anc
 
 ## 11. Politique de maintenance
 
-Toujours distinguer **VERROUILLÉ**, **configuration de travail**, **EN TEST**, **AUDIT** et **historique**.
+Toujours distinguer **VERROUILLÉ**, **configuration de travail**, **EN TEST**, **AUDIT**, **bêta mesurée** et **BiS final modélisé**.
 
 Pour chaque modification significative :
 1. mettre à jour le MASTER CONTEXT ;
@@ -158,4 +178,4 @@ Pour chaque modification significative :
 4. synchroniser le dossier GitHub canonique ;
 5. vérifier le contenu réellement publié sur `hollow-dominion-live`.
 
-Une hypothèse ne devient jamais une vérité verrouillée sans validation.
+Une hypothèse ne devient jamais une vérité verrouillée sans validation. Une valeur de stuff bêta qui fonctionne ne devient jamais automatiquement un roll BiS final.
