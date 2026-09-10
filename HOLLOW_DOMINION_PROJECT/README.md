@@ -1,87 +1,98 @@
 # HOLLOW DOMINION — Project Archive
 
-Dossier de référence persistant pour le projet **HOLLOW DOMINION** (Path of Exile 2, version 0.5.2).
+Dossier de référence persistant pour **HOLLOW DOMINION** — Path of Exile 2, version **0.5.2**.
 
 ## Règle de travail
 
-Toute nouvelle conversation ChatGPT qui reprend ce projet doit commencer par consulter ce dossier avant de modifier le build, l’arbre, les visuels, le gear ou le futur diaporama.
+Toute reprise du projet doit commencer par `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md`. Ce fichier est l’autorité opérationnelle prioritaire ; toute décision verrouillée qu’il contient prévaut sur les anciens documents, posters, prototypes et descriptions historiques.
 
-## Base de connaissance consolidée
+À chaque nouvelle référence ou modification significative :
 
-- `reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` — synthèse humaine consolidée destinée au theorycraft et aux raisonnements futurs.
-- `reference/HOLLOW_DOMINION_REASONING_INDEX.json` — index structuré des décisions, métriques mécaniques dérivées, skills/supports, gear, risques et audits ouverts.
-- `live_build/` — **application et état numérique vivant du build**. Pour toute question sur les valeurs courantes du stuff, les résistances, le crit, le Spirit ou les priorités d’optimisation, lire `live_build/build-data.js` puis `live_build/calculations.js`.
-
-Les index et l’application accélèrent les raisonnements mais ne remplacent pas les sources mécaniques de vérité.
+1. mettre à jour le MASTER CONTEXT et son registre de sources ;
+2. synchroniser les fichiers secondaires concernés ;
+3. placer chaque référence active dans son emplacement GitHub canonique ;
+4. vérifier le contenu réellement publié sur la branche `hollow-dominion-live`.
 
 ## Ordre de priorité des sources
 
-1. `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — **contexte maître actuel**. Les décisions verrouillées priment sur les informations plus anciennes.
-2. `reference/HOLLOW_DOMINION_reference.build` — allocations exactes ; le champ `description` interne est ancien.
-3. `../Skill Trees/0.5.2/data.json` — source structurelle officielle pour IDs, noms, stats, coordonnées, groupes et connexions réelles de l’arbre.
-4. `reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — rapport validé ID ↔ nom ↔ type ↔ coordonnées.
-5. `live_build/build-data.js` — **état numérique de travail courant** du gear, des stats, des supports et des slots libres ; à mettre à jour lorsqu’une décision numérique est validée.
+1. `reference/HOLLOW_DOMINION_MASTER_CONTEXT.md` — décisions verrouillées et état courant.
+2. `reference/HOLLOW_DOMINION_reference.build` — allocations exactes de l’arbre.
+3. `../Skill Trees/0.5.2/data.json` — IDs, stats, coordonnées, groupes et connexions réelles.
+4. `reference/HOLLOW_DOMINION_identification_120_default_8_ascendancy.md` — mapping validé 120 + 8.
+5. `reference/HOLLOW_DOMINION_KNOWLEDGE_BASE.md` et `reference/HOLLOW_DOMINION_REASONING_INDEX.json` — index secondaires synchronisés.
+6. Références techniques/visuelles approuvées — présentation et contrôle seulement.
 
-En cas de conflit mécanique, les quatre premières sources priment. En cas de conflit entre une ancienne infographie et `live_build/build-data.js`, utiliser le live state.
+## Références actives
+
+### `reference/`
+- `HOLLOW_DOMINION_MASTER_CONTEXT.md`
+- `HOLLOW_DOMINION_reference.build`
+- `HOLLOW_DOMINION_identification_120_default_8_ascendancy.md`
+- `HOLLOW_DOMINION_KNOWLEDGE_BASE.md`
+- `HOLLOW_DOMINION_REASONING_INDEX.json`
+- `HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`
+
+### `images/`
+- `passive_tree_master.webp`
+
+### `live_build/`
+- `build-data.js`
+- `tree-state.js`
+- `calculations.js`
+- `app.js`
+- `index.html`
+- `style.css`
+- `poe2db-visuals.js`
+- `poe2db-visuals.css`
+- `visual-manifest.json`
+- `README.md`
+
+### Source topologique canonique
+- `../Skill Trees/0.5.2/data.json`
 
 ## Identité verrouillée du build
 
 - **HOLLOW DOMINION — by Nejib**
-- Path of Exile 2 — **0.5.2**
-- **Monk — Martial Artist**
-- **Quarterstaff**
-- Ne pas réintroduire Hollow Palm malgré les anciens noms de fichiers/presets.
-- **Fists of Stone** via Way of the Stonefist est une pièce mécanique obligatoire.
-- Priorité DPS boss : **Hollow Form → Whirling Assault**.
-- Clear / Cold / Freeze : **Shattering Palm**.
-- Lightning / Shock / contrôle : **Charged Staff**.
-- Philosophie défensive : **Evasion + Energy Shield**, avec contrôle Freeze/Stun.
-- **Convalescence est définitivement exclue du build.**
+- **Monk — Martial Artist — Quarterstaff**
+- **Fists of Stone / Way of the Stonefist** obligatoire
+- Boss DPS : **Hollow Form → Whirling Assault**
+- Clear / premier Freeze : **Shattering Palm**
+- Lightning / Shock : **Charged Staff**
+- Défense : **Evasion + Energy Shield**
+- Hollow Palm : **exclu**
+- Spirit Vessel : **exclu**
+- Convalescence : **exclu**
 
-## Arbre passif — vérité validée
+## Arbre passif
 
-- **120/120 passifs principaux**.
-- **8/8 passifs Martial Artist dépensés**.
-- `AscendancyMonk1Start` est seulement le point de départ graphique et n’est pas compté.
-- Tous les IDs utilisés existent dans `Skill Trees/0.5.2/data.json`.
-- **122 connexions réelles** relient les 120 passifs sélectionnés et les 120 forment un seul composant connecté.
+- **120/120** passifs principaux.
+- **8/8** passifs Martial Artist dépensés.
+- `AscendancyMonk1Start` est uniquement l’origine graphique.
 - Ne pas afficher ni commenter les Weapon Sets dans le visuel final.
-- Pour l’arbre passif, ne jamais inventer ou déplacer un nœud. Utiliser les coordonnées et connexions réelles de `Skill Trees/0.5.2/data.json`.
-- **Ne jamais utiliser un générateur d’images pour reconstruire la topologie technique de l’arbre.**
+- Toute reconstruction de la topologie doit être déterministe depuis `Skill Trees/0.5.2/data.json`.
+- **Interdiction d’utiliser un générateur d’images pour reconstruire la topologie technique de l’arbre.**
 
-## Compétences / supports — état de travail actuel
+## Compétences / état courant
 
 - Hollow Form → Whirling Assault : Heavy Swing, Heightened Charges, Blindside, Vorana’s Siege.
-- Shattering Palm : Ancestral Call II, Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest.
-- Charged Staff : Blind II, Perpetual Charge, Prolonged Duration II, Elemental Armament II, Innervate.
-- Hollow Resonance, Hollow Focus et Tempest Bell : packages documentés dans le Master Context et le live state.
-- Charge Regulation : Vitality II / Clarity II / Precision II — à auditer côté Spirit.
-- Spirit Vessel : package passif/utilitaire conservé.
-- Elemental Conflux reste **optionnel**.
-- **Convalescence : supprimée, ne plus la réintroduire.**
+- Shattering Palm : Rapid Attacks II, Magnified Area II, Elemental Armament II, Rising Tempest, **Ice Bite II** ; Ancestral Call II = clear swap.
+- Freezing Mark : **Eternal Mark, Prolonged Duration II, Charged Mark, Mark for Death II** ; 5e slot libre.
+- Charge Regulation : **Clarity II + Precision II** ; Vitality II supprimée.
+- Wind Dancer : **Maim + Blind II + Rage II** verrouillés.
+- `Biting Frost II`, `Pin I` et `Lockdown` sont exclus dans leurs setups concernés.
+- Elemental Conflux reste optionnel / inactif.
 
-## Live Build App
+## Priorités actuelles
 
-Dossier : `HOLLOW_DOMINION_PROJECT/live_build/`
+1. **Sustain Mana**.
+2. Valider en jeu **Freezing Mark + Ice Bite II → Hollow Form** pour le Freeze boss.
+3. Préserver Evasion + ES et surveiller les gros hits physiques.
+4. Ensuite seulement reprendre critique et affixes offensifs.
 
-- `index.html` — interface live.
-- `build-data.js` — source numérique courante, lisible par humain/ChatGPT.
-- `calculations.js` — résistances endgame, critique et Spirit.
-- `app.js` — rendu, édition locale et export JSON.
-- `visual-manifest.json` — identifie l’image de référence utilisateur et ses zones de crop.
+## Politique visuelle
 
-État virtuel courant important : Ingéniosité 30/30 ; résistances optimisées vers **75/75/75/~75 après pénalité endgame** ; un suffixe libre sur **Masque souriant** et un suffixe libre sur **Amulette solaire**, volontairement laissés à 0 en attendant l’optimisation critique.
+**PoE2DB** est la source visuelle de référence pour les équipements, compétences et supports du live build. L’audit canonique est `reference/HOLLOW_DOMINION_PoE2DB_visual_audit_FINAL_20260910.md`.
 
-## Contraintes encore ouvertes
+Les anciens posters, anciens arbres générés, anciens `.build` Hollow Palm, anciennes versions du Master Context et workspaces HTML sont **historiques / non autoritatifs**.
 
-Priorités actuelles : 1) **chance de critique réelle**, 2) sustain **Mana**, 3) budget **Spirit**, 4) gros hits physiques, 5) supports secondaires, 6) clear final. Le gros mod Attack Speed de la Bague de Topaze reste à auditer contre le pool réel 0.5.2.
-
-## Références visuelles
-
-- `images/passive_tree_master.webp` : master de l’arbre validé.
-- Le fichier indiqué dans `live_build/visual-manifest.json` est l’image de référence actuelle pour la mise en page et le snapshot des valeurs du build.
-- Les anciens arbres générés, anciens fichiers Hollow Palm et workspaces intermédiaires sont historiques et ne doivent pas servir de vérité mécanique.
-
-## Politique de raisonnement
-
-Toujours distinguer **verrouillé**, **configuration de travail** et **provisoire / à auditer**. Ne jamais transformer une condition en bonus permanent. Pour une question sur l’arbre, revenir à `data.json`; pour l’allocation, au `.build`; pour une décision de build, au Master Context ; pour les **valeurs courantes modifiables**, lire et mettre à jour `live_build/build-data.js`.
+Pour toute décision détaillée ou valeur en conflit, revenir au MASTER CONTEXT puis aux sources techniques selon l’ordre ci-dessus.
